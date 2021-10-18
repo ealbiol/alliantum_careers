@@ -6,7 +6,8 @@ import EmployeePhoto from "../components/EmployeePhoto/index"
 
 console.log(getAllEmployees());
 
-export default function TheTeam({ }) {
+
+export default function TheTeam() {
 
     const data = useStaticQuery(graphql`
     query {
@@ -31,15 +32,19 @@ export default function TheTeam({ }) {
         })
     }, [])
 
+    console.log("Employees--->", getAllEmployees());
+
+    const employeesIT = employees.filter(employee => employee.departmentName === "IT")
+
     return (
         <Layout>
 
             {
-                employees.map((employee, index) => {
+                employeesIT.map((employee, index) => {
 
                     return (
-                        <div>
-                            <div key={index} >{employee.firstName}{" "}{employee.surname}</div>
+                        <div key={index} >
+                            <div>{employee.firstName}{" "}{employee.surname}</div>
                             <div>{employee.departmentName}</div>
                             <div>{employee.description}</div>
                             <EmployeePhoto
