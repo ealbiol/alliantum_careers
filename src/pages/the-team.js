@@ -35,6 +35,15 @@ export default function TheTeam() {
     console.log("Employees--->", getAllEmployees());
 
     const employeesIT = employees.filter(employee => employee.departmentName === "IT")
+    const departmentsPerEmployee = employees.map(employee => employee.departmentName)
+
+    const departmentsUnique = new Set(departmentsPerEmployee);
+
+    const departmentsUniqueArray = Array.from(departmentsUnique);
+    console.log("Departments Unique: --->", departmentsUniqueArray);
+
+    const array1 = [1, 2, 3]
+    console.log(array1);
 
     return (
         <Layout>
@@ -54,6 +63,19 @@ export default function TheTeam() {
                     )
                 })
             }
+
+            {
+                departmentsUniqueArray.map((department, index) => {
+
+                    return (
+                        <div key={index} >
+                            <div>{department}</div>
+                        </div>
+                    )
+                })
+            }
+
+
 
         </Layout>
     )
