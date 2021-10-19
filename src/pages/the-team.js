@@ -12,24 +12,17 @@ export default function TheTeam() {
     const data = useStaticQuery(graphql`
     query {
         allImageSharp {
-          nodes {
-            fixed {
-              originalName
+            nodes{
+                ...employeesPhotos
             }
-            gatsbyImageData
-          }
         }
         site {
-          siteMetadata {
-            jobOffer
-            mainPage
-            theTeam
-            title
-          }
+          ...metadata
         }
       }
           
   `)
+
     console.log("Data:", data);
     const [employees, setEmployees] = React.useState([])
 

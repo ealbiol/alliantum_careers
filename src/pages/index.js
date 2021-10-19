@@ -12,20 +12,12 @@ export function IndexPage() {
   const data = useStaticQuery(graphql`
   query {
       allImageSharp {
-        nodes {
-          fixed {
-            originalName
+          nodes{
+              ...employeesPhotos
           }
-          gatsbyImageData
-        }
       }
       site {
-        siteMetadata {
-          jobOffer
-          mainPage
-          theTeam
-          title
-        }
+        ...metadata
       }
     }
         
@@ -57,7 +49,6 @@ export function IndexPage() {
           )
         })
       }
-
     </Layout>
   )
 

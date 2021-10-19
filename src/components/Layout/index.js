@@ -17,12 +17,7 @@ const Layout = ({ children, titlePage }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
-        siteMetadata {
-          title
-          mainPage
-          theTeam
-          jobOffer
-        }
+        ...metadata
       }
     }
   `)
@@ -37,7 +32,7 @@ const Layout = ({ children, titlePage }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
-        <Test>Im part of the header. Testin Styled Components</Test>
+        <Test>Im part of the header. Testing Styled Components</Test>
         <main>{children}</main>
         <footer
           style={{
@@ -49,6 +44,9 @@ const Layout = ({ children, titlePage }) => {
           <a href="https://www.gatsbyjs.com">Gatsby</a>
         </footer>
       </div>
+      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        Button
+      </button>
     </>
   )
 }
