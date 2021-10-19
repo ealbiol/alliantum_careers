@@ -37,18 +37,17 @@ export default function TheTeam() {
     const employeesIT = employees.filter(employee => employee.departmentName === "IT")
     const departmentsPerEmployee = employees.map(employee => employee.departmentName)
 
-    const departmentsUnique = new Set(departmentsPerEmployee);
+    const departmentsUnique = new Set(departmentsPerEmployee); //Removing repeated departments.
 
-    const departmentsUniqueArray = Array.from(departmentsUnique);
+    const departmentsUniqueArray = Array.from(departmentsUnique); //Parsing from Set to Array.
     console.log("Departments Unique: --->", departmentsUniqueArray);
 
-    const array1 = [1, 2, 3]
-    console.log(array1);
+
 
     return (
         <Layout>
 
-            {
+            {/* {
                 employeesIT.map((employee, index) => {
 
                     return (
@@ -62,9 +61,30 @@ export default function TheTeam() {
                         </div>
                     )
                 })
-            }
+            } */}
 
-            {
+            {/* /////////// */}
+
+            {/* {
+                employees.map((employee, index) => {
+
+                    return (
+                        <div key={index} >
+                            <EmployeePhoto
+                                photo={employee.photo}
+                            />
+                            <div>{employee.firstName}{" "}{employee.surname}</div>
+                            <div>{employee.departmentName}</div>
+                            <div>{employee.description}</div>
+
+                        </div>
+                    )
+                })
+            } */}
+
+            {/* /////////// */}
+            <h2>Departments:</h2>
+            {/* {
                 departmentsUniqueArray.map((department, index) => {
 
                     return (
@@ -72,6 +92,37 @@ export default function TheTeam() {
                             <div>{department}</div>
                         </div>
                     )
+                })
+            } */}
+
+            {
+                departmentsUniqueArray.map((department, index) => {
+                    const employeesPerDepartment = employees.filter(employee => employee.departmentName === department)
+                    console.log("Employees per department: --->", department, employeesPerDepartment);
+
+
+
+                    return (
+                        <div key={index} >
+                            <h1>{department}</h1>
+                            {
+                                employeesPerDepartment.map((employeeDepUnite, index) => {
+                                    return (
+                                        <div key={index} >
+                                            <EmployeePhoto
+                                                photo={employeeDepUnite.photo}
+                                            />
+                                            <div>{employeeDepUnite.firstName}{" "}{employeeDepUnite.surname}</div>
+                                            <div>{employeeDepUnite.departmentName}</div>
+
+                                        </div>
+                                    )
+                                })
+                            }
+                        </div>
+                    )
+
+
                 })
             }
 
