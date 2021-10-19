@@ -1,13 +1,35 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
+import Layout from "../components/Layout/index"
 import Seo from "../components/seo"
 import { getAllEmployees } from "../data/data"
-
+import { useStaticQuery, graphql } from "gatsby"
 
 
 export function IndexPage() {
+
+  const data = useStaticQuery(graphql`
+  query {
+      allImageSharp {
+        nodes {
+          fixed {
+            originalName
+          }
+          gatsbyImageData
+        }
+      }
+      site {
+        siteMetadata {
+          jobOffer
+          mainPage
+          theTeam
+          title
+        }
+      }
+    }
+        
+`)
 
   const [employees, setEmployees] = React.useState([])
 
@@ -19,12 +41,12 @@ export function IndexPage() {
   }, [])
 
   return (
-    <Layout>
+    <Layout titlePage={data.site.siteMetadata?.mainPage} >
       <Seo title="Home" />
 
 
       <p>
-        <Link to="/page-2/">Go to page 2</Link> <br />
+        <Link to="/the-team/">The Team</Link> <br />
         <Link to="/page-3/">Go to page 3</Link> <br />
         <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
       </p>

@@ -1,5 +1,5 @@
 import * as React from "react"
-import Layout from "../components/layout"
+import Layout from "../components/Layout/index"
 import { getAllEmployees } from "../data/data"
 import { useStaticQuery, graphql } from "gatsby"
 import EmployeePhoto from "../components/EmployeePhoto/index"
@@ -11,15 +11,23 @@ export default function TheTeam() {
 
     const data = useStaticQuery(graphql`
     query {
-            allImageSharp {
-              nodes {
-                fixed {
-                  originalName
-                }
-                gatsbyImageData
-              }
+        allImageSharp {
+          nodes {
+            fixed {
+              originalName
             }
+            gatsbyImageData
           }
+        }
+        site {
+          siteMetadata {
+            jobOffer
+            mainPage
+            theTeam
+            title
+          }
+        }
+      }
           
   `)
     console.log("Data:", data);
@@ -34,7 +42,7 @@ export default function TheTeam() {
 
     console.log("Employees--->", getAllEmployees());
 
-    const employeesIT = employees.filter(employee => employee.departmentName === "IT")
+    // const employeesIT = employees.filter(employee => employee.departmentName === "IT")
     const departmentsPerEmployee = employees.map(employee => employee.departmentName)
 
     const departmentsUnique = new Set(departmentsPerEmployee); //Removing repeated departments.
@@ -45,7 +53,7 @@ export default function TheTeam() {
 
 
     return (
-        <Layout>
+        <Layout titlePage={data.site.siteMetadata?.theTeam} >
 
             {/* {
                 employeesIT.map((employee, index) => {
@@ -83,7 +91,7 @@ export default function TheTeam() {
             } */}
 
             {/* /////////// */}
-            <h2>Departments:</h2>
+
             {/* {
                 departmentsUniqueArray.map((department, index) => {
 
@@ -114,11 +122,13 @@ export default function TheTeam() {
                                             />
                                             <div>{employeeDepUnite.firstName}{" "}{employeeDepUnite.surname}</div>
                                             <div>{employeeDepUnite.departmentName}</div>
+                                            <div>{employeeDepUnite.description}</div>
 
                                         </div>
                                     )
                                 })
                             }
+
                         </div>
                     )
 
