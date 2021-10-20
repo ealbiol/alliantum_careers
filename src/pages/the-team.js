@@ -2,7 +2,8 @@ import * as React from "react"
 import Layout from "../components/Layout/index"
 import { getAllEmployees } from "../data/data"
 import { useStaticQuery, graphql } from "gatsby"
-import { EmployeeCard } from "../components/EmployeeCard/index"
+import { EmployeeCard } from "../components/EmployeeCard"
+import { DepartmentWithEmployees } from "../components/DepartmentWithEmployees"
 
 
 console.log("All Employees:--->", getAllEmployees());
@@ -12,11 +13,6 @@ export default function TheTeam() {
 
     const data = useStaticQuery(graphql`
     query {
-        allImageSharp {
-            nodes{
-                ...employeesPhotos
-            }
-        }
         site {
           ...metadata
         }
@@ -24,7 +20,6 @@ export default function TheTeam() {
           
   `)
 
-    console.log("Data:", data);
     const [employees, setEmployees] = React.useState([])
 
     React.useEffect(() => {
@@ -34,15 +29,12 @@ export default function TheTeam() {
         })
     }, [])
 
-    console.log("Employees--->", getAllEmployees());
 
-    // const employeesIT = employees.filter(employee => employee.departmentName === "IT")
     const departmentsPerEmployee = employees.map(employee => employee.departmentName)
 
     const departmentsUnique = new Set(departmentsPerEmployee); //Removing repeated departments.
 
     const departmentsUniqueArray = Array.from(departmentsUnique); //Parsing from Set to Array.
-    console.log("Departments Unique: --->", departmentsUniqueArray);
 
 
 
@@ -97,33 +89,19 @@ export default function TheTeam() {
                 })
             } */}
 
+
+
             {
                 departmentsUniqueArray.map((department, index) => {
-                    const employeesPerDepartment = employees.filter(employee => employee.departmentName === department)
-                    console.log("Employees per department: --->", department, employeesPerDepartment);
-
 
 
                     return (
                         <div key={index} >
-                            <h1>{department}</h1>
-                            {
-                                employeesPerDepartment.map((employeeDepUnite, index) => {
-                                    return (
-                                        <div key={index} >
 
-                                            <EmployeeCard
-                                                photo={employeeDepUnite.photo}
-                                                firstName={employeeDepUnite.firstName}
-                                                lastName={employeeDepUnite.surname}
-                                                departmentName={employeeDepUnite.departmentName}
-                                                description={employeeDepUnite.description}
-                                            />
+                            <DepartmentWithEmployees
+                                departmentTitle={department}
+                            />
 
-                                        </div>
-                                    )
-                                })
-                            }
 
                         </div>
                     )
