@@ -22,3 +22,6 @@ const SecondPage = () => (
 )
 
 export default SecondPage
+
+
+//path intellisense
