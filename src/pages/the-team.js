@@ -2,7 +2,6 @@ import * as React from "react"
 import Layout from "../components/Layout/index"
 import { getAllEmployees } from "../data/data"
 import { useStaticQuery, graphql } from "gatsby"
-import { EmployeeCard } from "../components/EmployeeCard"
 import { DepartmentWithEmployees } from "../components/DepartmentWithEmployees"
 
 
@@ -32,68 +31,17 @@ export default function TheTeam() {
 
     const departmentsPerEmployee = employees.map(employee => employee.departmentName)
 
-    const departmentsUnique = new Set(departmentsPerEmployee); //Removing repeated departments.
+    const departmentsUnique = new Set(departmentsPerEmployee);
 
-    const departmentsUniqueArray = Array.from(departmentsUnique); //Parsing from Set to Array.
+    const departmentsUniqueArray = Array.from(departmentsUnique);
 
 
 
     return (
         <Layout titlePage={data.site.siteMetadata?.theTeam} >
 
-            {/* {
-                employeesIT.map((employee, index) => {
-
-                    return (
-                        <div key={index} >
-                            <div>{employee.firstName}{" "}{employee.surname}</div>
-                            <div>{employee.departmentName}</div>
-                            <div>{employee.description}</div>
-                            <EmployeePhoto
-                                photo={employee.photo}
-                            />
-                        </div>
-                    )
-                })
-            } */}
-
-            {/* /////////// */}
-
-            {/* {
-                employees.map((employee, index) => {
-
-                    return (
-                        <div key={index} >
-                            <EmployeePhoto
-                                photo={employee.photo}
-                            />
-                            <div>{employee.firstName}{" "}{employee.surname}</div>
-                            <div>{employee.departmentName}</div>
-                            <div>{employee.description}</div>
-
-                        </div>
-                    )
-                })
-            } */}
-
-            {/* /////////// */}
-
-            {/* {
-                departmentsUniqueArray.map((department, index) => {
-
-                    return (
-                        <div key={index} >
-                            <div>{department}</div>
-                        </div>
-                    )
-                })
-            } */}
-
-
-
             {
                 departmentsUniqueArray.map((department, index) => {
-
 
                     return (
                         <div key={index} >
@@ -102,15 +50,11 @@ export default function TheTeam() {
                                 departmentTitle={department}
                             />
 
-
                         </div>
                     )
 
-
                 })
             }
-
-
 
         </Layout>
     )

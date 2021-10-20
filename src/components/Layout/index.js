@@ -9,7 +9,8 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "../header"
+import Header from "../Header/index"
+import Footer from "../Footer/index"
 import "./layout.css"
 import { Test } from "./styles"
 
@@ -25,6 +26,7 @@ const Layout = ({ children, titlePage }) => {
   return (
     <>
       <Header siteTitle={titlePage} />
+
       <div
         style={{
           margin: `0 auto`,
@@ -44,9 +46,8 @@ const Layout = ({ children, titlePage }) => {
           <a href="https://www.gatsbyjs.com">Gatsby</a>
         </footer>
       </div>
-      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-        Button
-      </button>
+
+      <Footer />
     </>
   )
 }
