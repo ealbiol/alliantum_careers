@@ -12,7 +12,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "../Header/index"
 import Footer from "../Footer/index"
 import "./layout.css"
-import { Test } from "./styles"
 
 const Layout = ({ children, titlePage }) => {
   const data = useStaticQuery(graphql`
@@ -34,7 +33,6 @@ const Layout = ({ children, titlePage }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
-        <Test>Im part of the header. Testing Styled Components</Test>
         <main>{children}</main>
         <footer
           style={{

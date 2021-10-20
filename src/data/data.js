@@ -25,3 +25,14 @@ export async function getAllEmployees() {
     return allEmployees
 }
 
+export const allHeaderSections = [
+    { sectionName: "Your benefits" },
+    { sectionName: "The offices" },
+    { sectionName: "The team" },
+    { sectionName: "Our values" },
+    { sectionName: "The jobs" }
+]
+
+export async function getAllHeaderSections() {
+    return allHeaderSections
+}
