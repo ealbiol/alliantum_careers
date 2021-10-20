@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
 
+// ---> Bio and Seo to be added !
 // import Bio from "../components/bio"
 import Layout from "../components/layout"
 // import Seo from "../components/seo"
@@ -11,6 +12,12 @@ const JobOfferTemplate = ({ data, location }) => {
     return (
         <Layout>
             <div>Job Offer!</div>
+            <h1>{jobOffer.frontmatter.title}</h1>
+
+            <section
+                dangerouslySetInnerHTML={{ __html: jobOffer.html }}
+                itemProp="articleBody"
+            />
         </Layout>
     )
 }
