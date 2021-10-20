@@ -2,9 +2,10 @@ import * as React from "react"
 import Layout from "../components/Layout/index"
 import { getAllEmployees } from "../data/data"
 import { useStaticQuery, graphql } from "gatsby"
-import EmployeePhoto from "../components/EmployeePhoto/index"
+import { EmployeeCard } from "../components/EmployeeCard/index"
 
-console.log(getAllEmployees());
+
+console.log("All Employees:--->", getAllEmployees());
 
 
 export default function TheTeam() {
@@ -110,12 +111,14 @@ export default function TheTeam() {
                                 employeesPerDepartment.map((employeeDepUnite, index) => {
                                     return (
                                         <div key={index} >
-                                            <EmployeePhoto
+
+                                            <EmployeeCard
                                                 photo={employeeDepUnite.photo}
+                                                firstName={employeeDepUnite.firstName}
+                                                lastName={employeeDepUnite.surname}
+                                                departmentName={employeeDepUnite.departmentName}
+                                                description={employeeDepUnite.description}
                                             />
-                                            <div>{employeeDepUnite.firstName}{" "}{employeeDepUnite.surname}</div>
-                                            <div>{employeeDepUnite.departmentName}</div>
-                                            <div>{employeeDepUnite.description}</div>
 
                                         </div>
                                     )

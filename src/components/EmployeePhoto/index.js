@@ -5,7 +5,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 export default function EmployeePhoto({ photo }) {
 
-    const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query {
             allImageSharp {
               nodes {
@@ -19,12 +19,12 @@ export default function EmployeePhoto({ photo }) {
           
   `)
 
-    const photoEmployee = data.allImageSharp.nodes.find(image => photo === image.fixed.originalName);
+  const photoEmployee = data.allImageSharp.nodes.find(image => photo === image.fixed.originalName);
 
 
-    return (
+  return (
 
-        <GatsbyImage image={getImage(photoEmployee)} alt="Photo" />
+    <GatsbyImage image={getImage(photoEmployee)} alt="Photo" />
 
-    )
+  )
 }
