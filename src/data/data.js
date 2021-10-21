@@ -25,6 +25,8 @@ export async function getAllEmployees() {
     return allEmployees
 }
 
+
+
 export const allHeaderSections = [
     { sectionName: "Your benefits" },
     { sectionName: "The offices" },
@@ -35,4 +37,19 @@ export const allHeaderSections = [
 
 export async function getAllHeaderSections() {
     return allHeaderSections
+}
+
+
+
+export const allApplyFormFields = [
+    { type: "text", name: "name", placeholder: "Your name" },
+    { type: "text", name: "last name", placeholder: "Your last name" },
+    { type: "text", name: "talents", placeholder: "Tell us about your talents" },
+    { type: "email", name: "email", placeholder: "Your email" },
+    { type: "file", name: "cv", placeholder: "Your CV" },
+
+]
+
+export async function getAllApplyFormFields() {
+    return allApplyFormFields
 }
