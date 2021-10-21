@@ -2,15 +2,34 @@
 title: Odoo Developer
 date: "2015-05-06T23:46:37.121Z"
 department: "Business System"
-minimumExperience: "1 year"
-
+experience: "2 years"
+languageRequired2: "French - Advanced"
 ---
 
-Wow! I love blogging so much already.
+At Alliantum GmbH we are currently recruiting for a new employee as SEA Specialist, French Speaker
 
-Did you know that "despite its name, salted duck eggs can also be made from
-chicken eggs, though the taste and texture will be somewhat different, and the
-egg yolk will be less rich."?
-([Wikipedia Link](https://en.wikipedia.org/wiki/Salted_duck_egg))
+**What tasks do we have for you?**
 
-Yeah, I didn't either.
+- Campaign creation and maintenance (SEA)
+- Create reporting in Google Analytics
+- Conception and creation of landing pages
+- Analysis of results and improvement proposals for managed projects
+- Development of other interesting tasks
+
+**Would you be able to bring us the following skills/knowledge?**
+
+- Knowledge of SEM factors for campaign optimisation and management.
+- Knowledge about French market
+- Advanced experience in Google ads.
+- Advanced experience in Google Analytics reporting.
+- Knowledge of positioning and analysis tools
+- Advanced knowledge of English and French.
+
+**What do we offer to you?**
+
+- Flexible working hours in our office in the city center of Malaga
+- A responsible position with a wide range of interesting/challenges tasks
+- Permanent contract
+- Opportunity to learn plenty of new technologies
+- A modern and safe workplace with positive team spirit
+- Unlimited coffee and tea

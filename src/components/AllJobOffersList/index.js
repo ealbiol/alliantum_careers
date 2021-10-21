@@ -38,8 +38,16 @@ export function AllJobOffersList() {
 
     return (
         <div>
+            <div>
+                <h3>Departments</h3>
+                <span>All roles</span>
+                <div style={{ border: "1px dashed blue" }} >
+                    <DepartmentsMenu
+                        allDepartments={GetAllDepartments()} />
+                </div>
+            </div>
 
-            <DepartmentsMenu allDepartments={GetAllDepartments()} />
+
 
             <div>
                 {
