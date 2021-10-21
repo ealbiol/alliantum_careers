@@ -9,7 +9,9 @@ import { ApplyForm } from "../components/ApplyForm"
 import { AllJobOffersList } from "../components/AllJobOffersList"
 
 const JobOfferTemplate = ({ data, location }) => {
+
   const jobOffer = data.markdownRemark;
+
 
   return (
     <Layout>
@@ -47,7 +49,8 @@ const JobOfferTemplate = ({ data, location }) => {
       </div>
 
       <div>
-        <AllJobOffersList />
+        <AllJobOffersList
+        />
       </div>
 
     </Layout>

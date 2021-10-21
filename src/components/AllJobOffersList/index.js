@@ -31,19 +31,32 @@ export function AllJobOffersList() {
       }
   `)
 
+    const [clickedDepartment, setClickedDepartment] = React.useState(null)
 
-    const jobOfferDetails = data.allMarkdownRemark.edges
+
+    const jobOfferDetails = clickedDepartment
+        ? data.allMarkdownRemark.edges.filter(item => item.node.frontmatter.department === clickedDepartment)
+        : data.allMarkdownRemark.edges;
+
+
+
     console.log("job offer details:--->", jobOfferDetails);
 
+    function allRoles() {
+        setClickedDepartment(null)
+    }
 
     return (
         <div>
             <div>
                 <h3>Departments</h3>
-                <span>All roles</span>
+                <button onClick={() => (allRoles())} >All roles</button>
                 <div style={{ border: "1px dashed blue" }} >
                     <DepartmentsMenu
-                        allDepartments={GetAllDepartments()} />
+                        allDepartments={GetAllDepartments()}
+                        clickedDep={clickedDepartment}
+                        setClickedDep={setClickedDepartment}
+                    />
                 </div>
             </div>
 
