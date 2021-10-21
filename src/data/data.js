@@ -1,3 +1,4 @@
+import * as React from "react"
 
 
 export const allEmployees = [
@@ -52,4 +53,29 @@ export const allApplyFormFields = [
 
 export async function getAllApplyFormFields() {
     return allApplyFormFields
+}
+
+
+export function GetAllDepartments() {
+
+    const [employees, setEmployees] = React.useState([])
+
+    React.useEffect(() => {
+        getAllEmployees().then((result) => {
+            setEmployees(result)
+
+        })
+    }, [])
+
+
+    const departmentsPerEmployee = employees.map(employee => employee.departmentName)
+
+    const departmentsUnique = new Set(departmentsPerEmployee);
+
+    const departmentsUniqueArray = Array.from(departmentsUnique);
+
+    console.log("All Departments:--->", departmentsUniqueArray);
+
+    return departmentsUniqueArray
+
 }

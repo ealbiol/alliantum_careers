@@ -1,5 +1,8 @@
 import * as React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
+import { NotifyMeButton } from "../NotifyMeButton"
+import { DepartmentsMenu } from "../DepartmentsMenu"
+import { GetAllDepartments } from "../../data/data"
 
 export function AllJobOffersList() {
 
@@ -34,21 +37,29 @@ export function AllJobOffersList() {
 
 
     return (
-        <div  >
+        <div>
 
-            {
-                jobOfferDetails.map((detail, index) => {
-                    return (
-                        <div key={index} style={{ border: "1px solid black" }} >
-                            <Link to={detail.node.fields.slug} >
-                                <div>{detail.node.frontmatter.title}</div>
-                                <div>{detail.node.frontmatter.department}</div>
-                            </Link>
-                        </div>
+            <DepartmentsMenu allDepartments={GetAllDepartments()} />
 
-                    )
-                })
-            }
+            <div>
+                {
+                    jobOfferDetails.map((detail, index) => {
+                        return (
+                            <div key={index} style={{ border: "1px solid black" }} >
+                                <Link to={detail.node.fields.slug} >
+                                    <div>{detail.node.frontmatter.title}</div>
+                                    <div>{detail.node.frontmatter.department}</div>
+                                </Link>
+                            </div>
+
+                        )
+                    })
+                }
+            </div>
+
+            <NotifyMeButton
+                style={{ border: "1px solid blue" }}
+            />
 
         </div>
     )
