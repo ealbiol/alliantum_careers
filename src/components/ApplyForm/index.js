@@ -13,19 +13,19 @@ export function ApplyForm() {
     }, [])
 
     return (
-        <div>
-            <form>
-                {
-                    formFields.map((field, index) => {
-                        return (
-                            <label key={index} >
-                                <input type={field.type} name={field.name} placeholder={field.placeholder} />
-                            </label>
-                        )
-                    })
-                }
-            </form>
 
-        </div>
+        <form style={{ border: "1px solid black" }} >
+            {
+                formFields.map((field, index) => {
+                    return (
+                        <label key={index} >
+                            <input type={field.type} name={field.name} placeholder={field.placeholder} />
+                        </label>
+                    )
+                })
+            }
+        </form>
+
+
     )
 }
