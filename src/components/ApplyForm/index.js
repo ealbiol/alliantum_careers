@@ -19,11 +19,12 @@ export function ApplyForm() {
                 formFields.map((field, index) => {
                     return (
                         <label key={index} >
-                            <input type={field.type} name={field.name} placeholder={field.placeholder} />
+                            <input type={field.type} name={field.name} placeholder={field.placeholder} required />
                         </label>
                     )
                 })
             }
+            <button type="submit" >Apply for this job</button>
         </form>
 
 
