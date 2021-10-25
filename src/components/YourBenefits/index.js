@@ -13,7 +13,7 @@ export function YourBenefits() {
     }, [])
 
     return (
-        <div style={{ border: "1px solid black" }} >
+        <div>
             <div>YOUR BENEFITS</div>
             <div>
                 Do Business Digitalisation

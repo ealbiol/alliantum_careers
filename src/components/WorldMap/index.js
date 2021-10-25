@@ -15,7 +15,14 @@ export function WorldMap() {
     }, [])
 
     return (
-        <div>
+        <div style={{ border: "1px solid black" }} >
+            <div>
+                THE OFFICE
+            </div>
+            <div>
+                German spirit.
+                Spanish passion.
+            </div>
             {
                 addressUnite.map((address, index) => {
                     return (

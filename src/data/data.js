@@ -31,10 +31,10 @@ export async function getAllEmployees() {
 //-----------------------------------------------------//
 
 export const allHeaderAndFooterSections = [
-    { sectionName: "Your benefits", anchor: "/#your-benefits" }, //to be added when field is created in index page.
-    { sectionName: "The offices", anchor: "/#the-offices" }, //to be added when field is created in index page.
-    { sectionName: "The team", anchor: "/the-team" }, //to be added when field is created in index page.
-    { sectionName: "Our values", anchor: "/#" }, //to be added when field is created in index page.
+    { sectionName: "Your benefits", anchor: "/#your-benefits" },
+    { sectionName: "The offices", anchor: "/#the-offices" },
+    { sectionName: "The team", anchor: "/the-team" },
+    { sectionName: "Our values", anchor: "/#" }, //to be added when Component is created for index page.
     { sectionName: "The jobs", anchor: "/#jobs-table" }
 ]
 

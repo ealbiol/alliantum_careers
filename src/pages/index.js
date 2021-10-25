@@ -36,19 +36,26 @@ export function IndexPage() {
 
   return (
     <Layout titlePage={data.site.siteMetadata?.mainPage} >
+
       <Seo title="Home" />
 
-
-      <div>
+      {/* <div>
         <Link to="/page-2/">Go to page 2</Link> <br />
         <Link to="/page-3/">Go to page 3</Link> <br />
         <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+      </div> */}
+
+      {/* ---> Job Offers Table */}
+      <div id="jobs-table" style={{ border: "4px solid rebeccapurple" }}>
+        <div>
+          We do Business Digitalisation
+          and New-era Marketing
+        </div>
+        <AllJobOffersList />
       </div>
 
-      <AllJobOffersList />
-
-      <div style={{ border: "1px solid green" }} >
-        <div>YOUR BENEFITS</div>
+      {/* ---> Your Benefits */}
+      <div style={{ border: "4px solid gray" }} >
         <div>
           Work in an international company,
           with a happy team, in a great office
@@ -58,19 +65,20 @@ export function IndexPage() {
         </div>
       </div>
 
-      <div id="the-offices" >
-        World Map with Office Cards
+      {/* ---> World Map */}
+      <div id="the-offices" style={{ border: "4px solid rebeccapurple" }} >
         <WorldMap />
       </div>
 
-      {
+      {/* {
         employees.map((employee, index) => {
           return (
             <div key={index} >{employee.firstName}</div>
           )
         })
-      }
+      } */}
 
+      {/* ---> Office Presentation */}
       <div>
         <div>
           Your future office is modern,
@@ -164,9 +172,6 @@ export function IndexPage() {
       <div>A</div>
       <div>A</div>
       <div>A</div>
-      <div id="jobs-table">
-        <div >Space for Jobs Table List with Anchor</div>
-      </div>
       <div>A</div>
       <div>A</div>
       <div>A</div>

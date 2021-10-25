@@ -47,9 +47,9 @@ export function AllJobOffersList() {
     }
 
     return (
-        <div style={{ border: "1px solid blue" }} >
+        <div>
             <div>
-                <h3>Departments</h3>
+                <div>WHAT WE NEED RIGHT NOW</div>
 
                 <button onClick={() => (allRoles())} >All roles</button>
 
