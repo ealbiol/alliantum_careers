@@ -27,7 +27,7 @@ export default function Footer() {
 
                 <div>Alliantum Logo</div>
 
-                <AnchorLink to="/#jobsTableList">The jobs</AnchorLink>
+                <AnchorLink to="/#jobs-table">The jobs</AnchorLink>
                 <div style={{ border: "1px solid black" }} >
                     {
                         footerUnite.map((unite, index) => {

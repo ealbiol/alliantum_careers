@@ -31,11 +31,11 @@ export async function getAllEmployees() {
 //-----------------------------------------------------//
 
 export const allHeaderSections = [
-    { sectionName: "Your benefits" },
-    { sectionName: "The offices" },
-    { sectionName: "The team" },
-    { sectionName: "Our values" },
-    { sectionName: "The jobs" }
+    { sectionName: "Your benefits", anchor: "/#" }, //to be added when field is created in index page.
+    { sectionName: "The offices", anchor: "/#" }, //to be added when field is created in index page.
+    { sectionName: "The team", anchor: "/#" }, //to be added when field is created in index page.
+    { sectionName: "Our values", anchor: "/#" }, //to be added when field is created in index page.
+    { sectionName: "The jobs", anchor: "/#jobs-table" }
 ]
 
 export async function getAllHeaderSections() {

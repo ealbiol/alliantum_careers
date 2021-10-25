@@ -2,6 +2,7 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { getAllHeaderSections } from "../../data/data"
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 
 export default function Header({ siteTitle }) {
@@ -27,11 +28,11 @@ export default function Header({ siteTitle }) {
               headerUnite.map((unite, index) => {
                 return (
                   <span key={index} style={{ margin: 0 }}>
-                    <Link
-                      to="/" //---> Route to be changed to each level of the main Page with the exception of "The jobs" that has its unique page.
+                    <AnchorLink
+                      to={unite.anchor} //---> Route to be changed to each level of the main Page with the exception of "The jobs" that has its unique page.
                       style={{ color: `white`, textDecoration: `none` }}>
                       {unite.sectionName}
-                    </Link>
+                    </AnchorLink>
                   </span>
                 )
               })
