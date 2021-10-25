@@ -1,6 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { getAllFooterSections, getAllAdresses } from "../../data/data"
+import { getAllHeaderAndFooterSections, getAllAdresses } from "../../data/data"
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 
@@ -11,7 +11,7 @@ export default function Footer() {
 
 
     React.useEffect(() => {
-        getAllFooterSections().then((result) => {
+        getAllHeaderAndFooterSections().then((result) => {
             setFooterUnite(result)
 
             getAllAdresses().then((result) => {
@@ -25,14 +25,16 @@ export default function Footer() {
         <footer style={{ background: `rebeccapurple`, marginBottom: `1.45rem` }}>
             <div style={{ margin: `0 auto`, maxWidth: 960, padding: `1.45rem 1.0875rem` }}>
 
-                <div>Alliantum Logo</div>
+                <Link to="/" >Logo Alliantum</Link>
 
                 <AnchorLink to="/#jobs-table">The jobs</AnchorLink>
                 <div style={{ border: "1px solid black" }} >
                     {
                         footerUnite.map((unite, index) => {
                             return (
-                                <div key={index}>{unite.sectionName}</div>
+                                <AnchorLink key={index} to={unite.anchor}>
+                                    {unite.sectionName}
+                                </AnchorLink>
                             )
                         })
                     }

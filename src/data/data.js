@@ -30,16 +30,16 @@ export async function getAllEmployees() {
 
 //-----------------------------------------------------//
 
-export const allHeaderSections = [
+export const allHeaderAndFooterSections = [
     { sectionName: "Your benefits", anchor: "/#" }, //to be added when field is created in index page.
     { sectionName: "The offices", anchor: "/#" }, //to be added when field is created in index page.
-    { sectionName: "The team", anchor: "/#" }, //to be added when field is created in index page.
+    { sectionName: "The team", anchor: "/the-team" }, //to be added when field is created in index page.
     { sectionName: "Our values", anchor: "/#" }, //to be added when field is created in index page.
     { sectionName: "The jobs", anchor: "/#jobs-table" }
 ]
 
-export async function getAllHeaderSections() {
-    return allHeaderSections
+export async function getAllHeaderAndFooterSections() {
+    return allHeaderAndFooterSections
 }
 
 
@@ -103,16 +103,17 @@ export async function getAllBenefits() {
 
 //-----------------------------------------------------//
 
-export const allFooterSections = [
-    { sectionName: "Your benefits" },
-    { sectionName: "The office" },
-    { sectionName: "The team" },
-    { sectionName: "Our values" },
-]
+// export const allFooterSections = [
+//     { sectionName: "Your benefits", anchor: "/#" },
+//     { sectionName: "The office", anchor: "/#" },
+//     { sectionName: "The team", anchor: "/the-team" },
+//     { sectionName: "Our values", anchor: "/#" },
+//     { sectionName: "The jobs", anchor: "/#jobs-table" }
+// ]
 
-export async function getAllFooterSections() {
-    return allFooterSections
-}
+// export async function getAllFooterSections() {
+//     return allFooterSections
+// }
 
 //-----------------------------------------------------//
 

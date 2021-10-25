@@ -1,7 +1,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
-import { getAllHeaderSections } from "../../data/data"
+import { getAllHeaderAndFooterSections } from "../../data/data"
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 
@@ -10,7 +10,7 @@ export default function Header({ siteTitle }) {
   const [headerUnite, setHeaderUnite] = React.useState([])
 
   React.useEffect(() => {
-    getAllHeaderSections().then((result) => {
+    getAllHeaderAndFooterSections().then((result) => {
       setHeaderUnite(result)
 
     })
@@ -22,7 +22,7 @@ export default function Header({ siteTitle }) {
       <div style={{ margin: `0 auto`, maxWidth: 960, padding: `1.45rem 1.0875rem` }}>
 
         <div>
-          <div>Logo Alliantum</div>
+          <Link to="/" >Logo Alliantum</Link>
           <div>
             {
               headerUnite.map((unite, index) => {
