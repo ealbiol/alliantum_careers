@@ -9,6 +9,7 @@
     "babel-plugin-styled-components": "^1.13.2",
     "gatsby": "^4.0.0-zz-next.9",
     "gatsby-cli": "^4.0.0",
+    "gatsby-plugin-anchor-links": "^1.2.1",
     "gatsby-plugin-feed": "^4.0.0-zz-next.8",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-image": "^2.0.0-zz-next.1",
