@@ -2,8 +2,44 @@
 title: Digital Marketing - SEA Specialist (FRENCH SPEAKER)
 date: "2015-05-01T22:12:03.284Z"
 description: "Hello World"
+department: "Marketing"
+experience: "At least 1 year"
+languageRequired1: "English - Advanced"
+languageRequired2: "French - Advanced"
+
 ---
 
+At Alliantum GmbH we are currently recruiting for a new employee as SEA Specialist, French Speaker
+
+**What tasks do we have for you?**
+
+- Campaign creation and maintenance (SEA)
+- Create reporting in Google Analytics
+- Conception and creation of landing pages
+- Analysis of results and improvement proposals for managed projects
+- Development of other interesting tasks
+
+**Would you be able to bring us the following skills/knowledge?**
+
+- Knowledge of SEM factors for campaign optimisation and management.
+- Knowledge about French market
+- Advanced experience in Google ads.
+- Advanced experience in Google Analytics reporting.
+- Knowledge of positioning and analysis tools
+- Advanced knowledge of English and French.
+
+**What do we offer to you?**
+
+- Flexible working hours in our office in the city center of Malaga
+- A responsible position with a wide range of interesting/challenges tasks
+- Permanent contract
+- Opportunity to learn plenty of new technologies
+- A modern and safe workplace with positive team spirit
+- Unlimited coffee and tea
+
+
+
+<!-- 
 This is my first post on my new fake blog! How exciting!
 
 I'm sure I'll write a lot more interesting things in the future.
@@ -164,7 +200,6 @@ Paragraph:
 
     Code
 
-<!-- -->
 
     Paragraph:
 
@@ -228,4 +263,4 @@ This paragraph has some `code` in it.
 
 ![Alt Text](https://placehold.it/200x50 "Image Title")
 
-    ![Alt Text](https://placehold.it/200x50 "Image Title")
+    ![Alt Text](https://placehold.it/200x50 "Image Title") -->

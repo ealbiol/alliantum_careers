@@ -1,4 +1,4 @@
-import { graphql } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 
 export const employeesPhotos = useStaticQuery(graphql`
 fragment employeesPhotos on ImageSharp {
@@ -23,4 +23,24 @@ fragment metadata on Site {
       }
     }
       
+`)
+
+export const allJobOffersList = useStaticQuery(graphql`
+fragment allJobOffersList on allMarkdownRemark {
+    nodes {
+      frontmatter {
+        title
+        department
+      }
+    }
+    edges {
+      node {
+        fields {
+          slug
+        }
+      }
+    }
+  }
+
+
 `)
