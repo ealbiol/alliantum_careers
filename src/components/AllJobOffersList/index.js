@@ -47,13 +47,13 @@ export function AllJobOffersList() {
     }
 
     return (
-        <div>
+        <div style={{ border: "1px solid blue" }} >
             <div>
                 <h3>Departments</h3>
 
                 <button onClick={() => (allRoles())} >All roles</button>
 
-                <div style={{ border: "1px dashed blue" }} >
+                <div  >
                     <DepartmentsMenu
                         allDepartments={GetAllDepartments()}
                         clickedDep={clickedDepartment}

@@ -5,6 +5,9 @@ import Layout from "../components/Layout/index"
 import Seo from "../components/seo"
 import { getAllEmployees } from "../data/data"
 import { useStaticQuery, graphql } from "gatsby"
+import { AllJobOffersList } from "../components/AllJobOffersList/index"
+import { YourBenefits } from "../components/YourBenefits/index"
+import { WorldMap } from "../components/WorldMap"
 
 export function IndexPage() {
 
@@ -36,11 +39,30 @@ export function IndexPage() {
       <Seo title="Home" />
 
 
-      <p>
-        <Link to="/the-team/">The Team</Link> <br />
+      <div>
+        <Link to="/page-2/">Go to page 2</Link> <br />
         <Link to="/page-3/">Go to page 3</Link> <br />
         <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-      </p>
+      </div>
+
+      <AllJobOffersList />
+
+      <div style={{ border: "1px solid green" }} >
+        <div>YOUR BENEFITS</div>
+        <div>
+          Work in an international company,
+          with a happy team, in a great office
+        </div>
+        <div id="your-benefits" >
+          <YourBenefits />
+        </div>
+      </div>
+
+      <div id="the-offices" >
+        World Map with Office Cards
+        <WorldMap />
+      </div>
+
       {
         employees.map((employee, index) => {
           return (
@@ -49,6 +71,13 @@ export function IndexPage() {
         })
       }
 
+      <div>
+        <div>
+          Your future office is modern,
+          bright and equipped with the latest
+          technological equipment
+        </div>
+      </div>
 
       <div>A</div>
       <div>A</div>
