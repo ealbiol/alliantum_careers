@@ -53,7 +53,9 @@ const JobOfferTemplate = ({ data, location }) => {
         <AllJobOffersList
         />
       </div>
+
       <YourBenefits />
+
     </Layout>
   )
 }
