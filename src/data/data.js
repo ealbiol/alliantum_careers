@@ -1,5 +1,6 @@
 import * as React from "react"
 
+//-----------------------------------------------------//
 
 export const allEmployees = [
     { firstName: "Stephan", surname: "Diehl", departmentName: "Management", description: "The challenge of the future will be to attract, engage and develop talents. Let’s build the best possible environment for that all together.", photo: "StephanDiehl.jpg" },
@@ -27,6 +28,7 @@ export async function getAllEmployees() {
 }
 
 
+//-----------------------------------------------------//
 
 export const allHeaderSections = [
     { sectionName: "Your benefits" },
@@ -41,6 +43,7 @@ export async function getAllHeaderSections() {
 }
 
 
+//-----------------------------------------------------//
 
 export const allApplyFormFields = [
     { type: "text", name: "name", placeholder: "Your name" },
@@ -55,6 +58,8 @@ export async function getAllApplyFormFields() {
     return allApplyFormFields
 }
 
+
+//-----------------------------------------------------//
 
 export function GetAllDepartments() {
 
@@ -79,3 +84,21 @@ export function GetAllDepartments() {
     return departmentsUniqueArray
 
 }
+
+//-----------------------------------------------------//
+
+export const allBenefits = [
+    { icon: "Clock Icon", title: "Flexible Hours", content: "Flexible entry and exit times. There is life beyond work, and we know it" },
+    { icon: "Cap Icon", title: "Training Fridays", content: "Fridays dedicated to training in subjects of interest to our work place" },
+    { icon: "Team Icon", title: "Team Activities", content: "We organise team activities and it is easy to see us many days eating hamburgers somewhere near the office" },
+    { icon: "Happy Face Icon", title: "Work-Life Balance", content: "Enjoy your life, your time, your family... You only live once! We need you to be happy" },
+    { icon: "Pin Icon", title: "Great Location", content: "Our office is located in the centre of Malaga, close to the shopping and entertainment area" },
+    { icon: "Coffee Icon", title: "Coffee and Tea", content: "Coffee and tea for everyone and there is always someone to bring something to go with it" },
+
+]
+
+export async function getAllBenefits() {
+    return allBenefits
+}
+
+//-----------------------------------------------------//

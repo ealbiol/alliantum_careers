@@ -1,12 +1,13 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
 
-// ---> Bio and Seo to be added !
+// -------> Bio and Seo to be added !
 // import Bio from "../components/bio"
 import Layout from "../components/layout"
 // import Seo from "../components/seo"
 import { ApplyForm } from "../components/ApplyForm"
 import { AllJobOffersList } from "../components/AllJobOffersList"
+import { YourBenefits } from "../components/YourBenefits"
 
 const JobOfferTemplate = ({ data, location }) => {
 
@@ -52,7 +53,7 @@ const JobOfferTemplate = ({ data, location }) => {
         <AllJobOffersList
         />
       </div>
-
+      <YourBenefits />
     </Layout>
   )
 }
