@@ -137,7 +137,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-anchor-links",
       options: {
-        offset: -100
+        offset: -50
       }
     },
 
@@ -146,7 +146,7 @@ module.exports = {
       options: {
         postCssPlugins: [
           require("tailwindcss"),
-          // require("./tailwind.config.js"), // Optional: Load custom Tailwind CSS configuration
+          require("./tailwind.config"), // Optional: Load custom Tailwind CSS configuration
         ],
       },
     },
