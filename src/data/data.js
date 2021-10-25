@@ -102,3 +102,27 @@ export async function getAllBenefits() {
 }
 
 //-----------------------------------------------------//
+
+export const allFooterSections = [
+    { sectionName: "Your benefits" },
+    { sectionName: "The office" },
+    { sectionName: "The team" },
+    { sectionName: "Our values" },
+]
+
+export async function getAllFooterSections() {
+    return allFooterSections
+}
+
+//-----------------------------------------------------//
+
+export const allAddresses = [
+    { city: "Málaga", country: "Spain", address: "Huéscar, 2, Oficina 1-2, Edificio Ochoa N°2, 3ª Planta. 29007 Málaga" },
+    { city: "Oststeinbek", country: "Germany", address: "Im Hegen 13 22113 Oststeinbek" }
+]
+
+export async function getAllAdresses() {
+    return allAddresses
+}
+
+//-------------------------------------------------------//

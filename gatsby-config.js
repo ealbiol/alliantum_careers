@@ -134,6 +134,12 @@ module.exports = {
     },
     `gatsby-plugin-react-helmet`,
 
+    {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: -100
+      }
+    },
 
     {
       resolve: `gatsby-plugin-sass`,

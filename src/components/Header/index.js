@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import { getAllHeaderSections } from "../../data/data"
 
 
-export default function Header2({ siteTitle }) {
+export default function Header({ siteTitle }) {
 
   const [headerUnite, setHeaderUnite] = React.useState([])
 
@@ -16,20 +16,10 @@ export default function Header2({ siteTitle }) {
   }, [])
 
   return (
-    <header
-      style={{
-        background: `rebeccapurple`,
-        marginBottom: `1.45rem`,
-      }}
-    >
+    <header style={{ background: `rebeccapurple`, marginBottom: `1.45rem` }}>
 
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `1.45rem 1.0875rem`,
-        }}
-      >
+      <div style={{ margin: `0 auto`, maxWidth: 960, padding: `1.45rem 1.0875rem` }}>
+
         <div>
           <div>Logo Alliantum</div>
           <div>
@@ -39,11 +29,7 @@ export default function Header2({ siteTitle }) {
                   <span key={index} style={{ margin: 0 }}>
                     <Link
                       to="/" //---> Route to be changed to each level of the main Page with the exception of "The jobs" that has its unique page.
-                      style={{
-                        color: `white`,
-                        textDecoration: `none`,
-                      }}
-                    >
+                      style={{ color: `white`, textDecoration: `none` }}>
                       {unite.sectionName}
                     </Link>
                   </span>
