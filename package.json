@@ -8,15 +8,8 @@
     "autoprefixer": "^10.3.7",
     "babel-plugin-styled-components": "^1.13.2",
     "gatsby": "^4.0.0-zz-next.9",
-<<<<<<< HEAD
     "gatsby-cli": "^4.0.0-zz-next.5",
-=======
-    "gatsby-cli": "^4.0.0",
-<<<<<<< HEAD
->>>>>>> 72a7be368c325db37f7e4e8dcf91c090563aaa69
-=======
     "gatsby-plugin-anchor-links": "^1.2.1",
->>>>>>> 30f9cc4461dc4a7d6802a55321a2351cf90df186
     "gatsby-plugin-feed": "^4.0.0-zz-next.8",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-image": "^2.0.0-zz-next.1",

@@ -1,6 +1,8 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { getAllFooterSections, getAllAdresses } from "../../data/data"
+import { AnchorLink } from "gatsby-plugin-anchor-links";
+
 
 export default function Footer() {
 
@@ -24,7 +26,8 @@ export default function Footer() {
             <div style={{ margin: `0 auto`, maxWidth: 960, padding: `1.45rem 1.0875rem` }}>
 
                 <div>Alliantum Logo</div>
-                <Link to="/" >The jobs</Link>
+
+                <AnchorLink to="/#jobsTableList">The jobs</AnchorLink>
                 <div style={{ border: "1px solid black" }} >
                     {
                         footerUnite.map((unite, index) => {
