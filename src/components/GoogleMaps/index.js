@@ -3,6 +3,7 @@ import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
 import { googleMapsApiKey } from "../../../credentials";
 import { getAllAdresses } from "../../data/data";
 import marker from "../../images/marker.svg"
+import { OfficeCard } from "../OfficeCard";
 
 const containerStyle = {
     width: '100%',
@@ -21,7 +22,7 @@ export function GoogleMaps() {
     React.useEffect(() => {
         getAllAdresses().then((result) => {
             setAddressUnite(result)
-            console.log(result);
+            console.log("addressUnite:--->", result);
         })
     }, [])
 
@@ -47,7 +48,14 @@ export function GoogleMaps() {
     return isLoaded ? (
 
         <div className="map">
-            <div>Office Card</div>
+
+            {
+                addressUnite.map((address, index) => {
+                    return (
+                        <OfficeCard key={index} addressUnite={address} />
+                    )
+                })
+            }
 
             <GoogleMap
                 mapContainerStyle={containerStyle}
@@ -423,14 +431,10 @@ export function GoogleMaps() {
                                 key={index}
                                 position={{ lat: address.lat, lng: address.lng }}
                                 name={address.city}
-                                label={
-                                    address.city
-                                }
+                                // label={address.city}
                                 scaledSize={new window.google.maps.Size(90, 90)}
                                 className="marker"
-                                icon={
-                                    marker
-                                }
+                                icon={marker}
                             />
                         )
                     })
