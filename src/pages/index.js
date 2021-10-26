@@ -8,6 +8,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { AllJobOffersList } from "../components/AllJobOffersList/index"
 import { YourBenefits } from "../components/YourBenefits/index"
 import { WorldMap } from "../components/WorldMap"
+import { GoogleMaps } from "../components/GoogleMaps"
 
 export function IndexPage() {
 
@@ -87,155 +88,9 @@ export function IndexPage() {
         </div>
       </div>
 
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
-      <div>A</div>
 
 
+      <GoogleMaps />
 
     </Layout>
   )
