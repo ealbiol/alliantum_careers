@@ -5,16 +5,16 @@ import { EmployeeCard } from "../EmployeeCard/index"
 
 export function DepartmentWithEmployees({ departmentTitle }) {
 
-    const data = useStaticQuery(graphql`
-    query {
-        allImageSharp {
-            nodes{
-                ...employeesPhotos
-            }
-        }
-      }
-          
-  `)
+    //     const data = useStaticQuery(graphql`
+    //     query {
+    //         allImageSharp {
+    //             nodes{
+    //                 ...employeesPhotos
+    //             }
+    //         }
+    //       }
+
+    //   `)
 
     const [employees, setEmployees] = React.useState([])
 

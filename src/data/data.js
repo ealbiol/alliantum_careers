@@ -113,3 +113,19 @@ export async function getAllAdresses() {
 }
 
 //-------------------------------------------------------//
+
+export const allOfficePhotos = [
+    { photo: "photo1.jpg" },
+    { photo: "photo2.jpg" },
+    { photo: "photo3.jpg" },
+    { photo: "photo4.jpg" },
+    { photo: "photo5.jpg" },
+    { photo: "photo6.jpg" },
+    { photo: "photo7.jpg" },
+    { photo: "photo8.jpg" },
+]
+export async function getAllOfficePhotos() {
+    return allOfficePhotos
+}
+
+//-------------------------------------------------------//

@@ -24,7 +24,7 @@ export default function EmployeePhoto({ photo }) {
 
   return (
 
-    <GatsbyImage image={getImage(photoEmployee)} alt="Photo" />
+    <GatsbyImage image={getImage(photoEmployee)} alt="Photo Employee" />
 
   )
 }
