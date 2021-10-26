@@ -104,8 +104,8 @@ export async function getAllBenefits() {
 //-----------------------------------------------------//
 
 export const allAddresses = [
-    { city: "Málaga", country: "Spain", address: "Huéscar, 2, Oficina 1-2, Edificio Ochoa N°2, 3ª Planta. 29007 Málaga" },
-    { city: "Oststeinbek", country: "Germany", address: "Im Hegen 13 22113 Oststeinbek" }
+    { city: "Málaga", country: "Spain", address: "C. Ordóñez, 2, 2º, 29005 Málaga", lat: 36.71782288308034, lng: -4.424975802343778 },
+    { city: "Oststeinbek", country: "Germany", address: "Im Hegen 13 22113 Oststeinbek", lat: 53.55106201339093, lng: 10.155707354649618 }
 ]
 
 export async function getAllAdresses() {
