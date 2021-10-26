@@ -1,6 +1,6 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import AstronautImage from "../../images/astronaut-photos/astronaut.svg"
+
 
 export function AstronautSection() {
     return (
