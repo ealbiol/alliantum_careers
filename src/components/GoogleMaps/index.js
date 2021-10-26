@@ -44,11 +44,11 @@ export function GoogleMaps() {
     }, [])
 
 
-
-
     return isLoaded ? (
 
         <div className="map">
+            <div>Office Card</div>
+
             <GoogleMap
                 mapContainerStyle={containerStyle}
                 center={center}
@@ -415,6 +415,7 @@ export function GoogleMaps() {
                     ]
                 }}
             >
+
                 {
                     addressUnite.map((address, index) => {
                         return (
@@ -422,10 +423,14 @@ export function GoogleMaps() {
                                 key={index}
                                 position={{ lat: address.lat, lng: address.lng }}
                                 name={address.city}
-                                // label={address.city.toUpperCase()}
+                                label={
+                                    address.city
+                                }
                                 scaledSize={new window.google.maps.Size(90, 90)}
                                 className="marker"
-                                icon={marker}
+                                icon={
+                                    marker
+                                }
                             />
                         )
                     })
