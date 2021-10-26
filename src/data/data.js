@@ -129,3 +129,13 @@ export async function getAllOfficePhotos() {
 }
 
 //-------------------------------------------------------//
+
+export const allAstronautPhotos = [
+    { photo: "astronaut.jpg" },
+    // { photo: "moon.jpg" },
+]
+export async function getAllAstronautPhotos() {
+    return allAstronautPhotos
+}
+
+//-------------------------------------------------------//

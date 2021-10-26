@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
@@ -18,12 +18,10 @@ export function OfficePhoto({ officePhoto }) {
           }
           
   `)
-    console.log("prop officePhoto:--->", officePhoto);
+
     const photoOffice = data.allImageSharp.nodes.find(image => officePhoto.photo === image.fixed.originalName);
-    console.log("photoOffice:--->", photoOffice);
 
     return (
         <GatsbyImage image={getImage(photoOffice)} alt="Photo Office" />
-        // <div>hola</div>
     )
 }

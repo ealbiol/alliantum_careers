@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from "react"
 import { getAllOfficePhotos } from '../../data/data';
 import { OfficePhoto } from '../OfficePhoto';
 

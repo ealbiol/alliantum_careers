@@ -1,6 +1,4 @@
 import * as React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/Layout/index"
 import Seo from "../components/seo"
 import { getAllEmployees } from "../data/data"
@@ -9,6 +7,7 @@ import { AllJobOffersList } from "../components/AllJobOffersList/index"
 import { YourBenefits } from "../components/YourBenefits/index"
 import { GoogleMaps } from "../components/GoogleMaps"
 import { OfficePhotos } from "../components/OfficePhotos"
+import { AstronautSection } from "../components/AstronautSection"
 
 export function IndexPage() {
 
@@ -63,14 +62,8 @@ export function IndexPage() {
       </div>
 
 
-      {/* ------------> World Map */}
-      <div id="the-offices" style={{ border: "4px solid rebeccapurple" }} >
-        <GoogleMaps />
-      </div>
-
-
       {/* ------------> Office Presentation */}
-      <div>
+      <div style={{ border: "4px solid rebeccapurple" }} >
         <h2>
           Your future office is modern,
           bright and equipped with the latest
@@ -78,6 +71,15 @@ export function IndexPage() {
         </h2>
         <OfficePhotos />
       </div>
+
+
+      {/* ------------> World Map */}
+      <div id="the-offices" style={{ border: "4px solid gray" }} >
+        <GoogleMaps />
+      </div>
+
+
+      <AstronautSection />
 
 
       {/* <div>
