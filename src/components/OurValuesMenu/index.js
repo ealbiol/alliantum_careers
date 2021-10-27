@@ -2,6 +2,12 @@ import * as React from "react"
 import { ValueCard } from "../ValueCard"
 
 export function OurValuesMenu({ allOurValues }) {
+
+    const [showValueCard, setShowValueCard] = React.useState(0)
+    const onClickValueTitle = (id) => setShowValueCard(id)
+
+
+
     return (
         <div>
             <div>
@@ -9,8 +15,13 @@ export function OurValuesMenu({ allOurValues }) {
                     allOurValues.map((value, index) => {
                         return (
                             <div key={index}>
-                                <div>{value.title}</div>
-                                <ValueCard allOurValues={allOurValues} />
+                                <button onClick={() => (onClickValueTitle(index))} >{value.title}</button>
+                                <div>
+                                    {
+                                        showValueCard === index ? <ValueCard value={value} /> : null
+                                    }
+                                </div>
+
                             </div>
                         )
                     })
@@ -19,3 +30,4 @@ export function OurValuesMenu({ allOurValues }) {
         </div>
     )
 }
+

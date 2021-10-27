@@ -2,7 +2,7 @@ import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
-export function ValuePhoto({ allOurValues }) {
+export function ValuePhoto({ value }) {
 
     const data = useStaticQuery(graphql`
     query {
@@ -18,10 +18,12 @@ export function ValuePhoto({ allOurValues }) {
           
   `)
 
-    const photoValue = data.allImageSharp.nodes.find(image => allOurValues.photo === image.fixed.originalName);
+    const photoValue = data.allImageSharp.nodes.find(image => value.photo === image.fixed.originalName);
+    console.log("allOurValues:--->", value);
+    console.log("photoValues:--->", photoValue);
 
 
     return (
-        <div>Value Photo</div>
+        <GatsbyImage image={getImage(photoValue)} alt="Photo Office" />
     )
 }
