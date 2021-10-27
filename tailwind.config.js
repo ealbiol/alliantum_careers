@@ -228,6 +228,8 @@ module.exports = {
                 '"Segoe UI Emoji"',
                 '"Segoe UI Symbol"',
                 '"Noto Color Emoji"',
+                "Krona One",
+                "Roboto"
             ],
             serif: ['ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
             mono: [
@@ -250,7 +252,7 @@ module.exports = {
         },
         fontWeight: {
             light: '300',
-            medium: '500',
+            regular: '400',
             bold: '700',
         },
         gap: (theme) => theme('spacing'),
