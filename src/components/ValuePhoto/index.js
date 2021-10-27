@@ -18,6 +18,9 @@ export function ValuePhoto({ allOurValues }) {
           
   `)
 
+    const photoValue = data.allImageSharp.nodes.find(image => allOurValues.photo === image.fixed.originalName);
+
+
     return (
         <div>Value Photo</div>
     )
