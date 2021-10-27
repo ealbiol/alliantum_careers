@@ -34,7 +34,7 @@ export const allHeaderAndFooterSections = [
     { sectionName: "Your benefits", anchor: "/#your-benefits" },
     { sectionName: "The offices", anchor: "/#the-offices" },
     { sectionName: "The team", anchor: "/the-team" },
-    { sectionName: "Our values", anchor: "/#" }, //to be added when Component is created for index page.
+    { sectionName: "Our values", anchor: "/#our-values" }, //to be added when Component is created for index page.
     { sectionName: "The jobs", anchor: "/#jobs-table" }
 ]
 

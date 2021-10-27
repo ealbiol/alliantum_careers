@@ -72,7 +72,10 @@ export function IndexPage() {
 
       <AstronautSection />
 
-      <OurValuesSection />
+      {/* ------------> Our Values */}
+      <div id="our-values" style={{ border: "4px solid gray" }} >
+        <OurValuesSection />
+      </div>
 
       {/* <div>
         <Link to="/page-2/">Go to page 2</Link> <br />
