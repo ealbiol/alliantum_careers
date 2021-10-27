@@ -59,7 +59,6 @@ export function AllJobOffersList() {
                         clickedDep={clickedDepartment}
                         setClickedDep={setClickedDepartment}
                     />
-
                 </div>
             </div>
 

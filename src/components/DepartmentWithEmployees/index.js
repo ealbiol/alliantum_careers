@@ -1,20 +1,9 @@
 import * as React from "react"
 import { getAllEmployees } from "../../data/data"
-import { useStaticQuery, graphql } from "gatsby"
 import { EmployeeCard } from "../EmployeeCard/index"
 
 export function DepartmentWithEmployees({ departmentTitle }) {
 
-    //     const data = useStaticQuery(graphql`
-    //     query {
-    //         allImageSharp {
-    //             nodes{
-    //                 ...employeesPhotos
-    //             }
-    //         }
-    //       }
-
-    //   `)
 
     const [employees, setEmployees] = React.useState([])
 

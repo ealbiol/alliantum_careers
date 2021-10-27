@@ -8,6 +8,8 @@ import { YourBenefits } from "../components/YourBenefits/index"
 import { GoogleMaps } from "../components/GoogleMaps"
 import { OfficePhotos } from "../components/OfficePhotos"
 import { AstronautSection } from "../components/AstronautSection"
+import { TheTeam } from "../components/TheTeam"
+import { OurValuesSection } from "../components/OurValuesSection"
 
 export function IndexPage() {
 
@@ -66,7 +68,11 @@ export function IndexPage() {
         <GoogleMaps />
       </div>
 
+      <TheTeam />
+
       <AstronautSection />
+
+      <OurValuesSection />
 
       {/* <div>
         <Link to="/page-2/">Go to page 2</Link> <br />

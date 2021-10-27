@@ -139,3 +139,19 @@ export async function getAllAstronautPhotos() {
 }
 
 //-------------------------------------------------------//
+
+export const allOurValues = [
+    { title: "Pioneering Spirit", content: "We are technological and therefore like to be at the cutting edge. We have an entrepreneurial spirit that drives us to develop innovative solutions and products that make it easier for our customers to differentiate themselves. Always from the perspective of profitability and growth. This principle is closely linked to learning and, more specifically, to the concept of lifelong learning. Inexhaustible capacity for learning", photo: "" },
+    { title: "Decisive", content: "We are resolute and strive to develop our projects on time. We like to provide solutions that add value and are tailored to the real needs of the company.", photo: "" },
+    { title: "Truly International", content: "We are an international company. Our German origin and our Spanish headquarters mean that our frontier is the world. We like international projects, and we do not limit ourselves to any geographical area.", photo: "" },
+    { title: "Fairness", content: "All decisions must be reasoned and seek the common good and be fair to the rest of the team. We also promote open speech as the possibility of being able to express an opinion or propose a particular action without fear of being reprimanded for it.", photo: "" },
+    { title: "Flexible", content: "We know how to adapt to situations and the different needs of the moment. We promote flexible environments for work, learning, and growth.", photo: "" },
+    { title: "Team Spirit", content: "Our team, together with our customers, is the most important thing to us. We like to have a fun and open working space. We share moments outside the office, and there is always some recreational activity planned where we can showcase each other's skills.", photo: "" },
+
+]
+
+export async function getAllOurValues() {
+    return allOurValues
+}
+
+//-----------------------------------------------------//
