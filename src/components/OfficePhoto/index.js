@@ -5,7 +5,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 export function OfficePhoto({ officePhoto }) {
 
-    const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query {
             allImageSharp {
               nodes {
@@ -19,9 +19,9 @@ export function OfficePhoto({ officePhoto }) {
           
   `)
 
-    const photoOffice = data.allImageSharp.nodes.find(image => officePhoto.photo === image.fixed.originalName);
+  const photoOffice = data.allImageSharp.nodes.find(image => officePhoto.photo === image.fixed.originalName);
 
-    return (
-        <GatsbyImage image={getImage(photoOffice)} alt="Photo Office" />
-    )
+  return (
+    <GatsbyImage image={getImage(photoOffice)} alt="Photo Office" />
+  )
 }

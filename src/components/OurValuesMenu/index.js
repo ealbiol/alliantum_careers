@@ -9,8 +9,7 @@ export function OurValuesMenu({ allOurValues }) {
                     allOurValues.map((value, index) => {
                         return (
                             <div key={index}>
-                                <div>{value.title}</div>
-                                <ValueCard allOurValues={allOurValues} />
+                                <ValueCard value={value} />
                             </div>
                         )
                     })
