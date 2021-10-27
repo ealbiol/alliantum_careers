@@ -3,8 +3,8 @@ import { ValueCard } from "../ValueCard"
 
 export function OurValuesMenu({ allOurValues }) {
 
-    const [showValueCard, setShowValueCard] = React.useState(false)
-    const onClickValueTitle = () => setShowValueCard(!showValueCard)
+    const [showValueCard, setShowValueCard] = React.useState(0)
+    const onClickValueTitle = (id) => setShowValueCard(id)
 
 
 
@@ -15,11 +15,13 @@ export function OurValuesMenu({ allOurValues }) {
                     allOurValues.map((value, index) => {
                         return (
                             <div key={index}>
-                                <button onClick={onClickValueTitle} >{value.title}
-                                </button>
-                                {
-                                    showValueCard ? <ValueCard value={value} /> : null
-                                }
+                                <button onClick={() => (onClickValueTitle(index))} >{value.title}</button>
+                                <div>
+                                    {
+                                        showValueCard === index ? <ValueCard value={value} /> : null
+                                    }
+                                </div>
+
                             </div>
                         )
                     })
