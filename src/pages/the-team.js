@@ -27,7 +27,6 @@ export default function TheTeam() {
 
             <Seo title="The Team" />
 
-
             <DepartmentsMenu allDepartments={GetAllDepartments()} />
 
             {
@@ -41,6 +40,7 @@ export default function TheTeam() {
                             />
 
                         </div>
+
                     )
 
                 })

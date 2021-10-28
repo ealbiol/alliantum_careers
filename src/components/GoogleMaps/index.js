@@ -60,7 +60,7 @@ export function GoogleMaps() {
             <GoogleMap
                 mapContainerStyle={containerStyle}
                 center={center}
-                zoom={1.8}
+                zoom={2.5}
                 options={{
                     zoomControl: false,
                     mapTypeControl: false,

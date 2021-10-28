@@ -12,6 +12,7 @@ import { TheTeam } from "../components/TheTeam"
 import { OurValuesSection } from "../components/OurValuesSection"
 import { WorkWithUs } from "../components/WorkWithUs"
 
+
 export function IndexPage() {
 
   const data = useStaticQuery(graphql`
@@ -39,6 +40,7 @@ export function IndexPage() {
 
   return (
     <Layout titlePage={data.site.siteMetadata?.mainPage} >
+
 
       <Seo title="Home" />
 
