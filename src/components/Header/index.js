@@ -22,7 +22,7 @@ export default function Header({ siteTitle }) {
 
       <div>
 
-        <div class="flex flex-row justify-between container mx-auto py-3 bb bg-red">
+        <div className="flex flex-row justify-between container mx-auto py-3 bb bg-red">
           <Link to="/" > 
             <StaticImage
                 src="../../images/alliantum-brand/alliantum-logo.png"

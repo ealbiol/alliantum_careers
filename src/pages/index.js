@@ -34,7 +34,7 @@ export function IndexPage() {
     getAllEmployees().then((result) => {
       setEmployees(result)
 
-    })
+    })  
   }, [])
 
   return (
@@ -43,7 +43,7 @@ export function IndexPage() {
       <Seo title="Home" />
 
       {/* ------------> Work With Us */}
-      <div id="jobs-table" style={{ border: "4px solid rebeccapurple" }}>
+      <div id="jobs-table" className="bg-persian-pink" style={{ border: "4px solid rebeccapurple" }}>
         <WorkWithUs />
       </div>
 
@@ -76,7 +76,9 @@ export function IndexPage() {
 
       <TheTeam />
 
-      <AstronautSection />
+      <div className="bg-cornflower-blue">
+        <AstronautSection />
+      </div>
 
       {/* ------------> Our Values */}
       <div id="our-values" style={{ border: "4px solid gray" }} >
