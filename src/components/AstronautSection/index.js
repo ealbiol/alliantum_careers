@@ -5,7 +5,7 @@ import { Parallax } from 'react-scroll-parallax';
 
 export function AstronautSection() {
     return (
-        <div style={{ backgroundColor: "#529DFC" }} >
+        <div className="container mx-auto" >
             <div>
                 <h3>Our Mission</h3>
                 <div>
