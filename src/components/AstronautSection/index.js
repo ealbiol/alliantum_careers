@@ -12,9 +12,9 @@ export function AstronautSection() {
                     To provide cutting-edge and innovative technological solutions tailored to business needs to increase competitiveness and productivity.
                 </div>
             </div>
-            <Parallax x={[-100, 35]}>
+            <Parallax x={[100, -100]}>
                 <StaticImage
-                    src="../../images/astronaut-photos/astronaut.svg"
+                    src="../../images/astronaut-photos/astronaut.png"
                     alt="Astronaut"
                     placeholder="blurred"
                     layout="fixed"
