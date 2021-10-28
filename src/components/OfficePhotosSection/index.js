@@ -19,11 +19,11 @@ export function OfficePhotos() {
 
     const firstLinePhotos = officePhotos.slice(0, 4)
     console.log("firstLinePhotos:---->", firstLinePhotos);
-    const secondLinePhotos = officePhotos.slice(4, 8)
+    const secondLinePhotos = officePhotos.slice(4, 8);
 
     return (
         <div>
-            <Parallax x={[100, -150]}>
+            <Parallax x={[-300, 40]}>
                 <div style={{ border: "2px dashed rebeccapurple" }} >
                     {
                         firstLinePhotos.map((officePhoto, index) => {
@@ -35,7 +35,7 @@ export function OfficePhotos() {
                 </div>
             </Parallax>
 
-            <Parallax x={[-150, 100]}>
+            <Parallax x={[300, -40]}>
 
                 <div style={{ border: "2px dashed rebeccapurple" }}   >
                     {
