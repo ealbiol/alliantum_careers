@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Alliantum.es`,
     mainPage: `Main Page`,
     theTeam: `The Team`,
     jobOffer: `Job Offer`,
@@ -150,6 +150,7 @@ module.exports = {
         ],
       },
     },
+
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
@@ -161,6 +162,9 @@ module.exports = {
         ],
         display: 'swap'
       }
-    }
+    },
+
+    'gatsby-plugin-dark-mode'
+
   ],
 }
