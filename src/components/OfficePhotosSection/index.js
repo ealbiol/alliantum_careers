@@ -36,7 +36,6 @@ export function OfficePhotos() {
             </Parallax>
 
             <Parallax x={[300, -40]}>
-
                 <div style={{ border: "2px dashed rebeccapurple" }}   >
                     {
                         secondLinePhotos.map((officePhoto, index) => {
