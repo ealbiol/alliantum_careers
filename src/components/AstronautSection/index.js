@@ -9,7 +9,7 @@ export function AstronautSection() {
             <div className="absolute">
                 <Parallax x={[-100, 35]}>
                     <StaticImage
-                        src="../../images/astronaut-photos/astronaut.svg"
+                        src="../../images/astronaut-photos/astronaut.png"
                         alt="Astronaut"
                         placeholder="blurred"
                         layout="fixed"
