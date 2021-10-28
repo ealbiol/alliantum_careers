@@ -1,6 +1,9 @@
 import * as React from "react"
 import { getAllOfficePhotos } from '../../data/data';
 import { OfficePhoto } from '../OfficePhoto';
+import { Parallax } from 'react-scroll-parallax';
+
+
 
 export function OfficePhotos() {
 
@@ -14,30 +17,37 @@ export function OfficePhotos() {
         })
     }, [])
 
-    const first4photos = officePhotos.slice(0, 4)
-    console.log("first4Photos:---->", first4photos);
-    const last4photos = officePhotos.slice(4, 8)
+    const firstLinePhotos = officePhotos.slice(0, 4)
+    console.log("firstLinePhotos:---->", firstLinePhotos);
+    const secondLinePhotos = officePhotos.slice(4, 8)
 
     return (
         <div>
-            <div style={{ border: "2px dashed rebeccapurple" }} >
-                {
-                    first4photos.map((officePhoto, index) => {
-                        return (
-                            <OfficePhoto key={index} officePhoto={officePhoto} />
-                        )
-                    })
-                }
-            </div>
-            <div style={{ border: "2px dashed rebeccapurple" }}   >
-                {
-                    last4photos.map((officePhoto, index) => {
-                        return (
-                            <OfficePhoto key={index} officePhoto={officePhoto} />
-                        )
-                    })
-                }
-            </div>
+            <Parallax x={[100, -150]}>
+                <div style={{ border: "2px dashed rebeccapurple" }} >
+                    {
+                        firstLinePhotos.map((officePhoto, index) => {
+                            return (
+                                <OfficePhoto key={index} officePhoto={officePhoto} />
+                            )
+                        })
+                    }
+                </div>
+            </Parallax>
+
+            <Parallax x={[-150, 100]}>
+
+                <div style={{ border: "2px dashed rebeccapurple" }}   >
+                    {
+                        secondLinePhotos.map((officePhoto, index) => {
+                            return (
+                                <OfficePhoto key={index} officePhoto={officePhoto} />
+                            )
+                        })
+                    }
+                </div>
+            </Parallax>
+
         </div>
 
     )
