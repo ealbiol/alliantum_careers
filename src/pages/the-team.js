@@ -1,5 +1,6 @@
 import * as React from "react"
 import Layout from "../components/Layout/index"
+import Seo from "../components/seo"
 import { getAllEmployees } from "../data/data"
 import { useStaticQuery, graphql } from "gatsby"
 import { DepartmentWithEmployees } from "../components/DepartmentWithEmployees"
@@ -24,6 +25,8 @@ export default function TheTeam() {
     return (
         <Layout titlePage={data.site.siteMetadata?.theTeam} >
 
+            <Seo title="The Team" />
+
             <DepartmentsMenu allDepartments={GetAllDepartments()} />
 
             {
@@ -37,6 +40,7 @@ export default function TheTeam() {
                             />
 
                         </div>
+
                     )
 
                 })

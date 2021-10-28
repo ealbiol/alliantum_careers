@@ -12,6 +12,7 @@ import { TheTeam } from "../components/TheTeam"
 import { OurValuesSection } from "../components/OurValuesSection"
 import { WorkWithUs } from "../components/WorkWithUs"
 
+
 export function IndexPage() {
 
   const data = useStaticQuery(graphql`
@@ -39,6 +40,7 @@ export function IndexPage() {
 
   return (
     <Layout titlePage={data.site.siteMetadata?.mainPage} >
+
 
       <Seo title="Home" />
 
@@ -84,20 +86,6 @@ export function IndexPage() {
       <div id="our-values" >
         <OurValuesSection />
       </div>
-
-      {/* <div>
-        <Link to="/page-2/">Go to page 2</Link> <br />
-        <Link to="/page-3/">Go to page 3</Link> <br />
-        <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-      </div> */}
-
-      {/* {
-        employees.map((employee, index) => {
-          return (
-            <div key={index} >{employee.firstName}</div>
-          )
-        })
-      } */}
 
     </Layout>
   )
