@@ -34,7 +34,7 @@ export function IndexPage() {
     getAllEmployees().then((result) => {
       setEmployees(result)
 
-    })  
+    })
   }, [])
 
   return (
@@ -84,20 +84,6 @@ export function IndexPage() {
       <div id="our-values" style={{ border: "4px solid gray" }} >
         <OurValuesSection />
       </div>
-
-      {/* <div>
-        <Link to="/page-2/">Go to page 2</Link> <br />
-        <Link to="/page-3/">Go to page 3</Link> <br />
-        <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-      </div> */}
-
-      {/* {
-        employees.map((employee, index) => {
-          return (
-            <div key={index} >{employee.firstName}</div>
-          )
-        })
-      } */}
 
     </Layout>
   )
