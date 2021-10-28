@@ -132,7 +132,7 @@ export async function getAllOfficePhotos() {
 
 export const allAstronautPhotos = [
     { photo: "astronaut.jpg" },
-    // { photo: "moon.jpg" },
+    { photo: "planet.png" },
 ]
 export async function getAllAstronautPhotos() {
     return allAstronautPhotos
