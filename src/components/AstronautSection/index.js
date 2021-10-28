@@ -1,5 +1,6 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
+import { Parallax } from 'react-scroll-parallax';
 
 
 export function AstronautSection() {
@@ -11,14 +12,16 @@ export function AstronautSection() {
                     To provide cutting-edge and innovative technological solutions tailored to business needs to increase competitiveness and productivity.
                 </div>
             </div>
-            <StaticImage
-                src="../../images/astronaut-photos/astronaut.svg"
-                alt="Astronaut"
-                placeholder="blurred"
-                layout="fixed"
-                width={410}
-                height={600}
-            />
+            <Parallax x={[-100, 35]}>
+                <StaticImage
+                    src="../../images/astronaut-photos/astronaut.svg"
+                    alt="Astronaut"
+                    placeholder="blurred"
+                    layout="fixed"
+                    width={410}
+                    height={600}
+                />
+            </Parallax>
             <div>
                 <h3>Our Vision</h3>
                 <div>
