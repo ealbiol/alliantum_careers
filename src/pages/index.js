@@ -34,7 +34,7 @@ export function IndexPage() {
     getAllEmployees().then((result) => {
       setEmployees(result)
 
-    })  
+    })
   }, [])
 
   return (
@@ -43,18 +43,18 @@ export function IndexPage() {
       <Seo title="Home" />
 
       {/* ------------> Work With Us */}
-      <div id="jobs-table" className="bg-persian-pink" style={{ border: "4px solid rebeccapurple" }}>
+      <div id="jobs-table" className="bg-persian-pink">
         <WorkWithUs />
       </div>
 
       {/* ------------> Job Offers Table */}
-      <div id="jobs-table" style={{ border: "4px solid rebeccapurple" }}>
+      <div id="jobs-table">
         <h2>We do Business Digitalisation and New-era Marketing</h2>
         <AllJobOffersList />
       </div>
 
       {/* ------------> Your Benefits */}
-      <div style={{ border: "4px solid gray" }} >
+      <div >
         <h2>Work in an international company, with a happy team, in a great office</h2>
         <div id="your-benefits" >
           <YourBenefits />
@@ -62,13 +62,13 @@ export function IndexPage() {
       </div>
 
       {/* ------------> Office Presentation */}
-      <div style={{ border: "4px solid rebeccapurple" }} >
+      <div>
         <h2>Your future office is modern, bright and equipped with the latest technological equipment</h2>
         <OfficePhotos />
       </div>
 
       {/* ------------> World Map */}
-      <div id="the-offices" style={{ border: "4px solid gray" }} >
+      <div id="the-offices" >
         <h5>THE OFFICE</h5>
         <h3>German spirit. Spanish passion.</h3>
         <GoogleMaps />
@@ -81,7 +81,7 @@ export function IndexPage() {
       </div>
 
       {/* ------------> Our Values */}
-      <div id="our-values" style={{ border: "4px solid gray" }} >
+      <div id="our-values" >
         <OurValuesSection />
       </div>
 
