@@ -14,13 +14,30 @@ export function OfficePhotos() {
         })
     }, [])
 
+    const first4photos = officePhotos.slice(0, 4)
+    console.log("first4Photos:---->", first4photos);
+    const last4photos = officePhotos.slice(4, 8)
+
     return (
         <div>
-            {officePhotos.map((officePhoto, index) => {
-                return (
-                    <OfficePhoto key={index} officePhoto={officePhoto} />
-                )
-            })}
+            <div style={{ border: "2px dashed rebeccapurple" }} >
+                {
+                    first4photos.map((officePhoto, index) => {
+                        return (
+                            <OfficePhoto key={index} officePhoto={officePhoto} />
+                        )
+                    })
+                }
+            </div>
+            <div style={{ border: "2px dashed rebeccapurple" }}   >
+                {
+                    last4photos.map((officePhoto, index) => {
+                        return (
+                            <OfficePhoto key={index} officePhoto={officePhoto} />
+                        )
+                    })
+                }
+            </div>
         </div>
 
     )

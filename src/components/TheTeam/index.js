@@ -24,7 +24,7 @@ export function TheTeam() {
             </div>
 
             <div>
-                <div>VIDEO</div>
+                <div>(Space for VIDEO)</div>
                 <div>
                     <div>An employee-oriented company where you can enjoy a fun and informal atmosphere, while keep growing as the best professional in your area.</div>
                     <div>Specialised in Digital Marketing and the implementation of Business Software Systems. We like to keep learning and always be up to date, which is why the development and careers of our employees are a priority for us.
@@ -49,6 +49,7 @@ export function TheTeam() {
                             )
                         })
                     }
+                    <div>Meet your future team</div>
                 </div>
                 <div style={{ backgroundColor: "#FCE569" }} >
                     <div>You could be one of them</div>

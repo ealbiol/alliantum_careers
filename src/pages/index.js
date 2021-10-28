@@ -10,6 +10,7 @@ import { OfficePhotos } from "../components/OfficePhotosSection"
 import { AstronautSection } from "../components/AstronautSection"
 import { TheTeam } from "../components/TheTeam"
 import { OurValuesSection } from "../components/OurValuesSection"
+import { WorkWithUs } from "../components/WorkWithUs"
 
 export function IndexPage() {
 
@@ -40,6 +41,11 @@ export function IndexPage() {
     <Layout titlePage={data.site.siteMetadata?.mainPage} >
 
       <Seo title="Home" />
+
+      {/* ------------> Work With Us */}
+      <div id="jobs-table" style={{ border: "4px solid rebeccapurple" }}>
+        <WorkWithUs />
+      </div>
 
       {/* ------------> Job Offers Table */}
       <div id="jobs-table" style={{ border: "4px solid rebeccapurple" }}>
