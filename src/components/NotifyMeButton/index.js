@@ -6,8 +6,9 @@ export function NotifyMeButton() {
     console.log("departmentsLists:--->", departmentsLists);
     const allDepartments = GetAllDepartments();
 
+    const initialOption = "Select Department"
     const [userEmail, setUserEmail] = React.useState("")
-    const [userDepartment, setUserDepartment] = React.useState("")
+    const [userDepartment, setUserDepartment] = React.useState(initialOption)
     const URL = "https://api.sendinblue.com/v3/contacts"
 
     function handleUserEmail(e) {
@@ -48,7 +49,7 @@ export function NotifyMeButton() {
 
     return (
         <div>
-            {/* 1 */}
+            {/* Option 1 */}
             <form onSubmit={handleUserEmail} >
                 <input
                     type="email"
@@ -64,7 +65,7 @@ export function NotifyMeButton() {
             </form>
 
 
-            {/* 2 */}
+            {/* Option 2 */}
             <form onSubmit={handleUserEmail}>
                 <input
                     type="email"
@@ -88,10 +89,19 @@ export function NotifyMeButton() {
                         })
                     }
                 </select>
-                <button type="submit">
-                    <span>(Bell Icon){" "}</span>
-                    <span>Notify me on new jobs</span>
-                </button>
+                {userDepartment === initialOption &&
+                    <button type="submit" style={{ color: `gray` }} disabled>
+                        <span>(Bell Icon){" "}</span>
+                        <span>Notify me on new jobs</span>
+                    </button>
+                }
+                {userDepartment !== initialOption &&
+                    <button type="submit" style={{ color: `green` }} >
+                        <span>(Bell Icon){" "}</span>
+                        <span>Notify me on new jobs</span>
+                    </button>
+                }
+
             </form>
 
         </div>
