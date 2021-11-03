@@ -3,6 +3,7 @@ import * as React from "react"
 import { sendInBlueApiKey, departmentsLists } from "../../../credentials";
 import { GetAllDepartments } from "../../data/data";
 
+
 export function NotifyMeButton() {
     console.log("departmentsLists:--->", departmentsLists);
     const allDepartments = GetAllDepartments();
@@ -13,7 +14,6 @@ export function NotifyMeButton() {
     const [showNotifySubmit, setShowNotifySubmit] = React.useState(false)
     const URL = "https://api.sendinblue.com/v3/contacts"
 
-    const [userList, setUserList] = React.useState([])
 
     function handleUserEmail(e) {
         e.preventDefault();
@@ -36,11 +36,6 @@ export function NotifyMeButton() {
             .catch(err => console.error(err));
 
         console.log(options);
-
-        //---------//
-
-        userList.push(userEmail)
-        console.log("User List:--->", userList);
 
     }
 
