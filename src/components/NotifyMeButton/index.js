@@ -1,3 +1,4 @@
+import { data } from "autoprefixer";
 import * as React from "react"
 import { sendInBlueApiKey, departmentsLists } from "../../../credentials";
 import { GetAllDepartments } from "../../data/data";
@@ -12,11 +13,12 @@ export function NotifyMeButton() {
     const [showNotifySubmit, setShowNotifySubmit] = React.useState(false)
     const URL = "https://api.sendinblue.com/v3/contacts"
 
+    const [userList, setUserList] = React.useState([])
+
     function handleUserEmail(e) {
         e.preventDefault();
         console.log("User email:--->", userEmail);
         console.log("User department:--->", userDepartment);
-
 
         const options = {
             method: "POST",
@@ -28,14 +30,20 @@ export function NotifyMeButton() {
             body: JSON.stringify({ "email": userEmail, "listIds": departmentId })
         };
 
-
         fetch(URL, options)
             .then(response => response.json())
             .then(data => console.log("Added email:--->", data))
             .catch(err => console.error(err));
 
         console.log(options);
+
+        //---------//
+
+        userList.push(userEmail)
+        console.log("User List:--->", userList);
+
     }
+
 
     const allDepsWithoutManagement = allDepartments.filter(department => department !== "Management")
     allDepsWithoutManagement.sort().unshift(initialOption)
@@ -53,7 +61,9 @@ export function NotifyMeButton() {
         <div>
             <button onClick={handleBoolean} ><h4>Notify me on new jobs</h4></button>
 
+
             {showNotifySubmit &&
+
                 <form onSubmit={handleUserEmail} style={{ border: "2px solid rebeccapurple" }} >
                     <input
                         type="email"
@@ -90,6 +100,7 @@ export function NotifyMeButton() {
                         </button>
                     }
                 </form>
+
             }
 
 

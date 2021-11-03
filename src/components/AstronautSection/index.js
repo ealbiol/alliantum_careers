@@ -13,8 +13,8 @@ export function AstronautSection() {
                         alt="Astronaut"
                         placeholder="blurred"
                         layout="fixed"
-                        width={410}
-                        height={600}
+                        width={390}
+                        height={570}
                     />
                 </Parallax>
             </div>

@@ -1,5 +1,5 @@
 import * as React from "react"
-import PropTypes from "prop-types"
+// import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { getAllHeaderAndFooterSections } from "../../data/data"
 import { AnchorLink } from "gatsby-plugin-anchor-links";
@@ -23,13 +23,13 @@ export default function Header({ siteTitle }) {
       <div>
 
         <div className="flex flex-row justify-between container mx-auto py-3 bb bg-red">
-          <Link to="/" > 
+          <Link to="/" >
             <StaticImage
-                src="../../images/alliantum-brand/alliantum-logo.png"
-                alt="Alliantum"
-                placeholder="blurred"
-                layout="fixed"
-                height={30}
+              src="../../images/alliantum-brand/alliantum-logo.png"
+              alt="Alliantum"
+              placeholder="blurred"
+              layout="fixed"
+              height={30}
             />
           </Link>
           <div>
