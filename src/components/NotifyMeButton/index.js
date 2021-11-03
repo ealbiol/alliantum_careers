@@ -18,7 +18,6 @@ export function NotifyMeButton() {
         console.log("User department:--->", userDepartment);
 
 
-
         const options = {
             method: "POST",
             headers: {
@@ -30,7 +29,6 @@ export function NotifyMeButton() {
         };
 
 
-
         fetch(URL, options)
             .then(response => response.json())
             .then(data => console.log("Added email:--->", data))
@@ -40,9 +38,9 @@ export function NotifyMeButton() {
     }
 
     const allDepsWithoutManagement = allDepartments.filter(department => department !== "Management")
-    allDepsWithoutManagement.sort().unshift("Select Department")
-    console.log("Sorted Departments with 'Select':--->", allDepsWithoutManagement);
+    allDepsWithoutManagement.sort().unshift(initialOption)
 
+    console.log("Sorted Departments with 'Select':--->", allDepsWithoutManagement);
     console.log("user department:--->", userDepartment);
 
     const matchingDepartment = departmentsLists.find(department => userDepartment === department.name)
@@ -53,24 +51,8 @@ export function NotifyMeButton() {
 
     return (
         <div>
-            {/* Option 1 */}
-            {/* <form onSubmit={handleUserEmail} >
-                <input
-                    type="email"
-                    name="Notify Me"
-                    placeholder="email"
-                    onChange={(e) => setUserEmail(e.currentTarget.value)}
-                    required
-                />
-                <button type="submit"   >
-                    <span>(Bell Icon){" "}</span>
-                    <span>Notify me on new jobs</span>
-                </button>
-            </form> */}
+            <button onClick={handleBoolean} ><h4>Notify me on new jobs</h4></button>
 
-
-            {/* Option 2 */}
-            <button onClick={handleBoolean} >Notify me on new jobs</button>
             {showNotifySubmit &&
                 <form onSubmit={handleUserEmail} style={{ border: "2px solid rebeccapurple" }} >
                     <input
@@ -107,7 +89,6 @@ export function NotifyMeButton() {
                             <span>Submit</span>
                         </button>
                     }
-
                 </form>
             }
 
