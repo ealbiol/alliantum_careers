@@ -24,7 +24,7 @@ export function NotifyMeButton() {
                 "Content-Type": "application/json",
                 "api-key": sendInBlueApiKey,
             },
-            body: JSON.stringify({ "email": userEmail, "listIds": [4] })
+            body: JSON.stringify({ "email": userEmail, "listIds": departmentId })
         };
 
 
@@ -43,8 +43,8 @@ export function NotifyMeButton() {
 
     console.log("user department:--->", userDepartment);
 
-    // const finding = departmentsLists.find(department => userDepartment === Object.keys(department.name))
-    // console.log("ggggggggg", finding);
+    const matchingDepartment = departmentsLists.find(department => userDepartment === department.name)
+    const departmentId = [matchingDepartment?.id]
 
     return (
         <div>
