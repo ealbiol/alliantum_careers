@@ -9,6 +9,7 @@ export function NotifyMeButton() {
     const initialOption = "Select Department"
     const [userEmail, setUserEmail] = React.useState("")
     const [userDepartment, setUserDepartment] = React.useState(initialOption)
+    const [showNotifySubmit, setShowNotifySubmit] = React.useState(false)
     const URL = "https://api.sendinblue.com/v3/contacts"
 
     function handleUserEmail(e) {
@@ -47,10 +48,13 @@ export function NotifyMeButton() {
     const matchingDepartment = departmentsLists.find(department => userDepartment === department.name)
     const departmentId = [matchingDepartment?.id]
 
+    const handleBoolean = () => setShowNotifySubmit(!showNotifySubmit)
+
+
     return (
         <div>
             {/* Option 1 */}
-            <form onSubmit={handleUserEmail} >
+            {/* <form onSubmit={handleUserEmail} >
                 <input
                     type="email"
                     name="Notify Me"
@@ -62,47 +66,51 @@ export function NotifyMeButton() {
                     <span>(Bell Icon){" "}</span>
                     <span>Notify me on new jobs</span>
                 </button>
-            </form>
+            </form> */}
 
 
             {/* Option 2 */}
-            <form onSubmit={handleUserEmail}>
-                <input
-                    type="email"
-                    name="Notify Me"
-                    placeholder="email"
-                    onChange={(e) => setUserEmail(e.currentTarget.value)}
-                    required
-                />
-                <label >Departments:</label>
-                <select name="departments" id="departments" onChange={(e) => setUserDepartment(e.currentTarget.value)} >
-                    {
-                        allDepsWithoutManagement.map((department, index) => {
-                            return (
-                                <option
-                                    key={index}
-                                    value={department}
-                                >
-                                    {department}
-                                </option>
-                            )
-                        })
+            <button onClick={handleBoolean} >Notify me on new jobs</button>
+            {showNotifySubmit &&
+                <form onSubmit={handleUserEmail} style={{ border: "2px solid rebeccapurple" }} >
+                    <input
+                        type="email"
+                        name="Notify Me"
+                        placeholder="email"
+                        onChange={(e) => setUserEmail(e.currentTarget.value)}
+                        required
+                    />
+                    <label >Departments:</label>
+                    <select name="departments" id="departments" onChange={(e) => setUserDepartment(e.currentTarget.value)} >
+                        {
+                            allDepsWithoutManagement.map((department, index) => {
+                                return (
+                                    <option
+                                        key={index}
+                                        value={department}
+                                    >
+                                        {department}
+                                    </option>
+                                )
+                            })
+                        }
+                    </select>
+                    {userDepartment === initialOption &&
+                        <button type="submit" style={{ color: `gray` }} disabled>
+                            <span>(Bell Icon){" "}</span>
+                            <span>Submit</span>
+                        </button>
                     }
-                </select>
-                {userDepartment === initialOption &&
-                    <button type="submit" style={{ color: `gray` }} disabled>
-                        <span>(Bell Icon){" "}</span>
-                        <span>Notify me on new jobs</span>
-                    </button>
-                }
-                {userDepartment !== initialOption &&
-                    <button type="submit" style={{ color: `green` }} >
-                        <span>(Bell Icon){" "}</span>
-                        <span>Notify me on new jobs</span>
-                    </button>
-                }
+                    {userDepartment !== initialOption &&
+                        <button type="submit" style={{ color: `green` }} >
+                            <span>(Bell Icon){" "}</span>
+                            <span>Submit</span>
+                        </button>
+                    }
 
-            </form>
+                </form>
+            }
+
 
         </div>
     )
