@@ -8,7 +8,6 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
 import Header from "../Header/index"
 import Footer from "../Footer/index"
 import "./layout.css"
@@ -28,7 +27,6 @@ const Layout = ({ children, titlePage }) => {
 
   React.useEffect(() => {
     console.log("LocalStorage:--->", localStorage.theme);
-    console.log("LocalStorage:--->", typeof localStorage.theme);
 
     if (localStorage.theme === "dark" || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       setIsDark(true)
