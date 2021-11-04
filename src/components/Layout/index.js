@@ -23,8 +23,20 @@ const Layout = ({ children, titlePage }) => {
     }
   `)
 
-  const [isDark, setIsDark] = React.useState("")
+  const [isDark, setIsDark] = React.useState(false)
 
+
+  React.useEffect(() => {
+    console.log("LocalStorage:--->", localStorage.theme);
+    console.log("LocalStorage:--->", typeof localStorage.theme);
+
+    if (localStorage.theme === "dark" || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      setIsDark(true)
+      console.log("Darkening Age:--->");
+    } else {
+      setIsDark(false)
+    }
+  }, [])
 
   return (
     <div className={isDark ? "dark" : ""}>
@@ -33,6 +45,7 @@ const Layout = ({ children, titlePage }) => {
       <SwitchModeButton isDark={isDark} setIsDark={setIsDark} />
 
       <div>
+        <h1>{isDark ? "dark" : "light"}</h1>
         <main>{children}</main>
         {/* <footer
           style={{
