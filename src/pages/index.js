@@ -45,7 +45,7 @@ export function IndexPage() {
       <Seo title="Home" />
 
       {/* ------------> Work With Us */}
-      <div id="jobs-table" className="bg-persian-pink">
+      <div id="jobs-table" className="bg-persian-pink dark:bg-festival">
         <WorkWithUs />
       </div>
 

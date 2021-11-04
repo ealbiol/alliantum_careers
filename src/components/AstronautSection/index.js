@@ -30,7 +30,7 @@ export function AstronautSection() {
                     To become the leading provider of e-commerce solutions, from brand development to digital identity and technical implementation.
                 </p>
             </div>
-            <Parallax x={[-100, 35]}>
+            <Parallax y={[-100, 35]}>
                 <StaticImage
                     src="../../images/astronaut-photos/planet.png"
                     alt="Planet"

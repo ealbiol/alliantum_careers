@@ -12,7 +12,7 @@ export function OfficePhoto({ officePhoto }) {
                 fixed {
                   originalName
                 }
-                gatsbyImageData(width: 150)
+                gatsbyImageData(width: 350)
               }
             }
           }
