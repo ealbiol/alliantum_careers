@@ -12,6 +12,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "../Header/index"
 import Footer from "../Footer/index"
 import "./layout.css"
+import { SwitchModeButton } from "../SwitchModeButton"
 
 const Layout = ({ children, titlePage }) => {
   const data = useStaticQuery(graphql`
@@ -22,9 +23,14 @@ const Layout = ({ children, titlePage }) => {
     }
   `)
 
+  const [isDark, setIsDark] = React.useState("")
+
+
   return (
-    <>
+    <div className={isDark ? "dark" : ""}>
       <Header siteTitle={titlePage} />
+
+      <SwitchModeButton isDark={isDark} setIsDark={setIsDark} />
 
       <div>
         <main>{children}</main>
@@ -40,7 +46,7 @@ const Layout = ({ children, titlePage }) => {
       </div>
 
       <Footer />
-    </>
+    </div>
   )
 }
 

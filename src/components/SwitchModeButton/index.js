@@ -1,29 +1,16 @@
 import * as React from "react"
 
-export function SwitchModeButton() {
+export function SwitchModeButton({ isDark, setIsDark }) {
+
+    const handleSwitch = () => setIsDark(!isDark)
+
+
     return (
-        <div>
+        <p>
             <label className="switch">
-                <input type="checkbox" />
-                <span className="slider"></span>
-            </label>
-
-            <label className="switch">
-                <input type="checkbox" />
-                <span className="slider"></span>
-            </label>
-
-            <label className="switch">
-                <input type="checkbox" />
+                <input onClick={handleSwitch} type="checkbox" />
                 <span className="slider round"></span>
             </label>
-
-            <label className="switch">
-                <input type="checkbox" />
-                <span className="slider round"></span>
-            </label>
-
-
-        </div>
+        </p>
     )
 }

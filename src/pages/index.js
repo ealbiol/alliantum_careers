@@ -11,7 +11,6 @@ import { AstronautSection } from "../components/AstronautSection"
 import { TheTeam } from "../components/TheTeam"
 import { OurValuesSection } from "../components/OurValuesSection"
 import { WorkWithUs } from "../components/WorkWithUs"
-import { SwitchModeButton } from "../components/SwitchModeButton"
 
 
 export function IndexPage() {
@@ -45,8 +44,6 @@ export function IndexPage() {
 
       <Seo title="Home" />
 
-
-      <SwitchModeButton />
 
       {/* ------------> Work With Us */}
       <div id="jobs-table" className="bg-persian-pink dark:bg-festival">
