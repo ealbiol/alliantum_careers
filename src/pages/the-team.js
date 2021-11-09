@@ -10,7 +10,7 @@ import { GetAllDepartments } from "../data/data"
 console.log("All Employees:--->", getAllEmployees());
 
 
-export default function TheTeam() {
+export function TheTeam() {
 
     const data = useStaticQuery(graphql`
     query {
@@ -50,3 +50,4 @@ export default function TheTeam() {
     )
 }
 
+export default TheTeam

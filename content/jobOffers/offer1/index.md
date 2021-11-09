@@ -6,7 +6,6 @@ department: "Marketing"
 experience: "At least 1 year"
 languageRequired1: "English - Advanced"
 languageRequired2: "French - Advanced"
-
 ---
 
 At Alliantum GmbH we are currently recruiting for a new employee as SEA Specialist, French Speaker

@@ -39,7 +39,8 @@ export default function Header({ siteTitle }) {
                   <span key={index} style={{ margin: 0 }}>
                     <AnchorLink
                       to={unite.anchor} //---> Route to be changed to each level of the main Page with the exception of "The jobs" that has its unique page.
-                      style={{ color: `white`, textDecoration: `none` }}>
+                      style={{ color: `white`, textDecoration: `none` }}
+                    >
                       {unite.sectionName}
                     </AnchorLink>
                   </span>

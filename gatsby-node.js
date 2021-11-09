@@ -1,4 +1,5 @@
 const path = require(`path`)
+
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
@@ -106,7 +107,6 @@ exports.createSchemaCustomization = ({ actions }) => {
       experience: String
       languageRequired1: String
       languageRequired2: String
-      languageRequired3: String
     }
 
     type Fields {

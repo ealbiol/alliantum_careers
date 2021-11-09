@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 
 // -------> Bio to be added !
 // import Bio from "../components/bio"
-import Layout from "../components/layout"
+import Layout from "../components/Layout/index"
 import Seo from "../components/seo"
 import { ApplyForm } from "../components/ApplyForm"
 import { AllJobOffersList } from "../components/AllJobOffersList"
@@ -87,7 +87,6 @@ export const pageQuery = graphql`
         experience
         languageRequired1
         languageRequired2
-        languageRequired3
       }
     }
     

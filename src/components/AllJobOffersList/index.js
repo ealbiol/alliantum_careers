@@ -13,14 +13,13 @@ export function AllJobOffersList() {
           edges {
             node {
               frontmatter {
+                date
                 department
                 description
                 languageRequired1
                 languageRequired2
                 experience
                 title
-                minimumExperience
-                languageRequired3
               }
               fields {
                 slug
