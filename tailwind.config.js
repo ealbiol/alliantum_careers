@@ -335,8 +335,8 @@ module.exports = {
             ],
         },
         fontSize: {
-            xs: ['1.222rem', { lineHeight: '140%' }],
-            sm: ['2rem', { lineHeight: '140%' }],
+            xs: ['0.778rem', { lineHeight: '140%' }],
+            sm: ['1.556rem', { lineHeight: '140%' }],
             base: ['1rem', { lineHeight: '140%' }],
             lg: ['5.222rem', { lineHeight: '140%' }],
             xl: ['8.444rem', { lineHeight: '140%' }],
