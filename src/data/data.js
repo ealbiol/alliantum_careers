@@ -88,12 +88,12 @@ export function GetAllDepartments() {
 //-----------------------------------------------------//
 
 export const allBenefits = [
-    { icon: "Clock Icon", title: "Flexible Hours", content: "Flexible entry and exit times. There is life beyond work, and we know it" },
-    { icon: "Cap Icon", title: "Training Fridays", content: "Fridays dedicated to training in subjects of interest to our work place" },
-    { icon: "Team Icon", title: "Team Activities", content: "We organise team activities and it is easy to see us many days eating hamburgers somewhere near the office" },
-    { icon: "Happy Face Icon", title: "Work-Life Balance", content: "Enjoy your life, your time, your family... You only live once! We need you to be happy" },
-    { icon: "Pin Icon", title: "Great Location", content: "Our office is located in the centre of Malaga, close to the shopping and entertainment area" },
-    { icon: "Coffee Icon", title: "Coffee and Tea", content: "Coffee and tea for everyone and there is always someone to bring something to go with it" },
+    { id: 1, title: "Flexible Hours", content: "Flexible entry and exit times. There is life beyond work, and we know it" },
+    { id: 2, title: "Training Fridays", content: "Fridays dedicated to training in subjects of interest to our work place" },
+    { id: 3, title: "Team Activities", content: "We organise team activities and it is easy to see us many days eating hamburgers somewhere near the office" },
+    { id: 4, title: "Work-Life Balance", content: "Enjoy your life, your time, your family... You only live once! We need you to be happy" },
+    { id: 5, title: "Great Location", content: "Our office is located in the centre of Malaga, close to the shopping and entertainment area" },
+    { id: 6, title: "Coffee and Tea", content: "Coffee and tea for everyone and there is always someone to bring something to go with it" },
 
 ]
 
