@@ -25,7 +25,8 @@ export function NotifyMeButton() {
             headers: {
                 "Accept": "application/json",
                 "Content-Type": "application/json",
-                "api-key": sendInBlueApiKey,
+                // "api-key": sendInBlueApiKey,
+                "api-key": process.env.GATSBY_SENDINBLUE_API_KEY,
             },
             body: JSON.stringify({ "email": userEmail, "listIds": departmentId })
         };
@@ -46,10 +47,19 @@ export function NotifyMeButton() {
     console.log("Sorted Departments with 'Select':--->", allDepsWithoutManagement);
     console.log("user department:--->", userDepartment);
 
+    const departmentsLists = [
+        { name: "IT", id: 4 },
+        { name: "HR", id: 5 },
+        { name: "Business System", id: 6 },
+        { name: "Digital Marketing", id: 7 }
+    ]
+
     const matchingDepartment = departmentsLists.find(department => userDepartment === department.name)
     const departmentId = [matchingDepartment?.id]
 
     const handleBoolean = () => setShowNotifySubmit(!showNotifySubmit)
+
+
 
 
     return (

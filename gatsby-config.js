@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Alliantum.es`,
@@ -164,6 +168,7 @@ module.exports = {
         display: 'swap'
       }
     },
-    "gatsby-plugin-react-svg"
+    "gatsby-plugin-react-svg",
+
   ],
 }

@@ -38,9 +38,9 @@ export function IndexPage() {
     })
   }, [])
 
+
   return (
     <Layout titlePage={data.site.siteMetadata?.mainPage} >
-
 
       <Seo title="Home" />
 

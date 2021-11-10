@@ -1,6 +1,5 @@
 import * as React from "react"
 import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
-import { googleMapsApiKey } from "../../../credentials";
 import { getAllAdresses } from "../../data/data";
 import marker from "../../images/marker.svg"
 import { OfficeCard } from "../OfficeCard";
@@ -29,8 +28,10 @@ export function GoogleMaps() {
 
     const { isLoaded } = useJsApiLoader({
         id: 'google-map-script',
-        googleMapsApiKey: googleMapsApiKey
+        googleMapsApiKey: process.env.GATSBY_GOOGLE_MAPS_API_KEY
     })
+
+
 
     // const [map, setMap] = React.useState(null)
 
