@@ -21,7 +21,6 @@ export function AstronautSection() {
 
                                     //Horizontal:
                                     // left: `${percentage * 100}%`,
-                                    // top: "50%",
 
                                     //Vertical:
                                     left: "50%",

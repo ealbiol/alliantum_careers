@@ -40,7 +40,7 @@ export function OfficePhotos() {
                         {
                             firstLinePhotos.map((officePhoto, index) => {
                                 return (
-                                    <div>
+                                    <div key={index} >
                                         <OfficePhoto key={index} officePhoto={officePhoto} />
                                     </div>
                                 )
@@ -75,7 +75,7 @@ export function OfficePhotos() {
                         {
                             secondLinePhotos.map((officePhoto, index) => {
                                 return (
-                                    <div>
+                                    <div key={index} >
                                         <OfficePhoto key={index} officePhoto={officePhoto} />
                                     </div>
                                 )

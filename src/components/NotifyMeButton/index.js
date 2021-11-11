@@ -1,8 +1,7 @@
-import { data } from "autoprefixer";
+// import { data } from "autoprefixer";
 import * as React from "react"
-// import { sendInBlueApiKey, departmentsLists } from "../../../credentials";
 import { GetAllDepartments } from "../../data/data";
-
+import IconBell from "../../images/notify-me-photos/Icon1.svg"
 
 export function NotifyMeButton() {
 
@@ -67,7 +66,7 @@ export function NotifyMeButton() {
 
     return (
         <div>
-            <button onClick={handleBoolean} ><h4>Notify me on new jobs</h4></button>
+            <button onClick={handleBoolean} ><h4><IconBell /> Notify me on new jobs</h4></button>
 
 
             {showNotifySubmit &&
