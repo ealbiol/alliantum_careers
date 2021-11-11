@@ -26,34 +26,27 @@ export function OfficePhotos() {
             <Parallax
                 style={{
                     height: "20vh",
-                    border: "1px solid black",
-                    // overflow: "visible",
+                    border: "2px dashed rebeccapurple",
                 }}
                 renderLayer={(percentage) => (
-                    <span
+                    <div
                         style={{
                             display: "flex",
                             position: "absolute",
-                            //Horizontal:
                             left: `${percentage * 100}%`,
-                            // top: "50%",
-                            //Vertical:
-                            // left: "50%",
-                            // bottom: `${percentage * 50}%`,
                             transform: "translate(-0%,-0%)",
                             width: 1500,
-                            // height: 400,
                         }} >
                         {
                             firstLinePhotos.map((officePhoto, index) => {
                                 return (
-                                    <span>
+                                    <div>
                                         <OfficePhoto key={index} officePhoto={officePhoto} />
-                                    </span>
+                                    </div>
                                 )
                             })
                         }
-                    </span>
+                    </div>
                 )}
             >
             </Parallax>
@@ -61,7 +54,7 @@ export function OfficePhotos() {
             <Parallax
                 style={{
                     height: "20vh",
-                    border: "1px solid black",
+                    border: "2px dashed rebeccapurple",
                     // overflow: "visible",
                 }}
                 renderLayer={(percentage) => (
