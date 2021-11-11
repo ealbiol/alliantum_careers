@@ -1,6 +1,6 @@
 import { data } from "autoprefixer";
 import * as React from "react"
-import { sendInBlueApiKey, departmentsLists } from "../../../credentials";
+// import { sendInBlueApiKey, departmentsLists } from "../../../credentials";
 import { GetAllDepartments } from "../../data/data";
 
 
