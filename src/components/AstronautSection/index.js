@@ -6,8 +6,7 @@ import { Parallax, Background } from "react-parallax";
 export function AstronautSection() {
     return (
         <div>
-            <div style={{ width: "100%", border: "1px solid black", height: "100%" }} >
-
+            <div>
                 {/* Astronaut Parallax */}
                 <Parallax
                     strength={200}
@@ -26,14 +25,12 @@ export function AstronautSection() {
 
                                     //Vertical:
                                     left: "50%",
-                                    top: `${percentage * 50}%`,
+                                    bottom: `${percentage * 50}%`,
 
                                     // borderRadius: "50%",
-                                    transform: "translate(-50%,-50%)",
-                                    width: 700,
-                                    height: 700,
-                                    paddingTop: "1%",
-                                    border: "1px solid black",
+                                    transform: "translate(-50%,-0%)",
+                                    width: 500,
+                                    height: 400,
                                 }}
                             >
                                 <StaticImage
@@ -78,12 +75,10 @@ export function AstronautSection() {
                             style={{
                                 position: "absolute",
                                 left: "50%",
-                                top: `${percentage * 100}%`,
-                                transform: "translate(-50%,-50%)",
+                                bottom: `${percentage * 50}%`,
+                                transform: "translate(-50%,-0%)",
                                 width: 500,
-                                height: 500,
-                                paddingTop: "1%",
-                                border: "1px solid black",
+                                height: 400,
                             }}
                         >
                             <StaticImage
