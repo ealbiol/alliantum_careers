@@ -1,6 +1,6 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import { Parallax, Background } from "react-parallax";
+import { Parallax } from "react-parallax";
 
 
 export function AstronautSection() {
