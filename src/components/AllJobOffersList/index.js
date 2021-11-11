@@ -69,7 +69,7 @@ export function AllJobOffersList() {
                         return (
                             <div key={index} style={{ border: "1px solid black" }} >
                                 <Link to={detail.node.fields.slug} >
-                                    <div>{detail.node.frontmatter.title}</div>
+                                    <h4>{detail.node.frontmatter.title}</h4>
                                     <div>{detail.node.frontmatter.department}</div>
                                 </Link>
                             </div>
