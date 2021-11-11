@@ -5,7 +5,15 @@ import { GetAllDepartments } from "../../data/data";
 
 
 export function NotifyMeButton() {
-    console.log("departmentsLists:--->", departmentsLists);
+
+    const departmentsLists = [
+        { name: "IT", id: 4 },
+        { name: "HR", id: 5 },
+        { name: "Business System", id: 6 },
+        { name: "Digital Marketing", id: 7 }
+    ]
+
+
     const allDepartments = GetAllDepartments();
 
     const initialOption = "Select Department"
@@ -47,12 +55,7 @@ export function NotifyMeButton() {
     console.log("Sorted Departments with 'Select':--->", allDepsWithoutManagement);
     console.log("user department:--->", userDepartment);
 
-    const departmentsLists = [
-        { name: "IT", id: 4 },
-        { name: "HR", id: 5 },
-        { name: "Business System", id: 6 },
-        { name: "Digital Marketing", id: 7 }
-    ]
+
 
     const matchingDepartment = departmentsLists.find(department => userDepartment === department.name)
     const departmentId = [matchingDepartment?.id]
