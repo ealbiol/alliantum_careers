@@ -69,6 +69,10 @@ const departmentsLists = [
     ]
 ```
 
+## 5.  **Receiving Job Applications.**
+
+Netlifty Forms functionality is set to receive 
+
 
 
 
