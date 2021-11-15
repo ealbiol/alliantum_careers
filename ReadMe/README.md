@@ -15,9 +15,8 @@ This is the Site Project for Alliantum.es.
 ### Repository Usage Instructions
 
 ## 1.  **Installing Node Modules.**
-    ```
+
     npm install
-    ```
 
 ## 2.  **Creating a ```.env.development``` file.**
 
