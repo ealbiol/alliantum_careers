@@ -60,7 +60,14 @@ When users fill the form to receive new job offers they have to choose the depar
 
 The departments list can be found in the component 'NotifyMeButton.js'.
 
-
+```    
+const departmentsLists = [
+        { name: "IT", id: 4 },
+        { name: "HR", id: 5 },
+        { name: "Business System", id: 6 },
+        { name: "Digital Marketing", id: 7 }
+    ]
+```
 
 
 
