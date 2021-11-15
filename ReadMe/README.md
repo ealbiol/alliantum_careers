@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.gatsbyjs.com">
-    <img alt="Alliantum.es" src="logo-alliantum.png" width="60" />
+    <img alt="Alliantum.es" src="logo-alliantum.png" width="80" />
   </a>
 </p>
 <h1 align="center">
