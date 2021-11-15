@@ -4,7 +4,7 @@ import Layout from "../components/Layout"
 export function ThankYou() {
     return (
         <Layout>
-            <div>Thank You!</div>
+            <h1>Thank You!</h1>
         </Layout>
     )
 }
