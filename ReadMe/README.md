@@ -39,7 +39,7 @@ This is the Site Project for Alliantum.es.
     - GoogleMaps
     - OfficeCard
 
-  **Sendinblue**: 
+  **[Sendinblue](https://docs.netlify.com/forms/setup/)**: 
   
   Sendinblue is platform for email marketing service.
 
