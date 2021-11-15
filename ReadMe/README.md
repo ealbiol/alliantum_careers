@@ -20,7 +20,7 @@ This is the Site Project for Alliantum.es.
 
 ## 2.  **Creating a ```.env.development``` file.**
 
-  <img alt="Alliantum.es" src="env.png" width="180" />
+  <img alt="Environment Development Image" src="env.png" width="180" />
 
 ## 3.  **Adding API Keys to the file.**
 
@@ -31,6 +31,12 @@ This is the Site Project for Alliantum.es.
   ```GATSBY_GOOGLE_MAPS_API_KEY=<YOUR_GOOGE_MAPS_API_KEY>```
 
   ```GATSBY_SENDINBLUE_API_KEY=<YOUR_SENDINBLUE_API_KEY>```
+
+
+- Add these variables as Environment Variables in your Netlify Site Project:
+
+  <img alt="Environment Variables Netlify" src="env-netlify.png" width="180" />
+
 
 - What are they used for?
 
@@ -45,18 +51,18 @@ This is the Site Project for Alliantum.es.
 
   This API key is needed to receive the contact details of the users that are interested in receiving new job offers to their emails. These users filled the form of the component ' NotifyMeButton '. 
 
-  <img alt="Alliantum.es" src="notify.png" width="180" />
+  <img alt="Notify Me Button Image" src="notify.png" width="180" />
 
   All users contact details will be received in a dashboard table:
 
-  <img alt="Alliantum.es" src="dashboard.png" />
+  <img alt="Sendinblue Dashboard Image" src="dashboard.png" />
 
 
 ## 4.  **Setting Sendinblue Lists.**
 
 When users fill the form to receive new job offers they have to choose the department they are interested in. The 'Lists' Sendinblue's functionality is set so that the contact details are sent in different office departments list.
 
-  <img alt="Alliantum.es" src="lists.png" />
+  <img alt="Sendinblue Lists Image" src="lists.png" />
 
 The departments list can be found in the component 'NotifyMeButton'.
 

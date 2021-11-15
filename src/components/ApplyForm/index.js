@@ -14,7 +14,7 @@ export function ApplyForm() {
 
     return (
 
-        <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="../../pages/index.js" style={{ border: "1px solid black" }} >
+        <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" style={{ border: "1px solid black" }} >
             <input type="hidden" name="form-name" value="contact" />
             {/* {
                 formFields.map((field, index) => {
