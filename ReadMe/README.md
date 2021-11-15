@@ -7,8 +7,11 @@
   Alliantum.es Site
 </h1>
 
-This is the Site Project for Alliantum.es.
+This site uses the following external resources:
 
+  - **[Netlify](https://www.netlify.com/)**
+  - **[Google Maps](https://developers.google.com/maps/documentation/javascript/get-api-key)**
+  - **[Sendinblue](https://www.sendinblue.com/)**
 
 
 
