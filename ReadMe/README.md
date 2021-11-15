@@ -33,8 +33,6 @@ This is the Site Project for Alliantum.es.
 
   ```GATSBY_SENDINBLUE_API_KEY=<YOUR_API_KEY>```
 
-
-
 - What are they used for?
 
   **Google Maps**: This API key is needed to render the maps in the following components:
@@ -46,7 +44,7 @@ This is the Site Project for Alliantum.es.
   
   Sendinblue is platform for email marketing service.
 
-  This API key is needed to receive the contact details of the users that are interested in receiving new job offers to their emails. These users filled the form of the component ' NotifyMeButton '. 
+  This API key is needed to receive the contact details of the users that are interested in receiving new job offers to their emails. These users filled the form of the component ' NotifyMeButton.js '. 
 
   <img alt="Alliantum.es" src="notify.png" width="180" />
 
@@ -54,6 +52,12 @@ This is the Site Project for Alliantum.es.
 
   <img alt="Alliantum.es" src="dashboard.png" />
 
+
+## 4.  **Setting Sendinblue Lists.**
+
+When users fill the form to receive new job offers they have to choose the department they are interested in. The 'Lists' Sendinblue's functionality is set so that the contact details are sent in different office departments list.
+
+  <img alt="Alliantum.es" src="lists.png" />
 
 
 
