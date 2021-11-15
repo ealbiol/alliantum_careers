@@ -66,7 +66,10 @@ export function NotifyMeButton() {
 
     return (
         <div>
-            <button className="btn btn-outline" onClick={handleBoolean}>Notify me on new jobs</button>
+            <button className="btn btn-outline" onClick={handleBoolean}>
+                <span><IconBell /></span>
+                <span> Notify me on new jobs</span>
+            </button>
 
             {showNotifySubmit &&
 
