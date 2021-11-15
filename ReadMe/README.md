@@ -27,7 +27,7 @@ This is the Site Project for Alliantum.es.
 
 - Add your keys in the following way:
 
-```GATSBY_GOOGLE_MAPS_API_KEY=<YOUR_API_KEY>```
+  ```GATSBY_GOOGLE_MAPS_API_KEY=<YOUR_API_KEY>```
 
 
 
