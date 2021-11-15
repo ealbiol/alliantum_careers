@@ -14,7 +14,6 @@ This site uses the following external resources:
   - **[Sendinblue](https://www.sendinblue.com/)**
 
 
-
 # Repository Usage Instructions
 
 ## 1.  **Installing Node Modules.**
