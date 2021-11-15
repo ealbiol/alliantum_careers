@@ -15,7 +15,7 @@ This is the Site Project for Alliantum.es.
 ### Repository Usage Instructions
 
 ## 1.  **Installing Node Modules.**
-    ```sh
+    ```
     npm install
     ```
 
