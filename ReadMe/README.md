@@ -20,7 +20,7 @@ This is the Site Project for Alliantum.es.
     ```
 
 1.  **Creating a ```.env.development``` file.**
-    <img alt="Alliantum.es" src="env.png" width="80" />
+    <img alt="Alliantum.es" src="env.png" />
 
 
 
