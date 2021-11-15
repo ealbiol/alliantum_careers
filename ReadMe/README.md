@@ -34,6 +34,7 @@ This is the Site Project for Alliantum.es.
   ```GATSBY_SENDINBLUE_API_KEY=<YOUR_API_KEY>```
 
 
+
 - What are they used for?
 
   **Google Maps**: This API key is needed to render the maps in the following components:
