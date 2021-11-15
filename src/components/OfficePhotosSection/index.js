@@ -1,7 +1,7 @@
 import * as React from "react"
 import { getAllOfficePhotos } from '../../data/data';
 import { OfficePhoto } from '../OfficePhoto';
-import { Parallax } from 'react-scroll-parallax';
+import { Parallax } from "react-parallax";
 
 
 
@@ -23,28 +23,67 @@ export function OfficePhotos() {
 
     return (
         <div>
-            <Parallax x={[-300, 40]}>
-                <div style={{ border: "2px dashed rebeccapurple" }} >
-                    {
-                        firstLinePhotos.map((officePhoto, index) => {
-                            return (
-                                <OfficePhoto key={index} officePhoto={officePhoto} />
-                            )
-                        })
-                    }
-                </div>
+            <Parallax
+                style={{
+                    height: "20vh",
+                    border: "2px dashed rebeccapurple",
+                }}
+                renderLayer={(percentage) => (
+                    <div
+                        style={{
+                            display: "flex",
+                            position: "absolute",
+                            left: `${percentage * 100}%`,
+                            transform: "translate(-0%,-0%)",
+                            width: 1500,
+                        }} >
+                        {
+                            firstLinePhotos.map((officePhoto, index) => {
+                                return (
+                                    <div key={index} >
+                                        <OfficePhoto key={index} officePhoto={officePhoto} />
+                                    </div>
+                                )
+                            })
+                        }
+                    </div>
+                )}
+            >
             </Parallax>
 
-            <Parallax x={[300, -40]}>
-                <div style={{ border: "2px dashed rebeccapurple" }}   >
-                    {
-                        secondLinePhotos.map((officePhoto, index) => {
-                            return (
-                                <OfficePhoto key={index} officePhoto={officePhoto} />
-                            )
-                        })
-                    }
-                </div>
+            <Parallax
+                style={{
+                    height: "20vh",
+                    border: "2px dashed rebeccapurple",
+                    // overflow: "visible",
+                }}
+                renderLayer={(percentage) => (
+                    <div
+                        style={{
+                            display: "flex",
+                            position: "absolute",
+                            //Horizontal:
+                            right: `${percentage * 100}%`,
+                            // top: "50%",
+                            //Vertical:
+                            // left: "50%",
+                            // bottom: `${percentage * 50}%`,
+                            transform: "translate(-0%,-00%)",
+                            width: 1500,
+                            // height: 400,
+                        }} >
+                        {
+                            secondLinePhotos.map((officePhoto, index) => {
+                                return (
+                                    <div key={index} >
+                                        <OfficePhoto key={index} officePhoto={officePhoto} />
+                                    </div>
+                                )
+                            })
+                        }
+                    </div>
+                )}
+            >
             </Parallax>
 
         </div>

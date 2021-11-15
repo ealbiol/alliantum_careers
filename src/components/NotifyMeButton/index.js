@@ -1,11 +1,18 @@
-import { data } from "autoprefixer";
+// import { data } from "autoprefixer";
 import * as React from "react"
-import { sendInBlueApiKey, departmentsLists } from "../../../credentials";
 import { GetAllDepartments } from "../../data/data";
-
+import IconBell from "../../images/notify-me-photos/Icon1.svg"
 
 export function NotifyMeButton() {
-    console.log("departmentsLists:--->", departmentsLists);
+
+    const departmentsLists = [
+        { name: "IT", id: 4 },
+        { name: "HR", id: 5 },
+        { name: "Business System", id: 6 },
+        { name: "Digital Marketing", id: 7 }
+    ]
+
+
     const allDepartments = GetAllDepartments();
 
     const initialOption = "Select Department"
@@ -25,7 +32,8 @@ export function NotifyMeButton() {
             headers: {
                 "Accept": "application/json",
                 "Content-Type": "application/json",
-                "api-key": sendInBlueApiKey,
+                // "api-key": sendInBlueApiKey,
+                "api-key": process.env.GATSBY_SENDINBLUE_API_KEY,
             },
             body: JSON.stringify({ "email": userEmail, "listIds": departmentId })
         };
@@ -46,10 +54,14 @@ export function NotifyMeButton() {
     console.log("Sorted Departments with 'Select':--->", allDepsWithoutManagement);
     console.log("user department:--->", userDepartment);
 
+
+
     const matchingDepartment = departmentsLists.find(department => userDepartment === department.name)
     const departmentId = [matchingDepartment?.id]
 
     const handleBoolean = () => setShowNotifySubmit(!showNotifySubmit)
+
+
 
 
     return (

@@ -32,7 +32,7 @@ export function WorkWithUs() {
                         })
                     }
                 </div>
-                <div>Meet your future team</div>
+                <AnchorLink to={"/the-team"} >Meet your future team</AnchorLink>
             </div>
         </div>
     )

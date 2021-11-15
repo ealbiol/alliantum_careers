@@ -11,7 +11,8 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "../Header/index"
 import Footer from "../Footer/index"
 import "./layout.css"
-import { SwitchModeButton } from "../SwitchModeButton"
+import { SwitchModeButton } from "../SwitchModeButton/index"
+import { CookieBanner } from "../CookieBanner/index"
 
 const Layout = ({ children, titlePage }) => {
   const data = useStaticQuery(graphql` 
@@ -54,6 +55,8 @@ const Layout = ({ children, titlePage }) => {
           <a href="https://www.gatsbyjs.com">Gatsby</a>
         </footer> */}
       </div>
+
+      <CookieBanner />
 
       <Footer />
     </div>
