@@ -20,7 +20,7 @@ This is the Site Project for Alliantum.es.
 
 ## 2.  **Creating a ```.env.development``` file.**
 
-    <img alt="Alliantum.es" src="env.png" width="180" />
+  <img alt="Alliantum.es" src="env.png" width="180" />
 
 ## 3.  **Adding API Keys to the file.**
 
