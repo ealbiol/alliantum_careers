@@ -12,18 +12,18 @@ This is the Site Project for Alliantum.es.
 
 
 
-## Repository Usage Instructions
+### Repository Usage Instructions
 
-1.  **Installing Node Modules.**
+## 1.  **Installing Node Modules.**
     ```shell
     npm install
     ```
 
-2.  **Creating a ```.env.development``` file.**
+## 2.  **Creating a ```.env.development``` file.**
 
     <img alt="Alliantum.es" src="env.png" width="180" />
 
-2.  **Adding API Keys to the file.**
+## 3.  **Adding API Keys to the file.**
 
 - This file contains the API Keys for Google Maps and Sendinblue.
 
@@ -36,12 +36,12 @@ This is the Site Project for Alliantum.es.
 
 - What are they used for?
 
-  ***1. Google Maps***: This API key is needed to render the maps in the following components:
+  **Google Maps**: This API key is needed to render the maps in the following components:
     
     - GoogleMaps.js
     - OfficeCard.js
 
-  **2. Sendinblue**: 
+  **Sendinblue**: 
   
   Sendinblue is platform for email marketing service.
 
