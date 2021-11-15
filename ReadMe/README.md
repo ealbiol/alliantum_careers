@@ -29,15 +29,24 @@ This is the Site Project for Alliantum.es.
 
 - What are they used for?
 
-  Google Maps: This API key is needed to render the maps in the following components:
+  **Google Maps**: This API key is needed to render the maps in the following components:
     
-    - GoogleMaps
-    - OfficeCard
+    - GoogleMaps.js
+    - OfficeCard.js
+
+  **Sendinblue**: 
+  
+  Sendinblue is platform for email marketing service.
+
+  This API key is needed to receive the contact details of the users that are interested in receiving new job offers to their emails. These users filled the form of the component ' NotifyMeButton '. 
+
+  <img alt="Alliantum.es" src="notify.png" width="180" />
+
 
 - Add your keys in the following way:
 
   ```GATSBY_GOOGLE_MAPS_API_KEY=<YOUR_API_KEY>```
-  
+
   ```GATSBY_SENDINBLUE_API_KEY=<YOUR_API_KEY>```
 
 
