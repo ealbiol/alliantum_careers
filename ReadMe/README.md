@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.com">
+  <a href="https://www.alliantum.es">
     <img alt="Alliantum.es" src="logo-alliantum.png" width="80" />
   </a>
 </p>
@@ -20,6 +20,8 @@ This is the Site Project for Alliantum.es.
     ```
 
 1.  **Creating a ```.env.development``` file.**
+    <img alt="Alliantum.es" src="env.png" width="80" />
+
 
 
 
