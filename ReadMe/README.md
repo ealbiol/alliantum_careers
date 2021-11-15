@@ -23,6 +23,11 @@ This is the Site Project for Alliantum.es.
 
     <img alt="Alliantum.es" src="env.png" width="180" />
 
+This file contains the API Keys for Google Maps and Sendinblue.
+
+Add your keys in the following way:
+
+GATSBY_GOOGLE_MAPS_API_KEY=<YOUR_API_KEY>
 
 
 
