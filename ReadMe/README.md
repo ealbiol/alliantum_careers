@@ -82,7 +82,7 @@ Netlifty Forms functionality is set to receive the applicant details from the fo
 ```
 - All form submissions will be stored in a Netlify dashboard in the 'Forms' section. The 'value' attribute sets the name of your dashboard.
 
-- **More information regarding Netlify Forms setup can be found by clicking [here](https://docs.netlify.com/forms/setup/).**
+- More information regarding Netlify Forms setup can be found by clicking [here](https://docs.netlify.com/forms/setup/).
 
 
 
