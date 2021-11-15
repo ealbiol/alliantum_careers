@@ -5,8 +5,6 @@
   </a>
 </p>
 
-  <h1 align="center" >Alliantum.es Site</h1>
-
 This site uses the following external resources:
 
   - **[Netlify](https://www.netlify.com/)**
