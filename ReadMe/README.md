@@ -36,7 +36,7 @@ This is the Site Project for Alliantum.es.
 
 - What are they used for?
 
-  **1. Google Maps**: This API key is needed to render the maps in the following components:
+  ***1. Google Maps***: This API key is needed to render the maps in the following components:
     
     - GoogleMaps.js
     - OfficeCard.js
