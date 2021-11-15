@@ -28,8 +28,6 @@ This site uses the following external resources:
 
 - Add your keys in the following way:
 
-<span style="color:red">cardinals</span>
-
   ```GATSBY_GOOGLE_MAPS_API_KEY=<YOUR_GOOGE_MAPS_API_KEY>```
 
   ```GATSBY_SENDINBLUE_API_KEY=<YOUR_SENDINBLUE_API_KEY>```
