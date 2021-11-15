@@ -34,12 +34,12 @@ This is the Site Project for Alliantum.es.
 
 - What are they used for?
 
-  **Google Maps**: This API key is needed to render the maps in the following components:
+  **[Google Maps](https://developers.google.com/maps/documentation/javascript/get-api-key)**: This API key is needed to render the maps in the following components:
     
     - GoogleMaps
     - OfficeCard
 
-  **[Sendinblue](https://docs.netlify.com/forms/setup/)**: 
+  **[Sendinblue](https://www.sendinblue.com/)**: 
   
   Sendinblue is platform for email marketing service.
 
