@@ -27,14 +27,21 @@ This is the Site Project for Alliantum.es.
 
 - This file contains the API Keys for Google Maps and Sendinblue.
 
+- Add your keys in the following way:
+
+  ```GATSBY_GOOGLE_MAPS_API_KEY=<YOUR_API_KEY>```
+
+  ```GATSBY_SENDINBLUE_API_KEY=<YOUR_API_KEY>```
+
+
 - What are they used for?
 
-  **Google Maps**: This API key is needed to render the maps in the following components:
+  **1. Google Maps**: This API key is needed to render the maps in the following components:
     
     - GoogleMaps.js
     - OfficeCard.js
 
-  **Sendinblue**: 
+  **2. Sendinblue**: 
   
   Sendinblue is platform for email marketing service.
 
@@ -42,12 +49,13 @@ This is the Site Project for Alliantum.es.
 
   <img alt="Alliantum.es" src="notify.png" width="180" />
 
+  All users contact details will be received in a dashboard table:
 
-- Add your keys in the following way:
+  <img alt="Alliantum.es" src="dashboard.png" />
 
-  ```GATSBY_GOOGLE_MAPS_API_KEY=<YOUR_API_KEY>```
 
-  ```GATSBY_SENDINBLUE_API_KEY=<YOUR_API_KEY>```
+
+
 
 
 
