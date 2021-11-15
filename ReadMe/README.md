@@ -35,7 +35,7 @@ This is the Site Project for Alliantum.es.
 
 - Add these variables as Environment Variables in your Netlify Site Project:
 
-  <img alt="Environment Variables Netlify" src="env-netlify.png" width="180" />
+  <img alt="Environment Variables Netlify" src="env-netlify.png" />
 
 
 - What are they used for?
