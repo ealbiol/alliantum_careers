@@ -19,6 +19,7 @@ This is the Site Project for Alliantum.es.
     npm install
     ```
 
+1.  **Creating a ```.env.development``` file.**
 
 
 
