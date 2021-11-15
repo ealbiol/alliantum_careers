@@ -80,7 +80,7 @@ Netlifty Forms functionality is set to receive the applicant details from the fo
     <button type="submit" >Send Message</button>
 </form>
 ```
-- If choosing Netlify to host this site all the form submissions will be stored in a Netlify dashboard in the 'Forms' section. The 'value' attribute sets the name of your dashboard.
+- All form submissions will be stored in a Netlify dashboard in the 'Forms' section. The 'value' attribute sets the name of your dashboard.
 
 - **More information regarding Netlify Forms setup can be found by clicking [here](https://docs.netlify.com/forms/setup/).**
 
