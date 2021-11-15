@@ -15,7 +15,7 @@ This is the Site Project for Alliantum.es.
 ### Repository Usage Instructions
 
 ## 1.  **Installing Node Modules.**
-    ```shell
+    ```sh
     npm install
     ```
 
@@ -58,6 +58,8 @@ This is the Site Project for Alliantum.es.
 When users fill the form to receive new job offers they have to choose the department they are interested in. The 'Lists' Sendinblue's functionality is set so that the contact details are sent in different office departments list.
 
   <img alt="Alliantum.es" src="lists.png" />
+
+The departments list can be found in the component 'NotifyMeButton.js'.
 
 
 
