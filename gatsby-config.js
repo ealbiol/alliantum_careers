@@ -116,6 +116,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
+            title: "Your Site's RSS Feed",
           },
         ],
       },
@@ -163,8 +164,6 @@ module.exports = {
         display: 'swap'
       }
     },
-
-    'gatsby-plugin-dark-mode'
-
+    "gatsby-plugin-react-svg"
   ],
 }

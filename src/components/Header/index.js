@@ -1,10 +1,10 @@
 import * as React from "react"
-import PropTypes from "prop-types"
+// import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { getAllHeaderAndFooterSections } from "../../data/data"
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { StaticImage } from "gatsby-plugin-image"
-
+import AlliantumLogo from "../../images/header-photos/Image1.svg"
 
 export default function Header({ siteTitle }) {
 
@@ -18,19 +18,13 @@ export default function Header({ siteTitle }) {
   }, [])
 
   return (
-    <header style={{ marginBottom: `1.45rem` }}>
+    <header className="fixed w-full z-30 bg-white" style={{ marginBottom: `1.45rem` }}>
 
-      <div>
+      <div className="container-main">
 
-        <div className="flex flex-row justify-between container mx-auto py-3 bb bg-red">
-          <Link to="/" > 
-            <StaticImage
-                src="../../images/alliantum-brand/alliantum-logo.png"
-                alt="Alliantum"
-                placeholder="blurred"
-                layout="fixed"
-                height={30}
-            />
+        <div className="flex flex-row justify-between py-3 bb bg-red">
+          <Link to="/" >
+            <AlliantumLogo />
           </Link>
           <div>
             {
@@ -38,8 +32,9 @@ export default function Header({ siteTitle }) {
                 return (
                   <span key={index} style={{ margin: 0 }}>
                     <AnchorLink
-                      to={unite.anchor} //---> Route to be changed to each level of the main Page with the exception of "The jobs" that has its unique page.
-                      style={{ color: `white`, textDecoration: `none` }}>
+                      to={unite.anchor}
+                      style={{ color: `white`, textDecoration: `none` }}
+                    >
                       {unite.sectionName}
                     </AnchorLink>
                   </span>

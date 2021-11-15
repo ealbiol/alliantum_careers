@@ -13,7 +13,7 @@ export function DepartmentWithEmployees({ departmentTitle }) {
             setEmployees(employeesPerDepartment)
 
         })
-    }, [])
+    }, [departmentTitle])
 
     console.log("Employees--->", getAllEmployees());
 

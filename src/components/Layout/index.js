@@ -8,13 +8,13 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
 import Header from "../Header/index"
 import Footer from "../Footer/index"
 import "./layout.css"
+import { SwitchModeButton } from "../SwitchModeButton"
 
 const Layout = ({ children, titlePage }) => {
-  const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql` 
     query SiteTitleQuery {
       site {
         ...metadata
@@ -22,11 +22,27 @@ const Layout = ({ children, titlePage }) => {
     }
   `)
 
+  const [isDark, setIsDark] = React.useState(false)
+
+
+  React.useEffect(() => {
+    console.log("LocalStorage:--->", localStorage.theme);
+
+    if (localStorage.theme === "dark" || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      setIsDark(true)
+      console.log("Darkening Age:--->");
+    } else {
+      setIsDark(false)
+    }
+  }, [])
+
   return (
-    <>
+    <div className={isDark ? "dark" : ""}>
       <Header siteTitle={titlePage} />
 
+      <SwitchModeButton isDark={isDark} setIsDark={setIsDark} />
       <div>
+
         <main>{children}</main>
         {/* <footer
           style={{
@@ -40,7 +56,7 @@ const Layout = ({ children, titlePage }) => {
       </div>
 
       <Footer />
-    </>
+    </div>
   )
 }
 

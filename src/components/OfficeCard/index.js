@@ -1,8 +1,7 @@
 import * as React from "react"
-import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
+import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 import { googleMapsApiKey } from "../../../credentials";
-import { getAllAdresses } from "../../data/data";
-import marker from "../../images/marker.svg"
+
 
 
 const containerStyle = {
@@ -10,10 +9,10 @@ const containerStyle = {
     height: '20vh'
 };
 
-const center = {
-    lat: 36.71782288308034,
-    lng: -4.424975802343778
-};
+// const center = {
+//     lat: 36.71782288308034,
+//     lng: -4.424975802343778
+// };
 
 
 export function OfficeCard({ addressUnite }) {
@@ -25,15 +24,15 @@ export function OfficeCard({ addressUnite }) {
 
     const [map, setMap] = React.useState(null)
 
-    const onLoad = React.useCallback(function callback(map) {
-        const bounds = new window.google.maps.LatLngBounds();
-        map.fitBounds(bounds);
-        setMap(map)
-    }, [])
+    // const onLoad = React.useCallback(function callback(map) {
+    //     const bounds = new window.google.maps.LatLngBounds();
+    //     map.fitBounds(bounds);
+    //     setMap(map)
+    // }, [])
 
-    const onUnmount = React.useCallback(function callback(map) {
-        setMap(null)
-    }, [])
+    // const onUnmount = React.useCallback(function callback(map) {
+    //     setMap(null)
+    // }, [])
 
     return isLoaded ? (
         <div style={{ border: "4px solid gray", width: "30%" }} >

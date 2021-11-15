@@ -13,14 +13,13 @@ export function AllJobOffersList() {
           edges {
             node {
               frontmatter {
+                date
                 department
                 description
                 languageRequired1
                 languageRequired2
                 experience
                 title
-                minimumExperience
-                languageRequired3
               }
               fields {
                 slug
@@ -47,13 +46,13 @@ export function AllJobOffersList() {
     }
 
     return (
-        <div>
+        <div className="">
             <div>
-                <div>WHAT WE NEED RIGHT NOW</div>
 
-                <button onClick={() => (allRoles())} >All roles</button>
 
-                <div  >
+
+                <div className="flex mb-3">
+                    <button className="text-xs py-1 px-3 border border-loblolly-600 rounded-xl mr-1" onClick={() => (allRoles())} >All roles</button>
                     <DepartmentsMenu
                         allDepartments={GetAllDepartments()}
                         clickedDep={clickedDepartment}
@@ -68,10 +67,10 @@ export function AllJobOffersList() {
                 {
                     jobOfferDetails.map((detail, index) => {
                         return (
-                            <div key={index} style={{ border: "1px solid black" }} >
-                                <Link to={detail.node.fields.slug} >
+                            <div key={index} className="card">
+                                <Link className="flex justify-between items-center" to={detail.node.fields.slug} >
                                     <div>{detail.node.frontmatter.title}</div>
-                                    <div>{detail.node.frontmatter.department}</div>
+                                    <span className="pill">{detail.node.frontmatter.department}</span>
                                 </Link>
                             </div>
 
@@ -81,7 +80,6 @@ export function AllJobOffersList() {
             </div>
 
             <NotifyMeButton
-                style={{ border: "1px solid blue" }}
             />
 
         </div>

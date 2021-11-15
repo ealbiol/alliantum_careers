@@ -3,7 +3,7 @@ const colors = require('tailwindcss/colors')
 module.exports = {
     purge: [],
     presets: [],
-    // darkMode: media, // or 'media' or 'class'
+    darkMode: "class", // or 'media' or 'class'
     theme: {
         screens: {
             sm: '640px',
@@ -305,22 +305,14 @@ module.exports = {
             DEFAULT: '1',
         },
         fontFamily: {
+            body: ['Roboto', 'sans-serif'],
+            title: ['"Krona One"', 'sans-serif'],
             sans: [
-                'ui-sans-serif',
-                'system-ui',
-                '-apple-system',
-                'BlinkMacSystemFont',
-                '"Segoe UI"',
-                'Roboto',
-                '"Helvetica Neue"',
-                'Arial',
-                '"Noto Sans"',
                 'sans-serif',
                 '"Apple Color Emoji"',
                 '"Segoe UI Emoji"',
                 '"Segoe UI Symbol"',
                 '"Noto Color Emoji"',
-                '"Krona One"',
             ],
             serif: ['ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
             mono: [
@@ -481,6 +473,7 @@ module.exports = {
             '4/6': '66.666667%',
             '5/6': '83.333333%',
             full: '100%',
+            halfscreen: '80vh',
             screen: '100vh',
         }),
         inset: (theme, { negative }) => ({
@@ -816,21 +809,8 @@ module.exports = {
         width: (theme) => ({
             auto: 'auto',
             ...theme('spacing'),
-            '1/2': '50%',
-            '1/3': '33.333333%',
-            '2/3': '66.666667%',
-            '1/4': '25%',
-            '2/4': '50%',
-            '3/4': '75%',
-            '1/5': '20%',
-            '2/5': '40%',
-            '3/5': '60%',
-            '4/5': '80%',
-            '1/6': '16.666667%',
-            '2/6': '33.333333%',
-            '3/6': '50%',
-            '4/6': '66.666667%',
-            '5/6': '83.333333%',
+            'px-230': '230px',
+            'container-sm': '990px',
             '1/12': '8.333333%',
             '2/12': '16.666667%',
             '3/12': '25%',

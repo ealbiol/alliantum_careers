@@ -16,18 +16,18 @@ export function WorkWithUs() {
     }, [])
 
     return (
-        <div>
-            <div>
-                <div>WE ARE LOOKING FOR TALENT</div>
-                <h1>Want to work with us?</h1>
+        <div className="flex relative">
+            <div className="container-main z-10 h-halfscreen mt-2 bg-gradient-to-r from-white via-white to-transparent">
+                <div className="text-xs font-bold">WE ARE LOOKING FOR TALENT</div>
+                <h1 className="font-title">Want to work with us?</h1>
                 <AnchorLink to={"/#jobs-table"} >See open processes</AnchorLink>
             </div>
-            <div>
-                <div>
+            <div className="absolute">
+                <div className="flex flex-wrap">
                     {
                         employees.map((employee, index) => {
                             return (
-                                <EmployeePhoto key={index} photo={employee.photo} />
+                                <EmployeePhoto className="mr-2 mb-2" key={index} photo={employee.photo} />
                             )
                         })
                     }

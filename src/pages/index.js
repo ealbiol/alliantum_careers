@@ -41,50 +41,53 @@ export function IndexPage() {
   return (
     <Layout titlePage={data.site.siteMetadata?.mainPage} >
 
-
-      <Seo title="Home" />
-
-      {/* ------------> Work With Us */}
-      <div id="jobs-table" className="bg-persian-pink">
-        <WorkWithUs />
-      </div>
-
-      {/* ------------> Job Offers Table */}
-      <div id="jobs-table">
-        <h2>We do Business Digitalisation and New-era Marketing</h2>
-        <AllJobOffersList />
-      </div>
-
-      {/* ------------> Your Benefits */}
-      <div >
-        <h2>Work in an international company, with a happy team, in a great office</h2>
-        <div id="your-benefits" >
-          <YourBenefits />
-        </div>
-      </div>
-
-      {/* ------------> Office Presentation */}
       <div>
-        <h2>Your future office is modern, bright and equipped with the latest technological equipment</h2>
-        <OfficePhotos />
-      </div>
+        <Seo title="Home" />
 
-      {/* ------------> World Map */}
-      <div id="the-offices" >
-        <h5>THE OFFICE</h5>
-        <h3>German spirit. Spanish passion.</h3>
-        <GoogleMaps />
-      </div>
+        {/* ------------> Work With Us */}
+        <div className="overflow-hidden">
+          <WorkWithUs />
+        </div>
 
-      <TheTeam />
+        {/* ------------> Job Offers Table */}
+        <div id="jobs-table" className="w-full lg:w-container-sm mx-auto">
+          <span className="pretitle">What we need right now</span>
+          <h2 className="title">We do Business Digitalisation and New-era Marketing</h2>
+          <AllJobOffersList />
+        </div>
 
-      <div className="bg-cornflower-blue">
-        <AstronautSection />
-      </div>
+        {/* ------------> Your Benefits */}
+        <div className="container mx-auto my-6">
+          <span className="pretitle">Your benefits</span>
+          <h2 className="title">Work in an international company, with a happy team, in a great office</h2>
+          <div id="your-benefits">
+            <YourBenefits />
+          </div>
+        </div>
 
-      {/* ------------> Our Values */}
-      <div id="our-values" >
-        <OurValuesSection />
+        {/* ------------> Office Presentation */}
+        <div>
+          <h2>Your future office is modern, bright and equipped with the latest technological equipment</h2>
+          <OfficePhotos />
+        </div>
+
+        {/* ------------> World Map */}
+        <div id="the-offices" >
+          <h5>THE OFFICE</h5>
+          <h3>German spirit. Spanish passion.</h3>
+          <GoogleMaps />
+        </div>
+
+        <TheTeam />
+
+        <div className="bg-cornflower-blue">
+          <AstronautSection />
+        </div>
+
+        {/* ------------> Our Values */}
+        <div id="our-values" >
+          <OurValuesSection />
+        </div>
       </div>
 
     </Layout>
