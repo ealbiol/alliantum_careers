@@ -36,14 +36,14 @@ This is the Site Project for Alliantum.es.
 
   **Google Maps**: This API key is needed to render the maps in the following components:
     
-    - GoogleMaps.js
-    - OfficeCard.js
+    - GoogleMaps
+    - OfficeCard
 
   **Sendinblue**: 
   
   Sendinblue is platform for email marketing service.
 
-  This API key is needed to receive the contact details of the users that are interested in receiving new job offers to their emails. These users filled the form of the component ' NotifyMeButton.js '. 
+  This API key is needed to receive the contact details of the users that are interested in receiving new job offers to their emails. These users filled the form of the component ' NotifyMeButton '. 
 
   <img alt="Alliantum.es" src="notify.png" width="180" />
 
@@ -58,7 +58,7 @@ When users fill the form to receive new job offers they have to choose the depar
 
   <img alt="Alliantum.es" src="lists.png" />
 
-The departments list can be found in the component 'NotifyMeButton.js'.
+The departments list can be found in the component 'NotifyMeButton'.
 
 ```    
 const departmentsLists = [
@@ -71,8 +71,18 @@ const departmentsLists = [
 
 ## 5.  **Receiving Job Applications.**
 
-Netlifty Forms functionality is set to receive 
+Netlifty Forms functionality is set to receive the applicant details from the form in the 'ApplyForm' Component.
 
+```shell
+<form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="contact" />
+    ...
+    <button type="submit" >Send Message</button>
+</form>
+```
+- If choosing Netlify to host this site all the form submissions will be stored in a Netlify dashboard in the 'Forms' section. The 'value' attribute sets the name of your dashboard.
+
+- **More information regarding Netlify Forms setup can be found by clicking [here](https://docs.netlify.com/forms/setup/).**
 
 
 
