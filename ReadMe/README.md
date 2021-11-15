@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+    <img alt="Gatsby" src="logo-alliantum.png" width="60" />
   </a>
 </p>
 <h1 align="center">
@@ -12,8 +12,6 @@ Kick off your project with this default boilerplate. This starter ships with the
 
 _Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
 
-
-<img title="credentials image" width="75%" alt="Alt text" src="logo-alliantum.png">
 
 
 ## 🚀 Quick start
