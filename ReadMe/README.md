@@ -4,8 +4,8 @@
   </a>
 </p>
 
-<a align="center" href="https://www.alliantum.es" >
-  <h1>Alliantum.es Site</h1>
+<a href="https://www.alliantum.es" >
+  <h1 align="center" >Alliantum.es Site</h1>
 </a>
 
 This site uses the following external resources:
