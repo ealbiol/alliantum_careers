@@ -85,4 +85,20 @@ Netlifty Forms functionality is set to receive the applicant details from the fo
 - More information regarding Netlify Forms setup can be found by clicking [here](https://docs.netlify.com/forms/setup/).
 
 
+## 6. Scripts
+
+  **Loading the Site.**
+
+- For Development Purposes: **`gatsby develop`**
+
+ Your site is now running at `http://localhost:8000`
+
+
+
+- For Building Puroposes: **`gatsby build`**
+
+    ```shell
+    gatsby serve
+    ```
+ Your site is now running at `http://localhost:9000`
 
