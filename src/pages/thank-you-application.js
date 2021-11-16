@@ -2,13 +2,13 @@ import * as React from "react"
 import Layout from "../components/Layout"
 import Seo from "../components/seo"
 
-export function ThankYou() {
+export function ThankYouApplication() {
     return (
         <Layout>
-            <Seo title="Thank You" />
-            <h1>Thank You!</h1>
+            <Seo title="Thank You Application" />
+            <h1>Thank You Application</h1>
         </Layout>
     )
 }
 
-export default ThankYou
+export default ThankYouApplication
