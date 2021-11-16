@@ -53,6 +53,12 @@ export default function Footer() {
                         )
                     })
                 }
+                <div style={{ border: "1px solid black" }} >
+                    <AnchorLink to="/privacy-policy">Privacy Policy</AnchorLink>
+                    <AnchorLink to="/cookies">Cookies</AnchorLink>
+                </div >
+
+
                 <div>© Alliantum GmbH.</div>
             </div>
 

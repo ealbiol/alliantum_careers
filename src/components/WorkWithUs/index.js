@@ -15,6 +15,12 @@ export function WorkWithUs() {
         })
     }, [])
 
+    const firstLinePhotos = employees.slice(0, 8)
+    console.log("firstLinePhotos:---->", firstLinePhotos);
+    const secondLinePhotos = employees.slice(9, 17);
+    console.log("secondLinePhotos:---->", secondLinePhotos);
+
+
     return (
         <div className="flex relative">
             <div className="container-main z-10 h-halfscreen mt-2 bg-gradient-to-r from-white via-white to-transparent">
@@ -25,7 +31,16 @@ export function WorkWithUs() {
             <div className="absolute">
                 <div className="flex flex-wrap">
                     {
-                        employees.map((employee, index) => {
+                        firstLinePhotos.map((employee, index) => {
+                            return (
+                                <EmployeePhoto className="mr-2 mb-2" key={index} photo={employee.photo} />
+                            )
+                        })
+                    }
+                </div>
+                <div className="flex flex-wrap">
+                    {
+                        secondLinePhotos.map((employee, index) => {
                             return (
                                 <EmployeePhoto className="mr-2 mb-2" key={index} photo={employee.photo} />
                             )

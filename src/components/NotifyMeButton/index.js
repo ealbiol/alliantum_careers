@@ -66,7 +66,10 @@ export function NotifyMeButton() {
 
     return (
         <div>
-            <button className="btn btn-outline" onClick={handleBoolean}>
+            <button
+                className="btn btn-outline"
+                onClick={handleBoolean}
+            >
                 <span><IconBell /></span>
                 <span> Notify me on new jobs</span>
             </button>
@@ -77,7 +80,7 @@ export function NotifyMeButton() {
                     <input
                         type="email"
                         name="Notify Me"
-                        placeholder="email"
+                        placeholder="Your email"
                         onChange={(e) => setUserEmail(e.currentTarget.value)}
                         required
                     />
@@ -98,13 +101,13 @@ export function NotifyMeButton() {
                     </select>
                     {userDepartment === initialOption &&
                         <button type="submit" style={{ color: `gray` }} disabled>
-                            <span>(Bell Icon){" "}</span>
+                            <span><IconBell /></span>
                             <span>Submit</span>
                         </button>
                     }
                     {userDepartment !== initialOption &&
                         <button type="submit" style={{ color: `green` }} >
-                            <span>(Bell Icon){" "}</span>
+                            <span><IconBell /></span>
                             <span>Submit</span>
                         </button>
                     }
