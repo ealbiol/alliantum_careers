@@ -83,6 +83,7 @@ export function IndexPage() {
           <GoogleMaps />
         </div>
 
+        {/* ------------> The Team */}
         <div>
           <div className="container mx-auto mt-6 mb-2">
             <span class="pretitle">The team</span>
