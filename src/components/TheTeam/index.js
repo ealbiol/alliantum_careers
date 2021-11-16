@@ -53,6 +53,58 @@ export function TheTeam() {
                         }
                     </marquee>
 
+
+
+
+
+                    <div class="marquee-wrapper">
+                        <div class="container">
+                            <div class="marquee-block">
+                                <div class="marquee-inner to-left">
+                                    <span>
+                                        <div class="marquee-item">
+                                            <p class="text-white">1</p>
+                                        </div>
+                                        <div class="marquee-item">
+                                            <p class="text-white">2</p>
+                                        </div>
+                                        <div class="marquee-item">
+                                            <p class="text-white">3</p>
+                                        </div>
+                                        <div class="marquee-item">
+                                            <p class="text-white">4</p>
+                                        </div>
+                                        <div class="marquee-item">
+                                            <p class="text-white">5</p>
+                                        </div>
+                                    </span>
+                                    <span>
+                                        <div class="marquee-item">
+                                            <p class="text-white">1</p>
+                                        </div>
+                                        <div class="marquee-item">
+                                            <p class="text-white">2</p>
+                                        </div>
+                                        <div class="marquee-item">
+                                            <p class="text-white">3</p>
+                                        </div>
+                                        <div class="marquee-item">
+                                            <p class="text-white">4</p>
+                                        </div>
+                                        <div class="marquee-item">
+                                            <p class="text-white">5</p>
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
                 </div>
                 <div>Meet your future team</div>
                 <div className="card-bg w-3/12">
