@@ -7,11 +7,15 @@ export function DepartmentsMenu({ allDepartments, clickedDep, setClickedDep }) {
         setClickedDep(department)
     }
 
+    console.log("allDepartments:--->", allDepartments);
+    const allDepsWithoutManagement = allDepartments.filter(department => department !== "Management")
+
+
     return (
         <div className="flex">
 
             {
-                allDepartments.map((department, index) => {
+                allDepsWithoutManagement.map((department, index) => {
 
                     return (
                         <button
