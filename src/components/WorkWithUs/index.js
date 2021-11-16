@@ -29,24 +29,21 @@ export function WorkWithUs() {
                 <AnchorLink to={"/#jobs-table"} >See open processes</AnchorLink>
             </div>
             <div className="absolute">
-                <div className="flex flex-wrap">
-                    {
-                        firstLinePhotos.map((employee, index) => {
-                            return (
-                                <EmployeePhoto className="mr-2 mb-2" key={index} photo={employee.photo} />
-                            )
-                        })
-                    }
-                </div>
-                <div className="flex flex-wrap">
-                    {
-                        secondLinePhotos.map((employee, index) => {
-                            return (
-                                <EmployeePhoto className="mr-2 mb-2" key={index} photo={employee.photo} />
-                            )
-                        })
-                    }
-                </div>
+                {
+                    firstLinePhotos.map((employee, index) => {
+                        return (
+                            <EmployeePhoto className="mr-2 mb-2" key={index} photo={employee.photo} />
+                        )
+                    })
+                }
+                {
+                    secondLinePhotos.map((employee, index) => {
+                        return (
+                            <EmployeePhoto className="mr-2 mb-2" key={index} photo={employee.photo} />
+                        )
+                    })
+                }
+
                 <AnchorLink to={"/the-team"} >Meet your future team</AnchorLink>
             </div>
         </div>

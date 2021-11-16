@@ -43,7 +43,7 @@ export function TheTeam() {
 
             <div>
                 <div className="slide-employees">
-                    <marquee width="100%" direction="left" height="600px">
+                    <div width="100%" direction="left" height="600px">
                         {
                             employees.map((employee, index) => {
                                 return (
@@ -51,7 +51,29 @@ export function TheTeam() {
                                 )
                             })
                         }
-                    </marquee>
+                    </div>
+
+
+
+
+
+                    <div class="marquee-wrapper">
+                        <div class="container">
+                            <div class="marquee-block">
+                                <div class="marquee-inner to-left">
+                                    <div width="100%" direction="left" height="600px">
+                                        {
+                                            employees.map((employee, index) => {
+                                                return (
+                                                    <EmployeePhoto className="rounded-md w-px-230 mr-2 mb-2" key={index} photo={employee.photo} />
+                                                )
+                                            })
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
                 <div>Meet your future team</div>
