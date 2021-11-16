@@ -32,7 +32,6 @@ export function NotifyMeButton() {
             headers: {
                 "Accept": "application/json",
                 "Content-Type": "application/json",
-                // "api-key": sendInBlueApiKey,
                 "api-key": process.env.GATSBY_SENDINBLUE_API_KEY,
             },
             body: JSON.stringify({ "email": userEmail, "listIds": departmentId })
@@ -40,7 +39,7 @@ export function NotifyMeButton() {
 
         fetch(URL, options)
             .then(response => response.json())
-            .then(data => window.location = "thank-you-notification/")
+            .then(data => window.location = "thank-you-for-subscribing/")
             .catch(err => console.error(err));
 
         console.log(options);

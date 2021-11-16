@@ -27,11 +27,9 @@ const Layout = ({ children, titlePage }) => {
 
 
   React.useEffect(() => {
-    console.log("LocalStorage:--->", localStorage.theme);
 
     if (localStorage.theme === "dark" || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       setIsDark(true)
-      console.log("Darkening Age:--->");
     } else {
       setIsDark(false)
     }
