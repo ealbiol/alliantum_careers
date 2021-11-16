@@ -60,7 +60,7 @@ export function IndexPage() {
         {/* ------------> Your Benefits */}
         <div className="container mx-auto my-6">
           <span className="pretitle">Your benefits</span>
-          <h3 className="title w-6/12">Work in an international company, with a happy team, in a great office</h3>
+          <h3 className="title text-md w-6/12">Work in an international company, with a happy team, in a great office</h3>
           <div id="your-benefits">
             <YourBenefits />
           </div>
@@ -69,19 +69,27 @@ export function IndexPage() {
         {/* ------------> Office Presentation */}
         <div>
           <div className="container mx-auto mt-6 mb-2">
-            <h2 className="title w-6/12">Your future office is modern, bright and equipped with the latest technological equipment</h2>
+            <h3 className="title text-md w-6/12">Your future office is modern, bright and equipped with the latest technological equipment</h3>
           </div>
           <OfficePhotos />
         </div>
 
         {/* ------------> World Map */}
-        <div id="the-offices" className="container mx-auto mt-6 mb-2">
-          <span className="pretitle">THE OFFICE</span>
-          <h3 className="title w-6/12">German spirit. Spanish passion.</h3>
+        <div id="the-offices">
+          <div className="container mx-auto mt-6 mb-2">
+            <span className="pretitle">The office</span>
+            <h3 className="title text-md w-6/12">German spirit. Spanish passion.</h3>
+          </div>
           <GoogleMaps />
         </div>
 
-        <TheTeam />
+        <div>
+          <div className="container mx-auto mt-6 mb-2">
+            <span class="pretitle">The team</span>
+            <h3 className="title text-md w-6/12">We are characterised by our strong team structure and working environment</h3>
+          </div>
+          <TheTeam />
+        </div>
 
         <div className="bg-cornflower-blue">
           <AstronautSection />
