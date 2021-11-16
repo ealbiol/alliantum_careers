@@ -6,10 +6,10 @@ import IconBell from "../../images/notify-me-photos/Icon1.svg"
 export function NotifyMeButton() {
 
     const departmentsLists = [
-        { name: "IT", id: 4 },
-        { name: "HR", id: 5 },
-        { name: "Business System", id: 6 },
-        { name: "Digital Marketing", id: 7 }
+        { name: "IT", id: 4, description: "IT Description." },
+        { name: "HR", id: 5, description: "HR Description." },
+        { name: "Business System", id: 6, description: "Business System Description." },
+        { name: "Digital Marketing", id: 7, description: "Digital Marketing Description." }
     ]
 
 
@@ -19,6 +19,7 @@ export function NotifyMeButton() {
     const [userEmail, setUserEmail] = React.useState("")
     const [userDepartment, setUserDepartment] = React.useState(initialOption)
     const [showNotifySubmit, setShowNotifySubmit] = React.useState(false)
+
     const URL = "https://api.sendinblue.com/v3/contacts"
 
 
@@ -60,8 +61,7 @@ export function NotifyMeButton() {
 
     const handleBoolean = () => setShowNotifySubmit(!showNotifySubmit)
 
-
-
+    console.log("Lists:--->", departmentsLists);
 
     return (
         <div>
@@ -98,6 +98,9 @@ export function NotifyMeButton() {
                             })
                         }
                     </select>
+
+
+
                     {userDepartment === initialOption &&
                         <button type="submit" style={{ color: `gray` }} disabled>
                             <span><IconBell /></span>
@@ -110,6 +113,13 @@ export function NotifyMeButton() {
                             <span>Submit</span>
                         </button>
                     }
+
+                    <span>
+                        {
+                            departmentsLists.find(department => userDepartment === department.name)?.description
+                        }
+                    </span>
+
                 </form>
 
             }
