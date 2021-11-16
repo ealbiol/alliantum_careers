@@ -49,8 +49,6 @@ export function AllJobOffersList() {
         <div className="">
             <div>
 
-
-
                 <div className="flex mb-3">
                     <button className="text-xs py-1 px-3 border border-loblolly-600 rounded-xl mr-1" onClick={() => (allRoles())} >All roles</button>
                     <DepartmentsMenu
@@ -60,8 +58,6 @@ export function AllJobOffersList() {
                     />
                 </div>
             </div>
-
-
 
             <div>
                 {

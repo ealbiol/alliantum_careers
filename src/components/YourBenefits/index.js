@@ -15,7 +15,6 @@ export function YourBenefits() {
     React.useEffect(() => {
         getAllBenefits().then((result) => {
             setBenefits(result)
-
         })
     }, [])
 
@@ -35,10 +34,14 @@ export function YourBenefits() {
                     benefits.map((unite, index) => {
                         const icon = iconsInSVG.find(icon => icon.id === unite.id)
                         return (
-                            <div key={index} >
+                            <div className="flex" key={index}>
                                 <div>{icon && icon.component}</div>
-                                <h4>{unite?.title?.toUpperCase()}</h4>
-                                <div>{unite?.content}</div>
+                                <div className="flex flex-col mb-1 pl-3">
+                                    <div className="h-px-80 flex items-center">
+                                        <h4 className="mb-0 text-electric-violet-600 w-4/12">{unite?.title?.toUpperCase()}</h4>
+                                    </div>
+                                    <div className="pr-6">{unite?.content}</div>
+                                </div>
                             </div>
                         )
                     })

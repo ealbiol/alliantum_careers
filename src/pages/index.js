@@ -53,14 +53,14 @@ export function IndexPage() {
         {/* ------------> Job Offers Table */}
         <div id="jobs-table" className="w-full lg:w-container-sm mx-auto">
           <span className="pretitle">What we need right now</span>
-          <h2 className="title">We do Business Digitalisation and New-era Marketing</h2>
+          <h3 className="title text-md w-7/12">We do Business Digitalisation and New-era Marketing</h3>
           <AllJobOffersList />
         </div>
 
         {/* ------------> Your Benefits */}
         <div className="container mx-auto my-6">
           <span className="pretitle">Your benefits</span>
-          <h2 className="title">Work in an international company, with a happy team, in a great office</h2>
+          <h3 className="title w-6/12">Work in an international company, with a happy team, in a great office</h3>
           <div id="your-benefits">
             <YourBenefits />
           </div>
@@ -68,14 +68,16 @@ export function IndexPage() {
 
         {/* ------------> Office Presentation */}
         <div>
-          <h2>Your future office is modern, bright and equipped with the latest technological equipment</h2>
+          <div className="container mx-auto mt-6 mb-2">
+            <h2 className="title w-6/12">Your future office is modern, bright and equipped with the latest technological equipment</h2>
+          </div>
           <OfficePhotos />
         </div>
 
         {/* ------------> World Map */}
-        <div id="the-offices" >
-          <h5>THE OFFICE</h5>
-          <h3>German spirit. Spanish passion.</h3>
+        <div id="the-offices" className="container mx-auto mt-6 mb-2">
+          <span className="pretitle">THE OFFICE</span>
+          <h3 className="title w-6/12">German spirit. Spanish passion.</h3>
           <GoogleMaps />
         </div>
 
