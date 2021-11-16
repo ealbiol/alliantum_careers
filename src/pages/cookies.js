@@ -6,7 +6,7 @@ export function Cookies() {
     return (
         <Layout>
             <Seo title="Cookies" />
-            <h1>Cookies</h1>
+            <h1>Cookies Content</h1>
         </Layout>
     )
 }

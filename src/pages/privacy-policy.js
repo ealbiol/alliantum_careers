@@ -6,7 +6,7 @@ export function PrivacyPolicy() {
     return (
         <Layout>
             <Seo title="Privacy Policy" />
-            <h1>Privacy Policy</h1>
+            <h1>Privacy Policy Content</h1>
         </Layout>
     )
 }
