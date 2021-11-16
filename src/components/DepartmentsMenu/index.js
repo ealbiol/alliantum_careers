@@ -15,7 +15,10 @@ export function DepartmentsMenu({ allDepartments, clickedDep, setClickedDep }) {
 
                     return (
                         <button
-                            style={{ backgroundColor: department === clickedDep ? "gray" : "" }}
+                            style={{
+                                backgroundColor: department === clickedDep ? "#D7DCE1" : "",
+                                color: department === clickedDep ? "white" : ""
+                            }}
                             className="text-xs py-1 px-3 border border-loblolly-600 rounded-xl mr-1"
                             onClick={() => filterDepartment(department)}
                             key={index} >
