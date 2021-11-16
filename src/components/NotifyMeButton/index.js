@@ -6,10 +6,10 @@ import IconBell from "../../images/notify-me-photos/Icon1.svg"
 export function NotifyMeButton() {
 
     const departmentsLists = [
-        { name: "IT", id: 4, description: "IT Description." },
-        { name: "HR", id: 5, description: "HR Description." },
-        { name: "Business System", id: 6, description: "Business System Description." },
-        { name: "Digital Marketing", id: 7, description: "Digital Marketing Description." }
+        { name: "IT", id: 4, description: "IT Department Description." },
+        { name: "HR", id: 5, description: "HR Department Description." },
+        { name: "Business System", id: 6, description: "Business System Department Description." },
+        { name: "Digital Marketing", id: 7, description: "Digital Marketing Department Description." }
     ]
 
 
@@ -99,7 +99,11 @@ export function NotifyMeButton() {
                         }
                     </select>
 
-
+                    <span>
+                        {
+                            departmentsLists.find(department => userDepartment === department.name)?.description
+                        }
+                    </span>
 
                     {userDepartment === initialOption &&
                         <button type="submit" style={{ color: `gray` }} disabled>
@@ -114,11 +118,6 @@ export function NotifyMeButton() {
                         </button>
                     }
 
-                    <span>
-                        {
-                            departmentsLists.find(department => userDepartment === department.name)?.description
-                        }
-                    </span>
 
                 </form>
 
