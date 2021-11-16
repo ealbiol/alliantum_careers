@@ -53,6 +53,9 @@ export default function Footer() {
                         )
                     })
                 }
+                <AnchorLink to="/privacy-policy">Privacy Policy</AnchorLink>
+                <AnchorLink to="/cookies">Cookies</AnchorLink>
+
                 <div>© Alliantum GmbH.</div>
             </div>
 

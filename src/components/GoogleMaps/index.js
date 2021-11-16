@@ -50,13 +50,7 @@ export function GoogleMaps() {
 
         <div className="map">
 
-            {
-                addressUnite.map((address, index) => {
-                    return (
-                        <OfficeCard key={index} addressUnite={address} />
-                    )
-                })
-            }
+
 
             <GoogleMap
                 mapContainerStyle={containerStyle}
@@ -442,6 +436,14 @@ export function GoogleMaps() {
                 }
 
             </GoogleMap>
+
+            {
+                addressUnite.map((address, index) => {
+                    return (
+                        <OfficeCard key={index} addressUnite={address} />
+                    )
+                })
+            }
 
         </div>
     ) : <></>
