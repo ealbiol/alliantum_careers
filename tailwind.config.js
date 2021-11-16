@@ -329,9 +329,10 @@ module.exports = {
         fontSize: {
             xs: ['0.778rem', { lineHeight: '140%' }],
             sm: ['1.556rem', { lineHeight: '140%' }],
+            md: ['1.626rem;', { lineHeight: '140%' }],
             base: ['1rem', { lineHeight: '140%' }],
             lg: ['5.222rem', { lineHeight: '140%' }],
-            xl: ['8.444rem', { lineHeight: '140%' }],
+            xl: ['8.444rem', { lineHeight: '240%' }],
         },
         fontWeight: {
             light: '300',
