@@ -83,7 +83,7 @@ export function NotifyMeButton() {
                         onChange={(e) => setUserEmail(e.currentTarget.value)}
                         required
                     />
-                    <label >Departments:</label>
+                    <div >Departments:</div>
                     <select name="departments" id="departments" onChange={(e) => setUserDepartment(e.currentTarget.value)} >
                         {
                             allDepsWithoutManagement.map((department, index) => {

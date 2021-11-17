@@ -1,16 +1,16 @@
 import * as React from "react"
-import { getAllApplyFormFields } from "../../data/data"
+// import { getAllApplyFormFields } from "../../data/data"
 
 export function ApplyForm() {
 
-    const [formFields, setFormFields] = React.useState([])
+    // const [formFields, setFormFields] = React.useState([])
 
-    React.useEffect(() => {
-        getAllApplyFormFields().then((result) => {
-            setFormFields(result)
+    // React.useEffect(() => {
+    //     getAllApplyFormFields().then((result) => {
+    //         setFormFields(result)
 
-        })
-    }, [])
+    //     })
+    // }, [])
 
     return (
 

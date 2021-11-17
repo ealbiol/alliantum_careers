@@ -12,7 +12,7 @@ export function SwitchModeButton({ isDark, setIsDark }) {
     return (
         <p>
             <label className="switch">
-                <input onClick={handleSwitch} type="checkbox" checked={isDark} />
+                <input onChange={handleSwitch} type="checkbox" checked={isDark} />
                 <span className="slider round"></span>
             </label>
         </p>

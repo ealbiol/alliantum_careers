@@ -15,6 +15,7 @@ import { SwitchModeButton } from "../SwitchModeButton/index"
 import { CookieBanner } from "../CookieBanner/index"
 
 const Layout = ({ children, titlePage }) => {
+
   const data = useStaticQuery(graphql` 
     query SiteTitleQuery {
       site {

@@ -57,10 +57,10 @@ export function TheTeam() {
 
 
 
-                    <div class="marquee-wrapper">
-                        <div class="container">
-                            <div class="marquee-block">
-                                <div class="marquee-inner to-left">
+                    <div className="marquee-wrapper">
+                        <div className="container">
+                            <div className="marquee-block">
+                                <div className="marquee-inner to-left">
                                     <div width="100%" direction="left" height="600px">
                                         {
                                             employees.map((employee, index) => {

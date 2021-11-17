@@ -2,7 +2,7 @@ import * as React from "react"
 import Layout from "../components/Layout"
 import Seo from "../components/seo"
 
-export function Cookies() {
+function Cookies() {
     return (
         <Layout>
             <Seo title="Cookies" />

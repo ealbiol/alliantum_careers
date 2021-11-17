@@ -10,7 +10,7 @@ import { GetAllDepartments } from "../data/data"
 console.log("All Employees:--->", getAllEmployees());
 
 
-export function TheTeam() {
+function TheTeam() {
 
     const data = useStaticQuery(graphql`
     query {
