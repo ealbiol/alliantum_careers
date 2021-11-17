@@ -24,6 +24,6 @@ export function ValuePhoto({ value }) {
 
 
   return (
-    <GatsbyImage image={getImage(photoValue)} alt="Photo Office" />
+    <GatsbyImage className="w-full" image={getImage(photoValue)} alt="Photo Office" />
   )
 }

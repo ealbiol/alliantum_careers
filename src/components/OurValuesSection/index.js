@@ -16,7 +16,7 @@ export function OurValuesSection() {
 
     return (
         <div>
-            <div>
+            <div className="container-main">
                 <OurValuesMenu
                     allOurValues={allOurValues}
                 />
