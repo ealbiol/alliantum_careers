@@ -20,7 +20,7 @@ function Test() {
                     <div className="rounded-lg bg-white overflow-hidden" >
                         <img src="" alt="Image" />
                         <div className="p-4">
-                            <h3 clasName="text-uppercase">Title</h3>
+                            <h3 className="text-uppercase">Title</h3>
                             <div>Descrip</div>
                         </div>
                     </div>
