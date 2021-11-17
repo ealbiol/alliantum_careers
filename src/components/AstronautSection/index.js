@@ -28,7 +28,7 @@ export function AstronautSection() {
                     <div className="ourvalues-image__above">
                         {/* Astronaut Parallax */}
                         <Parallax
-                            strength={200}
+                            strength={100}
                             style={{ height: "700px" }}
                             renderLayer={(percentage) => (
                                 <div>
@@ -43,7 +43,7 @@ export function AstronautSection() {
 
                                             //Vertical:
                                             left: "50%",
-                                            bottom: `${percentage * 10}%`,
+                                            bottom: `${percentage * 50}%`,
 
                                             // borderRadius: "50%",
                                             transform: "translate(-50%,-0%)",
@@ -56,7 +56,6 @@ export function AstronautSection() {
                                             alt="Astronaut"
                                             placeholder="blurred"
                                             layout="fixed"
-                                            width={612}
                                         />
                                     </div>
                                 </div>
@@ -69,7 +68,7 @@ export function AstronautSection() {
                     <div className="ourvalues-image__below">
                         {/* Planet Parallax */}
                         <Parallax
-                            strength={400}
+                            strength={100}
                             style={{ height: "700px" }}
                             renderLayer={(percentage) => (
                                 <div>
@@ -77,7 +76,7 @@ export function AstronautSection() {
                                         style={{
                                             position: "absolute",
                                             left: "82%",
-                                            bottom: `${percentage * 50}%`,
+                                            bottom: `${percentage * 10}%`,
                                             transform: "translate(-50%,-0%)",
                                             width: 600,
                                             height: 600,
@@ -89,7 +88,6 @@ export function AstronautSection() {
                                             placeholder="blurred"
                                             layout="fixed"
                                             width={430}
-                                            height={423}
                                         />
                                     </div>
                                 </div>

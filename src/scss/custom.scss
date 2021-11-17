@@ -88,6 +88,41 @@ body {
     height: 100vh;
 }
 
+
+
+.hero-header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-header__left {
+    position: absolute;
+    width: 100%;
+}
+
+.hero-left-content {
+    @apply container-main;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.hero-left-content__wrapper {
+    height: 80vh;
+}
+
+.hero-header__back {
+    background-color: blue;
+}
+
+.hero-back-content {
+
+}
+
+
+
 .marquee-wrapper{
     text-align:center;
   }
