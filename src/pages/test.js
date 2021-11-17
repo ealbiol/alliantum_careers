@@ -15,7 +15,7 @@ function Test() {
                     </div>
                 </div>
 
-                {/* <div className="w-6/12">
+                <div className="w-6/12">
                     <div className="rounded-lg bg-white overflow-hidden" >
                         <img src="" alt="Image" />
                         <div className="p-4">
@@ -23,7 +23,7 @@ function Test() {
                             <div>Descrip</div>
                         </div>
                     </div>
-                </div> */}
+                </div>
 
             </div>
 

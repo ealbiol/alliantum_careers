@@ -14,7 +14,7 @@ export function OurValuesMenu({ allOurValues }) {
     console.log("allOurValues:--->", allOurValues);
 
     return (
-        <div className="flex" >
+        <div  >
 
             <div>
                 {
@@ -37,11 +37,11 @@ export function OurValuesMenu({ allOurValues }) {
                                     </div>
 
                                 </div>
-                                <div className="w-6/12">
-                                    {/* {
+                                {/* <div className="w-6/12">
+                                    {
                                         showValueCard === value.id ? <ValueCard value={value} /> : null
-                                    } */}
-                                </div>
+                                    }
+                                </div> */}
                             </div>
                         )
                     })
