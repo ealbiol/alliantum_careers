@@ -21,9 +21,9 @@ export function OurValuesSection() {
                     allOurValues={allOurValues}
                 />
             </div>
-            <div>
-                <div>Do you want to grow with us?</div>
-                <AnchorLink to={"/#jobs-table"} >See open processes</AnchorLink>
+            <div className="card-bg bg-cornflower-blue w-3/12 mx-auto">
+                <span className="title text-md block">Do you want to grow with us?</span>
+                <AnchorLink className="btn btn-black mt-4" to={"/#jobs-table"} >See open processes</AnchorLink>
             </div>
         </div>
     )

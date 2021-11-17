@@ -22,11 +22,11 @@ export function WorkWithUs() {
 
 
     return (
-        <div className="flex relative">
-            <div className="container-main z-10 h-halfscreen mt-2 bg-gradient-to-r from-white via-white to-transparent">
-                <div className="text-xs font-bold">WE ARE LOOKING FOR TALENT</div>
+        <div className="flex relative mb-6">
+            <div className="container-main z-10 bg-gradient-to-r from-white via-white to-transparent flex flex-col items-start justify-center h-10">
+                <span className="pretitle text-xs font-bold">We are looking for talent</span>
                 <h1 className="font-title">Want to work with us?</h1>
-                <AnchorLink to={"/#jobs-table"} >See open processes</AnchorLink>
+                <AnchorLink className="btn btn-primary" to={"/#jobs-table"} >See open processes</AnchorLink>
             </div>
             <div className="absolute">
                 {

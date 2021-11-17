@@ -50,16 +50,6 @@ export function GoogleMaps() {
 
         <div className="map">
 
-            <div className="flex content-between" >
-                {
-                    addressUnite.map((address, index) => {
-                        return (
-                            <OfficeCard key={index} addressUnite={address} />
-                        )
-                    })
-                }
-            </div>
-
             <GoogleMap
                 mapContainerStyle={containerStyle}
                 center={center}
@@ -444,14 +434,17 @@ export function GoogleMaps() {
                 }
 
             </GoogleMap>
-
-            {
-                addressUnite.map((address, index) => {
-                    return (
-                        <OfficeCard key={index} addressUnite={address} />
-                    )
-                })
-            }
+            <div className="container-main">
+                <div className="flex justify-center" >
+                    {
+                        addressUnite.map((address, index) => {
+                            return (
+                                <OfficeCard key={index} addressUnite={address} />
+                            )
+                        })
+                    }
+                </div>
+            </div>
 
         </div>
     ) : <></>

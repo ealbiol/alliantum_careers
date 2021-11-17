@@ -91,7 +91,7 @@ export function IndexPage() {
           <TheTeam />
         </div>
 
-        <div className="bg-cornflower-blue">
+        <div>
           <AstronautSection />
         </div>
 
