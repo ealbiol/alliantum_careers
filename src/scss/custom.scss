@@ -47,6 +47,20 @@ body {
     @apply text-xs py-1 px-3 border border-loblolly-600 rounded-xl;
 }
 
+.card-menu {
+    @apply rounded-lg border border-loblolly-800;
+}
+
+.card-menu > li {
+    border-bottom: solid 1px inherit;
+    @apply border-b-0 border-loblolly-800;
+    margin: 0!important;
+}
+
+.card-menu > li:last-child {
+    border-bottom: none;
+}
+
 .ourvalues {
     background-color: #003BF9;
     position: relative;
