@@ -17,14 +17,15 @@ export function OurValuesMenu({ allOurValues }) {
         <div  >
 
             <div>
-                {
-                    allOurValues.map((value, index) => {
-                        return (
-                            <div key={index} className="flex my-6" >
-                                <div className="w-6/12">
-                                    <div>
-                                        <ul className="card-menu flex flex-col" >
-                                            <li className="flex w-full flex-grow" >
+                <div className="flex my-6" >
+                    <div className="w-6/12">
+                        <div>
+                            <ul className="card-menu flex flex-col" >
+                                {
+                                    allOurValues.map((value, index) => {
+                                        return (
+
+                                            <li key={index} className="flex w-full flex-grow" >
                                                 <button
                                                     className="p-4 flex-grow uppercase flex justify-between cursor-pointer"
                                                     onClick={() => (setShowValueCard(value.id))}
@@ -33,19 +34,20 @@ export function OurValuesMenu({ allOurValues }) {
                                                     <span className="block">{showValueCard === value.id ? <ArrowLeft /> : <ArrowRight />}</span>
                                                 </button>
                                             </li>
-                                        </ul>
-                                    </div>
 
-                                </div>
-                                {/* <div className="w-6/12">
+                                        )
+                                    })
+                                }
+                            </ul>
+                        </div>
+
+                    </div>
+                    {/* <div className="w-6/12">
                                     {
                                         showValueCard === value.id ? <ValueCard value={value} /> : null
                                     }
                                 </div> */}
-                            </div>
-                        )
-                    })
-                }
+                </div>
             </div >
 
 
