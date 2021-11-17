@@ -34,7 +34,7 @@ export const allHeaderAndFooterSections = [
     { sectionName: "Your benefits", anchor: "/#your-benefits" },
     { sectionName: "The offices", anchor: "/#the-offices" },
     { sectionName: "The team", anchor: "/the-team" },
-    { sectionName: "Our values", anchor: "/#our-values" }, //to be added when Component is created for index page.
+    { sectionName: "Our values", anchor: "/#our-values" },
     { sectionName: "The jobs", anchor: "/#jobs-table" }
 ]
 
@@ -141,12 +141,12 @@ export async function getAllAstronautPhotos() {
 //-------------------------------------------------------//
 
 export const allOurValues = [
-    { title: "Pioneering Spirit", photo: "pioneering.jpg", content: "We are technological and therefore like to be at the cutting edge. We have an entrepreneurial spirit that drives us to develop innovative solutions and products that make it easier for our customers to differentiate themselves. Always from the perspective of profitability and growth. This principle is closely linked to learning and, more specifically, to the concept of lifelong learning. Inexhaustible capacity for learning" },
-    { title: "Decisive", photo: "decisive.jpg", content: "We are resolute and strive to develop our projects on time. We like to provide solutions that add value and are tailored to the real needs of the company." },
-    { title: "Truly International", photo: "international.jpg", content: "We are an international company. Our German origin and our Spanish headquarters mean that our frontier is the world. We like international projects, and we do not limit ourselves to any geographical area." },
-    { title: "Fairness", photo: "fairness.jpg", content: "All decisions must be reasoned and seek the common good and be fair to the rest of the team. We also promote open speech as the possibility of being able to express an opinion or propose a particular action without fear of being reprimanded for it." },
-    { title: "Flexible", photo: "flexible.jpg", content: "We know how to adapt to situations and the different needs of the moment. We promote flexible environments for work, learning, and growth." },
-    { title: "Team Spirit", photo: "teamspirit.jpg", content: "Our team, together with our customers, is the most important thing to us. We like to have a fun and open working space. We share moments outside the office, and there is always some recreational activity planned where we can showcase each other's skills." },
+    { id: 1, title: "Pioneering Spirit", photo: "pioneering.jpg", content: "We are technological and therefore like to be at the cutting edge. We have an entrepreneurial spirit that drives us to develop innovative solutions and products that make it easier for our customers to differentiate themselves. Always from the perspective of profitability and growth. This principle is closely linked to learning and, more specifically, to the concept of lifelong learning. Inexhaustible capacity for learning" },
+    { id: 2, title: "Decisive", photo: "decisive.jpg", content: "We are resolute and strive to develop our projects on time. We like to provide solutions that add value and are tailored to the real needs of the company." },
+    { id: 3, title: "Truly International", photo: "international.jpg", content: "We are an international company. Our German origin and our Spanish headquarters mean that our frontier is the world. We like international projects, and we do not limit ourselves to any geographical area." },
+    { id: 4, title: "Fairness", photo: "fairness.jpg", content: "All decisions must be reasoned and seek the common good and be fair to the rest of the team. We also promote open speech as the possibility of being able to express an opinion or propose a particular action without fear of being reprimanded for it." },
+    { id: 5, title: "Flexible", photo: "flexible.jpg", content: "We know how to adapt to situations and the different needs of the moment. We promote flexible environments for work, learning, and growth." },
+    { id: 6, title: "Team Spirit", photo: "teamspirit.jpg", content: "Our team, together with our customers, is the most important thing to us. We like to have a fun and open working space. We share moments outside the office, and there is always some recreational activity planned where we can showcase each other's skills." },
 
 ]
 

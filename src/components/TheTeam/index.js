@@ -44,10 +44,10 @@ export function TheTeam() {
                             })
                         }
                     </div>
-                    <div class="marquee-wrapper">
-                        <div class="">
-                            <div class="marquee-block">
-                                <div class="marquee-inner to-left">
+                    <div className="marquee-wrapper">
+                        <div className="">
+                            <div className="marquee-block">
+                                <div className="marquee-inner to-left">
                                     <span>
                                         <div width="100%" direction="left" height="600px">
                                             {

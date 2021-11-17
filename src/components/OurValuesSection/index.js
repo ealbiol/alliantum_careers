@@ -15,11 +15,14 @@ export function OurValuesSection() {
     }, [])
 
     return (
-        <div className="bg-loblolly py-6">
+        <div>
             <div className="container-main">
-                <OurValuesMenu
-                    allOurValues={allOurValues}
-                />
+                <div style={{ border: "1px solid black" }} >
+                    <OurValuesMenu
+                        allOurValues={allOurValues}
+                    />
+                </div>
+
             </div>
             <div className="card-bg bg-cornflower-blue w-3/12 mx-auto">
                 <span className="title text-md block">Do you want to grow with us?</span>
