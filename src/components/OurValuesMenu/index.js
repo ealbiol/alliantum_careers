@@ -1,15 +1,20 @@
 import * as React from "react"
 import { ValueCard } from "../ValueCard"
+import ArrowLeft from "../../images/values-photos/arrow-left.svg"
+import ArrowRight from "../../images/values-photos/arrow-right.svg"
 
 export function OurValuesMenu({ allOurValues }) {
 
-    const [showValueCard, setShowValueCard] = React.useState(0)
-    const onClickValueTitle = (id) => setShowValueCard(id)
+    const [showValueCard, setShowValueCard] = React.useState(1)
+    // const handleValueIndex = (index) => setShowValueCard(index)
+
+    console.log("showValueCard:---> ", showValueCard);
 
 
+    console.log("allOurValues:--->", allOurValues);
 
     return (
-        <div>
+        <div className="flex" >
 
             <div>
                 {
@@ -19,15 +24,23 @@ export function OurValuesMenu({ allOurValues }) {
                                 <div className="w-6/12">
                                     <div>
                                         <ul className="card-menu flex flex-col" >
-                                            <li className="flex w-full flex-grow" ><button className="p-4 flex-grow uppercase flex justify-between cursor-pointer" onClick={() => (onClickValueTitle(index))} >{value.title}</button></li>
+                                            <li className="flex w-full flex-grow" >
+                                                <button
+                                                    className="p-4 flex-grow uppercase flex justify-between cursor-pointer"
+                                                    onClick={() => (setShowValueCard(value.id))}
+                                                >
+                                                    {value.title}
+                                                    <span className="block">{showValueCard === value.id ? <ArrowLeft /> : <ArrowRight />}</span>
+                                                </button>
+                                            </li>
                                         </ul>
                                     </div>
 
                                 </div>
                                 <div className="w-6/12">
-                                    {
-                                        showValueCard === index ? <ValueCard value={value} /> : null
-                                    }
+                                    {/* {
+                                        showValueCard === value.id ? <ValueCard value={value} /> : null
+                                    } */}
                                 </div>
                             </div>
                         )
@@ -36,7 +49,13 @@ export function OurValuesMenu({ allOurValues }) {
             </div >
 
 
-
+            <div style={{ border: "1px solid black" }} >
+                <div>
+                    {showValueCard &&
+                        <ValueCard value={allOurValues.find(value => value.id === showValueCard)} />
+                    }
+                </div>
+            </div>
 
         </div >
     )
