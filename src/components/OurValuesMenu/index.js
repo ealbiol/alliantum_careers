@@ -15,19 +15,26 @@ export function OurValuesMenu({ allOurValues }) {
                     allOurValues.map((value, index) => {
                         return (
                             <div key={index}>
-                                <button onClick={() => (onClickValueTitle(index))} >{value.title}</button>
-                                <div>
-                                    {
-                                        showValueCard === index ? <ValueCard value={value} /> : null
-                                    }
+                                <div className="flex">
+                                    <div className="w-6/12">
+                                        <button onClick={() => (onClickValueTitle(index))} >{value.title}</button>
+                                    </div>
+                                    <div className="w-6/12">
+                                        {
+                                            showValueCard === index ? <ValueCard value={value} /> : null
+                                        }
+                                    </div>
                                 </div>
-
                             </div>
                         )
                     })
                 }
-            </div>
-        </div>
+
+                <div className="flex">
+                    <div className="w-6/12">Lorem</div>
+                    <div className="w-6/12">Ipsum</div>
+                </div>
+            </div >
+        </div >
     )
 }
-

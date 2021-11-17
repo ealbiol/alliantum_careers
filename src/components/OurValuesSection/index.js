@@ -15,8 +15,8 @@ export function OurValuesSection() {
     }, [])
 
     return (
-        <div>
-            <div>
+        <div className="bg-loblolly py-6">
+            <div className="container-main">
                 <OurValuesMenu
                     allOurValues={allOurValues}
                 />
