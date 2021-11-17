@@ -1,7 +1,7 @@
 import * as React from "react"
 import Layout from "../components/Layout/index"
 import Seo from "../components/seo"
-import { getAllEmployees } from "../data/data"
+// import { getAllEmployees } from "../data/data"
 import { useStaticQuery, graphql } from "gatsby"
 import { AllJobOffersList } from "../components/AllJobOffersList/index"
 import { YourBenefits } from "../components/YourBenefits/index"
@@ -13,7 +13,7 @@ import { OurValuesSection } from "../components/OurValuesSection"
 import { WorkWithUs } from "../components/WorkWithUs"
 
 
-export function IndexPage() {
+function IndexPage() {
 
   const data = useStaticQuery(graphql`
   query {
@@ -29,14 +29,14 @@ export function IndexPage() {
         
 `)
 
-  const [employees, setEmployees] = React.useState([])
+  // const [employees, setEmployees] = React.useState([])
 
-  React.useEffect(() => {
-    getAllEmployees().then((result) => {
-      setEmployees(result)
+  // React.useEffect(() => {
+  //   getAllEmployees().then((result) => {
+  //     setEmployees(result)
 
-    })
-  }, [])
+  //   })
+  // }, [])
 
 
   return (
@@ -83,9 +83,10 @@ export function IndexPage() {
           <GoogleMaps />
         </div>
 
+        {/* ------------> The Team */}
         <div>
           <div className="container mx-auto mt-6 mb-2">
-            <span class="pretitle">The team</span>
+            <span className="pretitle">The team</span>
             <h3 className="title text-md w-6/12">We are characterised by our strong team structure and working environment</h3>
           </div>
           <TheTeam />

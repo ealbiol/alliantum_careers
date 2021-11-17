@@ -7,7 +7,7 @@
 
 import * as React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+// import { useStaticQuery, graphql } from "gatsby"
 import Header from "../Header/index"
 import Footer from "../Footer/index"
 import "./layout.css"
@@ -15,23 +15,22 @@ import { SwitchModeButton } from "../SwitchModeButton/index"
 import { CookieBanner } from "../CookieBanner/index"
 
 const Layout = ({ children, titlePage }) => {
-  const data = useStaticQuery(graphql` 
-    query SiteTitleQuery {
-      site {
-        ...metadata
-      }
-    }
-  `)
+
+  // const data = useStaticQuery(graphql` 
+  //   query SiteTitleQuery {
+  //     site {
+  //       ...metadata
+  //     }
+  //   }
+  // `)
 
   const [isDark, setIsDark] = React.useState(false)
 
 
   React.useEffect(() => {
-    console.log("LocalStorage:--->", localStorage.theme);
 
     if (localStorage.theme === "dark" || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       setIsDark(true)
-      console.log("Darkening Age:--->");
     } else {
       setIsDark(false)
     }

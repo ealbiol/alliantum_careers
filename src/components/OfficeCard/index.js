@@ -21,7 +21,7 @@ export function OfficeCard({ addressUnite }) {
         googleMapsApiKey: process.env.GATSBY_GOOGLE_MAPS_API_KEY
     })
 
-    const [map, setMap] = React.useState(null)
+    // const [map, setMap] = React.useState(null)
 
     // const onLoad = React.useCallback(function callback(map) {
     //     const bounds = new window.google.maps.LatLngBounds();

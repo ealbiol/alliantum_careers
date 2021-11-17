@@ -6,10 +6,10 @@ import IconBell from "../../images/notify-me-photos/Icon1.svg"
 export function NotifyMeButton() {
 
     const departmentsLists = [
-        { name: "IT", id: 4 },
-        { name: "HR", id: 5 },
-        { name: "Business System", id: 6 },
-        { name: "Digital Marketing", id: 7 }
+        { name: "IT", id: 4, description: "IT Department Description." },
+        { name: "HR", id: 5, description: "HR Department Description." },
+        { name: "Business System", id: 6, description: "Business System Department Description." },
+        { name: "Digital Marketing", id: 7, description: "Digital Marketing Department Description." }
     ]
 
 
@@ -19,6 +19,7 @@ export function NotifyMeButton() {
     const [userEmail, setUserEmail] = React.useState("")
     const [userDepartment, setUserDepartment] = React.useState(initialOption)
     const [showNotifySubmit, setShowNotifySubmit] = React.useState(false)
+
     const URL = "https://api.sendinblue.com/v3/contacts"
 
 
@@ -32,7 +33,6 @@ export function NotifyMeButton() {
             headers: {
                 "Accept": "application/json",
                 "Content-Type": "application/json",
-                // "api-key": sendInBlueApiKey,
                 "api-key": process.env.GATSBY_SENDINBLUE_API_KEY,
             },
             body: JSON.stringify({ "email": userEmail, "listIds": departmentId })
@@ -40,7 +40,7 @@ export function NotifyMeButton() {
 
         fetch(URL, options)
             .then(response => response.json())
-            .then(data => window.location = "thank-you-notification/")
+            .then(data => window.location = "thank-you-for-subscribing/")
             .catch(err => console.error(err));
 
         console.log(options);
@@ -61,8 +61,7 @@ export function NotifyMeButton() {
 
     const handleBoolean = () => setShowNotifySubmit(!showNotifySubmit)
 
-
-
+    console.log("Lists:--->", departmentsLists);
 
     return (
         <div>
@@ -84,7 +83,7 @@ export function NotifyMeButton() {
                         onChange={(e) => setUserEmail(e.currentTarget.value)}
                         required
                     />
-                    <label >Departments:</label>
+                    <div >Departments:</div>
                     <select name="departments" id="departments" onChange={(e) => setUserDepartment(e.currentTarget.value)} >
                         {
                             allDepsWithoutManagement.map((department, index) => {
@@ -99,6 +98,13 @@ export function NotifyMeButton() {
                             })
                         }
                     </select>
+
+                    <span>
+                        {
+                            departmentsLists.find(department => userDepartment === department.name)?.description
+                        }
+                    </span>
+
                     {userDepartment === initialOption &&
                         <button type="submit" style={{ color: `gray` }} disabled>
                             <span><IconBell /></span>
@@ -111,6 +117,8 @@ export function NotifyMeButton() {
                             <span>Submit</span>
                         </button>
                     }
+
+
                 </form>
 
             }

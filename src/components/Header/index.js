@@ -3,7 +3,6 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { getAllHeaderAndFooterSections } from "../../data/data"
 import { AnchorLink } from "gatsby-plugin-anchor-links";
-import { StaticImage } from "gatsby-plugin-image"
 import AlliantumLogo from "../../images/header-photos/Image1.svg"
 
 export default function Header({ siteTitle }) {
