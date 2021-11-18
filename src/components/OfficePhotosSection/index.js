@@ -33,7 +33,7 @@ export function OfficePhotos() {
                             display: "flex",
                             position: "absolute",
                             left: `${percentage * 100}%`,
-                            transform: "translate(-0%,-0%)",
+                            transform: "translate(-35%,-0%)",
                             width: 1500,
                         }} >
                         {
@@ -66,7 +66,7 @@ export function OfficePhotos() {
                             //Vertical:
                             // left: "50%",
                             // bottom: `${percentage * 50}%`,
-                            transform: "translate(-0%,-00%)",
+                            transform: "translate(-00%,-00%)",
                             width: 1500,
                             // height: 400,
                         }} >
