@@ -27,12 +27,15 @@ export function TheTeam() {
                 </div>
             </div>
             <div className="flex justify-center">
-                <span className="title text-xl text-center">Don’t they<br />look happy?</span>
+                <span className="title text-lg text-center leading-3 mt-6">Don’t they<br /><br />look happy?</span>
             </div>
-
 
             <EmployeesGallery />
 
+            <div className="card-bg bg-festival w-3/12 mx-auto -mt-7 mb-6">
+                <span className="title text-black text-md block">Do you want to grow with us?</span>
+                <AnchorLink className="btn btn-black mt-4" to={"/#jobs-table"} >See current job offers</AnchorLink>
+            </div>
 
         </div>
     )

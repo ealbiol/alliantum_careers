@@ -23,29 +23,42 @@ export default function Footer() {
     }, [])
 
     return (
-        <footer style={{ background: `rebeccapurple`, marginBottom: `1.45rem` }}>
-            <div style={{ margin: `0 auto`, maxWidth: 960, padding: `1.45rem 1.0875rem` }}>
+        <footer className="bg-black p-4">
+            <div className="container-main flex text-white">
+                <div className="w-3/12 flex flex-col content-between">
+                    <Link to="/" >
+                        <AlliantumLogo />
+                        <p>asd</p>
+                    </Link>
+                    <p>© Alliantum GmbH.</p>
+                </div>
 
-                <Link to="/" >
-                    <AlliantumLogo />
-                </Link>
+                <div className="w-3/12">
+                    <AnchorLink className="btn btn-outline" to="/#jobs-table">The jobs</AnchorLink>
+                </div>
 
-                <AnchorLink to="/#jobs-table">The jobs</AnchorLink>
-                <div style={{ border: "1px solid black" }} >
-                    {
-                        footerUnite.map((unite, index) => {
-                            return (
-                                <AnchorLink key={index} to={unite.anchor}>
-                                    {unite.sectionName}
-                                </AnchorLink>
-                            )
-                        })
-                    }
+                <div className="w-3/12">
+                    <ul>
+
+                        {
+                            footerUnite.map((unite, index) => {
+                                return (
+                                    <li>
+                                        <AnchorLink key={index} to={unite.anchor}>
+                                            {unite.sectionName}
+                                        </AnchorLink>
+                                    </li>
+                                )
+                            })
+                        }
+
+                    </ul>
+
                 </div>
                 {
                     addressUnite.map((address, index) => {
                         return (
-                            <div key={index} style={{ border: "1px solid black" }} >
+                            <div key={index}>
                                 <div>{address.city.toUpperCase()}</div>
                                 <div>{address.country.toUpperCase()}</div>
                                 <div>{address.address}</div>
@@ -53,13 +66,19 @@ export default function Footer() {
                         )
                     })
                 }
-                <div style={{ border: "1px solid black" }} >
-                    <AnchorLink to="/privacy-policy">Privacy Policy</AnchorLink>
-                    <AnchorLink to="/cookies">Cookies</AnchorLink>
-                </div >
+                <div className="w-3/12">
+                    <ul>
+                        <li>
+                            <AnchorLink to="/privacy-policy">Privacy Policy</AnchorLink>
+                        </li>
+                        <li>
+                            <AnchorLink to="/cookies">Cookies</AnchorLink>
+                        </li>
+                    </ul>
+                </div>
 
 
-                <div>© Alliantum GmbH.</div>
+
             </div>
 
         </footer>
