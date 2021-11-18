@@ -28,21 +28,39 @@ export function WorkWithUs() {
                 <h1 className="font-title">Want to work with us?</h1>
                 <AnchorLink className="btn btn-primary" to={"/#jobs-table"} >See open processes</AnchorLink>
             </div>
+            {/* <div> */}
             <div className="absolute">
-                {
-                    firstLinePhotos.map((employee, index) => {
-                        return (
-                            <EmployeePhoto className="mr-2 mb-2" key={index} photo={employee.photo} />
-                        )
-                    })
-                }
-                {
-                    secondLinePhotos.map((employee, index) => {
-                        return (
-                            <EmployeePhoto className="mr-2 mb-2" key={index} photo={employee.photo} />
-                        )
-                    })
-                }
+
+                <div  >
+                    {
+                        firstLinePhotos.map((employee, index) => {
+                            return (
+                                <div>
+                                    <EmployeePhoto className="mr-2 mb-2" key={index} photo={employee.photo} />
+                                    <div>{employee.firstName}</div>
+                                    <div>{employee.surname}</div>
+                                    <div>{employee.departmentName}</div>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
+                <div>
+                    {
+                        secondLinePhotos.map((employee, index) => {
+                            return (
+                                <div>
+                                    <EmployeePhoto className="mr-2 mb-2" key={index} photo={employee.photo} />
+                                    <div>{employee.firstName}</div>
+                                    <div>{employee.surname}</div>
+                                    <div>{employee.departmentName}</div>
+                                </div>
+
+                            )
+                        })
+                    }
+                </div>
+
 
                 <AnchorLink to={"/the-team"} >Meet your future team</AnchorLink>
             </div>
