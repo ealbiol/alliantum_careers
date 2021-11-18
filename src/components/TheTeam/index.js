@@ -1,8 +1,7 @@
 import * as React from "react"
 import { AnchorLink } from "gatsby-plugin-anchor-links";
-import EmployeePhoto from "../EmployeePhoto/index"
 import { getAllEmployees } from "../../data/data"
-
+import { EmployeesGallery } from "../EmployeesGallery";
 
 export function TheTeam() {
     const [employees, setEmployees] = React.useState([])
@@ -41,41 +40,7 @@ export function TheTeam() {
             </div>
 
 
-
-            <div className="hero-header__back">
-                <div className="hero-back-content">
-                    <div className="hero-faces-row mb-2" >
-                        {
-                            firstLinePhotos.map((employee, index) => {
-                                return (
-                                    <div className="hero-faces-row__item" >
-                                        <EmployeePhoto className="mr-2 mb-2" key={index} photo={employee.photo} />
-                                        <div className="hero-item-info" >
-                                            <span className="block" >{employee.firstName}{" "}{employee.surname}</span>
-                                            <span className="block" >{employee.departmentName}</span>
-                                        </div>
-                                    </div>
-                                )
-                            })
-                        }
-                    </div>
-                    <div className="hero-faces-row mb-2" >
-                        {
-                            secondLinePhotos.map((employee, index) => {
-                                return (
-                                    <div className="hero-faces-row__item" >
-                                        <EmployeePhoto className="mr-2 mb-2" key={index} photo={employee.photo} />
-                                        <div className="hero-item-info" >
-                                            <span className="block" >{employee.firstName}{" "}{employee.surname}</span>
-                                            <span className="block" >{employee.departmentName}</span>
-                                        </div>
-                                    </div>
-                                )
-                            })
-                        }
-                    </div>
-                </div>
-            </div>
+            <EmployeesGallery />
 
 
         </div>
