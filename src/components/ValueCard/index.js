@@ -1,10 +1,7 @@
 import * as React from "react"
 import { ValuePhoto } from "../ValuePhoto"
-
 export function ValueCard({ value }) {
-
     console.log("Value inside ValueCard:--->", value);
-
     return (
         value ?
             <div className="w-6/12">
@@ -19,6 +16,4 @@ export function ValueCard({ value }) {
             :
             null
     )
-
-
 }

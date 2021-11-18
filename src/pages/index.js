@@ -97,7 +97,7 @@ function IndexPage() {
         </div>
 
         {/* ------------> Our Values */}
-        <div id="our-values" >
+        <div id="our-values" className="bg-loblolly-400 py-6" >
           <OurValuesSection />
         </div>
       </div>

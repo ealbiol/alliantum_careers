@@ -434,7 +434,7 @@ export function GoogleMaps() {
                 }
 
             </GoogleMap>
-            <div className="container-main">
+            <div className="container-main -mt-6">
                 <div className="flex justify-center" >
                     {
                         addressUnite.map((address, index) => {

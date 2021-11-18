@@ -16,15 +16,27 @@ body {
 }
 
 .btn-primary {
-    @apply bg-cornflower-blue-600 text-white;
+    @apply bg-cornflower-blue text-white;
 }
 
 .btn-black {
     @apply bg-black text-white;
 }
 
+.btn-white {
+    @apply bg-white text-black;
+}
+
 .btn-outline {
-    @apply border-2 border-cornflower-blue-600 text-cornflower-blue-600;
+    @apply border-2 border-cornflower-blue text-cornflower-blue;
+}
+
+.btn-icon {
+    display: flex;
+}
+
+.btn-icon span:first-child{
+    margin-right: 12px;
 }
 
 .pretitle {
@@ -48,12 +60,13 @@ body {
 }
 
 .card-menu {
-    @apply rounded-lg border border-loblolly-800;
+    @apply rounded-xl border border-white;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .card-menu > li {
-    border-bottom: solid 1px inherit;
-    @apply border-b-0 border-loblolly-800;
+    border-bottom: solid 1px white;
     margin: 0!important;
 }
 
