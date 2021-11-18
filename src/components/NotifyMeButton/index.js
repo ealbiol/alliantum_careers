@@ -66,7 +66,7 @@ export function NotifyMeButton() {
     return (
         <div>
             <button
-                className="btn btn-outline"
+                className="btn btn-outline btn-icon"
                 onClick={handleBoolean}
             >
                 <span><IconBell /></span>
