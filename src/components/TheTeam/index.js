@@ -2,6 +2,8 @@ import * as React from "react"
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import EmployeePhoto from "../EmployeePhoto/index"
 import { getAllEmployees } from "../../data/data"
+
+
 export function TheTeam() {
     const [employees, setEmployees] = React.useState([])
     React.useEffect(() => {
@@ -9,6 +11,10 @@ export function TheTeam() {
             setEmployees(result)
         })
     }, [])
+
+    const firstLinePhotos = employees.slice(0, 8)
+    const secondLinePhotos = employees.slice(8, 16);
+
     return (
         <div>
             <div>
@@ -33,43 +39,45 @@ export function TheTeam() {
             <div className="flex justify-center">
                 <span className="title text-xl text-center">Don’t they<br />look happy?</span>
             </div>
-            <div>
-                <div className="slide-employees">
-                    <div width="100%" direction="left" height="600px">
+
+
+
+            <div className="hero-header__back">
+                <div className="hero-back-content">
+                    <div className="hero-faces-row mb-2" >
                         {
-                            employees.map((employee, index) => {
+                            firstLinePhotos.map((employee, index) => {
                                 return (
-                                    <EmployeePhoto className="rounded-md w-px-230 mr-2 mb-2" key={index} photo={employee.photo} />
+                                    <div className="hero-faces-row__item" >
+                                        <EmployeePhoto className="mr-2 mb-2" key={index} photo={employee.photo} />
+                                        <div className="hero-item-info" >
+                                            <span className="block" >{employee.firstName}{" "}{employee.surname}</span>
+                                            <span className="block" >{employee.departmentName}</span>
+                                        </div>
+                                    </div>
                                 )
                             })
                         }
                     </div>
-                    <div className="marquee-wrapper">
-                        <div className="">
-                            <div className="marquee-block">
-                                <div className="marquee-inner to-left">
-                                    <span>
-                                        <div width="100%" direction="left" height="600px">
-                                            {
-                                                employees.map((employee, index) => {
-                                                    return (
-                                                        <EmployeePhoto className="rounded-md w-px-230 mr-2 mb-2" key={index} photo={employee.photo} />
-                                                    )
-                                                })
-                                            }
+                    <div className="hero-faces-row mb-2" >
+                        {
+                            secondLinePhotos.map((employee, index) => {
+                                return (
+                                    <div className="hero-faces-row__item" >
+                                        <EmployeePhoto className="mr-2 mb-2" key={index} photo={employee.photo} />
+                                        <div className="hero-item-info" >
+                                            <span className="block" >{employee.firstName}{" "}{employee.surname}</span>
+                                            <span className="block" >{employee.departmentName}</span>
                                         </div>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
+                                    </div>
+                                )
+                            })
+                        }
                     </div>
                 </div>
-                <div>Meet your future team</div>
-                <div className="card-bg bg-festival w-3/12 mx-auto">
-                    <span className="title text-md">You could be<br />one of them</span>
-                    <AnchorLink className="btn btn-black mt-4" to="/#jobs-table" >See open processes</AnchorLink>
-                </div>
             </div>
+
+
         </div>
     )
 }
