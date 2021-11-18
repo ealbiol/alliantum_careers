@@ -1,5 +1,6 @@
 import * as React from "react"
 import Layout from "../components/Layout"
+import { StaticImage } from "gatsby-plugin-image"
 
 function Test() {
     return (
@@ -41,18 +42,53 @@ function Test() {
                 </div>
                 <div className="hero-header__back">
                     <div className="hero-back-content">
-                        <div className="flex">
-                            <div>
-                                <img className="rounded" src="../images/employees-photos/CarlosMayo.jpg" alt="Carlos" />
+                        <div className="hero-faces-row mb-2">
+
+                            <div className="hero-faces-row__item">
+                                <StaticImage
+                                    className="hero-item-face"
+                                    src="../images/employees-photos/CarlosMayo.jpg"
+                                    alt="Carlos"
+                                    placeholder="blurred"
+                                    layout="fixed"
+                                    width="280"
+                                />
+                                <div className="hero-item-info">
+                                    <span className="block">Antxonio Felipez</span>
+                                    <span className="block">Desatascador de humanos</span>
+                                </div>
                             </div>
-                            <div>2</div>
-                            <div>3</div>
-                            <div>4</div>
-                            <div>5</div>
-                            <div>6</div>
-                            <div>7</div>
-                            <div>8</div>
-                            <div>9</div>
+
+                            <div className="hero-faces-row__item">
+                                <StaticImage
+                                    className="hero-item-face"
+                                    src="../images/employees-photos/CarlosMayo.jpg"
+                                    alt="Carlos"
+                                    placeholder="blurred"
+                                    layout="fixed"
+                                    width="280"
+                                />
+                                <div className="hero-item-info">
+                                    <span className="block">Antxonio Felipez</span>
+                                    <span className="block">Desatascador de humanos</span>
+                                </div>
+                            </div>
+
+                            <div className="hero-faces-row__item">
+                                <StaticImage
+                                    className="hero-item-face"
+                                    src="../images/employees-photos/CarlosMayo.jpg"
+                                    alt="Carlos"
+                                    placeholder="blurred"
+                                    layout="fixed"
+                                    width="280"
+                                />
+                                <div className="hero-item-info">
+                                    <span className="block">Antxonio Felipez</span>
+                                    <span className="block">Desatascador de humanos</span>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>

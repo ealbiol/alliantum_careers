@@ -61,6 +61,8 @@ body {
     border-bottom: none;
 }
 
+
+/* ------- OUR VALUES ------- */
 .ourvalues {
     background-color: #003BF9;
     position: relative;
@@ -89,7 +91,7 @@ body {
 }
 
 
-
+/* ------- HERO HEADER ------- */
 .hero-header {
     position: relative;
     width: 100%;
@@ -113,76 +115,44 @@ body {
     height: 80vh;
 }
 
-.hero-header__back {
-    background-color: blue;
+.hero-header__back {}
+
+.hero-back-content {}
+
+
+/* ------- HERO HEADER FACES ------- */
+.hero-faces-row {
+    display: flex;
 }
 
-.hero-back-content {
-
+.hero-item-face {
+    max-width: 280px;
+    width: 280px;
 }
 
-
-
-.marquee-wrapper{
-    text-align:center;
-  }
-
-.marquee-wrapper .container{
-    overflow:hidden;
-}
-.marquee-inner span{
-    float:left;
-    width:50%;
-}
-
-  .marquee-wrapper .marquee-block{
-    --total-marquee-items:17;
-    height: 600px;
-    width: calc(100% * (var(--total-marquee-items)));
-    overflow: hidden;
-    box-sizing: border-box;
-    position: relative;
-    margin: 20px auto;
-    padding: 30px 0;
-  }
-  .marquee-inner{
-    display: block;
-    width: 200%;
+.hero-item-info {
+    opacity: 0;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+    color: white;
+    padding: 16px;
+    font-size: 14px;
     position: absolute;
-  }
-  .marquee-inner p{
-    font-weight: 800;
-    font-size: 30px;
-    font-family: cursive;
-  }
-  .marquee-inner.to-left{
-    animation: marqueeLeft 25s linear infinite;
-  }
-  .marquee-inner.to-right{
-    animation: marqueeRight 25s linear infinite;
-  }
-  .marquee-item{
-    width: 230px;
-    height: auto;
-    display: inline-block;
-    margin: 0 10px;
-    float: left;
-    transition: all .2s ease-out;
-    background:#00cc00;
-  }
-  @keyframes marqueeLeft{
-    0% {
-      left: 0;
+    bottom: 0;
+    width: 100%;
+    line-height: 20px;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.hero-faces-row__item {
+    position: relative;
+    overflow: hidden;
+    @apply rounded-lg mr-2;
+}
+
+.hero-faces-row__item:hover {
+
+    .hero-item-info {
+        opacity: 1;
     }
-    100% {
-      left: -100%;
-    }
-  }
-  @keyframes marqueeRight{
-    0% { 
-      left: -100%; 
-    }
-    100% {
-     left: 0; 
-    }
-  }
+}
