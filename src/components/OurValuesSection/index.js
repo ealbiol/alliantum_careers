@@ -17,11 +17,11 @@ export function OurValuesSection() {
     return (
         <div>
             <div className="container-main">
-                <devicePixelRatio>
+                <div>
                     <OurValuesMenu
                         allOurValues={allOurValues}
                     />
-                </devicePixelRatio>
+                </div>
 
             </div>
             <div className="card-bg mt-6 bg-cornflower-blue w-3/12 mx-auto">
