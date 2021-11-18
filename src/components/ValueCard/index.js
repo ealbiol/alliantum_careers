@@ -18,7 +18,6 @@ export function ValueCard({ value }) {
             </div>
             :
             null
-
     )
 
 }
