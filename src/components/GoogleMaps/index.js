@@ -53,7 +53,7 @@ export function GoogleMaps() {
             <GoogleMap
                 mapContainerStyle={containerStyle}
                 center={center}
-                zoom={2.5}
+                zoom={3.5}
                 options={{
                     zoomControl: false,
                     mapTypeControl: false,
