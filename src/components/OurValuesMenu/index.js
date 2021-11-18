@@ -6,11 +6,8 @@ import ArrowRight from "../../images/values-photos/arrow-right.svg"
 export function OurValuesMenu({ allOurValues }) {
 
     const [showValueCard, setShowValueCard] = React.useState(1)
-    // const handleValueIndex = (index) => setShowValueCard(index)
 
     console.log("showValueCard:---> ", showValueCard);
-
-
     console.log("allOurValues:--->", allOurValues);
 
     return (
@@ -42,11 +39,6 @@ export function OurValuesMenu({ allOurValues }) {
                         </div>
 
                     </div>
-                    {/* <div className="w-6/12">
-                                    {
-                                        showValueCard === value.id ? <ValueCard value={value} /> : null
-                                    }
-                                </div> */}
                 </div>
             </div >
 

@@ -24,8 +24,8 @@ export function EmployeesGallery() {
                     {
                         firstLinePhotos.map((employee, index) => {
                             return (
-                                <div className="hero-faces-row__item" >
-                                    <EmployeePhoto className="mr-2 mb-2" key={index} photo={employee.photo} />
+                                <div key={index} className="hero-faces-row__item" >
+                                    <EmployeePhoto className="mr-2 mb-2" photo={employee.photo} />
                                     <div className="hero-item-info" >
                                         <span className="block" >{employee.firstName}{" "}{employee.surname}</span>
                                         <span className="block" >{employee.departmentName}</span>
@@ -39,8 +39,8 @@ export function EmployeesGallery() {
                     {
                         secondLinePhotos.map((employee, index) => {
                             return (
-                                <div className="hero-faces-row__item" >
-                                    <EmployeePhoto className="mr-2 mb-2" key={index} photo={employee.photo} />
+                                <div key={index} className="hero-faces-row__item" >
+                                    <EmployeePhoto className="mr-2 mb-2" photo={employee.photo} />
                                     <div className="hero-item-info" >
                                         <span className="block" >{employee.firstName}{" "}{employee.surname}</span>
                                         <span className="block" >{employee.departmentName}</span>
