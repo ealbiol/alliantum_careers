@@ -1,6 +1,10 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
+    corePlugins: {
+        borderOpacity: false,
+        textOpacity: false,
+    },
     purge: [],
     presets: [],
     darkMode: "class", // or 'media' or 'class'
@@ -195,7 +199,7 @@ module.exports = {
             ...theme('colors'),
             DEFAULT: theme('colors.gray.200', 'currentColor'),
         }),
-        borderOpacity: (theme) => theme('opacity'),
+        borderOpacity: (theme) => theme('none'),
         borderRadius: {
             none: '0px',
             sm: '0.125rem',

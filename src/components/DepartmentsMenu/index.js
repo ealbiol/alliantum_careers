@@ -21,9 +21,9 @@ export function DepartmentsMenu({ allDepartments, clickedDep, setClickedDep }) {
                         <button
                             style={{
                                 backgroundColor: department === clickedDep ? "#D7DCE1" : "",
-                                color: department === clickedDep ? "white" : ""
+                                color: department === clickedDep ? "black" : ""
                             }}
-                            className="text-xs py-1 px-3 border border-loblolly-600 rounded-xl mr-1"
+                            className="text-xs py-1 px-3 border border-loblolly rounded-xl mr-1"
                             onClick={() => filterDepartment(department)}
                             key={index} >
                             {department}

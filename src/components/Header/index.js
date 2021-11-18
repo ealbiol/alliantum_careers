@@ -33,6 +33,7 @@ export default function Header({ siteTitle }) {
                     <AnchorLink
                       to={unite.anchor}
                       style={{ color: `white`, textDecoration: `none` }}
+                      className="ml-3"
                     >
                       {unite.sectionName}
                     </AnchorLink>

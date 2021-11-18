@@ -53,10 +53,10 @@ export function AllJobOffersList() {
                     <button
                         style={{
                             backgroundColor: clickedDepartment ? "" : "#D7DCE1",
-                            color: clickedDepartment ? "" : "white"
+                            color: clickedDepartment ? "" : "black"
 
                         }}
-                        className="text-xs py-1 px-3 border border-loblolly-600 rounded-xl mr-1"
+                        className="text-xs py-1 px-3 border border-loblolly rounded-xl mr-1"
                         onClick={() => (allRoles())} >
                         All roles
                     </button>
