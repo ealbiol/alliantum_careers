@@ -1,14 +1,10 @@
 import * as React from "react"
 import { AnchorLink } from "gatsby-plugin-anchor-links";
-import EmployeePhoto from "../EmployeePhoto/index"
-import { getAllEmployees } from "../../data/data"
+import { EmployeesGallery } from "../EmployeesGallery";
+
 export function TheTeam() {
-    const [employees, setEmployees] = React.useState([])
-    React.useEffect(() => {
-        getAllEmployees().then((result) => {
-            setEmployees(result)
-        })
-    }, [])
+
+
     return (
         <div>
             <div>
@@ -33,43 +29,11 @@ export function TheTeam() {
             <div className="flex justify-center">
                 <span className="title text-xl text-center">Don’t they<br />look happy?</span>
             </div>
-            <div>
-                <div className="slide-employees">
-                    <div width="100%" direction="left" height="600px">
-                        {
-                            employees.map((employee, index) => {
-                                return (
-                                    <EmployeePhoto className="rounded-md w-px-230 mr-2 mb-2" key={index} photo={employee.photo} />
-                                )
-                            })
-                        }
-                    </div>
-                    <div className="marquee-wrapper">
-                        <div className="">
-                            <div className="marquee-block">
-                                <div className="marquee-inner to-left">
-                                    <span>
-                                        <div width="100%" direction="left" height="600px">
-                                            {
-                                                employees.map((employee, index) => {
-                                                    return (
-                                                        <EmployeePhoto className="rounded-md w-px-230 mr-2 mb-2" key={index} photo={employee.photo} />
-                                                    )
-                                                })
-                                            }
-                                        </div>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>Meet your future team</div>
-                <div className="card-bg bg-festival w-3/12 mx-auto">
-                    <span className="title text-md">You could be<br />one of them</span>
-                    <AnchorLink className="btn btn-black mt-4" to="/#jobs-table" >See open processes</AnchorLink>
-                </div>
-            </div>
+
+
+            <EmployeesGallery />
+
+
         </div>
     )
 }

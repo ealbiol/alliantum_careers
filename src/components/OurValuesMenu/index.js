@@ -6,11 +6,8 @@ import ArrowRight from "../../images/values-photos/arrow-right.svg"
 export function OurValuesMenu({ allOurValues }) {
 
     const [showValueCard, setShowValueCard] = React.useState(1)
-    // const handleValueIndex = (index) => setShowValueCard(index)
 
     console.log("showValueCard:---> ", showValueCard);
-
-
     console.log("allOurValues:--->", allOurValues);
 
     return (
@@ -38,6 +35,12 @@ export function OurValuesMenu({ allOurValues }) {
                             }
                         </ul>
                     </div>
+<<<<<<< HEAD
+=======
+                </div>
+            </div >
+
+>>>>>>> 596054f8535302a669f6de421c1f50a1f8806df3
 
                 </div>
                 <div className="w-6/12 w-full ml-2 bg-white rounded-xl overflow-hidden">
