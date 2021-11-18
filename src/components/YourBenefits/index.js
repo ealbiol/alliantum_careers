@@ -38,7 +38,7 @@ export function YourBenefits() {
                                 <div>{icon && icon.component}</div>
                                 <div className="flex flex-col mb-1 pl-3">
                                     <div className="h-px-80 flex items-center">
-                                        <h4 className="mb-0 text-electric-violet-600 w-4/12">{unite?.title?.toUpperCase()}</h4>
+                                        <h4 className="mb-0 text-electric-violet w-4/12">{unite?.title?.toUpperCase()}</h4>
                                     </div>
                                     <div className="pr-6">{unite?.content}</div>
                                 </div>

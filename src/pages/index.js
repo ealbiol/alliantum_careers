@@ -52,14 +52,14 @@ function IndexPage() {
 
         {/* ------------> Job Offers Table */}
         <div id="jobs-table" className="w-full lg:w-container-sm mx-auto">
-          <span className="pretitle">What we need right now</span>
+          <span className="pretitle text-loblolly-600">What we need right now</span>
           <h3 className="title text-md w-7/12">We do Business Digitalisation and New-era Marketing</h3>
           <AllJobOffersList />
         </div>
 
         {/* ------------> Your Benefits */}
         <div className="container mx-auto my-6">
-          <span className="pretitle">Your benefits</span>
+          <span className="pretitle text-electric-violet">Your benefits</span>
           <h3 className="title text-md w-6/12">Work in an international company, with a happy team, in a great office</h3>
           <div id="your-benefits">
             <YourBenefits />

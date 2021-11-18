@@ -34,7 +34,7 @@ export function OfficeCard({ addressUnite }) {
     // }, [])
 
     return isLoaded ? (
-        <div className="w-4/12 px-2">
+        <div className="w-4/12 px-2 mb-3">
             <div className="border border-loblolly-600 rounded-lg overflow-hidden">
                 <div>
                     <GoogleMap
@@ -231,10 +231,10 @@ export function OfficeCard({ addressUnite }) {
                     >
                     </GoogleMap>
                 </div>
-                <div className="pt-3 mb-3 p-3">
-                    <span className="pretitle">{addressUnite.city.toUpperCase()}</span>
-                    <h3>{addressUnite.country.toUpperCase()}</h3>
-                    <span>{addressUnite.address}</span>
+                <div className="p-3">
+                    <span className="pretitle text-chestnut-rose">{addressUnite.city.toUpperCase()}</span>
+                    <h3 className="text-md mb-0">{addressUnite.country.toUpperCase()}</h3>
+                    <span className="text-xs">{addressUnite.address}</span>
                 </div>
             </div>
         </div>

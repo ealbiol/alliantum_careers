@@ -335,7 +335,7 @@ module.exports = {
             sm: ['1.556rem', { lineHeight: '140%' }],
             md: ['1.626rem;', { lineHeight: '140%' }],
             base: ['1rem', { lineHeight: '140%' }],
-            lg: ['5.222rem', { lineHeight: '140%' }],
+            lg: ['5.222rem', { lineHeight: '120%' }],
             xl: ['8.444rem', { lineHeight: '240%' }],
         },
         fontWeight: {
