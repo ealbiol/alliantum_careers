@@ -87,15 +87,18 @@ export function AllJobOffersList() {
                 }
             </div>
 
+            <div>First Button</div>
             <NotifyMeButton
             />
 
             <br />
 
+            <div>Checkboxes button</div>
             <NotifyMeButtonCheckBox />
 
             <br />
 
+            <div>Multi-Select Button</div>
             <NotifyMeButtonReactSelect />
 
         </div>
