@@ -1,24 +1,14 @@
 import * as React from "react"
 import Select from 'react-select'
-// import { GetAllDepartments } from "../../data/data";
 import { allDepartmentsReactSelect } from "../../data/data"
 import IconBell from "../../images/notify-me-photos/Icon1.svg"
 
 export function NotifyMeButtonReactSelect() {
 
-    // const departmentsLists = [
-    //     { name: "IT", id: 4, description: "IT Department Description." },
-    //     { name: "HR", id: 5, description: "HR Department Description." },
-    //     { name: "Business System", id: 6, description: "Business System Department Description." },
-    //     { name: "Digital Marketing", id: 7, description: "Digital Marketing Department Description." },
-    //     { name: "All Positions", id: 10, description: "All Positions Description." },
-    // ]
 
-
-    // const allDepartments = GetAllDepartments();
 
     const [userEmail, setUserEmail] = React.useState("")
-    const [userDepartment, setUserDepartment] = React.useState(null)
+    const [userDepartment, setUserDepartment] = React.useState([0])
     const [showNotifySubmit, setShowNotifySubmit] = React.useState(false)
 
 
@@ -27,8 +17,6 @@ export function NotifyMeButtonReactSelect() {
 
     function handleUserEmail(e) {
         e.preventDefault();
-        // console.log("User email:--->", userEmail);
-        // console.log("User department:--->", userDepartment);
 
         const options = {
             method: "POST",
@@ -37,7 +25,6 @@ export function NotifyMeButtonReactSelect() {
                 "Content-Type": "application/json",
                 "api-key": process.env.GATSBY_SENDINBLUE_API_KEY,
             },
-            // body: JSON.stringify({ "email": userEmail })
             body: JSON.stringify({ "email": userEmail, "listIds": userDepartment })
 
         };
@@ -52,13 +39,9 @@ export function NotifyMeButtonReactSelect() {
     }
 
 
-    // const matchingDepartment = departmentsLists.find(department => userDepartment === department.name)
-    // const departmentId = [matchingDepartment?.id]
-
     const handleBoolean = () => setShowNotifySubmit(!showNotifySubmit)
 
     const options = allDepartmentsReactSelect
-
 
     function handleChangeDepartment(e) {
         console.log("e.target.value:--->", e);
@@ -90,7 +73,7 @@ export function NotifyMeButtonReactSelect() {
                     />
                     <div >Departments:</div>
                     <Select
-                        // defaultValue={[allDepartmentsReactSelect[2]]}
+                        defaultValue={[allDepartmentsReactSelect[0]]}
                         isMulti
                         name="positions"
                         options={options}
@@ -100,26 +83,32 @@ export function NotifyMeButtonReactSelect() {
                     />
 
 
-                    <span>
-                        {/* {
-                            departmentsLists.find(department => userDepartment === department.name)?.description
-                        } */}
-                    </span>
+                    {
+                        userDepartment.length > 0 ?
+                            <button type="submit" style={{ color: `green` }} >
+                                <span><IconBell /></span>
+                                <span>Submit</span>
+                            </button>
+                            :
+                            <button type="submit" style={{ color: `gray` }} disabled>
+                                <span><IconBell /></span>
+                                <span>Submit</span>
+                            </button>
+                    }
 
                     {/* {userDepartment &&
+                        <button type="submit" style={{ color: `green` }} >
+                            <span><IconBell /></span>
+                            <span>Submit</span>
+                        </button>
+                    }
+
+                    {userDepartment.length === 0 &&
                         <button type="submit" style={{ color: `gray` }} disabled>
                             <span><IconBell /></span>
                             <span>Submit</span>
                         </button>
                     } */}
-
-                    {/* {userEmail && */}
-                    <button type="submit" style={{ color: `green` }} >
-                        <span><IconBell /></span>
-                        <span>Submit</span>
-                    </button>
-                    {/* } */}
-
 
                 </form>
 

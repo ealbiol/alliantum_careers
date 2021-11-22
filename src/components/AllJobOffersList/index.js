@@ -94,6 +94,8 @@ export function AllJobOffersList() {
 
             <NotifyMeButtonCheckBox />
 
+            <br />
+
             <NotifyMeButtonReactSelect />
 
         </div>
