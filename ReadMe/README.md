@@ -61,20 +61,23 @@ This site uses the following external resources:
 
 ## 4.  **Setting Sendinblue Lists.**
 
-When users fill the form to receive new job offers they have to choose the department they are interested in. The 'Lists' Sendinblue's functionality is set so that the contact details are sent in different office departments list.
+When users fill the form to receive new job offers they have to choose the job positions they are interested in from a multi-select menu. The 'Lists' Sendinblue's functionality is set so that the contact details are sent in different job position lists.
 
   <img alt="Sendinblue Lists Image" src="lists.png" />
 
-The departments list can be found in the component 'NotifyMeButton'.
+The job positions list list can be found in data.js:
 
 ```    
-const departmentsLists = [
-        { name: "IT", id: 4 },
-        { name: "HR", id: 5 },
-        { name: "Business System", id: 6 },
-        { name: "Digital Marketing", id: 7 }
-    ]
+export const allDepartmentsReactSelect = [
+    { id: 10, value: "All Positions", label: "All Positions" },
+    { id: 7, value: "Digital Marketing", label: "Digital Marketing" },
+    { id: 6, value: "Business Systems", label: "Business Systems" },
+    { id: 5, value: "HR", label: "HR" },
+    { id: 4, value: "IT", label: "IT" }
+]
 ```
+
+The job position id must be equal to the one given by sendinblue to that specific job position list.
 
 ## 5.  **Receiving Job Applications.**
 

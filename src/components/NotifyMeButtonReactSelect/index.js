@@ -1,6 +1,6 @@
 import * as React from "react"
 import Select from 'react-select'
-import { allDepartmentsReactSelect } from "../../data/data"
+import { allPositionsReactSelect } from "../../data/data"
 import IconBell from "../../images/notify-me-photos/Icon1.svg"
 
 export function NotifyMeButtonReactSelect() {
@@ -8,8 +8,9 @@ export function NotifyMeButtonReactSelect() {
 
 
     const [userEmail, setUserEmail] = React.useState("")
-    const [userDepartment, setUserDepartment] = React.useState([0])
+    const [userPositions, setUserPositions] = React.useState([0])
     const [showNotifySubmit, setShowNotifySubmit] = React.useState(false)
+    const [submitMessage, setSubmitMessage] = React.useState(false)
 
 
     const URL = "https://api.sendinblue.com/v3/contacts"
@@ -18,6 +19,8 @@ export function NotifyMeButtonReactSelect() {
     function handleUserEmail(e) {
         e.preventDefault();
 
+        setSubmitMessage(!submitMessage)
+
         const options = {
             method: "POST",
             headers: {
@@ -25,7 +28,7 @@ export function NotifyMeButtonReactSelect() {
                 "Content-Type": "application/json",
                 "api-key": process.env.GATSBY_SENDINBLUE_API_KEY,
             },
-            body: JSON.stringify({ "email": userEmail, "listIds": userDepartment })
+            body: JSON.stringify({ "email": userEmail, "listIds": userPositions })
 
         };
 
@@ -41,14 +44,14 @@ export function NotifyMeButtonReactSelect() {
 
     const handleBoolean = () => setShowNotifySubmit(!showNotifySubmit)
 
-    const options = allDepartmentsReactSelect
+    const options = allPositionsReactSelect
 
     function handleChangeDepartment(e) {
         console.log("e.target.value:--->", e);
-        setUserDepartment(e.map(department => department.id))
+        setUserPositions(e.map(department => department.id))
     }
 
-    console.log("userDepartment:--->", userDepartment);
+    console.log("userPositions:--->", userPositions);
 
     return (
         <div>
@@ -62,7 +65,7 @@ export function NotifyMeButtonReactSelect() {
 
             {showNotifySubmit &&
 
-                <form onSubmit={handleUserEmail} style={{ border: "2px solid rebeccapurple" }} >
+                <form onSubmit={handleUserEmail} style={{ border: "2px solid rebeccapurple" }}  >
                     <label>Your email:{" "}</label>
                     <input
                         type="email"
@@ -71,17 +74,17 @@ export function NotifyMeButtonReactSelect() {
                         onChange={(e) => setUserEmail(e.currentTarget.value)}
                         required
                     />
-                    <div >Departments:</div>
+                    <div >Job Positions:</div>
 
                     {
-                        userDepartment.length > 0 ?
+                        userPositions.length > 0 ?
                             ""
                             :
                             <div style={{ color: "red" }} ><i>Required Field</i></div>
                     }
 
                     <Select
-                        defaultValue={[allDepartmentsReactSelect[0]]}
+                        defaultValue={[allPositionsReactSelect[0]]}
                         isMulti
                         name="positions"
                         options={options}
@@ -92,7 +95,7 @@ export function NotifyMeButtonReactSelect() {
 
 
                     {
-                        userDepartment.length > 0 ?
+                        userPositions.length > 0 ?
                             <button type="submit" style={{ color: `green` }} >
                                 <span><IconBell /></span>
                                 <span>Submit</span>
@@ -104,19 +107,12 @@ export function NotifyMeButtonReactSelect() {
                             </button>
                     }
 
-                    {/* {userDepartment &&
-                        <button type="submit" style={{ color: `green` }} >
-                            <span><IconBell /></span>
-                            <span>Submit</span>
-                        </button>
+                    {
+                        submitMessage ?
+                            <div style={{ color: "green" }} >Info received!</div>
+                            :
+                            ""
                     }
-
-                    {userDepartment.length === 0 &&
-                        <button type="submit" style={{ color: `gray` }} disabled>
-                            <span><IconBell /></span>
-                            <span>Submit</span>
-                        </button>
-                    } */}
 
                 </form>
 
