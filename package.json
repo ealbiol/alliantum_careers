@@ -37,6 +37,7 @@
     "react-helmet": "^6.1.0",
     "react-parallax": "^3.3.0",
     "react-scroll-parallax": "^2.4.0",
+    "react-select": "^5.2.1",
     "sass": "^1.43.4",
     "styled-components": "^5.3.3",
     "styled-reset": "^4.3.4"

@@ -157,3 +157,16 @@ export async function getAllOurValues() {
 }
 
 //-----------------------------------------------------//
+
+export const allDepartmentsReactSelect = [
+    { id: 7, value: "Digital Marketing", label: "Digital Marketing" },
+    { id: 6, value: "Business Systems", label: "Business Systems" },
+    { id: 5, value: "HR", label: "HR" },
+    { id: 4, value: "IT", label: "IT" },
+]
+
+export async function getAllDepartmentsReactSelect() {
+    return allDepartmentsReactSelect
+}
+
+//-----------------------------------------------------//

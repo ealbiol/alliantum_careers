@@ -4,6 +4,7 @@ import { NotifyMeButton } from "../NotifyMeButton"
 import { DepartmentsMenu } from "../DepartmentsMenu"
 import { GetAllDepartments } from "../../data/data"
 import { NotifyMeButtonCheckBox } from "../NotifyMeButtonCheckBox"
+import { NotifyMeButtonReactSelect } from "../NotifyMeButtonReactSelect"
 
 
 export function AllJobOffersList() {
@@ -92,6 +93,8 @@ export function AllJobOffersList() {
             <br />
 
             <NotifyMeButtonCheckBox />
+
+            <NotifyMeButtonReactSelect />
 
         </div>
     )
