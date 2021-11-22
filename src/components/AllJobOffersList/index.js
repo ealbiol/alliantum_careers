@@ -3,6 +3,8 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 import { NotifyMeButton } from "../NotifyMeButton"
 import { DepartmentsMenu } from "../DepartmentsMenu"
 import { GetAllDepartments } from "../../data/data"
+import { NotifyMeButtonCheckBox } from "../NotifyMeButtonCheckBox"
+
 
 export function AllJobOffersList() {
 
@@ -86,6 +88,10 @@ export function AllJobOffersList() {
 
             <NotifyMeButton
             />
+
+            <br />
+
+            <NotifyMeButtonCheckBox />
 
         </div>
     )

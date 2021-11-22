@@ -3,7 +3,7 @@ import * as React from "react"
 import { GetAllDepartments } from "../../data/data";
 import IconBell from "../../images/notify-me-photos/Icon1.svg"
 
-export function NotifyMeButton() {
+export function NotifyMeButtonCheckBox() {
 
     const departmentsLists = [
         { name: "IT", id: 4, description: "IT Department Description." },
@@ -84,20 +84,26 @@ export function NotifyMeButton() {
                         required
                     />
                     <div >Departments:</div>
-                    <select name="departments" id="departments" onChange={(e) => setUserDepartment(e.currentTarget.value)} >
-                        {
-                            allDepsWithoutManagement.map((department, index) => {
-                                return (
-                                    <option
-                                        key={index}
-                                        value={department}
-                                    >
-                                        {department}
-                                    </option>
-                                )
-                            })
-                        }
-                    </select>
+                    {/* <div name="departments" id="departments" onChange={(e) => setUserDepartment(e.currentTarget.value)} > */}
+                    <div>
+                        <ol>
+                            {
+                                allDepsWithoutManagement.map((department, index) => {
+                                    return (
+                                        <li
+                                            key={index}
+                                            value={department}
+                                            type="checkbox"
+                                        >
+                                            <input type="checkbox" onClick={(e) => setUserDepartment(department)} />
+                                            {department}
+                                        </li>
+                                    )
+                                })
+                            }
+                        </ol>
+
+                    </div>
 
                     <span>
                         {
@@ -122,8 +128,8 @@ export function NotifyMeButton() {
                 </form>
 
             }
-
-
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+            <label htmlFor="vehicle1"> I have a bike</label>
         </div>
     )
 }

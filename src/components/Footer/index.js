@@ -43,8 +43,8 @@ export default function Footer() {
                         {
                             footerUnite.map((unite, index) => {
                                 return (
-                                    <li>
-                                        <AnchorLink key={index} to={unite.anchor}>
+                                    <li key={index} >
+                                        <AnchorLink to={unite.anchor}>
                                             {unite.sectionName}
                                         </AnchorLink>
                                     </li>
