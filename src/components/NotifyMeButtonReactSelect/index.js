@@ -72,6 +72,14 @@ export function NotifyMeButtonReactSelect() {
                         required
                     />
                     <div >Departments:</div>
+
+                    {
+                        userDepartment.length > 0 ?
+                            ""
+                            :
+                            <div style={{ color: "red" }} ><i>Required Field</i></div>
+                    }
+
                     <Select
                         defaultValue={[allDepartmentsReactSelect[0]]}
                         isMulti
