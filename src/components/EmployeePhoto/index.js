@@ -23,6 +23,5 @@ export default function EmployeePhoto({ photo }) {
 
   return (
     <GatsbyImage className="rounded-lg" image={getImage(photoEmployee)} alt="Photo Employee" />
-
   )
 }

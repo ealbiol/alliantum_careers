@@ -12,7 +12,6 @@ import { TheTeam } from "../components/TheTeam"
 import { OurValuesSection } from "../components/OurValuesSection"
 import { WorkWithUs } from "../components/WorkWithUs"
 
-
 function IndexPage() {
 
   const data = useStaticQuery(graphql`
@@ -101,6 +100,7 @@ function IndexPage() {
           <OurValuesSection />
         </div>
       </div>
+
 
     </Layout>
   )

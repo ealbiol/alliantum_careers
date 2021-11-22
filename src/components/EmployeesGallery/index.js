@@ -3,6 +3,7 @@ import EmployeePhoto from "../EmployeePhoto";
 import { getAllEmployees } from "../../data/data"
 
 
+
 export function EmployeesGallery() {
 
     const [employees, setEmployees] = React.useState([])
@@ -18,8 +19,10 @@ export function EmployeesGallery() {
     const secondLinePhotos = employees.slice(8, 16);
 
     return (
+
         <div className="hero-header__back">
             <div className="hero-back-content">
+
                 <div className="hero-faces-row mb-2" >
                     {
                         firstLinePhotos.map((employee, index) => {
@@ -34,6 +37,8 @@ export function EmployeesGallery() {
                             )
                         })
                     }
+
+
                 </div>
                 <div className="hero-faces-row mb-2" >
                     {
@@ -51,6 +56,7 @@ export function EmployeesGallery() {
                     }
                 </div>
             </div>
+
         </div>
     )
 }

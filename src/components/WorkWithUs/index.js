@@ -3,6 +3,7 @@ import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { getAllEmployees } from "../../data/data"
 import { EmployeesGallery } from "../EmployeesGallery";
 
+
 export function WorkWithUs() {
 
     const [employees, setEmployees] = React.useState([])
@@ -34,6 +35,7 @@ export function WorkWithUs() {
             </div>
 
             <EmployeesGallery />
+
 
         </div>
     )
