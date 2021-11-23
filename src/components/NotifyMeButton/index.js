@@ -3,14 +3,14 @@ import Select from 'react-select'
 import { allPositionsReactSelect } from "../../data/data"
 import IconBell from "../../images/notify-me-photos/Icon1.svg"
 
-export function NotifyMeButton() {
+export function NotifyMeButton({ submitMessage, setSubmitMessage }) {
 
 
 
     const [userEmail, setUserEmail] = React.useState("")
     const [userPositions, setUserPositions] = React.useState([0])
     const [showNotifySubmit, setShowNotifySubmit] = React.useState(false)
-    const [submitMessage, setSubmitMessage] = React.useState(false)
+    // const [submitMessage, setSubmitMessage] = React.useState(false)
 
 
     const URL = "https://api.sendinblue.com/v3/contacts"
@@ -58,64 +58,80 @@ export function NotifyMeButton() {
 
     return (
         <div>
-            <button
-                className="btn btn-outline btn-icon"
-                onClick={handleBoolean}
-            >
-                <span><IconBell /></span>
-                <span> Notify me on new jobs</span>
-            </button>
+            {showNotifySubmit ?
+                <button
+                    className="btn btn-outline btn-icon"
+                    onClick={handleBoolean}
+                >X</button>
+                :
+                <button
+                    className="btn btn-outline btn-icon"
+                    onClick={handleBoolean}
+                >
+                    <span><IconBell /></span>
+                    <span> Notify me on new jobs</span>
+                </button>
+
+            }
+
 
             {showNotifySubmit &&
 
                 <form onSubmit={handleUserEmail} style={{ border: "2px solid rebeccapurple" }}  >
-                    <label>Your email:{" "}</label>
-                    <input
-                        type="email"
-                        name="Notify Me"
-                        placeholder="email"
-                        onChange={(e) => setUserEmail(e.currentTarget.value)}
-                        required
-                    />
-                    <div >Job Positions:</div>
+                    {submitMessage ?
+                        <div style={{ color: "green" }} >Email sent!</div>
+                        :
+                        <div>
+                            <label>Your email:{" "}</label>
+                            <input
+                                type="email"
+                                name="Notify Me"
+                                placeholder="email"
+                                onChange={(e) => setUserEmail(e.currentTarget.value)}
+                                required
+                            />
+                            <div >Job Positions:</div>
 
-                    {
-                        userPositions.length > 0 ?
-                            ""
-                            :
-                            <div style={{ color: "red" }} ><i>Required Field</i></div>
+                            {
+                                userPositions.length > 0 ?
+                                    ""
+                                    :
+                                    <div style={{ color: "red" }} ><i>Required Field</i></div>
+                            }
+
+                            <Select
+                                defaultValue={[allPositionsReactSelect[0]]}
+                                isMulti
+                                name="positions"
+                                options={options}
+                                className="basic-multi-select"
+                                classNamePrefix="select"
+                                onChange={handleChangeDepartment}
+                            />
+
+
+                            {
+                                userPositions.length > 0 ?
+                                    <button type="submit" style={{ color: `green` }} >
+                                        <span><IconBell /></span>
+                                        <span>Submit</span>
+                                    </button>
+                                    :
+                                    <button type="submit" style={{ color: `gray` }} disabled>
+                                        <span>Submit</span>
+                                    </button>
+                            }
+                        </div>
+
                     }
 
-                    <Select
-                        defaultValue={[allPositionsReactSelect[0]]}
-                        isMulti
-                        name="positions"
-                        options={options}
-                        className="basic-multi-select"
-                        classNamePrefix="select"
-                        onChange={handleChangeDepartment}
-                    />
 
-
-                    {
-                        userPositions.length > 0 ?
-                            <button type="submit" style={{ color: `green` }} >
-                                <span><IconBell /></span>
-                                <span>Submit</span>
-                            </button>
-                            :
-                            <button type="submit" style={{ color: `gray` }} disabled>
-                                <span><IconBell /></span>
-                                <span>Submit</span>
-                            </button>
-                    }
-
-                    {
+                    {/* {
                         submitMessage ?
-                            <div style={{ color: "green" }} >Info received!</div>
+                            <div style={{ color: "green" }} >Email sent!</div>
                             :
                             ""
-                    }
+                    } */}
 
                 </form>
 

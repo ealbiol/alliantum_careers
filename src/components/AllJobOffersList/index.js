@@ -32,6 +32,7 @@ export function AllJobOffersList() {
   `)
 
     const [clickedDepartment, setClickedDepartment] = React.useState(null)
+    const [submitMessage, setSubmitMessage] = React.useState(false)
 
 
     const jobOfferDetails = clickedDepartment
@@ -85,7 +86,7 @@ export function AllJobOffersList() {
                 }
             </div>
 
-            <NotifyMeButton />
+            <NotifyMeButton submitMessage={submitMessage} setSubmitMessage={setSubmitMessage} />
 
         </div>
     )
