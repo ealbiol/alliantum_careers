@@ -3,7 +3,7 @@ import Select from 'react-select'
 import { allPositionsReactSelect } from "../../data/data"
 import IconBell from "../../images/notify-me-photos/Icon1.svg"
 
-export function NotifyMeButtonReactSelect() {
+export function NotifyMeButton() {
 
 
 

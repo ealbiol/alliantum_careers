@@ -2,7 +2,7 @@ import * as React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { DepartmentsMenu } from "../DepartmentsMenu"
 import { GetAllDepartments } from "../../data/data"
-import { NotifyMeButtonReactSelect } from "../NotifyMeButtonReactSelect"
+import { NotifyMeButton } from "../NotifyMeButton"
 
 
 export function AllJobOffersList() {
@@ -85,7 +85,7 @@ export function AllJobOffersList() {
                 }
             </div>
 
-            <NotifyMeButtonReactSelect />
+            <NotifyMeButton />
 
         </div>
     )
