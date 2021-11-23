@@ -1,9 +1,7 @@
 import * as React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import { NotifyMeButton } from "../NotifyMeButton"
 import { DepartmentsMenu } from "../DepartmentsMenu"
 import { GetAllDepartments } from "../../data/data"
-import { NotifyMeButtonCheckBox } from "../NotifyMeButtonCheckBox"
 import { NotifyMeButtonReactSelect } from "../NotifyMeButtonReactSelect"
 
 
@@ -87,18 +85,6 @@ export function AllJobOffersList() {
                 }
             </div>
 
-            <div>First Button</div>
-            <NotifyMeButton
-            />
-
-            <br />
-
-            <div>Checkboxes button</div>
-            <NotifyMeButtonCheckBox />
-
-            <br />
-
-            <div>Multi-Select Button</div>
             <NotifyMeButtonReactSelect />
 
         </div>
