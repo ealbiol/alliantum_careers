@@ -10,7 +10,6 @@ export function NotifyMeButton({ submitMessage, setSubmitMessage }) {
     const [userEmail, setUserEmail] = React.useState("")
     const [userPositions, setUserPositions] = React.useState([0])
     const [showNotifySubmit, setShowNotifySubmit] = React.useState(false)
-    // const [submitMessage, setSubmitMessage] = React.useState(false)
 
 
     const URL = "https://api.sendinblue.com/v3/contacts"
@@ -36,7 +35,8 @@ export function NotifyMeButton({ submitMessage, setSubmitMessage }) {
             .then(data => {
                 console.log("Data:--->", data)
                 setSubmitMessage(true)
-                setTimeout(() => setSubmitMessage(false), 3000);
+                setShowNotifySubmit(false)
+                // setTimeout(() => setSubmitMessage(false), 3000);
             })
             .catch(err => console.error(err));
 
@@ -45,7 +45,10 @@ export function NotifyMeButton({ submitMessage, setSubmitMessage }) {
     }
 
 
-    const handleBoolean = () => setShowNotifySubmit(!showNotifySubmit)
+    const handleBoolean = () => {
+        setShowNotifySubmit(!showNotifySubmit)
+        setSubmitMessage(false)
+    }
 
     const options = allPositionsReactSelect
 
@@ -78,65 +81,54 @@ export function NotifyMeButton({ submitMessage, setSubmitMessage }) {
             {showNotifySubmit &&
 
                 <form onSubmit={handleUserEmail} style={{ border: "2px solid rebeccapurple" }}  >
-                    {submitMessage ?
-                        <div style={{ color: "green" }} >Email sent!</div>
-                        :
-                        <div>
-                            <label>Your email:{" "}</label>
-                            <input
-                                type="email"
-                                name="Notify Me"
-                                placeholder="email"
-                                onChange={(e) => setUserEmail(e.currentTarget.value)}
-                                required
-                            />
-                            <div >Job Positions:</div>
 
-                            {
-                                userPositions.length > 0 ?
-                                    ""
-                                    :
-                                    <div style={{ color: "red" }} ><i>Required Field</i></div>
-                            }
+                    <div>
+                        <label>Your email:{" "}</label>
+                        <input
+                            type="email"
+                            name="Notify Me"
+                            placeholder="email"
+                            onChange={(e) => setUserEmail(e.currentTarget.value)}
+                            required
+                        />
+                        <div >Job Positions:</div>
 
-                            <Select
-                                defaultValue={[allPositionsReactSelect[0]]}
-                                isMulti
-                                name="positions"
-                                options={options}
-                                className="basic-multi-select"
-                                classNamePrefix="select"
-                                onChange={handleChangeDepartment}
-                            />
+                        {
+                            userPositions.length > 0 ?
+                                ""
+                                :
+                                <div style={{ color: "red" }} ><i>Required Field</i></div>
+                        }
+
+                        <Select
+                            defaultValue={[allPositionsReactSelect[0]]}
+                            isMulti
+                            name="positions"
+                            options={options}
+                            className="basic-multi-select"
+                            classNamePrefix="select"
+                            onChange={handleChangeDepartment}
+                        />
 
 
-                            {
-                                userPositions.length > 0 ?
-                                    <button type="submit" style={{ color: `green` }} >
-                                        <span><IconBell /></span>
-                                        <span>Submit</span>
-                                    </button>
-                                    :
-                                    <button type="submit" style={{ color: `gray` }} disabled>
-                                        <span>Submit</span>
-                                    </button>
-                            }
-                        </div>
-
-                    }
-
-
-                    {/* {
-                        submitMessage ?
-                            <div style={{ color: "green" }} >Email sent!</div>
-                            :
-                            ""
-                    } */}
+                        {
+                            userPositions.length > 0 ?
+                                <button type="submit" style={{ color: `green` }} >
+                                    <span><IconBell /></span>
+                                    <span>Submit</span>
+                                </button>
+                                :
+                                <button type="submit" style={{ color: `gray` }} disabled>
+                                    <span>Submit</span>
+                                </button>
+                        }
+                    </div>
 
                 </form>
 
             }
-
+            {submitMessage &&
+                <div style={{ color: "green" }} >Email sent!</div>}
         </div>
     )
 }
