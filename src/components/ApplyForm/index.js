@@ -30,7 +30,7 @@ export function ApplyForm() {
             <textarea name="subject" id="subject" rows="5" placeholder="Tell us about your talents" required />
             <input type="email" name="Applicant Email" placeholder="Your email" required />
             <input type="file" name="Applicant CV" placeholder="Your CV" required />
-            <button type="submit" >Apply for this job</button>
+            <button type="submit" className="btn btn-primary z-10" >Apply for this job</button>
         </form>
 
 

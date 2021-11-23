@@ -47,7 +47,7 @@ export function AllJobOffersList() {
     }
 
     return (
-        <div className="">
+        <div>
             <div>
 
                 <div className="flex mb-3">

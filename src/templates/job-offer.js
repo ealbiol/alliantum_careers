@@ -9,6 +9,7 @@ import { ApplyForm } from "../components/ApplyForm"
 import { AllJobOffersList } from "../components/AllJobOffersList"
 import { YourBenefits } from "../components/YourBenefits"
 
+
 const JobOfferTemplate = ({ data, location }) => {
 
   const jobOffer = data.markdownRemark;
@@ -21,29 +22,32 @@ const JobOfferTemplate = ({ data, location }) => {
 
       <div>
 
-        <div>
+        <div className="ml-5"  >
+          <br />
+          <br />
+          <br />
 
-          <div>{jobOffer.frontmatter.department}</div>
+          <div className="pill" >{jobOffer.frontmatter.department}</div>
 
-          <div>WORK WITH US AS</div>
-          <h1>{jobOffer.frontmatter.title}</h1>
+          <div className="pretitle text-loblolly-600">WORK WITH US AS</div>
+          <div className="title text-md w-7/12" >{jobOffer.frontmatter.title}</div>
 
-          <h6>MINIMUM EXPERIENCE</h6>
+          <div className="pretitle text-loblolly-600" >MINIMUM EXPERIENCE</div>
           <div>{jobOffer.frontmatter.experience}</div>
 
-          <h6>LANGUAGES REQUIRED</h6>
+          <div className="pretitle text-loblolly-600" >LANGUAGES REQUIRED</div>
           <div>{jobOffer.frontmatter.languageRequired1}</div>
           <div>{jobOffer.frontmatter.languageRequired2}</div>
 
         </div>
 
-        <section
+        <section className="border border-loblolly rounded-lg mb-3 p-3 overflow-hidden max-w-3xl ml-5 mt-5"
           dangerouslySetInnerHTML={{ __html: jobOffer.html }}
           itemProp="articleBody"
         />
 
         <div>
-          <div>WHAT WE NEED RIGHT NOW</div>
+          <div className="pretitle text-loblolly-600" >WHAT WE NEED RIGHT NOW</div>
         </div>
 
       </div>

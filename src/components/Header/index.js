@@ -29,7 +29,7 @@ export default function Header({ siteTitle }) {
             {
               headerUnite.map((unite, index) => {
                 return (
-                  <span key={index} style={{ margin: 0 }}>
+                  <span key={index} style={{ margin: 0 }}  >
                     <AnchorLink
                       to={unite.anchor}
                       style={{ color: `white`, textDecoration: `none` }}
