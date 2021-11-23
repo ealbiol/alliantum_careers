@@ -21,7 +21,7 @@ This site uses the following external resources:
 
 ## 2.  **Creating a ```.env.development``` file.**
 
-  <img alt="Environment Development Image" src="env.png" width="180" />
+  <img alt="Environment Development Image" src="../src/images/readme-photos/env.png" width="180" />
 
 ## 3.  **Adding API Keys to the file.**
 
@@ -36,7 +36,7 @@ This site uses the following external resources:
 
 - Add these variables as Environment Variables in your Netlify Site Project:
 
-  <img alt="Environment Variables Netlify" src="env-netlify.png" />
+  <img alt="Environment Variables Netlify" src="../src/images/readme-photos/env-netlify.png" />
 
 
 - What are they used for?
@@ -52,18 +52,18 @@ This site uses the following external resources:
 
   This API key is needed to receive the contact details of the users that are interested in receiving new job offers to their emails. These users filled the form of the component ' NotifyMeButton '. 
 
-  <img alt="Notify Me Button Image" src="notify.png" width="180" />
+  <img alt="Notify Me Button Image" src="../src/images/readme-photos/notify.png" width="180" />
 
   All users contact details will be received in a dashboard table:
 
-  <img alt="Sendinblue Dashboard Image" src="dashboard.png" />
+  <img alt="Sendinblue Dashboard Image" src="../src/images/readme-photos/dashboard.png" />
 
 
 ## 4.  **Setting Sendinblue Lists.**
 
 When users fill the form to receive new job offers they have to choose the job positions they are interested in from a multi-select menu. The 'Lists' Sendinblue's functionality is set so that the contact details are sent in different job position lists.
 
-  <img alt="Sendinblue Lists Image" src="lists.png" />
+  <img alt="Sendinblue Lists Image" src="../src/images/readme-photos/lists.png" />
 
 The job positions list list can be found in data.js:
 
@@ -92,7 +92,7 @@ Netlifty Forms functionality is set to receive the applicant details from the fo
 ```
 - All form submissions will be stored in a Netlify dashboard in the 'Forms' section. The 'value' attribute sets the name of your dashboard. In this case the dashboard name is 'contact'.
 
-  <img alt="Netlify dashboard contact" src="dashboard-contact.png" />
+  <img alt="Netlify dashboard contact" src="../src/images/readme-photos/dashboard-contact.png" />
 
 - More information regarding Netlify Forms setup can be found by clicking [here](https://docs.netlify.com/forms/setup/).
 
