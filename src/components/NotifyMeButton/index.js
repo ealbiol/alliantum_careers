@@ -3,13 +3,13 @@ import Select from 'react-select'
 import { allPositionsReactSelect } from "../../data/data"
 import IconBell from "../../images/notify-me-photos/Icon1.svg"
 
-export function NotifyMeButton({ submitMessage, setSubmitMessage }) {
-
+export function NotifyMeButton() {
 
 
     const [userEmail, setUserEmail] = React.useState("")
     const [userPositions, setUserPositions] = React.useState([0])
     const [showNotifySubmit, setShowNotifySubmit] = React.useState(false)
+    const [submitMessage, setSubmitMessage] = React.useState(false)
 
 
     const URL = "https://api.sendinblue.com/v3/contacts"
@@ -36,7 +36,7 @@ export function NotifyMeButton({ submitMessage, setSubmitMessage }) {
                 console.log("Data:--->", data)
                 setSubmitMessage(true)
                 setShowNotifySubmit(false)
-                // setTimeout(() => setSubmitMessage(false), 3000);
+                setTimeout(() => setSubmitMessage(false), 50000);
             })
             .catch(err => console.error(err));
 
