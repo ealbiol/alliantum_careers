@@ -19,7 +19,6 @@ export function NotifyMeButtonReactSelect() {
     function handleUserEmail(e) {
         e.preventDefault();
 
-        setSubmitMessage(!submitMessage)
 
         const options = {
             method: "POST",
@@ -34,7 +33,11 @@ export function NotifyMeButtonReactSelect() {
 
         fetch(URL, options)
             .then(response => response.json())
-            .then(data => console.log("Data:--->", data))
+            .then(data => {
+                console.log("Data:--->", data)
+                setSubmitMessage(true)
+                setTimeout(() => setSubmitMessage(false), 3000);
+            })
             .catch(err => console.error(err));
 
         console.log(options);

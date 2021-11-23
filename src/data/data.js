@@ -160,6 +160,15 @@ export async function getAllOurValues() {
 
 export const allPositionsReactSelect = [
     { id: 10, value: "All Positions", label: "All Positions" },
+    { id: 11, value: "Brand Development", label: "Brand Development" },
+    { id: 12, value: "Digital Marketing", label: "Digital Marketing" },
+    { id: 13, value: "HR", label: "HR" },
+    { id: 14, value: "Odoo Consultant", label: "Odoo Consultant" },
+    { id: 15, value: "Odoo Developer", label: "Odoo Developer" },
+    { id: 16, value: "Project Manager Odoo", label: "Project Manager Odoo" },
+    { id: 17, value: "Sys Admin", label: "Sys Admin" },
+    { id: 18, value: "UX/UI Designer", label: "UX/UI Designer" },
+    { id: 19, value: "Web Developer", label: "Web Developer" },
     { id: 7, value: "Digital Marketing", label: "Digital Marketing" },
     { id: 6, value: "Business Systems", label: "Business Systems" },
     { id: 5, value: "HR", label: "HR" },

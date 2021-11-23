@@ -65,7 +65,7 @@ When users fill the form to receive new job offers they have to choose the job p
 
   <img alt="Sendinblue Lists Image" src="./src/images/readme-photos/lists.png" />
 
-The job positions list list can be found in data.js:
+The job positions list can be found in data.js:
 
 ```    
 export const allDepartmentsReactSelect = [
