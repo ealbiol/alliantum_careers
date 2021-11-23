@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.alliantum.es">
-    <img alt="Alliantum.es" src="../src/images/readme-images/logo-alliantum.png" width="80" />
+    <img alt="Alliantum.es" src="../src/images/readme-photos/logo-alliantum.png" width="80" />
       <h1 align="center" >Alliantum.es Site</h1>
   </a>
 </p>
