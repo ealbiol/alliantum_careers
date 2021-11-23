@@ -392,7 +392,7 @@ export function GoogleMaps() {
                             "stylers": [
                                 {
                                     "color": "#c9c9c9"
-                                }
+                                },
                             ]
                         },
                         {
@@ -401,7 +401,7 @@ export function GoogleMaps() {
                             "stylers": [
                                 {
                                     "color": "#ffffff"
-                                }
+                                },
                             ]
                         },
                         {
@@ -410,7 +410,7 @@ export function GoogleMaps() {
                             "stylers": [
                                 {
                                     "color": "#ffffff"
-                                }
+                                },
                             ]
                         }
                     ]

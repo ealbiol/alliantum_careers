@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.alliantum.es">
-    <img alt="Alliantum.es" src="logo-alliantum.png" width="80" />
+    <img alt="Alliantum.es" src="../src/images/readme-images/logo-alliantum.png" width="80" />
       <h1 align="center" >Alliantum.es Site</h1>
   </a>
 </p>
@@ -90,7 +90,9 @@ Netlifty Forms functionality is set to receive the applicant details from the fo
     <button type="submit" >Send Message</button>
 </form>
 ```
-- All form submissions will be stored in a Netlify dashboard in the 'Forms' section. The 'value' attribute sets the name of your dashboard.
+- All form submissions will be stored in a Netlify dashboard in the 'Forms' section. The 'value' attribute sets the name of your dashboard. In this case the dashboard name is 'contact'.
+
+  <img alt="Netlify dashboard contact" src="dashboard-contact.png" />
 
 - More information regarding Netlify Forms setup can be found by clicking [here](https://docs.netlify.com/forms/setup/).
 
