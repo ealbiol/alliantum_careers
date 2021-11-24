@@ -38,12 +38,13 @@ const JobOfferTemplate = ({ data, location }) => {
               <div className="pretitle text-loblolly-600" >WORK WITH US AS</div>
               <div className="title text-md w-7/12 mt-1" >{jobOffer.frontmatter.title}</div>
 
-              <div className="flex" >
+              <div className="flex mt-7" >
                 <div className="flex-grow" >
                   <div className="pretitle text-loblolly-600" >MINIMUM EXPERIENCE</div>
                   <div>{jobOffer.frontmatter.experience}</div>
                 </div>
-                <div className="flex-grow items-end" >
+                <div className="flex-grow " >
+                  {/* <div className="items-end" > */}
                   <div className="pretitle text-loblolly-600" >LANGUAGES REQUIRED</div>
                   <div>{jobOffer.frontmatter.languageRequired1}</div>
                   <div>{jobOffer.frontmatter.languageRequired2}</div>
@@ -68,8 +69,8 @@ const JobOfferTemplate = ({ data, location }) => {
 
           </div>
 
-          <div className="w-5/12 flex justify-end mt-7" >
-            <div className="max-w-md flex-grow fixed" >
+          <div className="w-7/12 flex justify-end mt-7"  >
+            <div className="max-w-md flex-grow fixed " >
               <ApplyForm />
             </div>
           </div>
