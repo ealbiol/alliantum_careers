@@ -17,18 +17,20 @@ export default function Header({ siteTitle }) {
   }, [])
 
   return (
-    <header className="fixed w-full z-30 bg-white" style={{ marginBottom: `1.45rem` }}>
+    <header className="fixed w-full z-30 bg-white " style={{ marginBottom: `1.45rem` }}>
 
       <div className="container-main">
 
-        <div className="flex flex-row justify-between py-3 bb bg-red">
-          <Link to="/" >
-            <div className="flex items-center" >
-              <AlliantumLogo />
-              <span>CAREERS</span>
-            </div>
 
+        <div className="flex flex-row justify-between py-3 bb bg-red">
+
+          <Link to="/" >
+            <div className="flex items-end">
+              <AlliantumLogo style={{ margin: "4px" }} />
+              <span className="text-xs">CAREERS</span>
+            </div>
           </Link>
+
           <div>
             {
               headerUnite.map((unite, index) => {
@@ -46,6 +48,7 @@ export default function Header({ siteTitle }) {
               })
             }
           </div>
+
         </div>
 
 

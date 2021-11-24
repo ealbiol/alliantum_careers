@@ -14,6 +14,9 @@ const JobOfferTemplate = ({ data, location }) => {
 
   const jobOffer = data.markdownRemark;
 
+  const jobDepartment = jobOffer.frontmatter.department
+  console.log("jobDepartment:--->", jobDepartment);
+
 
   return (
     <Layout>
@@ -71,7 +74,7 @@ const JobOfferTemplate = ({ data, location }) => {
 
           <div className="w-7/12 flex justify-end mt-7"  >
             <div className="max-w-md flex-grow fixed " >
-              <ApplyForm />
+              <ApplyForm jobDepartment={jobDepartment} />
             </div>
           </div>
         </div>
