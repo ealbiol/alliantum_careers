@@ -23,7 +23,11 @@ export default function Header({ siteTitle }) {
 
         <div className="flex flex-row justify-between py-3 bb bg-red">
           <Link to="/" >
-            <AlliantumLogo />
+            <div className="flex items-center" >
+              <AlliantumLogo />
+              <span>CAREERS</span>
+            </div>
+
           </Link>
           <div>
             {

@@ -18,49 +18,64 @@ const JobOfferTemplate = ({ data, location }) => {
   return (
     <Layout>
 
-      <Seo title={jobOffer.frontmatter.title} />
+      <br />
+      <br />
+      <br />
 
-      <div>
 
-        <div className="ml-5"  >
-          <br />
-          <br />
-          <br />
+      <div className="ml-6 mr-6" >
+        <Seo title={jobOffer.frontmatter.title} />
 
-          <div className="pill" >{jobOffer.frontmatter.department}</div>
+        <div className="flex" style={{ border: "4px solid rebeccapurple" }} >
+          <div className="flex-grow" style={{ border: "4px solid blue" }} >
 
-          <div className="pretitle text-loblolly-600">WORK WITH US AS</div>
-          <div className="title text-md w-7/12" >{jobOffer.frontmatter.title}</div>
+            <div>
 
-          <div className="pretitle text-loblolly-600" >MINIMUM EXPERIENCE</div>
-          <div>{jobOffer.frontmatter.experience}</div>
 
-          <div className="pretitle text-loblolly-600" >LANGUAGES REQUIRED</div>
-          <div>{jobOffer.frontmatter.languageRequired1}</div>
-          <div>{jobOffer.frontmatter.languageRequired2}</div>
+              <div className="pill" >{jobOffer.frontmatter.department}</div>
 
+              <div className="pretitle text-loblolly-600">WORK WITH US AS</div>
+              <div className="title text-md w-7/12" >{jobOffer.frontmatter.title}</div>
+
+              <div className="pretitle text-loblolly-600" >MINIMUM EXPERIENCE</div>
+              <div>{jobOffer.frontmatter.experience}</div>
+
+              <div className="pretitle text-loblolly-600" >LANGUAGES REQUIRED</div>
+              <div>{jobOffer.frontmatter.languageRequired1}</div>
+              <div>{jobOffer.frontmatter.languageRequired2}</div>
+
+            </div>
+
+            <section className="border border-loblolly rounded-lg mb-3 p-3 overflow-hidden max-w-3xl mt-5"
+              dangerouslySetInnerHTML={{ __html: jobOffer.html }}
+              itemProp="articleBody"
+            />
+
+            <div>
+              <div className="pretitle text-loblolly-600" >WHAT WE NEED RIGHT NOW</div>
+              <div className=" max-w-3xl" >
+                <AllJobOffersList />
+              </div>
+            </div>
+
+          </div>
+
+          <div className="flex-grow" style={{ border: "4px solid red" }} >
+            <div className="max-w-lg" >
+              <ApplyForm />
+            </div>
+          </div>
         </div>
 
-        <section className="border border-loblolly rounded-lg mb-3 p-3 overflow-hidden max-w-3xl ml-5 mt-5"
-          dangerouslySetInnerHTML={{ __html: jobOffer.html }}
-          itemProp="articleBody"
-        />
 
-        <div>
-          <div className="pretitle text-loblolly-600" >WHAT WE NEED RIGHT NOW</div>
+
+
+        <div style={{ border: "4px solid green" }} >
+          <YourBenefits />
         </div>
 
-      </div>
 
-      <div>
-        <ApplyForm />
       </div>
-
-      <div>
-        <AllJobOffersList />
-      </div>
-
-      <YourBenefits />
 
     </Layout>
   )

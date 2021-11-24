@@ -25,12 +25,21 @@ export function ApplyForm() {
                     )
                 })
             } */}
-            <input type="text" name="Applicant Name" placeholder="Your name" required />
-            <input type="text" name="Applicant Last Name" placeholder="Your last name" required />
-            <textarea name="subject" id="subject" rows="5" placeholder="Tell us about your talents" required />
-            <input type="email" name="Applicant Email" placeholder="Your email" required />
-            <input type="file" name="Applicant CV" placeholder="Your CV" required />
-            <button type="submit" className="btn btn-primary z-10" >Apply for this job</button>
+            <div className="flex mb-2"  >
+                <input type="text" name="Applicant Name" placeholder="Your name" className="flex-grow" required />
+                <input type="text" name="Applicant Last Name" placeholder="Your last name" className="flex-grow " required />
+            </div>
+            <div className="flex mb-2"  >
+                <textarea name="subject" id="subject" rows="5" placeholder="Tell us about your talents" className="flex-grow" required />
+            </div>
+            <div className="flex mb-2" >
+                <input type="email" name="Applicant Email" placeholder="Your email" className="flex-grow" required />
+                <input type="file" name="Applicant CV" placeholder="Your CV" className="flex-grow" required />
+            </div>
+            <div className="flex" >
+                <button type="submit" className="btn btn-primary flex-grow" >Apply for this job</button>
+
+            </div>
         </form>
 
 
