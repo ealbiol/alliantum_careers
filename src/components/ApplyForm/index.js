@@ -30,7 +30,7 @@ export function ApplyForm() {
                 <input type="text" name="Applicant Last Name" placeholder="Your last name" className="flex-grow " required />
             </div>
             <div className="flex mb-2"  >
-                <textarea name="subject" id="subject" rows="5" placeholder="Tell us about your talents" className="flex-grow" required />
+                <textarea name="subject" id="subject" rows="5" placeholder="Tell us about your talents" className="flex-grow" style={{ resize: "none" }} required />
             </div>
             <div className="flex mb-2" >
                 <input type="email" name="Applicant Email" placeholder="Your email" className="flex-grow" required />

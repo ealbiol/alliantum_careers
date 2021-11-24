@@ -28,10 +28,12 @@ const JobOfferTemplate = ({ data, location }) => {
 
         <div className="flex" >
 
-          <div className="w-6/12" >
-            <div>
+          <div className="w-7/12"  >
+            <div >
 
-              <div className="pill" >{jobOffer.frontmatter.department}</div>
+              <div className="flex" >
+                <div className="pill" >{jobOffer.frontmatter.department}</div>
+              </div>
 
               <div className="pretitle text-loblolly-600">WORK WITH US AS</div>
               <div className="title text-md w-7/12" >{jobOffer.frontmatter.title}</div>
@@ -45,21 +47,21 @@ const JobOfferTemplate = ({ data, location }) => {
 
             </div>
 
-            <section className="border border-loblolly rounded-lg mb-3 p-3 overflow-hidden max-w-3xl mt-5"
+            <section className="border border-loblolly rounded-lg mb-3 p-3 overflow-hidden max-w-3xl mt-5 w-12/12 mb-7"
               dangerouslySetInnerHTML={{ __html: jobOffer.html }}
               itemProp="articleBody"
             />
 
-            <div>
+            <div >
               <div className="pretitle text-loblolly-600" >WHAT WE NEED RIGHT NOW</div>
-              <div className=" max-w-3xl" >
+              <div>
                 <AllJobOffersList />
               </div>
             </div>
 
           </div>
 
-          <div className="w-6/12 flex justify-end" >
+          <div className="w-5/12 flex justify-end" >
             <div className="max-w-md flex-grow fixed" >
               <ApplyForm />
             </div>
