@@ -399,8 +399,12 @@ export function GoogleMaps() {
                             "elementType": "geometry.fill",
                             "stylers": [
                                 {
-                                    "color": "#ffffff"
+                                    "color": "#ffffff",
+
                                 },
+                                // {
+                                //     "backgroundColor": "hsla(0, 0%, 0%, 0)"
+                                // }
                             ]
                         },
                         {
