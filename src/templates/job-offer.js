@@ -26,9 +26,9 @@ const JobOfferTemplate = ({ data, location }) => {
       <div className="container-main" >
         <Seo title={jobOffer.frontmatter.title} />
 
-        <div className="flex gap-3" style={{ border: "4px solid rebeccapurple" }} >
+        <div className="flex" >
 
-          <div className="" style={{ border: "4px solid blue" }} >
+          <div className="w-6/12" >
             <div>
 
               <div className="pill" >{jobOffer.frontmatter.department}</div>
@@ -59,8 +59,8 @@ const JobOfferTemplate = ({ data, location }) => {
 
           </div>
 
-          <div className="max-w-6/12 w-100" style={{ border: "4px solid red" }} >
-            <div className="max-w-lg flex-grow fixed" style={{ border: "4px solid yellow" }} >
+          <div className="w-6/12 flex justify-end" >
+            <div className="max-w-md flex-grow fixed" >
               <ApplyForm />
             </div>
           </div>
@@ -69,7 +69,7 @@ const JobOfferTemplate = ({ data, location }) => {
 
 
 
-        <div style={{ border: "4px solid green" }} >
+        <div className="z-10 relative" style={{ border: "4px solid green" }} >
           <YourBenefits />
         </div>
 
