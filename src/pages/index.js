@@ -30,7 +30,6 @@ function IndexPage() {
 `)
 
 
-
   return (
     <Layout titlePage={data.site.siteMetadata?.mainPage} >
 
@@ -44,13 +43,13 @@ function IndexPage() {
 
         {/* ------------> Job Offers Table */}
         <div id="jobs-table" className="w-full">
-          <div class="blurred-gradient-wrapper h-screen">
-            <div class="blurred-gradient-container">
-              <div class="blurred-gradient-content">
-                <div class="">
+          <div className="blurred-gradient-wrapper h-screen">
+            <div className="blurred-gradient-container">
+              <div className="blurred-gradient-content">
+                <div >
                   <span className="pretitle text-loblolly-600">What we need right now</span>
                   <h3 className="title text-md w-7/12">We do Business Digitalisation and New-era Marketing</h3>
-                  <AllJobOffersList />
+                  <AllJobOffersList id="/#jobs-table" />
                 </div>
               </div>
 
@@ -62,8 +61,8 @@ function IndexPage() {
                   100%  {  transform: translate(400px, 20px) }
                   `
                 }
-
               />
+
               <CircleBlur blur="50" color="red" top="50%" left="50%" size="300"
                 keyFrame={
                   `    0%    {  transform: translate(0, 0) }
@@ -72,20 +71,19 @@ function IndexPage() {
                   100%  {  transform: translate(100px, 20px) }
                   `
                 }
-
               />
+
             </div>
           </div>
 
         </div>
 
         {/* ------------> Your Benefits */}
+        <div id="your-benefits" />
         <div className="container mx-auto my-6">
           <span className="pretitle text-electric-violet">Your benefits</span>
           <h3 className="title text-md w-6/12">Work in an international company, with a happy team, in a great office</h3>
-          <div id="your-benefits">
-            <YourBenefits />
-          </div>
+          <YourBenefits />
         </div>
 
         {/* ------------> Office Presentation */}
@@ -97,13 +95,12 @@ function IndexPage() {
         </div>
 
         {/* ------------> World Map */}
-        <div id="the-offices">
-          <div className="container mx-auto mt-6 mb-2">
-            <span className="pretitle">The office</span>
-            <h3 className="title text-md w-6/12">German spirit. Spanish passion.</h3>
-          </div>
-          <GoogleMaps />
+        <div id="the-offices" />
+        <div className="container mx-auto mt-6 mb-2">
+          <span className="pretitle">The office</span>
+          <h3 className="title text-md w-6/12">German spirit. Spanish passion.</h3>
         </div>
+        <GoogleMaps />
 
         {/* ------------> The Team */}
         <div>

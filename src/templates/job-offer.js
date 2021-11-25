@@ -47,7 +47,6 @@ const JobOfferTemplate = ({ data, location }) => {
                   <div>{jobOffer.frontmatter.experience}</div>
                 </div>
                 <div className="flex-grow " >
-                  {/* <div className="items-end" > */}
                   <div className="pretitle text-loblolly-600" >LANGUAGES REQUIRED</div>
                   <div>{jobOffer.frontmatter.languageRequired1}</div>
                   <div>{jobOffer.frontmatter.languageRequired2}</div>

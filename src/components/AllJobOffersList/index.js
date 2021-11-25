@@ -74,6 +74,7 @@ export function AllJobOffersList() {
                 {
                     jobOfferDetails.map((detail, index) => {
                         return (
+
                             <div key={index} className="card">
                                 <Link className="flex justify-between items-center" to={detail.node.fields.slug} >
                                     <div>{detail.node.frontmatter.title}</div>

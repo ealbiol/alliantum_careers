@@ -128,7 +128,8 @@ export function NotifyMeButton() {
 
             }
             {submitMessage &&
-                <div style={{ color: "green" }} >Email sent!</div>}
+                <div style={{ color: "green" }} >Email sent! Check your inbox.</div>
+            }
         </div>
     )
 }
