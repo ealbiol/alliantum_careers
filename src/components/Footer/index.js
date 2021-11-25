@@ -71,9 +71,9 @@ export default function Footer() {
                         <li>
                             <AnchorLink to="/privacy-policy">Privacy Policy</AnchorLink>
                         </li>
-                        <li>
+                        {/* <li>
                             <AnchorLink to="/cookies">Cookies</AnchorLink>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
 

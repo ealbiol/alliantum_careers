@@ -1,7 +1,6 @@
 import * as React from "react"
 import Layout from "../components/Layout/index"
 import Seo from "../components/seo"
-// import { getAllEmployees } from "../data/data"
 import { useStaticQuery, graphql } from "gatsby"
 import { AllJobOffersList } from "../components/AllJobOffersList/index"
 import { YourBenefits } from "../components/YourBenefits/index"
@@ -11,6 +10,9 @@ import { AstronautSection } from "../components/AstronautSection"
 import { TheTeam } from "../components/TheTeam"
 import { OurValuesSection } from "../components/OurValuesSection"
 import { WorkWithUs } from "../components/WorkWithUs"
+import { CircleBlur } from "../components/CircleBlur"
+import styled, { css, keyframes } from 'styled-components'
+
 
 function IndexPage() {
 
@@ -28,15 +30,18 @@ function IndexPage() {
         
 `)
 
-  // const [employees, setEmployees] = React.useState([])
 
-  // React.useEffect(() => {
-  //   getAllEmployees().then((result) => {
-  //     setEmployees(result)
+  const spin = keyframes`
+    0%    {  transform: translate(0, 0) }
+  33%   {  transform: scale(0.77) }
+  66%   {  transform: translate(20px, 10px) }
+  100%  {  transform: translate(40px, 20px) }
+`;
 
-  //   })
-  // }, [])
 
+  const animation = css`
+    animation: ${spin} linear infinite alternate 6s;
+  `
 
   return (
     <Layout titlePage={data.site.siteMetadata?.mainPage} >
@@ -60,9 +65,17 @@ function IndexPage() {
                   <AllJobOffersList />
                 </div>
               </div>
-              <span class="circle circle-1 circle-red" dataWidth="400" dataBlur="200"></span>
-              <span class="circle circle-2 circle-red"></span>
-              <span class="circle circle-3 circle-red"></span>
+
+              <CircleBlur blur="50" color="yellow" top="50%" left="50%" size="300" animationName="animation3"
+                keyFrame={{
+                  "0%": { transform: "translate(0, 0)" },
+                  "33%": { transform: "scale(0.77)" },
+                  "66%": { transform: "translate(20px, 10px)" },
+                  "100%": { transform: "translate(40px, 20px)" },
+                }}
+                animation={spin}
+              />
+
             </div>
           </div>
         </div>
