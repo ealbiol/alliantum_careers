@@ -50,10 +50,21 @@ function IndexPage() {
         </div>
 
         {/* ------------> Job Offers Table */}
-        <div id="jobs-table" className="w-full lg:w-container-sm mx-auto">
-          <span className="pretitle text-loblolly-600">What we need right now</span>
-          <h3 className="title text-md w-7/12">We do Business Digitalisation and New-era Marketing</h3>
-          <AllJobOffersList />
+        <div id="jobs-table" className="w-full">
+          <div class="blurred-gradient-wrapper h-screen">
+            <div class="blurred-gradient-container">
+              <div class="blurred-gradient-content">
+                <div class="">
+                  <span className="pretitle text-loblolly-600">What we need right now</span>
+                  <h3 className="title text-md w-7/12">We do Business Digitalisation and New-era Marketing</h3>
+                  <AllJobOffersList />
+                </div>
+              </div>
+              <span class="circle circle-1 circle-red" dataWidth="400" dataBlur="200"></span>
+              <span class="circle circle-2 circle-red"></span>
+              <span class="circle circle-3 circle-red"></span>
+            </div>
+          </div>
         </div>
 
         {/* ------------> Your Benefits */}

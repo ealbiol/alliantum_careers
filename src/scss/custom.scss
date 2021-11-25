@@ -183,5 +183,81 @@ body {
     .hero-item-info {
         opacity: 1;
     }
-}
+} 
 
+
+
+/* ------- GRADIENTS ------- */
+.blurred-gradient-wrapper {
+    position: relative;
+  }
+  
+  .blurred-gradient-container {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .blurred-gradient-content {
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  }
+  
+  .circle {
+    content: " ";
+    display: block;
+    position: relative;
+    z-index: 1;
+    border-radius: 100%;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 6s;
+  }
+  
+  .circle-1 {
+    width: 400px;
+    height: 400px;
+    left: 40%;
+    top: 40%;
+    filter: blur(200px);
+    background-color: blue;
+  }
+  
+  .circle-2 {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .circle-3 {
+    width: 200px;
+    height: 200px;
+  }
+  
+  @keyframes cirle-xs {
+    0%    {  transform: translate(0, 0) }
+    33%   {  transform: scale(0.77) }
+    66%   {  transform: translate(20px, 10px) }
+    100%  {  transform: translate(40px, 20px) }
+  }
+  
+  @keyframes circle-sm {
+    0%    {  transform: translate(10px, 30px) }
+    33%   {  transform: translate(0px, 10px) }
+    66%   {  transform: translate(30px, 10px) }
+    100%  {  transform: scale(1.4) }
+  }
+  
+  @keyframes circle-md {
+    0%    {  transform: translate(0, 0) }
+    33%   {  transform: scale(1.6) }
+    66%   {  transform: translate(10px, 30px) }
+    100%  {  transform: translate(30px, 20px) }
+  }
