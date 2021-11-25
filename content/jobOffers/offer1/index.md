@@ -2,7 +2,7 @@
 title: Digital Marketing - SEA Specialist (FRENCH SPEAKER)
 date: "2015-05-01T22:12:03.284Z"
 description: "Hello World"
-department: "Marketing"
+department: "Digital Marketing"
 experience: "At least 1 year"
 languageRequired1: "English - Advanced"
 languageRequired2: "French - Advanced"
