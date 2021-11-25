@@ -11,7 +11,7 @@ import { TheTeam } from "../components/TheTeam"
 import { OurValuesSection } from "../components/OurValuesSection"
 import { WorkWithUs } from "../components/WorkWithUs"
 import { CircleBlur } from "../components/CircleBlur"
-import styled, { css, keyframes } from 'styled-components'
+// import { css, keyframes } from 'styled-components'
 
 
 function IndexPage() {
@@ -31,17 +31,7 @@ function IndexPage() {
 `)
 
 
-  const spin = keyframes`
-    0%    {  transform: translate(0, 0) }
-  33%   {  transform: scale(0.77) }
-  66%   {  transform: translate(20px, 10px) }
-  100%  {  transform: translate(40px, 20px) }
-`;
-
-
-  const animation = css`
-    animation: ${spin} linear infinite alternate 6s;
-  `
+  //here
 
   return (
     <Layout titlePage={data.site.siteMetadata?.mainPage} >
@@ -66,18 +56,29 @@ function IndexPage() {
                 </div>
               </div>
 
-              <CircleBlur blur="50" color="yellow" top="50%" left="50%" size="300" animationName="animation3"
-                keyFrame={{
-                  "0%": { transform: "translate(0, 0)" },
-                  "33%": { transform: "scale(0.77)" },
-                  "66%": { transform: "translate(20px, 10px)" },
-                  "100%": { transform: "translate(40px, 20px)" },
-                }}
-                animation={spin}
-              />
+              <CircleBlur blur="50" color="yellow" top="50%" left="50%" size="300"
+                keyFrame={
+                  `    0%    {  transform: translate(0, 0) }
+                  33%   {  transform: scale(0.77) }
+                  66%   {  transform: translate(200px, 10px) }
+                  100%  {  transform: translate(400px, 20px) }
+                  `
+                }
 
+              />
+              <CircleBlur blur="50" color="red" top="50%" left="50%" size="300"
+                keyFrame={
+                  `    0%    {  transform: translate(0, 0) }
+                  33%   {  transform: scale(0.77) }
+                  66%   {  transform: translate(400px, 10px) }
+                  100%  {  transform: translate(100px, 20px) }
+                  `
+                }
+
+              />
             </div>
           </div>
+
         </div>
 
         {/* ------------> Your Benefits */}
