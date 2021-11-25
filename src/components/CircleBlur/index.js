@@ -1,7 +1,7 @@
 import * as React from "react"
 import styled, { keyframes } from 'styled-components'
 
-export function CircleBlur({ blur, color, size, top, left, animationName, keyFrame }) {
+export function CircleBlur({ blur, color, size, top, left, keyFrame }) {
 
     if (!blur) {
         blur = 200;
