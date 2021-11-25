@@ -13,6 +13,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     `
       {
         allMarkdownRemark(
+          filter: {fileAbsolutePath: {regex: "/content\/jobOffers/"}},
           sort: { fields: [frontmatter___date], order: ASC }
           limit: 1000
         ) {
