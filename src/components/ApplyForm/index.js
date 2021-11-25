@@ -40,13 +40,13 @@ export function ApplyForm({ jobDepartment }) {
                 <input type="file" name="Applicant CV" placeholder="Your CV" className="flex-grow" required />
             </div>
             <div className="flex mb-2">
-                {jobDepartment === "Web Developer" || jobDepartment === "Odoo Developer" || jobDepartment === "Sys Admin" || jobDepartment === "IT" ?
-                    <span className="flex">
+                {jobDepartment === "Web Developer" || jobDepartment === "Odoo Developer" || jobDepartment === "Sys Admin" || jobDepartment === "IT" || jobDepartment === "Business System" ?
+                    <span className="flex flex-grow">
                         <GithubLogo />
-                        <input type="url" name="Applicant URL" placeholder="Portfolio Developer" className="flex-grow" />
+                        <input type="url" name="Applicant URL" placeholder="Your Github profile" className="flex-grow" />
                     </span>
                     :
-                    <input type="url" name="Applicant URL" placeholder="Portfolio" className="flex-grow" />
+                    <input type="url" name="Applicant URL" placeholder="Your portfolio / blog / web" className="flex-grow" />
                 }
             </div>
             <div className="flex" >

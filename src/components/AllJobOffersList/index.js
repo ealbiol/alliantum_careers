@@ -10,7 +10,8 @@ export function AllJobOffersList() {
 
     const data = useStaticQuery(graphql`
     query {
-        allMarkdownRemark {
+        allMarkdownRemark(          filter: {fileAbsolutePath: {regex: "/content\/jobOffers/"}}
+        ) {
           edges {
             node {
               frontmatter {

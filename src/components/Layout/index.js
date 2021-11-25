@@ -42,6 +42,10 @@ const Layout = ({ children, titlePage }) => {
 
       <SwitchModeButton isDark={isDark} setIsDark={setIsDark} />
       <div>
+        <br />
+        <br />
+        <br />
+        <br />
 
         <main>{children}</main>
         {/* <footer
