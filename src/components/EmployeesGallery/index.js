@@ -15,7 +15,7 @@ export function EmployeesGallery() {
     }, [])
 
     const firstLinePhotos = employees.slice(0, 8).sort(function (a, b) { return 0.5 - Math.random() });
-    const secondLinePhotos = employees.slice(8, 16).sort(function (a, b) { return 0.5 - Math.random() });
+    const secondLinePhotos = employees.slice(8, 17).sort(function (a, b) { return 0.5 - Math.random() });
 
 
     return (
@@ -29,7 +29,7 @@ export function EmployeesGallery() {
                                 <div key={index} className="hero-faces-row__item" >
                                     <EmployeePhoto className="mr-2 mb-2" photo={employee.photo} />
                                     <div className="hero-item-info" >
-                                        <span className="block" >{employee.firstName}{" "}{employee.surname}</span>
+                                        <span className="block" >{employee.firstName}</span>
                                         <span className="block" >{employee.departmentName}</span>
                                     </div>
                                 </div>
@@ -46,7 +46,7 @@ export function EmployeesGallery() {
                                 <div key={index} className="hero-faces-row__item" >
                                     <EmployeePhoto className="mr-2 mb-2" photo={employee.photo} />
                                     <div className="hero-item-info" >
-                                        <span className="block" >{employee.firstName}{" "}{employee.surname}</span>
+                                        <span className="block" >{employee.firstName}</span>
                                         <span className="block" >{employee.departmentName}</span>
                                     </div>
                                 </div>
