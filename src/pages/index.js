@@ -11,7 +11,6 @@ import { TheTeam } from "../components/TheTeam"
 import { OurValuesSection } from "../components/OurValuesSection"
 import { WorkWithUs } from "../components/WorkWithUs"
 import { CircleBlur } from "../components/CircleBlur"
-// import { css, keyframes } from 'styled-components'
 
 
 function IndexPage() {
@@ -31,7 +30,6 @@ function IndexPage() {
 `)
 
 
-  //here
 
   return (
     <Layout titlePage={data.site.siteMetadata?.mainPage} >

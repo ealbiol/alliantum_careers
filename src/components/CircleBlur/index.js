@@ -46,22 +46,4 @@ ${keyFrame}
     `
     return <Circle className="circle" />
 
-    // return (
-    //     <React.Fragment>
-
-    //         <span
-    //             className="circle"
-    //             style={{
-    //                 filter: `blur(${blur}px)`,
-    //                 backgroundColor: color,
-    //                 width: `${size}px`,
-    //                 height: `${size}px`,
-    //                 top: top,
-    //                 left: left,
-    //                 animationName: animationName,
-    //                 animation: animation
-    //             }}></span>
-
-    //     </React.Fragment>
-    // )
 }
