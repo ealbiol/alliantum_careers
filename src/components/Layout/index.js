@@ -34,7 +34,6 @@ const Layout = ({ children, titlePage }) => {
         <br />
         <br />
         <br /> */}
-
         <main>{children}</main>
 
       </div>
