@@ -24,13 +24,16 @@ const Layout = ({ children, titlePage }) => {
   return (
     <div className={isDark ? "dark" : ""}>
       <Header siteTitle={titlePage} />
-
+      {/* <br />
+      <br />
+      <br />
+      <br /> */}
       <SwitchModeButton isDark={isDark} setIsDark={setIsDark} />
       <div>
+        {/* <br />
         <br />
         <br />
-        <br />
-        <br />
+        <br /> */}
 
         <main>{children}</main>
 

@@ -14,8 +14,9 @@ export function EmployeesGallery() {
         })
     }, [])
 
-    const firstLinePhotos = employees.slice(0, 8).sort(function (a, b) { return 0.5 - Math.random() });
-    const secondLinePhotos = employees.slice(8, 17).sort(function (a, b) { return 0.5 - Math.random() });
+    const allEmployeePhotos = employees.sort(function (a, b) { return 0.5 - Math.random() })
+    const firstLinePhotos = allEmployeePhotos.slice(0, 8);
+    const secondLinePhotos = allEmployeePhotos.slice(8, 16);
 
 
     return (
