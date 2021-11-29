@@ -13,7 +13,7 @@ export function SwitchModeButton({ themeData, setThemeData }) {
     return (
         <p>
             <label className="switch">
-                <input onChange={handleSwitch} type="checkbox" checked={themeData} />
+                <input onChange={handleSwitch} type="checkbox" checked={(themeData === "dark" ? true : false)} />
                 <span className="slider round"></span>
             </label>
         </p>
