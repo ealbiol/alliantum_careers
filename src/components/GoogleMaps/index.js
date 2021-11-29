@@ -22,7 +22,6 @@ export function GoogleMaps() {
     React.useEffect(() => {
         getAllAdresses().then((result) => {
             setAddressUnite(result)
-            console.log("addressUnite:--->", result);
         })
     }, [])
 

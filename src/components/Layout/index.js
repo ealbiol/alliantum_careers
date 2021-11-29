@@ -50,7 +50,7 @@ const Layout = ({ children, titlePage }) => {
         <br />
         <br />
         <br />
-        <SwitchModeButton isDark={isDark} setIsDark={setIsDark} />
+        <SwitchModeButton themeData={themeData} setThemeData={setThemeData} />
         <div>
           <h1>{isDark ? "Dark" : "Light"}</h1>
           <h1 className="bg-cornflower-blue dark:bg-black dark:text-white" >{isDark ? "Dark" : "Light"}</h1>
