@@ -25,7 +25,7 @@ const Layout = ({ children, titlePage }) => {
 
 
   const themeData = {
-    theme: typeof localStorage !== 'undefined' ? localStorage.theme : null
+    theme: typeof localStorage !== 'undefined' ? localStorage.theme : window.matchMedia('(prefers-color-scheme: dark)')
   }
 
   // themeData = typeof localStorage !== 'undefined' ? localStorage.theme : "light"     // false? o lo que sea el valor inicial
