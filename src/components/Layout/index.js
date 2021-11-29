@@ -23,9 +23,10 @@ const Layout = ({ children, titlePage }) => {
 
   }, [])
 
+  console.log("window:--->", window.matchMedia('(prefers-color-scheme: dark)'));
 
   const themeData = {
-    theme: typeof localStorage !== 'undefined' ? localStorage.theme : null
+    theme: typeof localStorage !== 'undefined' ? localStorage.theme : window.matchMedia('(prefers-color-scheme: dark)') === true ? "dark" : "light"
   }
 
 
