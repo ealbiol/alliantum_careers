@@ -26,7 +26,7 @@ const Layout = ({ children, titlePage }) => {
 
 
   return (
-    <DarkContext.Provider isDark={isDark} >
+    <DarkContext.Provider value={isDark} >
       <div className={isDark ? "dark" : ""}>
         <Header siteTitle={titlePage} />
         <br />
@@ -35,6 +35,8 @@ const Layout = ({ children, titlePage }) => {
         <br />
         <SwitchModeButton isDark={isDark} setIsDark={setIsDark} />
         <div>
+          <h1>{isDark ? "Dark" : "Light"}</h1>
+          <h1 className="bg-cornflower-blue dark:bg-black dark:text-white" >{isDark ? "Dark" : "Light"}</h1>
           <br />
           <br />
           <br />

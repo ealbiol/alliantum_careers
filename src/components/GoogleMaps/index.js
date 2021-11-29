@@ -15,9 +15,10 @@ const center = {
 };
 
 export function GoogleMaps() {
-    const isDark = useDark()
 
-    console.log("isDark Google Maps:--->", isDark);
+    const isDark = useDark()
+    console.log("isDark in GoogleMaps.js:--->", isDark);
+
 
     const [addressUnite, setAddressUnite] = React.useState([])
 
@@ -48,7 +49,6 @@ export function GoogleMaps() {
     //     setMap(null)
     // }, [])
 
-    // const isDark = "Lorem"
 
     return isLoaded ? (
 
