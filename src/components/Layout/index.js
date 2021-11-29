@@ -5,12 +5,13 @@ import Footer from "../Footer/index"
 import "./layout.css"
 import { SwitchModeButton } from "../SwitchModeButton/index"
 // import { CookieBanner } from "../CookieBanner/index"
+import DarkContext from "../../context/DarkContext"
+
 
 const Layout = ({ children, titlePage }) => {
 
 
   const [isDark, setIsDark] = React.useState(false)
-
 
   React.useEffect(() => {
 
@@ -19,29 +20,37 @@ const Layout = ({ children, titlePage }) => {
     } else {
       setIsDark(false)
     }
+
   }, [])
 
+
+
   return (
-    <div className={isDark ? "dark" : ""}>
-      <Header siteTitle={titlePage} />
-      {/* <br />
-      <br />
-      <br />
-      <br /> */}
-      <SwitchModeButton isDark={isDark} setIsDark={setIsDark} />
-      <div>
-        {/* <br />
+    <DarkContext.Provider isDark={isDark} >
+      <div className={isDark ? "dark" : ""}>
+        <Header siteTitle={titlePage} />
         <br />
         <br />
-        <br /> */}
-        <main>{children}</main>
+        <br />
+        <br />
+        <SwitchModeButton isDark={isDark} setIsDark={setIsDark} />
+        <div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <main>{children}</main>
 
+        </div>
+
+        {/* <CookieBanner /> */}
+
+        <Footer />
       </div>
+    </DarkContext.Provider>
 
-      {/* <CookieBanner /> */}
 
-      <Footer />
-    </div>
+
   )
 }
 
