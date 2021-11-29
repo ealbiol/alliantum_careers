@@ -29,7 +29,6 @@ const Layout = ({ children, titlePage }) => {
   }
 
 
-
   // themeData = typeof localStorage !== 'undefined' ? localStorage.theme : "light"     // false? o lo que sea el valor inicial
 
   console.log("themeData in Layout:--->", themeData.theme);
