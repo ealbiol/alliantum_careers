@@ -2,7 +2,7 @@ import * as React from "react"
 import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
 import { getAllAdresses } from "../../data/data";
 import { OfficeCard } from "../OfficeCard";
-import useDark from "../../hooks/useDark";
+import useTheme from "../../hooks/useTheme";
 
 const containerStyle = {
     width: '100%',
@@ -15,11 +15,8 @@ const center = {
 };
 
 export function GoogleMaps() {
-    const isDark = useDark()
 
-    console.log("isDark Google Maps:--->", isDark);
-
-
+    const theme = useTheme();
 
     const [addressUnite, setAddressUnite] = React.useState([])
 
@@ -30,11 +27,28 @@ export function GoogleMaps() {
         })
     }, [])
 
+    console.log("theme in GoogleMaps:--->", theme);
+
+
+    const [isDark, setIsDark] = React.useState(false)
+
+
+    React.useEffect(() => {
+
+        if (localStorage.theme === "dark" || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            setIsDark(true)
+        } else {
+            setIsDark(false)
+        }
+
+    }, [])
+
 
     const { isLoaded } = useJsApiLoader({
         id: 'google-map-script',
         googleMapsApiKey: process.env.GATSBY_GOOGLE_MAPS_API_KEY
     })
+
 
 
 
@@ -55,7 +69,7 @@ export function GoogleMaps() {
 
         <div className="map">
             {
-                isDark === "dark" ?
+                theme === "dark" ?
                     <GoogleMap
                         mapContainerStyle={containerStyle}
                         center={center}

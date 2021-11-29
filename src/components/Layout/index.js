@@ -5,7 +5,7 @@ import Footer from "../Footer/index"
 import "./layout.css"
 import { SwitchModeButton } from "../SwitchModeButton/index"
 // import { CookieBanner } from "../CookieBanner/index"
-import DarkContext from "../../context/DarkContext"
+import ThemeContext from "../../context/ThemeContext"
 
 
 const Layout = ({ children, titlePage }) => {
@@ -24,10 +24,15 @@ const Layout = ({ children, titlePage }) => {
   }, [])
 
 
+  const themeData = {
+    theme: localStorage.theme
+  }
+
+  console.log("themeData in Layout:--->", themeData.theme);
 
 
   return (
-    <DarkContext.Provider value={isDark} >
+    <ThemeContext.Provider value={themeData.theme} >
       <div className={isDark ? "dark" : ""}>
         <Header siteTitle={titlePage} />
         <br />
@@ -50,7 +55,7 @@ const Layout = ({ children, titlePage }) => {
 
         <Footer />
       </div>
-    </DarkContext.Provider>
+    </ThemeContext.Provider>
 
 
 
