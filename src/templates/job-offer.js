@@ -18,6 +18,7 @@ const JobOfferTemplate = ({ data, location }) => {
   console.log("jobDepartment:--->", jobDepartment);
 
 
+
   return (
     <Layout>
 

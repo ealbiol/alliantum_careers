@@ -15,9 +15,10 @@ const center = {
 };
 
 export function GoogleMaps() {
-
     const isDark = useDark()
-    console.log("isDark in GoogleMaps.js:--->", isDark);
+
+    console.log("isDark Google Maps:--->", isDark);
+
 
 
     const [addressUnite, setAddressUnite] = React.useState([])

@@ -25,6 +25,7 @@ const Layout = ({ children, titlePage }) => {
 
 
 
+
   return (
     <DarkContext.Provider value={isDark} >
       <div className={isDark ? "dark" : ""}>
