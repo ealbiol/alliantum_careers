@@ -23,9 +23,8 @@ const Layout = ({ children, titlePage }) => {
 
   }, [])
 
-
   const themeData = {
-    theme: localStorage.theme
+    theme: localStorage?.theme
   }
 
   console.log("themeData in Layout:--->", themeData.theme);
