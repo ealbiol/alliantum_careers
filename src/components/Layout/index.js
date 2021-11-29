@@ -25,7 +25,8 @@ const Layout = ({ children, titlePage }) => {
 
 
   const themeData = {
-    theme: typeof localStorage !== 'undefined' ? localStorage.theme : null
+    theme: typeof localStorage !== 'undefined' ? localStorage.theme : (localStorage.theme === "dark" || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) ||
+      (localStorage.theme === "light" || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: light)').matches))
   }
 
 
