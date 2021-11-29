@@ -14,18 +14,25 @@ const Layout = ({ children, titlePage }) => {
   const [isDark, setIsDark] = React.useState(false)
 
   React.useEffect(() => {
-
+    console.log("window:--->", window.matchMedia('(prefers-color-scheme: dark)'))
     if (localStorage.theme === "dark" || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       setIsDark(true)
+
     } else {
       setIsDark(false)
     }
 
   }, [])
 
-
+  console.log("LOCAL STORAGE", localStorage);
   const themeData = {
-    theme: typeof localStorage !== 'undefined' ? localStorage.theme : null
+
+
+    theme: localStorage.length !== 0 && localStorage.theme !== undefined ? localStorage.theme : (
+      window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light"
+    )
+
+
   }
 
 
