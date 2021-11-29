@@ -10,24 +10,27 @@ import ThemeContext from "../../context/ThemeContext"
 
 const Layout = ({ children, titlePage }) => {
 
-  const themeData = {
+  /*const themeData = {
     theme: ""
-  }
+  }*/
+  const [themeData, setThemeData] = React.useState("")
   const [isDark, setIsDark] = React.useState(false)
 
   React.useEffect(() => {
     console.log("window:--->", window.matchMedia('(prefers-color-scheme: dark)'))
     if (localStorage.theme === "dark" || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      setIsDark(true)
-
+      //setIsDark(true)
+      setThemeData("dark")
     } else {
-      setIsDark(false)
+      //setIsDark(false)
+      setThemeData("light")
     }
 
-    themeData.theme = localStorage?.length !== 0 && localStorage?.theme !== undefined ? localStorage?.theme : (
-      window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light"
-    )
-  }, [])
+    setThemeData(
+      localStorage?.length !== 0 && localStorage?.theme !== undefined ? localStorage?.theme : (
+        window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light"
+      ))
+  }, [isDark])
 
 
 
@@ -36,11 +39,11 @@ const Layout = ({ children, titlePage }) => {
 
 
 
-  console.log("themeData in Layout:--->", themeData.theme);
+  console.log("themeData in Layout:--->", themeData);
 
 
   return (
-    <ThemeContext.Provider value={themeData.theme} >
+    <ThemeContext.Provider value={themeData} >
       <div className={isDark ? "dark" : ""}>
         <Header siteTitle={titlePage} />
         <br />
