@@ -2,12 +2,10 @@ import * as React from "react"
 import { ValueCard } from "../ValueCard"
 import ArrowLeft from "../../images/values-photos/arrow-left.svg"
 import ArrowRight from "../../images/values-photos/arrow-right.svg"
-import useTheme from "../../hooks/useTheme"
 
 
 export function OurValuesMenu({ allOurValues }) {
 
-    const theme = useTheme();
 
     const [showValueCard, setShowValueCard] = React.useState(1)
 
@@ -15,7 +13,7 @@ export function OurValuesMenu({ allOurValues }) {
     console.log("allOurValues:--->", allOurValues);
 
     return (
-        <div className={theme} >
+        <div >
             <div className="flex " >
                 <div className="w-6/12 w-full">
                     <div>

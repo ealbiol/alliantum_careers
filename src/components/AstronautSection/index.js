@@ -1,11 +1,9 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { Parallax } from "react-parallax";
-import useTheme from "../../hooks/useTheme";
 
 export function AstronautSection() {
 
-    const theme = useTheme();
 
     return (
 

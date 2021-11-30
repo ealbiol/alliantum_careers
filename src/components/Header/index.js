@@ -4,12 +4,10 @@ import { Link } from "gatsby"
 import { getAllHeaderAndFooterSections } from "../../data/data"
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import AlliantumLogo from "../../images/header-photos/Image1.svg"
-import useTheme from "../../hooks/useTheme";
 
 
 export default function Header({ siteTitle }) {
 
-  const theme = useTheme();
 
   const [headerUnite, setHeaderUnite] = React.useState([])
 
@@ -21,47 +19,45 @@ export default function Header({ siteTitle }) {
   }, [])
 
   return (
-    <div className={theme}>
-      <header className="fixed w-full z-30 bg-white dark:bg-black dark:text-white" style={{ marginBottom: `1.45rem` }}>
+    <header className="fixed w-full z-30 bg-white dark:bg-black dark:text-white" style={{ marginBottom: `1.45rem` }}>
 
-        <div className="container-main">
+      <div className="container-main">
 
 
-          <div className="flex flex-row justify-between py-3 bb bg-red">
+        <div className="flex flex-row justify-between py-3 bb bg-red">
 
-            <Link to="/" >
-              <div className="flex items-end">
-                <AlliantumLogo style={{ margin: "4px" }} />
-                <span className="text-xs">CAREERS</span>
-              </div>
-            </Link>
-
-            <div>
-              {
-                headerUnite.map((unite, index) => {
-                  return (
-                    <span key={index} style={{ margin: 0 }}  >
-                      <AnchorLink
-                        to={unite.anchor}
-                        style={{ color: `white`, textDecoration: `none` }}
-                        className="ml-3"
-                      >
-                        {unite.sectionName}
-                      </AnchorLink>
-                    </span>
-                  )
-                })
-              }
+          <Link to="/" >
+            <div className="flex items-end">
+              <AlliantumLogo style={{ margin: "4px" }} />
+              <span className="text-xs">CAREERS</span>
             </div>
+          </Link>
 
+          <div>
+            {
+              headerUnite.map((unite, index) => {
+                return (
+                  <span key={index} style={{ margin: 0 }}  >
+                    <AnchorLink
+                      to={unite.anchor}
+                      style={{ color: `white`, textDecoration: `none` }}
+                      className="ml-3"
+                    >
+                      {unite.sectionName}
+                    </AnchorLink>
+                  </span>
+                )
+              })
+            }
           </div>
-
-
 
         </div>
 
-      </header>
-    </div>
+
+
+      </div>
+
+    </header>
   )
 }
 
