@@ -10,11 +10,9 @@ import ThemeContext from "../../context/ThemeContext"
 
 const Layout = ({ children, titlePage }) => {
 
-  /*const themeData = {
-    theme: ""
-  }*/
+
   const [themeData, setThemeData] = React.useState("")
-  const [isDark, setIsDark] = React.useState(false)
+  // const [isDark, setIsDark] = React.useState(false)
 
   React.useEffect(() => {
     console.log("window:--->", window.matchMedia('(prefers-color-scheme: dark)'))
@@ -30,8 +28,7 @@ const Layout = ({ children, titlePage }) => {
       localStorage?.length !== 0 && localStorage?.theme !== undefined ? localStorage?.theme : (
         window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light"
       ))
-  }, [isDark])
-
+  }, [/*isDark */])
 
 
   console.log("themeData in Layout:--->", themeData);

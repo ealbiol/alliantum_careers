@@ -28,18 +28,18 @@ export function GoogleMaps() {
     console.log("theme in GoogleMaps:--->", theme);
 
 
-    const [isDark, setIsDark] = React.useState(false)
+    // const [isDark, setIsDark] = React.useState(false)
 
 
-    React.useEffect(() => {
+    // React.useEffect(() => {
 
-        if (localStorage.theme === "dark" || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            setIsDark(true)
-        } else {
-            setIsDark(false)
-        }
+    //     if (localStorage.theme === "dark" || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    //         setIsDark(true)
+    //     } else {
+    //         setIsDark(false)
+    //     }
 
-    }, [])
+    // }, [])
 
 
     const { isLoaded } = useJsApiLoader({
