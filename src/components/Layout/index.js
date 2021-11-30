@@ -12,15 +12,12 @@ const Layout = ({ children, titlePage }) => {
 
 
   const [themeData, setThemeData] = React.useState("")
-  // const [isDark, setIsDark] = React.useState(false)
 
   React.useEffect(() => {
     console.log("window:--->", window.matchMedia('(prefers-color-scheme: dark)'))
     if (localStorage.theme === "dark" || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      // setIsDark(true)
       setThemeData("dark")
     } else {
-      // setIsDark(false)
       setThemeData("light")
     }
 
@@ -28,7 +25,7 @@ const Layout = ({ children, titlePage }) => {
       localStorage?.length !== 0 && localStorage?.theme !== undefined ? localStorage?.theme : (
         window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light"
       ))
-  }, [/*isDark */])
+  }, [])
 
 
   console.log("themeData in Layout:--->", themeData);
@@ -38,14 +35,13 @@ const Layout = ({ children, titlePage }) => {
     <ThemeContext.Provider value={themeData} >
       <div className={themeData}>
         <div className="bg-white dark:bg-black dark:text-white" >
-          <Header siteTitle={titlePage} />
+          <Header siteTitle={titlePage} themeData={themeData} setThemeData={setThemeData} />
           <br />
           <br />
           <br />
           <br />
           <SwitchModeButton themeData={themeData} setThemeData={setThemeData} />
           <div>
-            {/* <h1>{themeData}</h1> */}
             <h1 className="bg-cornflower-blue dark:bg-black dark:text-white" >{themeData.toLocaleUpperCase()}</h1>
             <br />
             <br />
