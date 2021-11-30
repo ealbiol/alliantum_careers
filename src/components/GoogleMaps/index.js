@@ -418,12 +418,9 @@ export function GoogleMaps() {
                                     "elementType": "geometry.fill",
                                     "stylers": [
                                         {
-                                            "color": "#000000",
+                                            "color": "#141414",
 
-                                        },
-                                        // {
-                                        //     "backgroundColor": "hsla(0, 0%, 0%, 0)"
-                                        // }
+                                        }
                                     ]
                                 },
                                 {
@@ -431,7 +428,7 @@ export function GoogleMaps() {
                                     "elementType": "labels.text.fill",
                                     "stylers": [
                                         {
-                                            "color": "#000000"
+                                            "color": "#141414"
                                         },
                                     ]
                                 }
