@@ -65,6 +65,8 @@ export function AstronautSection() {
                         </Parallax>
                     </div>
                     <div className="ourvalues-image__below">
+
+
                         {/* Planet Parallax */}
 
                         {/* <Parallax
