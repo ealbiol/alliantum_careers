@@ -53,7 +53,7 @@ function IndexPage() {
                 </div>
               </div>
 
-              <CircleBlur blur="50" color="yellow" top="50%" left="50%" size="300"
+              <CircleBlur zIndex={1} blur="50" color="yellow" top="50%" left="50%" size="300"
                 keyFrame={
                   `    0%    {  transform: translate(0, 0) }
                   33%   {  transform: scale(0.77) }
@@ -63,7 +63,7 @@ function IndexPage() {
                 }
               />
 
-              <CircleBlur blur="50" color="red" top="50%" left="50%" size="300"
+              <CircleBlur zIndex={1} blur="50" color="red" top="50%" left="50%" size="300"
                 keyFrame={
                   `    0%    {  transform: translate(0, 0) }
                   33%   {  transform: scale(0.77) }
