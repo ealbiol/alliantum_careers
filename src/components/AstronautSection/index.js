@@ -28,7 +28,7 @@ export function AstronautSection() {
                         {/* Astronaut Parallax */}
                         <Parallax
                             strength={100}
-                            style={{ height: "700px" }}
+                            style={{ height: "2000px" }}
                             renderLayer={(percentage) => (
                                 <div>
                                     <div
@@ -66,7 +66,8 @@ export function AstronautSection() {
                     </div>
                     <div className="ourvalues-image__below">
                         {/* Planet Parallax */}
-                        <Parallax
+
+                        {/* <Parallax
                             strength={100}
                             style={{ height: "700px" }}
                             renderLayer={(percentage) => (
@@ -94,7 +95,8 @@ export function AstronautSection() {
                         >
                             <div style={{ height: 500 }}>
                             </div>
-                        </Parallax>
+                        </Parallax> */}
+
                     </div>
                 </div>
             </div>
