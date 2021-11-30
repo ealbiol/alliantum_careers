@@ -15,7 +15,7 @@ export function OurValuesSection() {
     }, [])
 
     return (
-        <div>
+        <div className="dark:bg-black" >
             <div className="container-main">
                 <div>
                     <OurValuesMenu

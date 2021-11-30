@@ -1,15 +1,16 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { Parallax } from "react-parallax";
-
+import useTheme from "../../hooks/useTheme";
 
 export function AstronautSection() {
+
+    const theme = useTheme();
+
     return (
 
-
-
         <div>
-            <div className="ourvalues">
+            <div className="ourvalues dark:bg-black dark:text-black">
                 <div className="ourvalues__content py-6">
                     <div className="w-4/12 bg-white p-4 rounded-lg self-start ml-auto">
                         <h3 className="title text-md">Our Mission</h3>

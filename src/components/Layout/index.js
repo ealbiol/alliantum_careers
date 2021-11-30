@@ -45,8 +45,8 @@ const Layout = ({ children, titlePage }) => {
           <br />
           <SwitchModeButton themeData={themeData} setThemeData={setThemeData} />
           <div>
-            <h1>{themeData}</h1>
-            <h1 className="bg-cornflower-blue dark:bg-black dark:text-white" >{themeData}</h1>
+            {/* <h1>{themeData}</h1> */}
+            <h1 className="bg-cornflower-blue dark:bg-black dark:text-white" >{themeData.toLocaleUpperCase()}</h1>
             <br />
             <br />
             <br />
