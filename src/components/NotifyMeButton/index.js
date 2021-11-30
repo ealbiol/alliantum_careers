@@ -114,7 +114,6 @@ export function NotifyMeButton() {
                         {
                             userPositions.length > 0 ?
                                 <button type="submit" style={{ color: `green` }} >
-                                    <span><IconBell /></span>
                                     <span>Submit</span>
                                 </button>
                                 :
@@ -128,7 +127,7 @@ export function NotifyMeButton() {
 
             }
             {submitMessage &&
-                <div style={{ color: "green" }} >Email sent! Check your inbox.</div>
+                <div style={{ color: "green" }} >Email sent! Please check your inbox.</div>
             }
         </div>
     )

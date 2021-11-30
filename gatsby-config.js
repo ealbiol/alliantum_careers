@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Alliantum.es`,
+    title: ``,
+    // title: `Alliantum.es`,
     mainPage: `Main Page`,
     theTeam: `The Team`,
     jobOffer: `Job Offer`,
