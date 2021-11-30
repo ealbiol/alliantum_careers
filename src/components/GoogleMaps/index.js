@@ -810,9 +810,6 @@ export function GoogleMaps() {
                                             "color": "#ffffff",
 
                                         },
-                                        // {
-                                        //     "backgroundColor": "hsla(0, 0%, 0%, 0)"
-                                        // }
                                     ]
                                 },
                                 {

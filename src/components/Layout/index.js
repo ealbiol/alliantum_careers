@@ -10,32 +10,27 @@ import ThemeContext from "../../context/ThemeContext"
 
 const Layout = ({ children, titlePage }) => {
 
-  /*const themeData = {
-    theme: ""
-  }*/
+
   const [themeData, setThemeData] = React.useState("")
   const [isDark, setIsDark] = React.useState(false)
 
   React.useEffect(() => {
-    console.log("window:--->", window.matchMedia('(prefers-color-scheme: dark)'))
-    if (localStorage.theme === "dark" || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      //setIsDark(true)
-      setThemeData("dark")
-    } else {
-      //setIsDark(false)
-      setThemeData("light")
-    }
+
+    // console.log("window:--->", window.matchMedia('(prefers-color-scheme: dark)'))
+
+    // if (localStorage.theme === "dark" || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    //   //setIsDark(true)
+    //   setThemeData("dark")
+    // } else {
+    //   //setIsDark(false)
+    //   setThemeData("light")
+    // }
 
     setThemeData(
       localStorage?.length !== 0 && localStorage?.theme !== undefined ? localStorage?.theme : (
         window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light"
       ))
   }, [isDark])
-
-
-
-
-
 
 
 
