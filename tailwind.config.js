@@ -20,8 +20,8 @@ module.exports = {
             transparent: 'transparent',
             current: 'currentColor',
 
-            'white': '#FFFFFF',
-            'black': '#000000',
+            'white': '#f0f0f0',
+            'black': '#141414',
 
             'loblolly': {
                 '100': '#f9f9fa',
