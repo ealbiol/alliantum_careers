@@ -175,7 +175,7 @@ module.exports = {
     },
     "gatsby-plugin-react-svg",
     "gatsby-plugin-styled-components",
-    "styled-components"
+    "styled-components",
 
   ],
 }

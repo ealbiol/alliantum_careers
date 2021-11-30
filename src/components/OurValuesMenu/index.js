@@ -15,7 +15,7 @@ export function OurValuesMenu({ allOurValues }) {
     return (
         <div >
             <div className="flex" >
-                <div className="w-6/12 w-full card">
+                <div className="w-6/12 w-full">
                     <div>
                         <ul className="card-menu mx-0 flex flex-col px-0" >
                             {

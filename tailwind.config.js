@@ -132,6 +132,8 @@ module.exports = {
             ping: 'ping 1s cubic-bezier(0, 0, 0.2, 1) infinite',
             pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
             bounce: 'bounce 1s infinite',
+            marquee: 'marquee 25s linear infinite',
+            marquee2: 'marquee2 25s linear infinite',
         },
         backdropBlur: (theme) => theme('blur'),
         backdropBrightness: (theme) => theme('brightness'),
@@ -502,6 +504,14 @@ module.exports = {
             '-full': '-100%',
         }),
         keyframes: {
+            marquee: {
+                '0%': { transform: 'translateX(0%)' },
+                '100%': { transform: 'translateX(-100%)' },
+            },
+            marquee2: {
+                '0%': { transform: 'translateX(100%)' },
+                '100%': { transform: 'translateX(0%)' },
+            },
             spin: {
                 to: {
                     transform: 'rotate(360deg)',
