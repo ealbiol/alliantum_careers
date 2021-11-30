@@ -8,7 +8,7 @@ export function TheTeam() {
     return (
         <div>
             <div className="container mx-auto">
-                <AnchorLink to="/the-team" >Meet the team</AnchorLink>
+                <div>Meet the team</div>
             </div>
             <div className="container mx-auto">
                 <div className="flex">

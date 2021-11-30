@@ -103,6 +103,7 @@ function IndexPage() {
         <GoogleMaps />
 
         {/* ------------> The Team */}
+        <div id="the-team" />
         <div>
           <div className="container mx-auto mt-6 mb-2">
             <span className="pretitle">The team</span>
@@ -116,7 +117,8 @@ function IndexPage() {
         </div>
 
         {/* ------------> Our Values */}
-        <div id="our-values" >
+        <div id="our-values" />
+        <div>
           <OurValuesSection />
         </div>
       </div>

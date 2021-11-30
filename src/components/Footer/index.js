@@ -28,7 +28,7 @@ export default function Footer() {
                 <div className="w-3/12 flex flex-col content-between">
                     <Link to="/" >
                         <AlliantumLogo />
-                        <p>asd</p>
+
                     </Link>
                     <p>© Alliantum GmbH.</p>
                 </div>

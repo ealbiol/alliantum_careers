@@ -15,7 +15,7 @@ export function OurValuesSection() {
     }, [])
 
     return (
-        <div>
+        <div className="mt-7 mb-7" >
             <div className="container-main">
                 <div>
                     <OurValuesMenu

@@ -34,7 +34,7 @@ export async function getAllEmployees() {
 export const allHeaderAndFooterSections = [
     { sectionName: "Your benefits", anchor: "/#your-benefits" },
     { sectionName: "The offices", anchor: "/#the-offices" },
-    { sectionName: "The team", anchor: "/the-team" },
+    { sectionName: "The team", anchor: "/#the-team" },
     { sectionName: "Our values", anchor: "/#our-values" },
     { sectionName: "The jobs", anchor: "/#jobs-table" }
 ]

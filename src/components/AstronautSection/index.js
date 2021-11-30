@@ -28,7 +28,7 @@ export function AstronautSection() {
                         {/* Astronaut Parallax */}
                         <Parallax
                             strength={100}
-                            style={{ height: "1200px" }}
+                            style={{ height: "1400px" }}
                             renderLayer={(percentage) => (
                                 <div>
                                     <div
