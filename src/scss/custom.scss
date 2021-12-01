@@ -8,6 +8,10 @@ body {
     @apply bg-white;
 }
 
+body * {
+    transition: background-color 0.14s ease-in-out;
+}
+
 .container-main {
     @apply container mx-auto;
 }
@@ -30,6 +34,14 @@ body {
 
 .btn-outline {
     @apply border-2 border-cornflower-blue text-cornflower-blue;
+}
+
+.btn-outline-black {
+    @apply border-2 border-black text-black;
+}
+
+.btn-outline-white {
+    @apply border-2 border-white text-white;
 }
 
 .btn-icon {
@@ -124,11 +136,13 @@ body {
     align-items: center;
 }
 
-.hero-left-content__wrapper {
+.hero-left-content__wrapper, 
+.hero-left-content__wrapper-black {
     height: 80vh;
 }
 
-.hero-left-content__wrapper::before {
+.hero-left-content__wrapper::before,
+.hero-left-content__wrapper-black::before {
     display: block;
     position: absolute;
     width: 100%;
@@ -140,15 +154,9 @@ body {
 }
 
 .hero-left-content__wrapper-black::before {
-    display: block;
-    position: absolute;
-    background-color: white;
-    width: 100%;
-    height: 100%;
-    left: 20px;
-    left: -1422px;
-    content: "";
+    @apply bg-black;
 }
+
 
 .hero-header__back {
     height: 80vh;

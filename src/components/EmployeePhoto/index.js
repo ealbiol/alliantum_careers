@@ -22,6 +22,6 @@ export default function EmployeePhoto({ photo }) {
   const photoEmployee = data.allImageSharp.nodes.find(image => photo === image.fixed.originalName);
 
   return (
-    <GatsbyImage className="rounded-lg" image={getImage(photoEmployee)} alt="Photo Employee" />
+    <GatsbyImage className="rounded-lg" style={{ transform: "scale(1.01)" }} image={getImage(photoEmployee)} alt="Photo Employee" />
   )
 }

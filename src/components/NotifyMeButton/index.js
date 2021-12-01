@@ -1,7 +1,10 @@
 import * as React from "react"
 import Select from 'react-select'
 import { allPositionsReactSelect } from "../../data/data"
-import IconBell from "../../images/notify-me-photos/Icon1.svg"
+import IconBellWhite from "../../images/notify-me-photos/Icon1.svg"
+import IconBellBlack from "../../images/notify-me-photos/Icon2.svg"
+import useTheme from "../../hooks/useTheme";
+
 
 export function NotifyMeButton() {
 
@@ -10,6 +13,7 @@ export function NotifyMeButton() {
     const [userPositions, setUserPositions] = React.useState([0])
     const [showNotifySubmit, setShowNotifySubmit] = React.useState(false)
     const [submitMessage, setSubmitMessage] = React.useState(false)
+    const theme = useTheme();
 
 
     const URL = "https://api.sendinblue.com/v3/contacts"
@@ -63,13 +67,27 @@ export function NotifyMeButton() {
                     onClick={handleBoolean}
                 >X</button>
                 :
-                <button
-                    className="btn btn-outline btn-icon"
-                    onClick={handleBoolean}
-                >
-                    <span><IconBell /></span>
-                    <span> Notify me on new jobs</span>
-                </button>
+                theme === "dark" ?
+                    <button
+                        className="btn btn-white btn-icon"
+                        onClick={handleBoolean}
+                    >
+
+                        <span><IconBellBlack /></span>
+                        <span> Notify me on new jobs</span>
+
+                    </button>
+                    :
+                    <button
+                        className="btn btn-black btn-icon"
+                        onClick={handleBoolean}
+                    >
+
+                        <span><IconBellWhite /></span>
+                        <span> Notify me on new jobs</span>
+
+                    </button>
+
 
             }
 

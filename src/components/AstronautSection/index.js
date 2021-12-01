@@ -7,7 +7,7 @@ export function AstronautSection() {
 
     return (
 
-        <div>
+        <div className="overflow-hidden" >
             <div className="ourvalues dark:bg-black dark:text-black">
                 <div className="ourvalues__content py-6">
                     <div className="w-4/12 bg-white p-4 rounded-lg self-start ml-auto">
@@ -23,12 +23,13 @@ export function AstronautSection() {
                         </p>
                     </div>
                 </div>
+
                 <div className="ourvalues__images">
                     <div className="ourvalues-image__above">
                         {/* Astronaut Parallax */}
                         <Parallax
                             strength={100}
-                            style={{ height: "1400px" }}
+                            style={{ height: "1900px" }}
                             renderLayer={(percentage) => (
                                 <div>
                                     <div

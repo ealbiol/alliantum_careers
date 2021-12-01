@@ -41,7 +41,7 @@ export function TheTeam() {
 
                             <EmployeesGallery />
 
-                            <div className="card-bg bg-festival w-3/12 mx-auto -mt-7 mb-6">
+                            <div className="card-bg bg-festival w-3/12 mx-auto -mt-7 mb-6 relative z-10">
                                 <span className="title text-black text-md block">Do you want to grow with us?</span>
                                 <AnchorLink className="btn btn-black mt-4" to={"/#jobs-table"} >See current job offers</AnchorLink>
                             </div>

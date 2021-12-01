@@ -17,6 +17,7 @@ const center = {
 export function GoogleMaps() {
 
     const theme = useTheme();
+    console.log("theme in googleMaps:", theme);
     const [addressUnite, setAddressUnite] = React.useState([])
 
     React.useEffect(() => {
