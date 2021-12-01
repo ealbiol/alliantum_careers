@@ -62,10 +62,19 @@ export function NotifyMeButton() {
     return (
         <div>
             {showNotifySubmit ?
-                <button
-                    className="btn btn-outline btn-icon"
-                    onClick={handleBoolean}
-                >X</button>
+                theme === "dark" ?
+                    <button
+                        className="btn btn-white btn-icon mb-3"
+                        onClick={handleBoolean}
+                    >X
+                    </button>
+                    :
+                    <button
+                        className="btn btn-black btn-icon mb-3"
+                        onClick={handleBoolean}
+                    >X
+                    </button>
+
                 :
                 theme === "dark" ?
                     <button
@@ -128,11 +137,11 @@ export function NotifyMeButton() {
                         {
                             userPositions.length > 0 ?
                                 <button type="submit" style={{ color: `green` }} >
-                                    <span>Submit</span>
+                                    <button>Submit</button>
                                 </button>
                                 :
                                 <button type="submit" style={{ color: `gray` }} disabled>
-                                    <span>Submit</span>
+                                    <button>Submit</button>
                                 </button>
                         }
                     </div>
