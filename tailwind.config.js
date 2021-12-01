@@ -20,6 +20,7 @@ module.exports = {
             transparent: 'transparent',
             current: 'currentColor',
 
+            'bleach': '#FFF',
             'white': '#F0F0F0',
             'black': '#141414',
 

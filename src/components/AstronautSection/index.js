@@ -10,13 +10,13 @@ export function AstronautSection() {
         <div className="overflow-hidden" >
             <div className="ourvalues dark:bg-black dark:text-black">
                 <div className="ourvalues__content py-6">
-                    <div className="w-4/12 bg-white p-4 rounded-lg self-start ml-auto">
+                    <div className="w-4/12 bg-bleach p-4 rounded-lg self-start ml-auto">
                         <h3 className="title text-md">Our Mission</h3>
                         <p className="text-sm mb-0">
                             To provide cutting-edge and innovative technological solutions tailored to business needs to increase competitiveness and productivity.
                         </p>
                     </div>
-                    <div className="w-4/12 bg-white p-4 rounded-lg ml-auto self-end mr-auto z-10">
+                    <div className="w-4/12 bg-bleach p-4 rounded-lg ml-auto self-end mr-auto z-10">
                         <h3 className="title text-md">Our Vision</h3>
                         <p className="text-sm mb-0">
                             To become the leading provider of e-commerce solutions, from brand development to digital identity and technical implementation.

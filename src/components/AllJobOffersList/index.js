@@ -54,11 +54,11 @@ export function AllJobOffersList() {
                 <div className="flex mb-3">
                     <button
                         style={{
-                            backgroundColor: clickedDepartment ? "" : "#D7DCE1",
-                            color: clickedDepartment ? "" : "black"
+                            backgroundColor: clickedDepartment ? "" : "#141414",
+                            color: clickedDepartment ? "" : "#f0f0f0"
 
                         }}
-                        className="text-xs py-1 px-3 border border-loblolly rounded-xl mr-1"
+                        className="text-xs py-1 px-3 border border-black dark:border-white rounded-xl mr-1"
                         onClick={() => (allRoles())} >
                         All roles
                     </button>
@@ -75,7 +75,7 @@ export function AllJobOffersList() {
                     jobOfferDetails.map((detail, index) => {
                         return (
 
-                            <div key={index} className="card">
+                            <div key={index} className="card border border-black dark:border-white">
                                 <Link className="flex justify-between items-center" to={detail.node.fields.slug} >
                                     <div>{detail.node.frontmatter.title}</div>
                                     <span className="pill">{detail.node.frontmatter.department}</span>

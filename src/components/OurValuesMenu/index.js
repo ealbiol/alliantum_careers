@@ -38,7 +38,7 @@ export function OurValuesMenu({ allOurValues }) {
                     </div>
 
                 </div>
-                <div className="w-6/12 w-full ml-2 bg-white rounded-xl overflow-hidden dark:bg-black">
+                <div className="w-6/12 w-full ml-2 rounded-xl overflow-hidden border border-white bg-bleach dark:bg-black dark:border-white">
                     {showValueCard &&
                         <ValueCard value={allOurValues.find(value => value.id === showValueCard)} />
                     }

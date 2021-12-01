@@ -61,7 +61,7 @@ body * {
 }
 
 .card {
-    @apply border border-black rounded-lg mb-3 p-3 overflow-hidden;
+    @apply rounded-lg mb-3 p-3 overflow-hidden border border-black dark:border-white;
 }
 
 .card-bg {
@@ -69,17 +69,17 @@ body * {
 }
 
 .pill {
-    @apply text-xs py-1 px-3 border border-black rounded-xl;
+    @apply text-xs py-1 px-3 border border-black dark:border-white rounded-xl;
 }
 
 .card-menu {
-    @apply rounded-xl border border-black;
+    @apply rounded-xl border border-black dark:border-white;
     margin-bottom: 0;
     padding-bottom: 0;
 }
 
 .card-menu > li {
-    border-bottom: solid 1px black;
+    @apply border-b border-black dark:border-white;
     margin: 0!important;
 }
 
