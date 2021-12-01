@@ -77,20 +77,22 @@ export function AllJobOffersList() {
                         {
                             jobOfferDetails.map((detail, index) => {
                                 return (
+                                    <Link to={detail.node.fields.slug} >
+                                        <div key={index} className="card border border-black dark:border-white">
+                                            <div className="flex justify-between items-center"  >
+                                                <div>{detail.node.frontmatter.title}</div>
+                                                <span className="pill">{detail.node.frontmatter.department}</span>
+                                            </div>
+                                        </div>
+                                    </Link>
 
-                                    <div key={index} className="card border border-black dark:border-white">
-                                        <Link className="flex justify-between items-center" to={detail.node.fields.slug} >
-                                            <div>{detail.node.frontmatter.title}</div>
-                                            <span className="pill">{detail.node.frontmatter.department}</span>
-                                        </Link>
-                                    </div>
 
                                 )
                             })
                         }
                     </div>
                     :
-                    <div className="mb-3" >Currently there are no jobs available for the {clickedDepartment} team.</div>
+                    <div className="mb-3" >Currently there are no job offers available for the {clickedDepartment} team.</div>
             }
 
 
@@ -99,4 +101,8 @@ export function AllJobOffersList() {
         </div>
     )
 }
+
+
+
+
 

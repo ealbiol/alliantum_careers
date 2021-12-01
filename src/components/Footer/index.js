@@ -30,11 +30,11 @@ export default function Footer() {
                         <AlliantumLogo />
 
                     </Link>
-                    <p>© Alliantum GmbH.</p>
+                    <p className="mt-2 text-xs" >© Alliantum GmbH.</p>
                 </div>
 
                 <div className="w-3/12">
-                    <AnchorLink className="btn btn-outline" to="/#jobs-table">The jobs</AnchorLink>
+                    <AnchorLink className="btn btn-outline-white" to="/#jobs-table">The jobs</AnchorLink>
                 </div>
 
                 <div className="w-3/12">

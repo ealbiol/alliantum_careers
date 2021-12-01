@@ -28,7 +28,6 @@ const Layout = ({ children, titlePage }) => {
 
 
 
-
   return (
     <ThemeContext.Provider value={themeData} >
       <div className={themeData}>
@@ -53,8 +52,6 @@ const Layout = ({ children, titlePage }) => {
       </div>
 
     </ThemeContext.Provider>
-
-
 
   )
 }
