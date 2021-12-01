@@ -1,22 +1,22 @@
 import * as React from "react"
 import { AnchorLink } from "gatsby-plugin-anchor-links";
-import { getAllEmployees } from "../../data/data"
+// import { getAllEmployees } from "../../data/data"
 import { EmployeesGallery } from "../EmployeesGallery";
 
 
 export function WorkWithUs() {
 
-    const [employees, setEmployees] = React.useState([])
+    // const [employees, setEmployees] = React.useState([])
 
-    React.useEffect(() => {
-        getAllEmployees().then((result) => {
-            setEmployees(result)
+    // React.useEffect(() => {
+    //     getAllEmployees().then((result) => {
+    //         setEmployees(result)
 
-        })
-    }, [])
+    //     })
+    // }, [])
 
-    const firstLinePhotos = employees.slice(0, 8)
-    const secondLinePhotos = employees.slice(8, 16);
+    // const firstLinePhotos = employees.slice(0, 8)
+    // const secondLinePhotos = employees.slice(8, 16);
 
 
     return (

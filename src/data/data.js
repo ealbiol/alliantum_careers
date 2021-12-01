@@ -80,7 +80,6 @@ export function GetAllDepartments() {
 
     const departmentsUniqueArray = Array.from(departmentsUnique);
 
-    console.log("All Departments:--->", departmentsUniqueArray);
 
     return departmentsUniqueArray
 
