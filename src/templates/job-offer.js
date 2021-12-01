@@ -15,7 +15,6 @@ const JobOfferTemplate = ({ data, location }) => {
   const jobOffer = data.markdownRemark;
 
   const jobDepartment = jobOffer.frontmatter.department
-  console.log("jobDepartment:--->", jobDepartment);
 
 
 

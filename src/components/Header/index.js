@@ -3,11 +3,15 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { getAllHeaderAndFooterSections } from "../../data/data"
 import { AnchorLink } from "gatsby-plugin-anchor-links";
-import AlliantumLogo from "../../images/header-photos/Image1.svg"
 import { SwitchModeButton } from "../SwitchModeButton/index";
+import useTheme from "../../hooks/useTheme";
+import AlliantumLogoWhite from "../../images/header-photos/Alliantum-white.svg"
+import AlliantumLogoBlack from "../../images/header-photos/Alliantum-black.svg"
+
 
 export default function Header({ siteTitle, themeData, setThemeData }) {
 
+  const theme = useTheme();
 
   const [headerUnite, setHeaderUnite] = React.useState([])
 
@@ -30,7 +34,13 @@ export default function Header({ siteTitle, themeData, setThemeData }) {
 
           <Link to="/" >
             <div className="flex items-end">
-              <AlliantumLogo style={{ margin: "4px" }} />
+              {
+                theme === "dark" ?
+
+                  <AlliantumLogoWhite style={{ margin: "4px" }} />
+                  :
+                  <AlliantumLogoBlack style={{ margin: "4px" }} />
+              }
               <span className="text-xs">CAREERS</span>
             </div>
           </Link>

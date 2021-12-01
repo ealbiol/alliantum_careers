@@ -47,6 +47,7 @@ export function AllJobOffersList() {
         setClickedDepartment(null)
     }
 
+
     return (
         <div>
             <div>
