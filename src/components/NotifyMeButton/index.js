@@ -33,14 +33,12 @@ export function NotifyMeButton() {
         fetch(URL, options)
             .then(response => response.json())
             .then(data => {
-                console.log("Data:--->", data)
                 setSubmitMessage(true)
                 setShowNotifySubmit(false)
                 setTimeout(() => setSubmitMessage(false), 50000);
             })
             .catch(err => console.error(err));
 
-        console.log(options);
 
     }
 
@@ -53,11 +51,9 @@ export function NotifyMeButton() {
     const options = allPositionsReactSelect
 
     function handleChangeDepartment(e) {
-        console.log("e.target.value:--->", e);
         setUserPositions(e.map(department => department.id))
     }
 
-    console.log("userPositions:--->", userPositions);
 
     return (
         <div>

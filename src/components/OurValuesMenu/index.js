@@ -9,8 +9,7 @@ export function OurValuesMenu({ allOurValues }) {
 
     const [showValueCard, setShowValueCard] = React.useState(1)
 
-    console.log("showValueCard:---> ", showValueCard);
-    console.log("allOurValues:--->", allOurValues);
+
 
     return (
         <div >

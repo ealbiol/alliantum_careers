@@ -16,9 +16,7 @@ export function WorkWithUs() {
     }, [])
 
     const firstLinePhotos = employees.slice(0, 8)
-    console.log("firstLinePhotos:---->", firstLinePhotos);
     const secondLinePhotos = employees.slice(8, 16);
-    console.log("secondLinePhotos:---->", secondLinePhotos);
 
 
     return (

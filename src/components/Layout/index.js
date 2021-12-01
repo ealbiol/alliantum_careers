@@ -14,7 +14,6 @@ const Layout = ({ children, titlePage }) => {
   const [themeData, setThemeData] = React.useState("")
 
   React.useEffect(() => {
-    console.log("window:--->", window.matchMedia('(prefers-color-scheme: dark)'))
     if (localStorage.theme === "dark" || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       setThemeData("dark")
     } else {
@@ -28,7 +27,6 @@ const Layout = ({ children, titlePage }) => {
   }, [])
 
 
-  console.log("themeData in Layout:--->", themeData);
 
 
   return (

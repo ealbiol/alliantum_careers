@@ -19,8 +19,7 @@ export function ValuePhoto({ value }) {
   `)
 
   const photoValue = data.allImageSharp.nodes.find(image => value.photo === image.fixed.originalName);
-  console.log("allOurValues:--->", value);
-  console.log("photoValues:--->", photoValue);
+
 
 
   return (

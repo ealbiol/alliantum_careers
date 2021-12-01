@@ -25,7 +25,6 @@ export function GoogleMaps() {
         })
     }, [])
 
-    console.log("theme in GoogleMaps:--->", theme);
 
 
     // const [isDark, setIsDark] = React.useState(false)

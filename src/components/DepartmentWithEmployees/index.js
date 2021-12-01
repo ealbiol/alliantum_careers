@@ -15,7 +15,6 @@ export function DepartmentWithEmployees({ departmentTitle }) {
         })
     }, [departmentTitle])
 
-    console.log("Employees--->", getAllEmployees());
 
 
 

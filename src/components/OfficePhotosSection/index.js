@@ -12,13 +12,11 @@ export function OfficePhotos() {
     React.useEffect(() => {
         getAllOfficePhotos().then((result) => {
             setOfficePhotos(result)
-            console.log("Result Office Photos:--->", result);
 
         })
     }, [])
 
     const firstLinePhotos = officePhotos.slice(0, 4).sort(function (a, b) { return 0.5 - Math.random() })
-    console.log("firstLinePhotos:---->", firstLinePhotos);
     const secondLinePhotos = officePhotos.slice(4, 8).sort(function (a, b) { return 0.5 - Math.random() });
 
     return (
