@@ -2,14 +2,13 @@ import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import { Parallax } from "react-parallax";
 
-
 export function AstronautSection() {
+
+
     return (
 
-
-
         <div>
-            <div className="ourvalues">
+            <div className="ourvalues dark:bg-black dark:text-black">
                 <div className="ourvalues__content py-6">
                     <div className="w-4/12 bg-white p-4 rounded-lg self-start ml-auto">
                         <h3 className="title text-md">Our Mission</h3>
@@ -29,7 +28,7 @@ export function AstronautSection() {
                         {/* Astronaut Parallax */}
                         <Parallax
                             strength={100}
-                            style={{ height: "700px" }}
+                            style={{ height: "1400px" }}
                             renderLayer={(percentage) => (
                                 <div>
                                     <div
@@ -66,8 +65,11 @@ export function AstronautSection() {
                         </Parallax>
                     </div>
                     <div className="ourvalues-image__below">
+
+
                         {/* Planet Parallax */}
-                        <Parallax
+
+                        {/* <Parallax
                             strength={100}
                             style={{ height: "700px" }}
                             renderLayer={(percentage) => (
@@ -95,7 +97,8 @@ export function AstronautSection() {
                         >
                             <div style={{ height: 500 }}>
                             </div>
-                        </Parallax>
+                        </Parallax> */}
+
                     </div>
                 </div>
             </div>

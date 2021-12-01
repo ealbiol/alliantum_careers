@@ -7,7 +7,6 @@ export function DepartmentsMenu({ allDepartments, clickedDep, setClickedDep }) {
         setClickedDep(department)
     }
 
-    console.log("allDepartments:--->", allDepartments);
     const allDepsWithoutManagement = allDepartments.filter(department => department !== "Management")
 
 

@@ -1,7 +1,9 @@
 import * as React from "react"
 import styled, { keyframes } from 'styled-components'
 
-export function CircleBlur({ blur, color, size, top, left, keyFrame }) {
+
+
+export function CircleBlur({ blur, color, size, top, left, keyFrame, zIndex }) {
 
     if (!blur) {
         blur = 200;
@@ -25,16 +27,15 @@ export function CircleBlur({ blur, color, size, top, left, keyFrame }) {
 
 
     const spin = keyframes`
-${keyFrame}
+    ${keyFrame}
     `;
-
 
 
     const Circle = styled.span`
         content: " ";
         display: block;
         position: relative;
-        z-index: 1;
+        z-index: ${zIndex};
         border-radius: 100%;
         animation: ${spin} linear infinite alternate 6s;
         filter: blur(${blur}px);

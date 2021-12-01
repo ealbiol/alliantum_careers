@@ -34,7 +34,7 @@ function IndexPage() {
     <Layout titlePage={data.site.siteMetadata?.mainPage} >
 
       <div>
-        <Seo title="Home" />
+        <Seo title="Alliantum Careers" />
 
         {/* ------------> Work With Us */}
         <div className="overflow-hidden">
@@ -52,36 +52,35 @@ function IndexPage() {
                 </div>
               </div>
 
-              <CircleBlur blur="160" color="#F9B457" top="24%" left="16%" size="700"
-                keyFrame={ /* ORANGE */
-                  `    
-                  0%    {  transform: translate(0, 0) }
-                  33%   {  transform: scale(0.77) }
-                  66%   {  transform: translate(10px, 20px) }
-                  100%  {  transform: translate(30px, 40px) }
-                  `
+              <CircleBlur zIndex={1} blur="50" color="yellow" top="50%" left="50%" size="300"
+                keyFrame={
+                  `    0 % { transform: translate(0, 0) }
+  33 % { transform: scale(0.77) }
+  66 % { transform: translate(10px, 20px) }
+  100 % { transform: translate(30px, 40px) }
+    `
                 }
               />
 
-              <CircleBlur blur="160" color="#8838F8" top="18%" left="38%" size="800"
+              <CircleBlur zIndex={1} blur="160" color="#8838F8" top="18%" left="38%" size="800"
                 keyFrame={ /* PURPLE */
-                  `    
-                  0%    {  transform: translate(0, 0) }
-                  33%   {  transform: scale(0.88) }
-                  66%   {  transform: translate(10px, 20px) }
-                  100%  {  transform: translate(30px, 40px) }
                   `
+  0 % { transform: translate(0, 0) }
+  33 % { transform: scale(0.88) }
+  66 % { transform: translate(10px, 20px) }
+  100 % { transform: translate(30px, 40px) }
+    `
                 }
               />
 
-              <CircleBlur blur="160" color="#68B583" top="30%" left="58%" size="600"
+              <CircleBlur zIndex={1} blur="160" color="#68B583" top="30%" left="58%" size="600"
                 keyFrame={ /* GREEN */
-                  `    
-                  0%    {  transform: translate(0, 0) }
-                  33%   {  transform: scale(0.82) }
-                  66%   {  transform: translate(10px, 20px) }
-                  100%  {  transform: translate(30px, 40px) }
                   `
+  0 % { transform: translate(0, 0) }
+  33 % { transform: scale(0.82) }
+  66 % { transform: translate(10px, 20px) }
+  100 % { transform: translate(30px, 40px) }
+    `
                 }
               />
 
@@ -123,12 +122,12 @@ function IndexPage() {
 
             <CircleBlur blur="180" color="#D76166" top="60%" left="40%" size="700"
               keyFrame={ /* RED */
-                `    
-                    0%    {  transform: translate(0, 0) }
-                    33%   {  transform: scale(0.82) }
-                    66%   {  transform: translate(10px, 20px) }
-                    100%  {  transform: translate(30px, 40px) }
-                    `
+                `
+  0 % { transform: translate(0, 0) }
+  33 % { transform: scale(0.82) }
+  66 % { transform: translate(10px, 20px) }
+  100 % { transform: translate(30px, 40px) }
+    `
               }
             />
 
@@ -136,6 +135,7 @@ function IndexPage() {
         </div>
 
         {/* ------------> The Team */}
+        <div id="the-team" />
         <div>
           {/*
           <div className="container mx-auto mt-6 mb-2">
@@ -151,7 +151,8 @@ function IndexPage() {
         </div>
 
         {/* ------------> Our Values */}
-        <div id="our-values" className="py-6" >
+        <div id="our-values" />
+        <div>
           <OurValuesSection />
         </div>
       </div>

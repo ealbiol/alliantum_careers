@@ -1,6 +1,6 @@
 import * as React from "react"
 import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
-
+import useTheme from "../../hooks/useTheme";
 
 
 const containerStyle = {
@@ -15,6 +15,8 @@ const containerStyle = {
 
 
 export function OfficeCard({ addressUnite }) {
+
+    const theme = useTheme();
 
     const { isLoaded } = useJsApiLoader({
         id: 'google-map-script',
@@ -37,199 +39,399 @@ export function OfficeCard({ addressUnite }) {
         <div className="w-4/12 px-2">
             <div className="bg-white rounded-lg overflow-hidden">
                 <div>
-                    <GoogleMap
-                        mapContainerStyle={containerStyle}
-                        center={{
-                            lat: addressUnite.lat,
-                            lng: addressUnite.lng
-                        }}
-                        zoom={13}
-                        options={{
-                            zoomControl: false,
-                            mapTypeControl: false,
-                            scaleControl: false,
-                            streetViewControl: false,
-                            rotateControl: false,
-                            fullscreenControl: false,
-                            styles: [
-                                {
-                                    "featureType": "water",
-                                    "elementType": "geometry",
-                                    "stylers": [
+                    {
+                        theme === "dark" ?
+                            <GoogleMap
+                                mapContainerStyle={containerStyle}
+                                center={{
+                                    lat: addressUnite.lat,
+                                    lng: addressUnite.lng
+                                }}
+                                zoom={13}
+                                options={{
+                                    zoomControl: false,
+                                    mapTypeControl: false,
+                                    scaleControl: false,
+                                    streetViewControl: false,
+                                    rotateControl: false,
+                                    fullscreenControl: false,
+                                    styles: [
                                         {
-                                            "color": "#e9e9e9"
+                                            "featureType": "water",
+                                            "elementType": "geometry",
+                                            "stylers": [
+                                                {
+                                                    "color": "#141414"
+                                                },
+                                                {
+                                                    "lightness": 0
+                                                }
+                                            ]
                                         },
                                         {
-                                            "lightness": 17
+                                            "featureType": "landscape",
+                                            "elementType": "geometry",
+                                            "stylers": [
+                                                {
+                                                    "color": "#f5f5f5"
+                                                },
+                                                {
+                                                    "lightness": 20
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "featureType": "road.highway",
+                                            "elementType": "geometry.fill",
+                                            "stylers": [
+                                                {
+                                                    "color": "#ffffff"
+                                                },
+                                                {
+                                                    "lightness": 17
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "featureType": "road.highway",
+                                            "elementType": "geometry.stroke",
+                                            "stylers": [
+                                                {
+                                                    "color": "#ffffff"
+                                                },
+                                                {
+                                                    "lightness": 29
+                                                },
+                                                {
+                                                    "weight": 0.2
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "featureType": "road.arterial",
+                                            "elementType": "geometry",
+                                            "stylers": [
+                                                {
+                                                    "color": "#ffffff"
+                                                },
+                                                {
+                                                    "lightness": 18
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "featureType": "road.local",
+                                            "elementType": "geometry",
+                                            "stylers": [
+                                                {
+                                                    "color": "#ffffff"
+                                                },
+                                                {
+                                                    "lightness": 16
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "featureType": "poi",
+                                            "elementType": "geometry",
+                                            "stylers": [
+                                                {
+                                                    "color": "#f5f5f5"
+                                                },
+                                                {
+                                                    "lightness": 21
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "featureType": "poi.park",
+                                            "elementType": "geometry",
+                                            "stylers": [
+                                                {
+                                                    "color": "#dedede"
+                                                },
+                                                {
+                                                    "lightness": 21
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "elementType": "labels.text.stroke",
+                                            "stylers": [
+                                                {
+                                                    "visibility": "on"
+                                                },
+                                                {
+                                                    "color": "#ffffff"
+                                                },
+                                                {
+                                                    "lightness": 16
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "elementType": "labels.text.fill",
+                                            "stylers": [
+                                                {
+                                                    "saturation": 36
+                                                },
+                                                {
+                                                    "color": "#333333"
+                                                },
+                                                {
+                                                    "lightness": 40
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "elementType": "labels.icon",
+                                            "stylers": [
+                                                {
+                                                    "visibility": "off"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "featureType": "transit",
+                                            "elementType": "geometry",
+                                            "stylers": [
+                                                {
+                                                    "color": "#f2f2f2"
+                                                },
+                                                {
+                                                    "lightness": 19
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "featureType": "administrative",
+                                            "elementType": "geometry.fill",
+                                            "stylers": [
+                                                {
+                                                    "color": "#fefefe"
+                                                },
+                                                {
+                                                    "lightness": 20
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "featureType": "administrative",
+                                            "elementType": "geometry.stroke",
+                                            "stylers": [
+                                                {
+                                                    "color": "#fefefe"
+                                                },
+                                                {
+                                                    "lightness": 17
+                                                },
+                                                {
+                                                    "weight": 1.2
+                                                },
+
+                                            ]
+                                        },
+
+                                    ]
+                                }}
+                            >
+                            </GoogleMap>
+                            :
+                            <GoogleMap
+                                mapContainerStyle={containerStyle}
+                                center={{
+                                    lat: addressUnite.lat,
+                                    lng: addressUnite.lng
+                                }}
+                                zoom={13}
+                                options={{
+                                    zoomControl: false,
+                                    mapTypeControl: false,
+                                    scaleControl: false,
+                                    streetViewControl: false,
+                                    rotateControl: false,
+                                    fullscreenControl: false,
+                                    styles: [
+                                        {
+                                            "featureType": "water",
+                                            "elementType": "geometry",
+                                            "stylers": [
+                                                {
+                                                    "color": "#f0f0f0"
+                                                },
+                                                {
+                                                    "lightness": 17
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "featureType": "landscape",
+                                            "elementType": "geometry",
+                                            "stylers": [
+                                                {
+                                                    "color": "#f5f5f5"
+                                                },
+                                                {
+                                                    "lightness": 20
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "featureType": "road.highway",
+                                            "elementType": "geometry.fill",
+                                            "stylers": [
+                                                {
+                                                    "color": "#ffffff"
+                                                },
+                                                {
+                                                    "lightness": 17
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "featureType": "road.highway",
+                                            "elementType": "geometry.stroke",
+                                            "stylers": [
+                                                {
+                                                    "color": "#ffffff"
+                                                },
+                                                {
+                                                    "lightness": 29
+                                                },
+                                                {
+                                                    "weight": 0.2
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "featureType": "road.arterial",
+                                            "elementType": "geometry",
+                                            "stylers": [
+                                                {
+                                                    "color": "#ffffff"
+                                                },
+                                                {
+                                                    "lightness": 18
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "featureType": "road.local",
+                                            "elementType": "geometry",
+                                            "stylers": [
+                                                {
+                                                    "color": "#ffffff"
+                                                },
+                                                {
+                                                    "lightness": 16
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "featureType": "poi",
+                                            "elementType": "geometry",
+                                            "stylers": [
+                                                {
+                                                    "color": "#f5f5f5"
+                                                },
+                                                {
+                                                    "lightness": 21
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "featureType": "poi.park",
+                                            "elementType": "geometry",
+                                            "stylers": [
+                                                {
+                                                    "color": "#dedede"
+                                                },
+                                                {
+                                                    "lightness": 21
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "elementType": "labels.text.stroke",
+                                            "stylers": [
+                                                {
+                                                    "visibility": "on"
+                                                },
+                                                {
+                                                    "color": "#ffffff"
+                                                },
+                                                {
+                                                    "lightness": 16
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "elementType": "labels.text.fill",
+                                            "stylers": [
+                                                {
+                                                    "saturation": 36
+                                                },
+                                                {
+                                                    "color": "#333333"
+                                                },
+                                                {
+                                                    "lightness": 40
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "elementType": "labels.icon",
+                                            "stylers": [
+                                                {
+                                                    "visibility": "off"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "featureType": "transit",
+                                            "elementType": "geometry",
+                                            "stylers": [
+                                                {
+                                                    "color": "#f2f2f2"
+                                                },
+                                                {
+                                                    "lightness": 19
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "featureType": "administrative",
+                                            "elementType": "geometry.fill",
+                                            "stylers": [
+                                                {
+                                                    "color": "#fefefe"
+                                                },
+                                                {
+                                                    "lightness": 20
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "featureType": "administrative",
+                                            "elementType": "geometry.stroke",
+                                            "stylers": [
+                                                {
+                                                    "color": "#fefefe"
+                                                },
+                                                {
+                                                    "lightness": 17
+                                                },
+                                                {
+                                                    "weight": 1.2
+                                                }
+                                            ]
                                         }
                                     ]
-                                },
-                                {
-                                    "featureType": "landscape",
-                                    "elementType": "geometry",
-                                    "stylers": [
-                                        {
-                                            "color": "#f5f5f5"
-                                        },
-                                        {
-                                            "lightness": 20
-                                        }
-                                    ]
-                                },
-                                {
-                                    "featureType": "road.highway",
-                                    "elementType": "geometry.fill",
-                                    "stylers": [
-                                        {
-                                            "color": "#ffffff"
-                                        },
-                                        {
-                                            "lightness": 17
-                                        }
-                                    ]
-                                },
-                                {
-                                    "featureType": "road.highway",
-                                    "elementType": "geometry.stroke",
-                                    "stylers": [
-                                        {
-                                            "color": "#ffffff"
-                                        },
-                                        {
-                                            "lightness": 29
-                                        },
-                                        {
-                                            "weight": 0.2
-                                        }
-                                    ]
-                                },
-                                {
-                                    "featureType": "road.arterial",
-                                    "elementType": "geometry",
-                                    "stylers": [
-                                        {
-                                            "color": "#ffffff"
-                                        },
-                                        {
-                                            "lightness": 18
-                                        }
-                                    ]
-                                },
-                                {
-                                    "featureType": "road.local",
-                                    "elementType": "geometry",
-                                    "stylers": [
-                                        {
-                                            "color": "#ffffff"
-                                        },
-                                        {
-                                            "lightness": 16
-                                        }
-                                    ]
-                                },
-                                {
-                                    "featureType": "poi",
-                                    "elementType": "geometry",
-                                    "stylers": [
-                                        {
-                                            "color": "#f5f5f5"
-                                        },
-                                        {
-                                            "lightness": 21
-                                        }
-                                    ]
-                                },
-                                {
-                                    "featureType": "poi.park",
-                                    "elementType": "geometry",
-                                    "stylers": [
-                                        {
-                                            "color": "#dedede"
-                                        },
-                                        {
-                                            "lightness": 21
-                                        }
-                                    ]
-                                },
-                                {
-                                    "elementType": "labels.text.stroke",
-                                    "stylers": [
-                                        {
-                                            "visibility": "on"
-                                        },
-                                        {
-                                            "color": "#ffffff"
-                                        },
-                                        {
-                                            "lightness": 16
-                                        }
-                                    ]
-                                },
-                                {
-                                    "elementType": "labels.text.fill",
-                                    "stylers": [
-                                        {
-                                            "saturation": 36
-                                        },
-                                        {
-                                            "color": "#333333"
-                                        },
-                                        {
-                                            "lightness": 40
-                                        }
-                                    ]
-                                },
-                                {
-                                    "elementType": "labels.icon",
-                                    "stylers": [
-                                        {
-                                            "visibility": "off"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "featureType": "transit",
-                                    "elementType": "geometry",
-                                    "stylers": [
-                                        {
-                                            "color": "#f2f2f2"
-                                        },
-                                        {
-                                            "lightness": 19
-                                        }
-                                    ]
-                                },
-                                {
-                                    "featureType": "administrative",
-                                    "elementType": "geometry.fill",
-                                    "stylers": [
-                                        {
-                                            "color": "#fefefe"
-                                        },
-                                        {
-                                            "lightness": 20
-                                        }
-                                    ]
-                                },
-                                {
-                                    "featureType": "administrative",
-                                    "elementType": "geometry.stroke",
-                                    "stylers": [
-                                        {
-                                            "color": "#fefefe"
-                                        },
-                                        {
-                                            "lightness": 17
-                                        },
-                                        {
-                                            "weight": 1.2
-                                        }
-                                    ]
-                                }
-                            ]
-                        }}
-                    >
-                    </GoogleMap>
+                                }}
+                            >
+                            </GoogleMap>
+                    }
+
                 </div>
                 <div className="p-3">
                     <span className="pretitle text-chestnut-rose">{addressUnite.city.toUpperCase()}</span>

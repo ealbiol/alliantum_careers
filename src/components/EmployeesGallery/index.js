@@ -14,8 +14,9 @@ export function EmployeesGallery() {
         })
     }, [])
 
-    const firstLinePhotos = employees.slice(0, 8).sort(function (a, b) { return 0.5 - Math.random() });
-    const secondLinePhotos = employees.slice(8, 16).sort(function (a, b) { return 0.5 - Math.random() });
+    const allEmployeePhotos = employees.sort(function (a, b) { return 0.5 - Math.random() })
+    const firstLinePhotos = allEmployeePhotos.slice(0, 8);
+    const secondLinePhotos = allEmployeePhotos.slice(8, 16);
 
 
     return (
@@ -26,27 +27,26 @@ export function EmployeesGallery() {
                     {
                         firstLinePhotos.map((employee, index) => {
                             return (
-                                <div key={index} className="hero-faces-row__item" >
+                                <div key={index} className="hero-faces-row__item absolute top-0 py-12 animate-marquee2 whitespace-nowrap" >
                                     <EmployeePhoto className="mr-2 mb-2" photo={employee.photo} />
                                     <div className="hero-item-info" >
-                                        <span className="block" >{employee.firstName}{" "}{employee.surname}</span>
+                                        <span className="block" >{employee.firstName}</span>
                                         <span className="block" >{employee.departmentName}</span>
                                     </div>
                                 </div>
                             )
                         })
                     }
-
                 </div>
 
                 <div className="hero-faces-row mb-2" >
                     {
                         secondLinePhotos.map((employee, index) => {
                             return (
-                                <div key={index} className="hero-faces-row__item" >
+                                <div key={index} className="hero-faces-row__item absolute top-0 py-12 animate-marquee2 whitespace-nowrap" >
                                     <EmployeePhoto className="mr-2 mb-2" photo={employee.photo} />
                                     <div className="hero-item-info" >
-                                        <span className="block" >{employee.firstName}{" "}{employee.surname}</span>
+                                        <span className="block" >{employee.firstName}</span>
                                         <span className="block" >{employee.departmentName}</span>
                                     </div>
                                 </div>

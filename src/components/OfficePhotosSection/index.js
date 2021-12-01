@@ -12,77 +12,80 @@ export function OfficePhotos() {
     React.useEffect(() => {
         getAllOfficePhotos().then((result) => {
             setOfficePhotos(result)
-            console.log("Result Office Photos:--->", result);
 
         })
     }, [])
 
-    const firstLinePhotos = officePhotos.slice(0, 4).sort(function (a, b) { return 0.5 - Math.random() })
-    console.log("firstLinePhotos:---->", firstLinePhotos);
-    const secondLinePhotos = officePhotos.slice(4, 8).sort(function (a, b) { return 0.5 - Math.random() });
+    const firstLinePhotos = officePhotos.slice(0, 5).sort(function (a, b) { return 0.5 - Math.random() })
+    const secondLinePhotos = officePhotos.slice(5, 10).sort(function (a, b) { return 0.5 - Math.random() });
 
     return (
-        <div>
-            <Parallax
-                style={{
-                    height: "20vh",
-                }}
-                renderLayer={(percentage) => (
-                    <div
-                        style={{
-                            display: "flex",
-                            position: "absolute",
-                            left: `${percentage * 100}%`,
-                            transform: "translate(-35%,-0%)",
-                            width: 1500,
-                        }} >
-                        {
-                            firstLinePhotos.map((officePhoto, index) => {
-                                return (
-                                    <div key={index} >
-                                        <OfficePhoto key={index} officePhoto={officePhoto} />
-                                    </div>
-                                )
-                            })
-                        }
-                    </div>
-                )}
-            >
-            </Parallax>
+        <div >
+            <div className="mb-3" >
+                <Parallax
+                    style={{
+                        height: "240px",
+                    }}
+                    renderLayer={(percentage) => (
+                        <div
+                            style={{
+                                display: "flex",
+                                position: "absolute",
+                                left: `${percentage * 100}%`,
+                                transform: "translate(-35%,-0%)",
+                                width: 1900,
+                            }} >
+                            {
+                                firstLinePhotos.map((officePhoto, index) => {
+                                    return (
+                                        <div key={index} >
+                                            <OfficePhoto key={index} officePhoto={officePhoto} />
+                                        </div>
+                                    )
+                                })
+                            }
+                        </div>
+                    )}
+                >
+                </Parallax>
+            </div>
 
-            <Parallax
-                style={{
-                    height: "20vh",
-                    // overflow: "visible",
-                }}
-                renderLayer={(percentage) => (
-                    <div
-                        style={{
-                            display: "flex",
-                            position: "absolute",
-                            //Horizontal:
-                            right: `${percentage * 100}%`,
-                            // top: "50%",
-                            //Vertical:
-                            // left: "50%",
-                            // bottom: `${percentage * 50}%`,
-                            transform: "translate(-00%,-00%)",
-                            width: 1500,
-                            // height: 400,
-                        }} >
-                        {
-                            secondLinePhotos.map((officePhoto, index) => {
-                                return (
-                                    <div key={index} >
-                                        <OfficePhoto key={index} officePhoto={officePhoto} />
-                                    </div>
-                                )
-                            })
-                        }
-                    </div>
-                )}
-            >
-            </Parallax>
+            <div>
+                <Parallax
+                    style={{
+                        height: "240px",
+                        // overflow: "visible",
+                    }}
+                    renderLayer={(percentage) => (
+                        <div
+                            style={{
+                                display: "flex",
+                                position: "absolute",
+                                //Horizontal:
+                                right: `${percentage * 100}%`,
+                                // top: "50%",
+                                //Vertical:
+                                // left: "50%",
+                                // bottom: `${percentage * 50}%`,
+                                transform: "translate(-00%,-00%)",
+                                width: 1900,
+                                // height: 400,
+                            }} >
+                            {
+                                secondLinePhotos.map((officePhoto, index) => {
+                                    return (
+                                        <div key={index} >
+                                            <OfficePhoto key={index} officePhoto={officePhoto} />
+                                        </div>
+                                    )
+                                })
+                            }
+                        </div>
+                    )}
+                >
+                </Parallax>
+            </div>
+
 
         </div>
 

@@ -41,7 +41,7 @@ export function AllJobOffersList() {
 
 
 
-    console.log("job offer details:--->", jobOfferDetails);
+
 
     function allRoles() {
         setClickedDepartment(null)

@@ -4,8 +4,10 @@ import { Link } from "gatsby"
 import { getAllHeaderAndFooterSections } from "../../data/data"
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import AlliantumLogo from "../../images/header-photos/Image1.svg"
+import { SwitchModeButton } from "../SwitchModeButton/index";
 
-export default function Header({ siteTitle }) {
+export default function Header({ siteTitle, themeData, setThemeData }) {
+
 
   const [headerUnite, setHeaderUnite] = React.useState([])
 
@@ -16,8 +18,10 @@ export default function Header({ siteTitle }) {
     })
   }, [])
 
+
+
   return (
-    <header className="fixed w-full z-30 bg-white" style={{ marginBottom: `1.45rem` }}>
+    <header className="fixed w-full z-30 bg-white dark:bg-black dark:text-white" style={{ marginBottom: `1.45rem` }}>
 
       <div className="container-main">
 
@@ -48,7 +52,7 @@ export default function Header({ siteTitle }) {
               })
             }
           </div>
-
+          <SwitchModeButton themeData={themeData} setThemeData={setThemeData} />
         </div>
 
 

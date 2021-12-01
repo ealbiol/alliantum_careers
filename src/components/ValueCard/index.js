@@ -3,7 +3,6 @@ import { ValuePhoto } from "../ValuePhoto"
 
 export function ValueCard({ value }) {
 
-    console.log("Value inside ValueCard:--->", value);
 
     return (
         value ?

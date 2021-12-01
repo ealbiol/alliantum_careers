@@ -8,8 +8,8 @@ export function TheTeam() {
 
     return (
         <div>
-            <div>
-                <AnchorLink to="/the-team" >Meet the team</AnchorLink>
+            <div className="container mx-auto">
+                <div>Meet the team</div>
             </div>
             {/* ------------> The Team 
             <div className="container mx-auto">
