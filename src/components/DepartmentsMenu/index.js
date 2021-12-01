@@ -13,6 +13,7 @@ export function DepartmentsMenu({ allDepartments, clickedDep, setClickedDep }) {
     return (
         <div className="flex">
 
+
             {
                 allDepsWithoutManagement.map((department, index) => {
 

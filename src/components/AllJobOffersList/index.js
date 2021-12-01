@@ -71,22 +71,28 @@ export function AllJobOffersList() {
                 </div>
             </div>
 
-            <div>
-                {
-                    jobOfferDetails.map((detail, index) => {
-                        return (
+            {
+                jobOfferDetails.length ?
+                    <div>
+                        {
+                            jobOfferDetails.map((detail, index) => {
+                                return (
 
-                            <div key={index} className="card border border-black dark:border-white">
-                                <Link className="flex justify-between items-center" to={detail.node.fields.slug} >
-                                    <div>{detail.node.frontmatter.title}</div>
-                                    <span className="pill">{detail.node.frontmatter.department}</span>
-                                </Link>
-                            </div>
+                                    <div key={index} className="card border border-black dark:border-white">
+                                        <Link className="flex justify-between items-center" to={detail.node.fields.slug} >
+                                            <div>{detail.node.frontmatter.title}</div>
+                                            <span className="pill">{detail.node.frontmatter.department}</span>
+                                        </Link>
+                                    </div>
 
-                        )
-                    })
-                }
-            </div>
+                                )
+                            })
+                        }
+                    </div>
+                    :
+                    <div className="mb-3" >Currently there are no jobs available in the {clickedDepartment} team.</div>
+            }
+
 
             <NotifyMeButton />
 
