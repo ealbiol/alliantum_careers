@@ -110,8 +110,8 @@ export function NotifyMeButton() {
                         <input
                             type="email"
                             name="Notify Me"
-                            placeholder="email"
-                            onChange={(e) => setUserEmail(e.currentTarget.value)}
+                            placeholder="email" onChange={(e) => setUserEmail(e.currentTarget.value)}
+                            className="rounded h-4 text-black p-2"
                             required
                         />
                         <div >Job Positions:</div>
@@ -131,6 +131,7 @@ export function NotifyMeButton() {
                             className="basic-multi-select"
                             classNamePrefix="select"
                             onChange={handleChangeDepartment}
+                            className="text-black"
                         />
 
 
@@ -150,7 +151,7 @@ export function NotifyMeButton() {
 
             }
             {submitMessage &&
-                <div style={{ color: "green" }} >Email sent! Please check your inbox.</div>
+                <div style={{ color: "green" }} >We sent you a verification email! Please check your inbox.</div>
             }
         </div>
     )

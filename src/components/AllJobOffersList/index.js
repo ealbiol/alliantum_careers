@@ -77,16 +77,14 @@ export function AllJobOffersList() {
                         {
                             jobOfferDetails.map((detail, index) => {
                                 return (
-                                    <Link to={detail.node.fields.slug} >
-                                        <div key={index} className="card border border-black dark:border-white">
+                                    <Link key={index} to={detail.node.fields.slug} >
+                                        <div className="card border border-black dark:border-white">
                                             <div className="flex justify-between items-center"  >
                                                 <div>{detail.node.frontmatter.title}</div>
                                                 <span className="pill">{detail.node.frontmatter.department}</span>
                                             </div>
                                         </div>
                                     </Link>
-
-
                                 )
                             })
                         }
