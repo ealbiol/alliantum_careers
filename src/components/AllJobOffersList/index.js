@@ -47,6 +47,8 @@ export function AllJobOffersList() {
         setClickedDepartment(null)
     }
 
+    console.log("jobOfferDetails:--->", jobOfferDetails);
+
     return (
         <div>
             <div>
@@ -70,22 +72,26 @@ export function AllJobOffersList() {
                 </div>
             </div>
 
-            <div>
-                {
-                    jobOfferDetails.map((detail, index) => {
-                        return (
+            {
+                jobOfferDetails.length ?
+                    <div>
+                        {
+                            jobOfferDetails.map((detail, index) => {
+                                return (
+                                    <div key={index} className="card">
+                                        <Link className="flex justify-between items-center" to={detail.node.fields.slug} >
+                                            <div>{detail.node.frontmatter.title}</div>
+                                            <span className="pill">{detail.node.frontmatter.department}</span>
+                                        </Link>
+                                    </div>
+                                )
+                            })
+                        }
+                    </div>
+                    :
+                    <div className="mb-3" >Currently there are no job offers available in this department.</div>
+            }
 
-                            <div key={index} className="card">
-                                <Link className="flex justify-between items-center" to={detail.node.fields.slug} >
-                                    <div>{detail.node.frontmatter.title}</div>
-                                    <span className="pill">{detail.node.frontmatter.department}</span>
-                                </Link>
-                            </div>
-
-                        )
-                    })
-                }
-            </div>
 
             <NotifyMeButton />
 
