@@ -3,7 +3,6 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { getAllHeaderAndFooterSections } from "../../data/data"
 import { AnchorLink } from "gatsby-plugin-anchor-links";
-import AlliantumLogo from "../../images/header-photos/Image1.svg"
 import { SwitchModeButton } from "../SwitchModeButton/index";
 import useTheme from "../../hooks/useTheme";
 import AlliantumLogoWhite from "../../images/header-photos/Alliantum-white.svg"

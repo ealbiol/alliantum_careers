@@ -13,7 +13,6 @@ export function ApplyForm({ jobDepartment }) {
     //     })
     // }, [])
 
-    console.log("jobDepartment in ApplyForm:--->", jobDepartment);
 
     return (
 

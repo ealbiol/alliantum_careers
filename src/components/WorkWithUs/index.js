@@ -6,7 +6,7 @@ import useTheme from "../../hooks/useTheme";
 
 export function WorkWithUs() {
     const theme = useTheme();
-    console.log("theme:", theme);
+
     // const [employees, setEmployees] = React.useState([])
 
     // React.useEffect(() => {

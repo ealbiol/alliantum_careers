@@ -35,11 +35,11 @@ export function YourBenefits() {
                     benefits.map((unite, index) => {
                         const icon = iconsInSVG.find(icon => icon.id === unite.id)
                         return (
-                            <div className="blurred-gradient-wrapper">
+                            <div key={index} className="blurred-gradient-wrapper">
                                 <div className="blurred-gradient-container">
                                     <div className="blurred-gradient-content relative">
 
-                                        <div className="flex" key={index}>
+                                        <div className="flex">
                                             <div>{icon && icon.component}</div>
                                             <div className="flex flex-col mb-1 pl-3">
                                                 <div className="h-px-80 flex items-center">

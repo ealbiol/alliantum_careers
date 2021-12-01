@@ -47,7 +47,6 @@ export function AllJobOffersList() {
         setClickedDepartment(null)
     }
 
-    console.log("jobOfferDetails:--->", jobOfferDetails);
 
     return (
         <div>
