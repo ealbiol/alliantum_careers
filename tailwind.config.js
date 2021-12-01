@@ -20,7 +20,7 @@ module.exports = {
             transparent: 'transparent',
             current: 'currentColor',
 
-            'white': '#FFFFFF',
+            'white': '#F0F0F0',
             'black': '#000000',
 
             'loblolly': {
@@ -817,6 +817,7 @@ module.exports = {
             ...theme('spacing'),
             'px-230': '230px',
             'container-sm': '990px',
+            'container-md': '1024px',
             '1/12': '8.333333%',
             '2/12': '16.666667%',
             '3/12': '25%',

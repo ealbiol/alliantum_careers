@@ -34,8 +34,8 @@ export function OfficeCard({ addressUnite }) {
     // }, [])
 
     return isLoaded ? (
-        <div className="w-4/12 px-2 mb-3">
-            <div className="border border-loblolly-600 rounded-lg overflow-hidden">
+        <div className="w-4/12 px-2">
+            <div className="bg-white rounded-lg overflow-hidden">
                 <div>
                     <GoogleMap
                         mapContainerStyle={containerStyle}

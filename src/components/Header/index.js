@@ -17,7 +17,7 @@ export default function Header({ siteTitle }) {
   }, [])
 
   return (
-    <header className="fixed w-full z-30 bg-white " style={{ marginBottom: `1.45rem` }}>
+    <header className="fixed w-full z-30 bg-white" style={{ marginBottom: `1.45rem` }}>
 
       <div className="container-main">
 

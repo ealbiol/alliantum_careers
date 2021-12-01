@@ -27,7 +27,7 @@ export function WorkWithUs() {
                 <div className="hero-left-content">
 
                     <div className="hero-left-content__wrapper z-10 bg-gradient-to-r from-white via-white to-transparent flex flex-col items-start justify-center h-10">
-                        <span className="pretitle text-xs font-bold text-cornflower-blue z-10">We are looking for talent</span>
+                        <span className="pretitle text-cornflower-blue z-10">We are looking for talent</span>
                         <h1 className="font-title text-lg z-10">Want to work<br />with us?</h1>
                         <AnchorLink className="btn btn-primary z-10" to={"/#jobs-table"} >See open processes</AnchorLink>
                     </div>
@@ -35,8 +35,6 @@ export function WorkWithUs() {
             </div>
 
             <EmployeesGallery />
-
-
         </div>
     )
 }

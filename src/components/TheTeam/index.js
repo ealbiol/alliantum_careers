@@ -1,6 +1,7 @@
 import * as React from "react"
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { EmployeesGallery } from "../EmployeesGallery";
+import { CircleBlur } from "../CircleBlur/index"
 
 export function TheTeam() {
 
@@ -10,6 +11,7 @@ export function TheTeam() {
             <div>
                 <AnchorLink to="/the-team" >Meet the team</AnchorLink>
             </div>
+            {/* ------------> The Team 
             <div className="container mx-auto">
                 <div className="flex">
                     <div className="w-6/12">(Space for VIDEO)</div>
@@ -26,15 +28,50 @@ export function TheTeam() {
                     </div>
                 </div>
             </div>
+            
             <div className="flex justify-center">
                 <span className="title text-lg text-center leading-3 mt-6">Don’t they<br /><br />look happy?</span>
             </div>
+            */}
 
-            <EmployeesGallery />
+            <div className="blurred-gradient-wrapper">
+                <div className="blurred-gradient-container">
+                    <div className="blurred-gradient-content">
+                        <div className="w-100 relative z-10">
 
-            <div className="card-bg bg-festival w-3/12 mx-auto -mt-7 mb-6">
-                <span className="title text-black text-md block">Do you want to grow with us?</span>
-                <AnchorLink className="btn btn-black mt-4" to={"/#jobs-table"} >See current job offers</AnchorLink>
+                            <EmployeesGallery />
+
+                            <div className="card-bg bg-festival w-3/12 mx-auto -mt-7 mb-6">
+                                <span className="title text-black text-md block">Do you want to grow with us?</span>
+                                <AnchorLink className="btn btn-black mt-4" to={"/#jobs-table"} >See current job offers</AnchorLink>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <CircleBlur blur="160" color="#F9B457" top="40%" left="16%" size="700"
+                        keyFrame={ /* YELLOW */
+                            `    
+                            0%    {  transform: translate(0, 0) }
+                            33%   {  transform: scale(0.77) }
+                            66%   {  transform: translate(10px, 20px) }
+                            100%  {  transform: translate(30px, 40px) }
+                            `
+                        }
+                    />
+
+                    <CircleBlur blur="160" color="#966CE0" top="48%" left="50%" size="700"
+                        keyFrame={ /* PURPLE */
+                            `    
+                            0%    {  transform: translate(0, 0) }
+                            33%   {  transform: scale(0.77) }
+                            66%   {  transform: translate(10px, 20px) }
+                            100%  {  transform: translate(30px, 40px) }
+                            `
+                        }
+                    />
+
+                </div>
             </div>
 
         </div>

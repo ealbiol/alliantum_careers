@@ -43,32 +43,44 @@ function IndexPage() {
 
         {/* ------------> Job Offers Table */}
         <div id="jobs-table" className="w-full">
-          <div className="blurred-gradient-wrapper h-screen">
+          <div className="blurred-gradient-wrapper h-halfscreen">
             <div className="blurred-gradient-container">
-              <div className="blurred-gradient-content">
-                <div >
+              <div className="blurred-gradient-content absolute">
+                <div className="w-container-md w-100">
                   <span className="pretitle text-loblolly-600">What we need right now</span>
-                  <h3 className="title text-md w-7/12">We do Business Digitalisation and New-era Marketing</h3>
                   <AllJobOffersList id="/#jobs-table" />
                 </div>
               </div>
 
-              <CircleBlur blur="50" color="yellow" top="50%" left="50%" size="300"
-                keyFrame={
-                  `    0%    {  transform: translate(0, 0) }
+              <CircleBlur blur="160" color="#F9B457" top="24%" left="16%" size="700"
+                keyFrame={ /* ORANGE */
+                  `    
+                  0%    {  transform: translate(0, 0) }
                   33%   {  transform: scale(0.77) }
-                  66%   {  transform: translate(200px, 10px) }
-                  100%  {  transform: translate(400px, 20px) }
+                  66%   {  transform: translate(10px, 20px) }
+                  100%  {  transform: translate(30px, 40px) }
                   `
                 }
               />
 
-              <CircleBlur blur="50" color="red" top="50%" left="50%" size="300"
-                keyFrame={
-                  `    0%    {  transform: translate(0, 0) }
-                  33%   {  transform: scale(0.77) }
-                  66%   {  transform: translate(400px, 10px) }
-                  100%  {  transform: translate(100px, 20px) }
+              <CircleBlur blur="160" color="#8838F8" top="18%" left="38%" size="800"
+                keyFrame={ /* PURPLE */
+                  `    
+                  0%    {  transform: translate(0, 0) }
+                  33%   {  transform: scale(0.88) }
+                  66%   {  transform: translate(10px, 20px) }
+                  100%  {  transform: translate(30px, 40px) }
+                  `
+                }
+              />
+
+              <CircleBlur blur="160" color="#68B583" top="30%" left="58%" size="600"
+                keyFrame={ /* GREEN */
+                  `    
+                  0%    {  transform: translate(0, 0) }
+                  33%   {  transform: scale(0.82) }
+                  66%   {  transform: translate(10px, 20px) }
+                  100%  {  transform: translate(30px, 40px) }
                   `
                 }
               />
@@ -81,14 +93,14 @@ function IndexPage() {
         {/* ------------> Your Benefits */}
         <div id="your-benefits" />
         <div className="container mx-auto my-6">
-          <span className="pretitle text-electric-violet">Your benefits</span>
+          <span className="pretitle">Your benefits</span>
           <h3 className="title text-md w-6/12">Work in an international company, with a happy team, in a great office</h3>
           <YourBenefits />
         </div>
 
         {/* ------------> Office Presentation */}
         <div>
-          <div className="container mx-auto mt-6 mb-2">
+          <div className="container mx-auto my-6 mb-2">
             <h3 className="title text-md w-6/12">Your future office is modern, bright and equipped with the latest technological equipment</h3>
           </div>
           <OfficePhotos />
@@ -96,27 +108,50 @@ function IndexPage() {
 
         {/* ------------> World Map */}
         <div id="the-offices" />
-        <div className="container mx-auto mt-6 mb-2">
-          <span className="pretitle">The office</span>
-          <h3 className="title text-md w-6/12">German spirit. Spanish passion.</h3>
+
+        <div className="blurred-gradient-wrapper h-halfscreen">
+          <div className="blurred-gradient-container">
+            <div className="blurred-gradient-content">
+            </div>
+            <div className="relative z-10">
+              <div className="container mx-auto mt-6 mb-2">
+                <span className="pretitle">The office</span>
+                <h3 className="title text-md w-6/12">German spirit. Spanish passion.</h3>
+              </div>
+              <GoogleMaps />
+            </div>
+
+            <CircleBlur blur="180" color="#D76166" top="60%" left="40%" size="700"
+              keyFrame={ /* RED */
+                `    
+                    0%    {  transform: translate(0, 0) }
+                    33%   {  transform: scale(0.82) }
+                    66%   {  transform: translate(10px, 20px) }
+                    100%  {  transform: translate(30px, 40px) }
+                    `
+              }
+            />
+
+          </div>
         </div>
-        <GoogleMaps />
 
         {/* ------------> The Team */}
         <div>
+          {/*
           <div className="container mx-auto mt-6 mb-2">
+            
             <span className="pretitle">The team</span>
             <h3 className="title text-md w-6/12">We are characterised by our strong team structure and working environment</h3>
           </div>
+          */}
           <TheTeam />
         </div>
-
         <div>
           <AstronautSection />
         </div>
 
         {/* ------------> Our Values */}
-        <div id="our-values" className="bg-loblolly-400 py-6" >
+        <div id="our-values" className="py-6" >
           <OurValuesSection />
         </div>
       </div>
