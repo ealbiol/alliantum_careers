@@ -123,6 +123,9 @@ export const allOfficePhotos = [
     { photo: "photo6.jpg" },
     { photo: "photo7.jpg" },
     { photo: "photo8.jpg" },
+    { photo: "photo9.jpg" },
+    { photo: "photo10.jpg" },
+
 ]
 export async function getAllOfficePhotos() {
     return allOfficePhotos
@@ -146,7 +149,9 @@ export const allOurValues = [
     { id: 3, title: "Truly International", photo: "international.jpg", content: "We are an international company. Our German origin and our Spanish headquarters mean that our frontier is the world. We like international projects, and we do not limit ourselves to any geographical area." },
     { id: 4, title: "Fairness", photo: "fairness.jpg", content: "All decisions must be reasoned and seek the common good and be fair to the rest of the team. We also promote open speech as the possibility of being able to express an opinion or propose a particular action without fear of being reprimanded for it." },
     { id: 5, title: "Flexible", photo: "flexible.jpg", content: "We know how to adapt to situations and the different needs of the moment. We promote flexible environments for work, learning, and growth." },
-    { id: 6, title: "Team Spirit", photo: "teamspirit.jpg", content: "Our team, together with our customers, is the most important thing to us. We like to have a fun and open working space. We share moments outside the office, and there is always some recreational activity planned where we can showcase each other's skills." },
+    { id: 6, title: "Close Partner", photo: "close-partner.jpg", content: "We grow if we help our customers to grow, and for this reason, their success, results, commercial presence, and satisfaction are our objectives. We like to have a direct and close relationship with our partners, favoring fluid and direct communication that allows us to work perfectly." },
+    { id: 7, title: "Team Spirit", photo: "teamspirit.jpg", content: "Our team, together with our customers, is the most important thing to us. We like to have a fun and open working space. We share moments outside the office, and there is always some recreational activity planned where we can showcase each other's skills." },
+
 
 ]
 
