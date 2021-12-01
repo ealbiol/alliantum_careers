@@ -257,7 +257,7 @@ export function OfficeCard({ addressUnite }) {
                                             "elementType": "geometry",
                                             "stylers": [
                                                 {
-                                                    "color": "#e9e9e9"
+                                                    "color": "#f0f0f0"
                                                 },
                                                 {
                                                     "lightness": 17

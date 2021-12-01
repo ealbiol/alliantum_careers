@@ -24,7 +24,7 @@ export function OfficePhotos() {
             <div className="mb-3" >
                 <Parallax
                     style={{
-                        height: "232px",
+                        height: "240px",
                     }}
                     renderLayer={(percentage) => (
                         <div
@@ -53,7 +53,7 @@ export function OfficePhotos() {
             <div>
                 <Parallax
                     style={{
-                        height: "232px",
+                        height: "240px",
                         // overflow: "visible",
                     }}
                     renderLayer={(percentage) => (

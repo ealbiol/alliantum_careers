@@ -803,7 +803,7 @@ export function GoogleMaps() {
                                     "elementType": "geometry.fill",
                                     "stylers": [
                                         {
-                                            "color": "#ffffff",
+                                            "color": "#f0f0f0",
 
                                         },
                                     ]
@@ -813,7 +813,7 @@ export function GoogleMaps() {
                                     "elementType": "labels.text.fill",
                                     "stylers": [
                                         {
-                                            "color": "#ffffff"
+                                            "color": "#f0f0f0"
                                         },
                                     ]
                                 }
