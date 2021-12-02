@@ -23,7 +23,6 @@ export function YourBenefits() {
 
     const theme = useTheme();
 
-    const [benefits, setBenefits] = React.useState([])
     const [benefitsWhite, setBenefitsWhite] = React.useState([])
     const [benefitsBlack, setBenefitsBlack] = React.useState([])
 
