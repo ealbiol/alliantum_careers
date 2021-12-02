@@ -18,9 +18,10 @@ export function EmployeesGallery() {
     const firstLinePhotos = allEmployeePhotos.slice(0, 8);
     const secondLinePhotos = allEmployeePhotos.slice(8, 16);
 
-    // const doubleFirstLinePhotos = firstLinePhotos.concat(firstLinePhotos)
-    // const doubleSecondLinePhotos = secondLinePhotos.concat(secondLinePhotos)
+    const doubleFirstLinePhotos = firstLinePhotos.concat(firstLinePhotos)
+    const doubleSecondLinePhotos = secondLinePhotos.concat(secondLinePhotos)
 
+    console.log("double:--->", doubleFirstLinePhotos);
 
     return (
 
@@ -28,7 +29,7 @@ export function EmployeesGallery() {
             <div className="hero-back-content">
                 <div className="hero-faces-row mb-2" >
                     {
-                        firstLinePhotos.map((employee, index) => {
+                        doubleFirstLinePhotos.map((employee, index) => {
                             return (
                                 <div key={index} className="hero-faces-row__item absolute top-0 py-12 animate-marquee2 whitespace-nowrap" >
                                     <EmployeePhoto className="mr-2 mb-2" photo={employee.photo} />
@@ -44,7 +45,7 @@ export function EmployeesGallery() {
 
                 <div className="hero-faces-row mb-2" >
                     {
-                        secondLinePhotos.map((employee, index) => {
+                        doubleSecondLinePhotos.map((employee, index) => {
                             return (
                                 <div key={index} className="hero-faces-row__item absolute top-0 py-12 animate-marquee2 whitespace-nowrap" >
                                     <EmployeePhoto className="mr-2 mb-2" photo={employee.photo} />
