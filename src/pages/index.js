@@ -29,7 +29,6 @@ function IndexPage() {
         
 `)
 
-
   return (
     <Layout titlePage={data.site.siteMetadata?.mainPage} >
 
@@ -37,7 +36,7 @@ function IndexPage() {
         <Seo title="Alliantum Careers" />
 
         {/* ------------> Work With Us */}
-        <div className="overflow-hidden">
+        <div className="overflow-hidden marquee-wrapper">
           <WorkWithUs />
         </div>
 
