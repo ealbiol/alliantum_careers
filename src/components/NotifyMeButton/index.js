@@ -138,20 +138,22 @@ export function NotifyMeButton() {
                                 }
                             </div>
                         </div>
-                        <div className="flex flex-grow justify-between mt-3">
-                            <div className="flex align-center">
-                                <small className="leading-4 w-100 xl:w-6/12">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem rerum beatae, soluta quia ea sint fugit ut inventore aspernatur unde!</small>
+                        <div className="flex flex-col justify-between mt-3">
+                            <div className="flex flex-grow">
+                                {
+                                    userPositions.length > 0 ?
+                                        <button type="submit" className="btn btn-primary w-100 flex flex-grow" >
+                                            Subscribe to jobs
+                                        </button>
+                                        :
+                                        <button type="submit" className="btn btn-primary w-100" disabled>
+                                            Subscribe to jobs
+                                        </button>
+                                }
                             </div>
-                            {
-                                userPositions.length > 0 ?
-                                    <button type="submit" className="btn btn-primary min-w-0 xl:w-100" >
-                                        Subscribe to jobs
-                                    </button>
-                                    :
-                                    <button type="submit" className="btn btn-primary" disabled>
-                                        Subscribe to jobs
-                                    </button>
-                            }
+                            <div className="flex-grow">
+                                <small className="leading-4 w-100 pr-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem rerum beatae, soluta quia ea sint fugit ut inventore aspernatur unde!</small>
+                            </div>
                         </div>
                     </div>
 

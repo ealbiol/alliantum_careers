@@ -829,7 +829,7 @@ export function GoogleMaps() {
             }
 
             <div className="container-main -mt-6">
-                <div className="flex justify-center" >
+                <div className="flex flex-col md:flex-row justify-center" >
                     {
                         addressUnite.map((address, index) => {
                             return (

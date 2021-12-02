@@ -36,7 +36,7 @@ export function OfficeCard({ addressUnite }) {
     // }, [])
 
     return isLoaded ? (
-        <div className="w-4/12 px-2">
+        <div className="w-100 md:w-6/12 xl:w-4/12 md:px-2 mb-2 md:mb-0">
             <div className="bg-white dark:bg-black dark:border-white rounded-lg overflow-hidden">
                 <div>
                     {

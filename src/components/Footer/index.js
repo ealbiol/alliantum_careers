@@ -23,7 +23,7 @@ export default function Footer() {
     }, [])
 
     return (
-        <footer className="bg-black p-4">
+        <footer className="bg-black p-4 relative z-10">
             <div className="container-main flex text-white">
                 <div className="w-3/12 flex flex-col content-between">
                     <Link to="/" >

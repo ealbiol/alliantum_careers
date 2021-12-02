@@ -33,10 +33,7 @@ const Layout = ({ children, titlePage }) => {
       <div className={themeData}>
         <div className="bg-white dark:bg-black dark:text-white" >
           <Header siteTitle={titlePage} themeData={themeData} setThemeData={setThemeData} />
-          <br />
-          <br />
-          <br />
-          <br />
+
           <SwitchModeButton themeData={themeData} setThemeData={setThemeData} />
           <div>
             {/* <h1 className="bg-cornflower-blue dark:bg-black dark:text-white" >{themeData.toLocaleUpperCase()}</h1> */}

@@ -46,7 +46,7 @@ function IndexPage() {
           <div className="blurred-gradient-wrapper h-halfscreen">
             <div className="blurred-gradient-container">
               <div className="blurred-gradient-content absolute">
-                <div className="w-container-md w-100 h-full pt-7">
+                <div className="w-container-md w-100 h-full pt-7 px-2 xl:px-0">
                   <span className="pretitle text-black dark:text-white">What we need right now</span>
                   <AllJobOffersList className="relative z-4" id="/#jobs-table" />
                 </div>
@@ -94,14 +94,14 @@ function IndexPage() {
         <div id="your-benefits" />
         <div className="container mx-auto my-6">
           <span className="pretitle">Your benefits</span>
-          <h3 className="title text-md w-6/12">Work in an international company, with a happy team, in a great office</h3>
+          <h3 className="title text-md xl:w-6/12">Work in an international company, with a happy team, in a great office</h3>
           <YourBenefits />
         </div>
 
         {/* ------------> Office Presentation */}
         <div>
-          <div className="container mx-auto my-6 mb-2">
-            <h3 className="title text-md w-6/12">Your future office is modern, bright and equipped with the latest technological equipment</h3>
+          <div className="container mx-auto my-6 xl:mb-2">
+            <h3 className="title text-md xl:w-6/12">Your future office is modern, bright and equipped with the latest technological equipment</h3>
           </div>
           <OfficePhotos />
         </div>
@@ -116,7 +116,7 @@ function IndexPage() {
             <div className="relative z-10">
               <div className="container mx-auto mt-6 mb-2">
                 <span className="pretitle">The office</span>
-                <h3 className="title text-md w-6/12">German spirit. Spanish passion.</h3>
+                <h3 className="title text-md xl:w-6/12">German spirit. Spanish passion.</h3>
               </div>
               <GoogleMaps />
             </div>

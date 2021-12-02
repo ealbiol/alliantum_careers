@@ -79,9 +79,9 @@ export function AllJobOffersList() {
                                 return (
                                     <Link key={index} to={detail.node.fields.slug} >
                                         <div className="card border border-black dark:border-white">
-                                            <div className="flex justify-between items-center"  >
-                                                <div>{detail.node.frontmatter.title}</div>
-                                                <span className="pill">{detail.node.frontmatter.department}</span>
+                                            <div className="flex flex-col xl:flex-row justify-between items-start xl:items-center"  >
+                                                <div className="font-bold">{detail.node.frontmatter.title}</div>
+                                                <span className="pill mt-2 xl:mt-0">{detail.node.frontmatter.department}</span>
                                             </div>
                                         </div>
                                     </Link>
