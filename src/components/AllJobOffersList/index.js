@@ -50,7 +50,6 @@ export function AllJobOffersList() {
         setFormVisivbility(!formVisibility)
     }
 
-    console.log("showNotifySubmit:--->", showNotifySubmit);
 
     return (
         <div>

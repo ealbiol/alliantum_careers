@@ -36,9 +36,9 @@ export function NotifyMeButton({ showNotifySubmit, setShowNotifySubmit }) {
         fetch(URL, options)
             .then(response => response.json())
             .then(data => {
-                setSubmitMessage(true)
+                // setSubmitMessage(true)
                 setShowNotifySubmit(false)
-                setTimeout(() => setSubmitMessage(false), 50000);
+                setTimeout(() => setSubmitMessage(true), 50000);
             })
             .catch(err => console.error(err));
 
@@ -57,6 +57,7 @@ export function NotifyMeButton({ showNotifySubmit, setShowNotifySubmit }) {
         setUserPositions(e.map(department => department.id))
     }
 
+    console.log(submitMessage);
 
     return (
 
