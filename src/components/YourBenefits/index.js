@@ -65,7 +65,7 @@ export function YourBenefits() {
 
             {
                 theme === "dark" ?
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 pt-5" >
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-4 pt-5" >
                         {
                             benefitsWhite.map((unite, index) => {
                                 const icon = iconsInSVGWhite.find(icon => icon.id === unite.id)
@@ -74,13 +74,13 @@ export function YourBenefits() {
                                         <div className="blurred-gradient-container">
                                             <div className="blurred-gradient-content relative">
 
-                                                <div className="flex">
+                                                <div className="flex flex-col xxl:flex-row">
                                                     <div>{icon && icon.component}</div>
-                                                    <div className="flex flex-col mb-1 pl-3">
+                                                    <div className="flex flex-col mb-1 xxl:pl-3">
                                                         <div className="h-px-80 flex items-center">
                                                             <h4 className="mb-0 w-4/12">{unite?.title?.toUpperCase()}</h4>
                                                         </div>
-                                                        <div className="pr-6">{unite?.content}</div>
+                                                        <div className="xl:pr-6">{unite?.content}</div>
                                                     </div>
                                                 </div>
 
@@ -123,7 +123,7 @@ export function YourBenefits() {
                         }
                     </div>
                     :
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 pt-5" >
+                    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 pt-5" >
                         {
                             benefitsBlack.map((unite, index) => {
                                 const icon = iconsInSVGBlack.find(icon => icon.id === unite.id)
@@ -132,13 +132,13 @@ export function YourBenefits() {
                                         <div className="blurred-gradient-container">
                                             <div className="blurred-gradient-content relative">
 
-                                                <div className="flex">
+                                                <div className="flex flex-col xxl:flex-row">
                                                     <div>{icon && icon.component}</div>
-                                                    <div className="flex flex-col mb-1 pl-3">
+                                                    <div className="flex flex-col mb-1 xxl:pl-3">
                                                         <div className="h-px-80 flex items-center">
                                                             <h4 className="mb-0 w-4/12">{unite?.title?.toUpperCase()}</h4>
                                                         </div>
-                                                        <div className="pr-6">{unite?.content}</div>
+                                                        <div className="pr-6 sm:pr-4 md:pr-6">{unite?.content}</div>
                                                     </div>
                                                 </div>
 

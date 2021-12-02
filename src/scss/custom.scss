@@ -2,9 +2,15 @@
     font-size: 18px;
 }
 
+@media screen and (max-width: 28rem) {
+    :root {
+        font-size: 16px;
+    }
+}
+
 body {
     font-family: 'Roboto', sans-serif !important;
-    overflow-x: 0;
+    overflow-x: hidden;
     @apply bg-white;
 }
 
@@ -17,8 +23,10 @@ body * {
 }
 
 .btn {
-    @apply inline-block py-2 px-4 rounded;
+    @apply inline-block py-2 px-4 rounded text-center;
 }
+
+
 
 .btn-primary {
     @apply bg-cornflower-blue text-white;
@@ -30,6 +38,10 @@ body * {
 
 .btn-white {
     @apply bg-white text-black;
+}
+
+.btn-full {
+    @apply text-center min-w-full;
 }
 
 .btn-outline {
