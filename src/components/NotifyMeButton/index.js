@@ -59,14 +59,18 @@ export function NotifyMeButton({ showNotifySubmit, setShowNotifySubmit }) {
 
 
     return (
+
         <div>
             {showNotifySubmit ?
                 theme === "dark" ?
-                    <button
-                        className="btn btn-white btn-icon mb-3"
-                        onClick={handleBoolean}
-                    >X
-                    </button>
+                    <div>
+                        <button
+                            className="btn btn-white btn-icon mb-3"
+                            onClick={handleBoolean}
+                        >X
+                        </button>
+                    </div>
+
                     :
                     <button
                         className="btn btn-black btn-icon mb-3"
@@ -75,6 +79,7 @@ export function NotifyMeButton({ showNotifySubmit, setShowNotifySubmit }) {
                     </button>
 
                 :
+
                 theme === "dark" ?
                     <button
                         className="btn btn-white btn-icon"
@@ -161,5 +166,6 @@ export function NotifyMeButton({ showNotifySubmit, setShowNotifySubmit }) {
                 <div style={{ color: "green" }} >We sent you a verification email! Please check your inbox.</div>
             }
         </div>
+
     )
 }

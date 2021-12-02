@@ -50,71 +50,135 @@ export function AllJobOffersList() {
         setFormVisivbility(!formVisibility)
     }
 
-
+    console.log("showNotifySubmit:--->", showNotifySubmit);
 
     return (
-        <div className="relative z-10">
-            <div className="relative z-8">
+        <div>
+            {showNotifySubmit === true ?
+                <div className="relative z-10">
+                    <div className="relative z-8">
 
-                <div className="flex mb-3">
-                    <button
-                        style={{
-                            backgroundColor: clickedDepartment ? "" : "#141414",
-                            color: clickedDepartment ? "" : "#f0f0f0"
+                        <div className="flex mb-3">
+                            <button
+                                style={{
+                                    backgroundColor: clickedDepartment ? "" : "#141414",
+                                    color: clickedDepartment ? "" : "#f0f0f0"
 
-                        }}
-                        className="text-xs py-1 px-3 border border-black dark:border-white rounded-xl mr-1"
-                        onClick={() => (allRoles())} >
-                        All roles
-                    </button>
-                    <DepartmentsMenu
-                        allDepartments={GetAllDepartments()}
-                        clickedDep={clickedDepartment}
-                        setClickedDep={setClickedDepartment}
-                    />
-                </div>
-            </div>
+                                }}
+                                className="text-xs py-1 px-3 border border-black dark:border-white rounded-xl mr-1"
+                                onClick={() => (allRoles())} >
+                                All roles
+                            </button>
+                            <DepartmentsMenu
+                                allDepartments={GetAllDepartments()}
+                                clickedDep={clickedDepartment}
+                                setClickedDep={setClickedDepartment}
+                            />
+                        </div>
+                    </div>
 
-            {
-                jobOfferDetails.length ?
+                    {
+                        jobOfferDetails.length ?
+                            <div>
+                                {
+                                    jobOfferDetails.map((detail, index) => {
+                                        return (
+                                            <Link key={index} to={detail.node.fields.slug} >
+                                                <div className="card border border-black dark:border-white">
+                                                    <div className="flex justify-between items-center"  >
+                                                        <div>{detail.node.frontmatter.title}</div>
+                                                        <span className="pill">{detail.node.frontmatter.department}</span>
+                                                    </div>
+                                                </div>
+                                            </Link>
+                                        )
+                                    })
+                                }
+                            </div>
+                            :
+                            <div className="mb-3" >Currently there are no job offers available for the {clickedDepartment} team.</div>
+                    }
+
                     <div>
                         {
-                            jobOfferDetails.map((detail, index) => {
-                                return (
-                                    <Link key={index} to={detail.node.fields.slug} >
-                                        <div className="card border border-black dark:border-white">
-                                            <div className="flex justify-between items-center"  >
-                                                <div>{detail.node.frontmatter.title}</div>
-                                                <span className="pill">{detail.node.frontmatter.department}</span>
-                                            </div>
-                                        </div>
-                                    </Link>
-                                )
-                            })
+                            showNotifySubmit === true ?
+                                "" :
+                                <button className="btn btn-white" onClick={() => setShowNotifySubmit(false)}>Close</button>
                         }
                     </div>
-                    :
-                    <div className="mb-3" >Currently there are no job offers available for the {clickedDepartment} team.</div>
-            }
 
-
-            <div>
-                {showNotifySubmit === false ?
-                    <div onClick={handlePositionForm} >
-                        <NotifyMeButton showNotifySubmit={showNotifySubmit} setShowNotifySubmit={setShowNotifySubmit} />
-                    </div>
-                    :
                     <div>
-                        <button className="btn btn-white" onClick={() => setShowNotifySubmit(false)} >Close</button>
+                        <div>
+                            <div onClick={handlePositionForm} >
+                                <NotifyMeButton showNotifySubmit={showNotifySubmit} setShowNotifySubmit={setShowNotifySubmit} />
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                :
+
+
+                <div className="relative z-10">
+                    <div className="relative z-8">
+
+                        <div className="flex mb-3">
+                            <button
+                                style={{
+                                    backgroundColor: clickedDepartment ? "" : "#141414",
+                                    color: clickedDepartment ? "" : "#f0f0f0"
+
+                                }}
+                                className="text-xs py-1 px-3 border border-black dark:border-white rounded-xl mr-1"
+                                onClick={() => (allRoles())} >
+                                All roles
+                            </button>
+                            <DepartmentsMenu
+                                allDepartments={GetAllDepartments()}
+                                clickedDep={clickedDepartment}
+                                setClickedDep={setClickedDepartment}
+                            />
+                        </div>
+                    </div>
+
+                    {
+                        jobOfferDetails.length ?
+                            <div>
+                                {
+                                    jobOfferDetails.map((detail, index) => {
+                                        return (
+                                            <Link key={index} to={detail.node.fields.slug} >
+                                                <div className="card border border-black dark:border-white">
+                                                    <div className="flex justify-between items-center"  >
+                                                        <div>{detail.node.frontmatter.title}</div>
+                                                        <span className="pill">{detail.node.frontmatter.department}</span>
+                                                    </div>
+                                                </div>
+                                            </Link>
+                                        )
+                                    })
+                                }
+                            </div>
+                            :
+                            <div className="mb-3" >Currently there are no job offers available for the {clickedDepartment} team.</div>
+                    }
+
+
+                    <div>
                         <div onClick={handlePositionForm} >
                             <NotifyMeButton showNotifySubmit={showNotifySubmit} setShowNotifySubmit={setShowNotifySubmit} />
                         </div>
                     </div>
-                }
-            </div>
 
+
+                </div>
+            }
 
         </div>
+
     )
 }
 
