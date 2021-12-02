@@ -6,12 +6,11 @@ import IconBellBlack from "../../images/notify-me-photos/Icon2.svg"
 import useTheme from "../../hooks/useTheme";
 
 
-export function NotifyMeButton() {
+export function NotifyMeButton({ showNotifySubmit, setShowNotifySubmit }) {
 
 
     const [userEmail, setUserEmail] = React.useState("")
     const [userPositions, setUserPositions] = React.useState([0])
-    const [showNotifySubmit, setShowNotifySubmit] = React.useState(false)
     const [submitMessage, setSubmitMessage] = React.useState(false)
     const theme = useTheme();
 

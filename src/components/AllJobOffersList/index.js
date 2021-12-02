@@ -33,6 +33,8 @@ export function AllJobOffersList() {
   `)
 
     const [clickedDepartment, setClickedDepartment] = React.useState(null)
+    const [formVisibility, setFormVisivbility] = React.useState(false)
+    const [showNotifySubmit, setShowNotifySubmit] = React.useState(false)
 
 
     const jobOfferDetails = clickedDepartment
@@ -40,12 +42,14 @@ export function AllJobOffersList() {
         : data.allMarkdownRemark.edges;
 
 
-
-
-
     function allRoles() {
         setClickedDepartment(null)
     }
+
+    const handlePositionForm = () => {
+        setFormVisivbility(!formVisibility)
+    }
+
 
 
     return (
@@ -94,7 +98,21 @@ export function AllJobOffersList() {
             }
 
 
-            <NotifyMeButton />
+            <div>
+                {showNotifySubmit === false ?
+                    <div onClick={handlePositionForm} >
+                        <NotifyMeButton showNotifySubmit={showNotifySubmit} setShowNotifySubmit={setShowNotifySubmit} />
+                    </div>
+                    :
+                    <div>
+                        <button className="btn btn-white" onClick={() => setShowNotifySubmit(false)} >Close</button>
+                        <div onClick={handlePositionForm} >
+                            <NotifyMeButton showNotifySubmit={showNotifySubmit} setShowNotifySubmit={setShowNotifySubmit} />
+                        </div>
+                    </div>
+                }
+            </div>
+
 
         </div>
     )
