@@ -128,10 +128,9 @@ export function NotifyMeButton() {
                             isMulti
                             name="positions"
                             options={options}
-                            className="basic-multi-select"
+                            className="basic-multi-select text-black"
                             classNamePrefix="select"
                             onChange={handleChangeDepartment}
-                            className="text-black"
                         />
 
 
