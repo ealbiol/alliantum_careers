@@ -49,8 +49,8 @@ export function AllJobOffersList() {
 
 
     return (
-        <div>
-            <div>
+        <div className="relative z-10">
+            <div className="relative z-8">
 
                 <div className="flex mb-3">
                     <button

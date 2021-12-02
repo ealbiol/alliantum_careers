@@ -61,7 +61,7 @@ body * {
 }
 
 .card {
-    @apply rounded-lg mb-3 p-3 overflow-hidden border border-black dark:border-white;
+    @apply rounded-lg mb-3 p-3 border border-black dark:border-white;
 }
 
 .card-bg {

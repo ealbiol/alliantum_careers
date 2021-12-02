@@ -37,7 +37,7 @@ export function OfficeCard({ addressUnite }) {
 
     return isLoaded ? (
         <div className="w-4/12 px-2">
-            <div className="bg-white rounded-lg overflow-hidden">
+            <div className="bg-white dark:bg-black dark:border-white rounded-lg overflow-hidden">
                 <div>
                     {
                         theme === "dark" ?

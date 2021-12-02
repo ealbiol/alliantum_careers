@@ -103,48 +103,56 @@ export function NotifyMeButton() {
 
             {showNotifySubmit &&
 
-                <form onSubmit={handleUserEmail} style={{ border: "2px solid rebeccapurple" }}  >
+                <form onSubmit={handleUserEmail} >
 
-                    <div>
-                        <label>Your email:{" "}</label>
-                        <input
-                            type="email"
-                            name="Notify Me"
-                            placeholder="email" onChange={(e) => setUserEmail(e.currentTarget.value)}
-                            className="rounded h-4 text-black p-2"
-                            required
-                        />
-                        <div >Job Positions:</div>
+                    <div className="card bg-white dark:bg-black dark:border-white">
+                        <div className="flex flex-col xl:flex-row">
+                            <div className="flex flex-col xl:pr-2 w-100 xl:w-6/12">
+                                <label className="uppercase mb-1">Your email:{" "}</label>
+                                <input
+                                    type="email"
+                                    name="Notify Me"
+                                    placeholder="email" onChange={(e) => setUserEmail(e.currentTarget.value)}
+                                    className="rounded h-4 text-black p-2"
+                                    required
+                                />
+                            </div>
+                            <div className="flex flex-col w-100 xl:w-6/12">
+                                <label className="uppercase mb-1">Job Positions:</label>
 
-                        {
-                            userPositions.length > 0 ?
-                                ""
-                                :
-                                <div style={{ color: "red" }} ><i>Required Field</i></div>
-                        }
-
-                        <Select
-                            defaultValue={[allPositionsReactSelect[0]]}
-                            isMulti
-                            name="positions"
-                            options={options}
-                            className="basic-multi-select"
-                            classNamePrefix="select"
-                            onChange={handleChangeDepartment}
-                            className="text-black"
-                        />
-
-
-                        {
-                            userPositions.length > 0 ?
-                                <button type="submit" style={{ color: `green` }} >
-                                    <button>Submit</button>
-                                </button>
-                                :
-                                <button type="submit" style={{ color: `gray` }} disabled>
-                                    <button>Submit</button>
-                                </button>
-                        }
+                                <Select
+                                    defaultValue={[allPositionsReactSelect[0]]}
+                                    isMulti
+                                    name="positions"
+                                    options={options}
+                                    className="basic-multi-select"
+                                    classNamePrefix="select"
+                                    onChange={handleChangeDepartment}
+                                    className="text-black"
+                                />
+                                {
+                                    userPositions.length > 0 ?
+                                        ""
+                                        :
+                                        <div style={{ color: "red" }} ><i>Required Field</i></div>
+                                }
+                            </div>
+                        </div>
+                        <div className="flex flex-grow justify-between mt-3">
+                            <div className="flex align-center">
+                                <small className="leading-4 w-100 xl:w-6/12">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem rerum beatae, soluta quia ea sint fugit ut inventore aspernatur unde!</small>
+                            </div>
+                            {
+                                userPositions.length > 0 ?
+                                    <button type="submit" className="btn btn-primary min-w-0 xl:w-100" >
+                                        Subscribe to jobs
+                                    </button>
+                                    :
+                                    <button type="submit" className="btn btn-primary" disabled>
+                                        Subscribe to jobs
+                                    </button>
+                            }
+                        </div>
                     </div>
 
                 </form>

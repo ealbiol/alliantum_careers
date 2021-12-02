@@ -46,14 +46,14 @@ function IndexPage() {
           <div className="blurred-gradient-wrapper h-halfscreen">
             <div className="blurred-gradient-container">
               <div className="blurred-gradient-content absolute">
-                <div className="w-container-md w-100">
-                  <span className="pretitle text-loblolly-600">What we need right now</span>
-                  <AllJobOffersList id="/#jobs-table" />
+                <div className="w-container-md w-100 h-full pt-7">
+                  <span className="pretitle text-black dark:text-white">What we need right now</span>
+                  <AllJobOffersList className="relative z-4" id="/#jobs-table" />
                 </div>
               </div>
 
-              <CircleBlur zIndex={1} blur="50" color="#F9B457" top="50%" left="50%" size="300"
-                keyFrame={
+              <CircleBlur zIndex={1} blur="140" color="#F9B457" top="50%" left="20%" size="500"
+                keyFrame={ /* ORANGE */
                   ` 
                     0 % { transform: translate(0, 0) }
                     33 % { transform: scale(0.77) }
@@ -63,7 +63,7 @@ function IndexPage() {
                 }
               />
 
-              <CircleBlur zIndex={2} blur="160" color="#8838F8" top="18%" left="38%" size="800"
+              <CircleBlur zIndex={1} blur="160" color="#8838F8" top="24%" left="34%" size="800"
                 keyFrame={ /* PURPLE */
                   `
                     0 % { transform: translate(0, 0) }
@@ -72,7 +72,7 @@ function IndexPage() {
                     100 % { transform: translate(30px, 40px) }
                   `
                 }
-              />
+              />s
 
               <CircleBlur zIndex={1} blur="160" color="#68B583" top="30%" left="58%" size="600"
                 keyFrame={ /* GREEN */
