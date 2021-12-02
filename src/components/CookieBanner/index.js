@@ -24,7 +24,6 @@ export function CookieBanner() {
 
     React.useEffect(() => {
         if (localStorage.cookiesStatus) {
-            // if (localStorage.hasOwnProperty("cookiesStatus")) {
             setComponentVisibility(false)
         }
 

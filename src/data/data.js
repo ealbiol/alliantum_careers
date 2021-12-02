@@ -94,11 +94,40 @@ export const allBenefits = [
     { id: 4, title: "Work-Life Balance", content: "Enjoy your life, your time, your family... You only live once! We need you to be happy" },
     { id: 5, title: "Great Location", content: "Our office is located in the centre of Malaga, close to the shopping and entertainment area" },
     { id: 6, title: "Coffee and Tea", content: "Coffee and tea for everyone and there is always someone to bring something to go with it" },
-
 ]
 
 export async function getAllBenefits() {
     return allBenefits
+}
+
+//-----------------------------------------------------//
+
+export const allBenefitsWhite = [
+    { id: 7, title: "Flexible Hours", content: "Flexible entry and exit times. There is life beyond work, and we know it" },
+    { id: 8, title: "Training Fridays", content: "Fridays dedicated to training in subjects of interest to our work place" },
+    { id: 9, title: "Team Activities", content: "We organise team activities and it is easy to see us many days eating hamburgers somewhere near the office" },
+    { id: 10, title: "Work-Life Balance", content: "Enjoy your life, your time, your family... You only live once! We need you to be happy" },
+    { id: 11, title: "Great Location", content: "Our office is located in the centre of Malaga, close to the shopping and entertainment area" },
+    { id: 12, title: "Coffee and Tea", content: "Coffee and tea for everyone and there is always someone to bring something to go with it" },
+]
+
+export async function getAllBenefitsWhite() {
+    return allBenefitsWhite
+}
+
+//-----------------------------------------------------//
+
+export const allBenefitsBlack = [
+    { id: 13, title: "Flexible Hours", content: "Flexible entry and exit times. There is life beyond work, and we know it" },
+    { id: 14, title: "Training Fridays", content: "Fridays dedicated to training in subjects of interest to our work place" },
+    { id: 15, title: "Team Activities", content: "We organise team activities and it is easy to see us many days eating hamburgers somewhere near the office" },
+    { id: 16, title: "Work-Life Balance", content: "Enjoy your life, your time, your family... You only live once! We need you to be happy" },
+    { id: 17, title: "Great Location", content: "Our office is located in the centre of Malaga, close to the shopping and entertainment area" },
+    { id: 18, title: "Coffee and Tea", content: "Coffee and tea for everyone and there is always someone to bring something to go with it" },
+]
+
+export async function getAllBenefitsBlack() {
+    return allBenefitsBlack
 }
 
 //-----------------------------------------------------//

@@ -28,19 +28,6 @@ export function GoogleMaps() {
 
 
 
-    // const [isDark, setIsDark] = React.useState(false)
-
-
-    // React.useEffect(() => {
-
-    //     if (localStorage.theme === "dark" || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    //         setIsDark(true)
-    //     } else {
-    //         setIsDark(false)
-    //     }
-
-    // }, [])
-
 
     const { isLoaded } = useJsApiLoader({
         id: 'google-map-script',
