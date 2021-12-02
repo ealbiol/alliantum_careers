@@ -96,7 +96,7 @@ export function AllJobOffersList() {
                                 }
                             </div>
                             :
-                            <div className="mb-3" >Currently there are no job offers available for the {clickedDepartment} team.</div>
+                            <div className="mb-3" >There are currently no job offers available for the {clickedDepartment} team.</div>
                     }
 
                     <div>
@@ -114,8 +114,6 @@ export function AllJobOffersList() {
                             </div>
                         </div>
                     </div>
-
-
                 </div>
 
 

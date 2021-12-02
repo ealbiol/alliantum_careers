@@ -72,7 +72,7 @@ function IndexPage() {
                     100 % { transform: translate(30px, 40px) }
                   `
                 }
-              />s
+              />
 
               <CircleBlur zIndex={1} blur="160" color="#68B583" top="30%" left="58%" size="600"
                 keyFrame={ /* GREEN */

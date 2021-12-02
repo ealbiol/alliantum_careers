@@ -67,7 +67,7 @@ export function NotifyMeButton({ showNotifySubmit, setShowNotifySubmit }) {
                         <button
                             className="btn btn-white btn-icon mb-3"
                             onClick={handleBoolean}
-                        >X
+                        >Close
                         </button>
                     </div>
 
@@ -75,7 +75,7 @@ export function NotifyMeButton({ showNotifySubmit, setShowNotifySubmit }) {
                     <button
                         className="btn btn-black btn-icon mb-3"
                         onClick={handleBoolean}
-                    >X
+                    >Close
                     </button>
 
                 :
