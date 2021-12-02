@@ -1,91 +1,191 @@
 import * as React from "react"
-import { getAllBenefits } from "../../data/data"
-import Icon1 from "../../images/your-benefits-photos/icon1.svg"
-import Icon2 from "../../images/your-benefits-photos/icon2.svg"
-import Icon3 from "../../images/your-benefits-photos/icon3.svg"
-import Icon4 from "../../images/your-benefits-photos/icon4.svg"
-import Icon5 from "../../images/your-benefits-photos/icon5.svg"
-import Icon6 from "../../images/your-benefits-photos/icon6.svg"
+import { getAllBenefitsWhite, getAllBenefitsBlack } from "../../data/data"
+
+import Icon7 from "../../images/your-benefits-photos/icon-white-1.svg"
+import Icon8 from "../../images/your-benefits-photos/icon-white-2.svg"
+import Icon9 from "../../images/your-benefits-photos/icon-white-3.svg"
+import Icon10 from "../../images/your-benefits-photos/icon-white-4.svg"
+import Icon11 from "../../images/your-benefits-photos/icon-white-5.svg"
+import Icon12 from "../../images/your-benefits-photos/icon-white-6.svg"
+import Icon13 from "../../images/your-benefits-photos/icon-black-1.svg"
+import Icon14 from "../../images/your-benefits-photos/icon-black-2.svg"
+import Icon15 from "../../images/your-benefits-photos/icon-black-3.svg"
+import Icon16 from "../../images/your-benefits-photos/icon-black-4.svg"
+import Icon17 from "../../images/your-benefits-photos/icon-black-5.svg"
+import Icon18 from "../../images/your-benefits-photos/icon-black-6.svg"
+
+
 import { CircleBlur } from "../CircleBlur/index"
+import useTheme from "../../hooks/useTheme";
 
 
 export function YourBenefits() {
 
+    const theme = useTheme();
+
     const [benefits, setBenefits] = React.useState([])
+    const [benefitsWhite, setBenefitsWhite] = React.useState([])
+    const [benefitsBlack, setBenefitsBlack] = React.useState([])
+
 
     React.useEffect(() => {
-        getAllBenefits().then((result) => {
-            setBenefits(result)
+
+        getAllBenefitsWhite().then((result) => {
+            setBenefitsWhite(result)
         })
+
+        getAllBenefitsBlack().then((result) => {
+            setBenefitsBlack(result)
+        })
+
     }, [])
 
-    const iconsInSVG = [
-        { id: 1, component: <Icon1 /> },
-        { id: 2, component: <Icon2 /> },
-        { id: 3, component: <Icon3 /> },
-        { id: 4, component: <Icon4 /> },
-        { id: 5, component: <Icon5 /> },
-        { id: 6, component: <Icon6 /> },
+
+
+    const iconsInSVGWhite = [
+        { id: 7, component: <Icon7 /> },
+        { id: 8, component: <Icon8 /> },
+        { id: 9, component: <Icon9 /> },
+        { id: 10, component: <Icon10 /> },
+        { id: 11, component: <Icon11 /> },
+        { id: 12, component: <Icon12 /> },
+    ];
+
+    const iconsInSVGBlack = [
+        { id: 13, component: <Icon13 /> },
+        { id: 14, component: <Icon14 /> },
+        { id: 15, component: <Icon15 /> },
+        { id: 16, component: <Icon16 /> },
+        { id: 17, component: <Icon17 /> },
+        { id: 18, component: <Icon18 /> },
     ];
 
     return (
+
         <div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 pt-5">
-                {
-                    benefits.map((unite, index) => {
-                        const icon = iconsInSVG.find(icon => icon.id === unite.id)
-                        return (
-                            <div key={index} className="blurred-gradient-wrapper">
-                                <div className="blurred-gradient-container">
-                                    <div className="blurred-gradient-content relative">
 
-                                        <div className="flex">
-                                            <div>{icon && icon.component}</div>
-                                            <div className="flex flex-col mb-1 pl-3">
-                                                <div className="h-px-80 flex items-center">
-                                                    <h4 className="mb-0 w-4/12">{unite?.title?.toUpperCase()}</h4>
+            {
+                theme === "dark" ?
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 pt-5" >
+                        {
+                            benefitsWhite.map((unite, index) => {
+                                const icon = iconsInSVGWhite.find(icon => icon.id === unite.id)
+                                return (
+                                    <div key={index} className="blurred-gradient-wrapper">
+                                        <div className="blurred-gradient-container">
+                                            <div className="blurred-gradient-content relative">
+
+                                                <div className="flex">
+                                                    <div>{icon && icon.component}</div>
+                                                    <div className="flex flex-col mb-1 pl-3">
+                                                        <div className="h-px-80 flex items-center">
+                                                            <h4 className="mb-0 w-4/12">{unite?.title?.toUpperCase()}</h4>
+                                                        </div>
+                                                        <div className="pr-6">{unite?.content}</div>
+                                                    </div>
                                                 </div>
-                                                <div className="pr-6">{unite?.content}</div>
-                                            </div>
-                                        </div>
 
-                                    </div>
-                                    <CircleBlur blur="40" color="#F9B457" top="20%" left="8%" size="70"
-                                        keyFrame={ /* ORANGE */
-                                            `    
+                                            </div>
+
+                                            <CircleBlur blur="40" color="#F9B457" top="20%" left="8%" size="70"
+                                                keyFrame={ /* ORANGE */
+                                                    `    
                                         0%    {  transform: translate(0, 0) }
                                         33%   {  transform: scale(0.77) }
                                         66%   {  transform: translate(0px, 30px) }
                                         100%  {  transform: translate(26px, 40px) }
                                         `
-                                        }
-                                    />
-                                    <CircleBlur blur="40" color="#8838F8" top="8%" left="16%" size="70"
-                                        keyFrame={ /* PURPLE */
-                                            `    
+                                                }
+                                            />
+                                            <CircleBlur blur="40" color="#8838F8" top="8%" left="16%" size="70"
+                                                keyFrame={ /* PURPLE */
+                                                    `    
                                         0%    {  transform: translate(0, 0) }
                                         33%   {  transform: scale(0.88) }
                                         66%   {  transform: translate(14px, 22px) }
                                         100%  {  transform: translate(20px, 30px) }
                                         `
-                                        }
-                                    />
-                                    <CircleBlur blur="40" color="#68B583" top="32%" left="30%" size="70"
-                                        keyFrame={ /* GREEN */
-                                            `    
+                                                }
+                                            />
+                                            <CircleBlur blur="40" color="#68B583" top="32%" left="30%" size="70"
+                                                keyFrame={ /* GREEN */
+                                                    `    
                                         0%    {  transform: translate(0, 0) }
                                         33%   {  transform: scale(0.82) }
                                         66%   {  transform: translate(10px, 20px) }
                                         100%  {  transform: translate(40px, 10px) }
                                         `
-                                        }
-                                    />
-                                </div>
-                            </div>
-                        )
-                    })
-                }
-            </div>
+                                                }
+                                            />
+                                        </div>
+                                    </div>
+                                )
+                            })
+                        }
+                    </div>
+                    :
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 pt-5" >
+                        {
+                            benefitsBlack.map((unite, index) => {
+                                const icon = iconsInSVGBlack.find(icon => icon.id === unite.id)
+                                return (
+                                    <div key={index} className="blurred-gradient-wrapper">
+                                        <div className="blurred-gradient-container">
+                                            <div className="blurred-gradient-content relative">
+
+                                                <div className="flex">
+                                                    <div>{icon && icon.component}</div>
+                                                    <div className="flex flex-col mb-1 pl-3">
+                                                        <div className="h-px-80 flex items-center">
+                                                            <h4 className="mb-0 w-4/12">{unite?.title?.toUpperCase()}</h4>
+                                                        </div>
+                                                        <div className="pr-6">{unite?.content}</div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <CircleBlur blur="40" color="#F9B457" top="20%" left="8%" size="70"
+                                                keyFrame={ /* ORANGE */
+                                                    `    
+                                            0%    {  transform: translate(0, 0) }
+                                            33%   {  transform: scale(0.77) }
+                                            66%   {  transform: translate(0px, 30px) }
+                                            100%  {  transform: translate(26px, 40px) }
+                                            `
+                                                }
+                                            />
+                                            <CircleBlur blur="40" color="#8838F8" top="8%" left="16%" size="70"
+                                                keyFrame={ /* PURPLE */
+                                                    `    
+                                            0%    {  transform: translate(0, 0) }
+                                            33%   {  transform: scale(0.88) }
+                                            66%   {  transform: translate(14px, 22px) }
+                                            100%  {  transform: translate(20px, 30px) }
+                                            `
+                                                }
+                                            />
+                                            <CircleBlur blur="40" color="#68B583" top="32%" left="30%" size="70"
+                                                keyFrame={ /* GREEN */
+                                                    `    
+                                            0%    {  transform: translate(0, 0) }
+                                            33%   {  transform: scale(0.82) }
+                                            66%   {  transform: translate(10px, 20px) }
+                                            100%  {  transform: translate(40px, 10px) }
+                                            `
+                                                }
+                                            />
+                                        </div>
+                                    </div>
+                                )
+                            })
+                        }
+                    </div>
+            }
+
+
+
         </div>
+
     )
 }
