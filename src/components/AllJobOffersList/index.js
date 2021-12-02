@@ -33,8 +33,6 @@ export function AllJobOffersList() {
   `)
 
     const [clickedDepartment, setClickedDepartment] = React.useState(null)
-    const [formVisibility, setFormVisivbility] = React.useState(false)
-    const [showNotifySubmit, setShowNotifySubmit] = React.useState(false)
 
 
     const jobOfferDetails = clickedDepartment
@@ -42,14 +40,12 @@ export function AllJobOffersList() {
         : data.allMarkdownRemark.edges;
 
 
+
+
+
     function allRoles() {
         setClickedDepartment(null)
     }
-
-    const handlePositionForm = () => {
-        setFormVisivbility(!formVisibility)
-    }
-
 
 
     return (
@@ -84,7 +80,7 @@ export function AllJobOffersList() {
                                     <Link key={index} to={detail.node.fields.slug} >
                                         <div className="card border border-black dark:border-white">
                                             <div className="flex flex-col xl:flex-row justify-between items-start xl:items-center"  >
-                                                <div className="font-bold">{detail.node.frontmatter.title}</div>
+                                                <div>{detail.node.frontmatter.title}</div>
                                                 <span className="pill mt-2 xl:mt-0">{detail.node.frontmatter.department}</span>
                                             </div>
                                         </div>
@@ -98,21 +94,7 @@ export function AllJobOffersList() {
             }
 
 
-            <div>
-                {showNotifySubmit === false ?
-                    <div onClick={handlePositionForm} >
-                        <NotifyMeButton showNotifySubmit={showNotifySubmit} setShowNotifySubmit={setShowNotifySubmit} />
-                    </div>
-                    :
-                    <div>
-                        <button className="btn btn-white" onClick={() => setShowNotifySubmit(false)} >Close</button>
-                        <div onClick={handlePositionForm} >
-                            <NotifyMeButton showNotifySubmit={showNotifySubmit} setShowNotifySubmit={setShowNotifySubmit} />
-                        </div>
-                    </div>
-                }
-            </div>
-
+            <NotifyMeButton />
 
         </div>
     )

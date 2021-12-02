@@ -26,8 +26,6 @@ body * {
     @apply inline-block py-2 px-4 rounded text-center;
 }
 
-
-
 .btn-primary {
     @apply bg-cornflower-blue text-white;
 }
@@ -285,4 +283,10 @@ body * {
     33%   {  transform: scale(1.6) }
     66%   {  transform: translate(10px, 30px) }
     100%  {  transform: translate(30px, 20px) }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .gatsby-image-wrapper {
+        width: 300px;
+    }
   }
