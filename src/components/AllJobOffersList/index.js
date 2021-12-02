@@ -33,6 +33,8 @@ export function AllJobOffersList() {
   `)
 
     const [clickedDepartment, setClickedDepartment] = React.useState(null)
+    const [formVisibility, setFormVisivbility] = React.useState(false)
+    const [showNotifySubmit, setShowNotifySubmit] = React.useState(false)
 
 
     const jobOfferDetails = clickedDepartment
@@ -40,21 +42,15 @@ export function AllJobOffersList() {
         : data.allMarkdownRemark.edges;
 
 
-
-
-
     function allRoles() {
         setClickedDepartment(null)
     }
 
-<<<<<<< HEAD
-=======
     const handlePositionForm = () => {
         setFormVisivbility(!formVisibility)
     }
 
     console.log("showNotifySubmit:--->", showNotifySubmit);
->>>>>>> 6b7dab01035579b99265bef59001a2d4f8dca507
 
     return (
         <div>
@@ -89,9 +85,9 @@ export function AllJobOffersList() {
                                         return (
                                             <Link key={index} to={detail.node.fields.slug} >
                                                 <div className="card border border-black dark:border-white">
-                                                    <div className="flex justify-between items-center"  >
+                                                    <div className="flex flex-col xl:flex-row justify-between items-start xl:items-center" >
                                                         <div>{detail.node.frontmatter.title}</div>
-                                                        <span className="pill">{detail.node.frontmatter.department}</span>
+                                                        <span className="pill mt-2 xl:mt-0">{detail.node.frontmatter.department}</span>
                                                     </div>
                                                 </div>
                                             </Link>
@@ -105,24 +101,9 @@ export function AllJobOffersList() {
 
                     <div>
                         {
-<<<<<<< HEAD
-                            jobOfferDetails.map((detail, index) => {
-                                return (
-                                    <Link key={index} to={detail.node.fields.slug} >
-                                        <div className="card border border-black dark:border-white">
-                                            <div className="flex flex-col xl:flex-row justify-between items-start xl:items-center"  >
-                                                <div>{detail.node.frontmatter.title}</div>
-                                                <span className="pill mt-2 xl:mt-0">{detail.node.frontmatter.department}</span>
-                                            </div>
-                                        </div>
-                                    </Link>
-                                )
-                            })
-=======
                             showNotifySubmit === true ?
                                 "" :
                                 <button className="btn btn-white" onClick={() => setShowNotifySubmit(false)}>Close</button>
->>>>>>> 6b7dab01035579b99265bef59001a2d4f8dca507
                         }
                     </div>
 
@@ -138,9 +119,6 @@ export function AllJobOffersList() {
                 </div>
 
 
-<<<<<<< HEAD
-            <NotifyMeButton />
-=======
                 :
 
 
@@ -195,7 +173,6 @@ export function AllJobOffersList() {
                         </div>
                     </div>
 
->>>>>>> 6b7dab01035579b99265bef59001a2d4f8dca507
 
                 </div>
             }
@@ -204,8 +181,3 @@ export function AllJobOffersList() {
 
     )
 }
-
-
-
-
-
