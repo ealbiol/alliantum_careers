@@ -57,7 +57,7 @@ export function NotifyMeButton({ showNotifySubmit, setShowNotifySubmit, submitMe
         setUserPositions(e.map(department => department.id))
     }
 
-    console.log("submitMessage:--->",submitMessage);
+    // console.log("submitMessage:--->",submitMessage);
     // console.log("showNotifySubmit:--->",showNotifySubmit);
 
 
