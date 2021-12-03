@@ -6,12 +6,12 @@ import IconBellBlack from "../../images/notify-me-photos/Icon2.svg"
 import useTheme from "../../hooks/useTheme";
 
 
-export function NotifyMeButton({ showNotifySubmit, setShowNotifySubmit }) {
+export function NotifyMeButton({ showNotifySubmit, setShowNotifySubmit, submitMessage, setSubmitMessage }) {
 
 
     const [userEmail, setUserEmail] = React.useState("")
     const [userPositions, setUserPositions] = React.useState([0])
-    const [submitMessage, setSubmitMessage] = React.useState(false)
+    // const [submitMessage, setSubmitMessage] = React.useState(false)
     const theme = useTheme();
 
 
@@ -36,7 +36,7 @@ export function NotifyMeButton({ showNotifySubmit, setShowNotifySubmit }) {
         fetch(URL, options)
             .then(response => response.json())
             .then(data => {
-                // setSubmitMessage(true)
+                setSubmitMessage(true)
                 setShowNotifySubmit(false)
                 setTimeout(() => setSubmitMessage(true), 50000);
             })
@@ -48,7 +48,7 @@ export function NotifyMeButton({ showNotifySubmit, setShowNotifySubmit }) {
 
     const handleBoolean = () => {
         setShowNotifySubmit(!showNotifySubmit)
-        setSubmitMessage(false)
+        // setSubmitMessage(!submitMessage)
     }
 
     const options = allPositionsReactSelect
@@ -57,7 +57,9 @@ export function NotifyMeButton({ showNotifySubmit, setShowNotifySubmit }) {
         setUserPositions(e.map(department => department.id))
     }
 
-    console.log(submitMessage);
+    console.log("submitMessage:--->",submitMessage);
+    // console.log("showNotifySubmit:--->",showNotifySubmit);
+
 
     return (
 

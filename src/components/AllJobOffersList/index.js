@@ -35,6 +35,7 @@ export function AllJobOffersList() {
     const [clickedDepartment, setClickedDepartment] = React.useState(null)
     const [formVisibility, setFormVisivbility] = React.useState(false)
     const [showNotifySubmit, setShowNotifySubmit] = React.useState(false)
+    const [submitMessage, setSubmitMessage] = React.useState(false)
 
 
     const jobOfferDetails = clickedDepartment
@@ -109,7 +110,7 @@ export function AllJobOffersList() {
                     <div>
                         <div>
                             <div onClick={handlePositionForm} >
-                                <NotifyMeButton showNotifySubmit={showNotifySubmit} setShowNotifySubmit={setShowNotifySubmit} />
+                                <NotifyMeButton showNotifySubmit={showNotifySubmit} setShowNotifySubmit={setShowNotifySubmit} submitMessage={submitMessage} setSubmitMessage={setSubmitMessage}   />
                             </div>
                         </div>
                     </div>
@@ -166,13 +167,15 @@ export function AllJobOffersList() {
 
                     <div>
                         <div onClick={handlePositionForm} >
-                            <NotifyMeButton showNotifySubmit={showNotifySubmit} setShowNotifySubmit={setShowNotifySubmit} />
+                            <NotifyMeButton showNotifySubmit={showNotifySubmit} setShowNotifySubmit={setShowNotifySubmit} submitMessage={submitMessage} setSubmitMessage={setSubmitMessage} />
                         </div>
                     </div>
 
 
                 </div>
             }
+
+        
 
         </div>
 
