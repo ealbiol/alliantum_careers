@@ -16,7 +16,6 @@ module.exports = {
             xl: '1280px',
             xxl: '1536px',
             DEFAULT: '1450px',
-
         },
         colors: {
             transparent: 'transparent',
