@@ -3,6 +3,8 @@ import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import MenuIcon from '@mui/icons-material/Menu';
+import { getAllHeaderAndFooterSections } from "../../data/data"
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 
 export default function HeaderBurgerMenu() {
@@ -15,6 +17,17 @@ export default function HeaderBurgerMenu() {
     const handleClose = () => {
         setAnchorEl(null);
     };
+
+
+    const [headerUnite, setHeaderUnite] = React.useState([])
+
+    React.useEffect(() => {
+        getAllHeaderAndFooterSections().then((result) => {
+            setHeaderUnite(result)
+
+        })
+    }, [])
+
 
     return (
         <div>
@@ -37,9 +50,20 @@ export default function HeaderBurgerMenu() {
                 }}
                 sx={{ boxShadow: 0 }}
             >
-                <MenuItem onClick={handleClose}>Profile</MenuItem>
-                <MenuItem onClick={handleClose}>My accounthrthth4h4wth4wtt</MenuItem>
-                <MenuItem onClick={handleClose}>Logout</MenuItem>
+                {
+                    headerUnite.map((value, index) => {
+                        return (
+                            <AnchorLink
+                                key={index}
+                                to={value.anchor}
+                                style={{ color: `white`, textDecoration: `none` }}
+                                className="ml-3"
+                            >
+                                <MenuItem onClick={handleClose}>{value.sectionName}</MenuItem>
+                            </AnchorLink>
+                        )
+                    })
+                }
             </Menu>
         </div>
     )
