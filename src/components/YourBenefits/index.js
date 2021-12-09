@@ -78,7 +78,7 @@ export function YourBenefits() {
                                                     <div>{icon && icon.component}</div>
                                                     <div className="flex flex-col mb-1 xxl:pl-3">
                                                         <div className="h-px-80 flex items-center">
-                                                            <h4 className="mb-0 w-4/12">{unite?.title?.toUpperCase()}</h4>
+                                                            <h4 className="mb-0 lg:w-4/12">{unite?.title?.toUpperCase()}</h4>
                                                         </div>
                                                         <div className="xl:pr-6">{unite?.content}</div>
                                                     </div>
@@ -136,7 +136,7 @@ export function YourBenefits() {
                                                     <div>{icon && icon.component}</div>
                                                     <div className="flex flex-col mb-1 xxl:pl-3">
                                                         <div className="h-px-80 flex items-center">
-                                                            <h4 className="mb-0 w-4/12">{unite?.title?.toUpperCase()}</h4>
+                                                            <h4 className="mb-0 lg:w-4/12">{unite?.title?.toUpperCase()}</h4>
                                                         </div>
                                                         <div className="pr-6 sm:pr-4 md:pr-6">{unite?.content}</div>
                                                     </div>

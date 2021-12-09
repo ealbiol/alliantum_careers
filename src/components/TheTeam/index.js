@@ -38,14 +38,11 @@ export function TheTeam() {
                 <div className="blurred-gradient-container">
                     <div className="blurred-gradient-content">
                         <div className="w-100 relative z-10">
-
                             <EmployeesGallery />
-
-                            <div className="card-bg bg-white md:w-px-420 mx-auto -mt-7 mb-6 relative z-10">
-                                <span className="title text-black text-md block">Do you want to grow with us?</span>
-                                <AnchorLink className="btn btn-black btn-full text-center mt-4" to={"/#jobs-table"} >See current job offers</AnchorLink>
-                            </div>
-
+                        </div>
+                        <div className="card-bg bg-white md:w-px-420 mx-auto -mt-7 mb-6 relative z-10">
+                            <span className="title text-black text-md block">Do you want to grow with us?</span>
+                            <AnchorLink className="btn btn-black btn-full text-center mt-4" to={"/#jobs-table"} >See current job offers</AnchorLink>
                         </div>
                     </div>
 

@@ -24,20 +24,17 @@ export default function Header({ siteTitle, themeData, setThemeData }) {
   }, [])
 
 
-
   return (
-    <header className="fixed w-full z-30 bg-white dark:bg-black dark:text-white" style={{ marginBottom: `1.45rem` }}>
+    <header className="fixed w-full z-30 bg-white dark:bg-black dark:text-white">
 
       <div className="container-main">
 
-
-        <div className="flex flex-row justify-between py-3 bb bg-red">
+        <div className="flex flex-row justify-between py-1 lg:py-3 bb bg-red">
 
           <Link to="/" >
             <div className="flex items-end">
               {
                 theme === "dark" ?
-
                   <AlliantumLogoWhite style={{ margin: "4px" }} />
                   :
                   <AlliantumLogoBlack style={{ margin: "4px" }} />

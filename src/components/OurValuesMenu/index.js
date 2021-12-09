@@ -46,10 +46,8 @@ export function OurValuesMenu({ allOurValues }) {
                 </div>
             </div>
 
-
             <OurValuesMenuAccordion />
 
         </div >
     )
-
 }
