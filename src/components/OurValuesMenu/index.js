@@ -2,6 +2,7 @@ import * as React from "react"
 import { ValueCard } from "../ValueCard"
 import ArrowLeft from "../../images/values-photos/arrow-left.svg"
 import ArrowRight from "../../images/values-photos/arrow-right.svg"
+import { OurValuesMenuAccordion } from "../OurValuesMenuAccordion"
 
 
 export function OurValuesMenu({ allOurValues }) {
@@ -45,28 +46,9 @@ export function OurValuesMenu({ allOurValues }) {
                 </div>
             </div>
 
-            <p class="my-5 text-left">Closed</p>
-            <div
-                class="text-xl font-medium text-left bg-white hover:bg-gray-100 hover:bg-opacity-50 duration-300 p-3 rounded-lg"
-                role="alert"
-            >
-                Click me to open!
-            </div>
 
-            <p class="my-5 text-left">Opened</p>
+            <OurValuesMenuAccordion />
 
-            <div
-                class="text-xl font-medium text-left bg-white bg-gray-100 bg-opacity-50 duration-300 p-3 rounded-lg rounded-b-none"
-                role="alert"
-            >
-                Opened
-            </div>
-            <div class="bg-gray-100 bg-opacity-50 p-3 pt-1 rounded-b-lg">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-                ipsam ipsa veniam, ratione incidunt dolores maiores nobis reprehenderit
-                voluptas, quaerat delectus reiciendis corporis dolorum vero itaque unde
-                ut corrupti tenetur?
-            </div>
         </div >
     )
 
