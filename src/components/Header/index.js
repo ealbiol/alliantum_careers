@@ -65,12 +65,14 @@ export default function Header({ siteTitle, themeData, setThemeData }) {
               }
             </span>
           </div>
+          <div className="block lg:hidden" >
+            <HeaderBurgerMenu />
+          </div>
           <SwitchModeButton themeData={themeData} setThemeData={setThemeData} />
+
         </div>
 
-        <div className="block lg:hidden" >
-          <HeaderBurgerMenu />
-        </div>
+
 
 
       </div>
