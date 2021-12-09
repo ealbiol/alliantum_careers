@@ -23,7 +23,6 @@ export default function EmployeePhoto({ photo, firstName, surname }) {
 
   const altEmployeeName = photo.replace(/([A-Z])/g, ' $1').trim().replace(".jpg", "")
 
-  console.log("photoEmployee:--->", altEmployeeName);
 
   // console.log(firstName, surname);
 
