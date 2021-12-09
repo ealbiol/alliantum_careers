@@ -25,11 +25,11 @@ export default function Header({ siteTitle, themeData, setThemeData }) {
 
 
   return (
-    <header className="fixed w-full z-30 bg-white dark:bg-black dark:text-white">
+    <header className="fixed w-full z-30 bg-white dark:bg-black dark:text-white py-1 lg:py-3">
 
       <div className="container-main">
 
-        <div className="flex flex-row justify-between py-1 lg:py-3 bb bg-red">
+        <div className="flex flex-row justify-between bb bg-red">
 
           <Link to="/" >
             <div className="flex items-end">
@@ -42,30 +42,35 @@ export default function Header({ siteTitle, themeData, setThemeData }) {
               <span className="text-xs">CAREERS</span>
             </div>
           </Link>
+          <div className="flex">
 
-          <div className="hidden lg:block" >
-            <span>
-              {
-                headerUnite.map((unite, index) => {
-                  return (
-                    <span key={index} style={{ margin: 0 }}  >
-                      <AnchorLink
-                        to={unite.anchor}
-                        style={{ color: `white`, textDecoration: `none` }}
-                        className="ml-3"
-                      >
-                        {unite.sectionName}
-                      </AnchorLink>
-                    </span>
-                  )
-                })
-              }
-            </span>
+            <div className="hidden lg:flex items-center" >
+              <ul className="list-none flex p-0 m-0">
+                {
+                  headerUnite.map((unite, index) => {
+                    return (
+                      <li key={index} style={{ margin: 0 }}  >
+                        <AnchorLink
+                          to={unite.anchor}
+                          style={{ color: `white`, textDecoration: `none` }}
+                          className="ml-3"
+                        >
+                          {unite.sectionName}
+                        </AnchorLink>
+                      </li>
+                    )
+                  })
+                }
+              </ul>
+              <SwitchModeButton themeData={themeData} setThemeData={setThemeData} />
+            </div>
+            <div className="flex lg:hidden" >
+              <SwitchModeButton themeData={themeData} setThemeData={setThemeData} />
+              <HeaderBurgerMenu />
+            </div>
+
           </div>
-          <div className="block lg:hidden" >
-            <HeaderBurgerMenu />
-          </div>
-          <SwitchModeButton themeData={themeData} setThemeData={setThemeData} />
+
 
         </div>
 
