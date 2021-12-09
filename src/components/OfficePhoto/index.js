@@ -21,6 +21,7 @@ export function OfficePhoto({ officePhoto }) {
 
   const photoOffice = data.allImageSharp.nodes.find(image => officePhoto.photo === image.fixed.originalName);
 
+
   return (
     <GatsbyImage className="rounded-lg mr-3" image={getImage(photoOffice)} alt="Alliantum office photo" />
   )

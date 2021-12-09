@@ -31,7 +31,7 @@ export function EmployeesGallery() {
                         doubleFirstLinePhotos.map((employee, index) => {
                             return (
                                 <div key={index} className="hero-faces-row__item absolute top-0 py-12 animate-marquee2 whitespace-nowrap" >
-                                    <EmployeePhoto className="mr-2 mb-2" photo={employee.photo} />
+                                    <EmployeePhoto className="mr-2 mb-2" photo={employee.photo} firstName={employee.firstName} surname={employee.surname} />
                                     <div className="hero-item-info" >
                                         <span className="block" >{employee.firstName}</span>
                                         <span className="block" >{employee.departmentName}</span>
