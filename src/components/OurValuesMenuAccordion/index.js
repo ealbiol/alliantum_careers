@@ -29,26 +29,26 @@ export function OurValuesMenuAccordion() {
 
 
     return (
-        <div className="mt-4" >
+        <div className="mt-4 rounded-lg" >
             {
                 allOurValues.map((value, index) => {
                     return (
-                        <Accordion key={index} expanded={expanded === value.id} onChange={handleChange(value.id)}>
+                        <Accordion className="p-2 my-1 rounded-lg border-0 shadow-none" key={index} expanded={expanded === value.id} onChange={handleChange(value.id)}>
                             <AccordionSummary
+                                className="uppercase font-bold p-0"
                                 expandIcon={<ExpandMoreIcon />}
                                 aria-controls="panel1bh-content"
                                 id="panel1bh-header"
                             >
-                                <Typography sx={{ width: '33%', flexShrink: 0 }}>
+                                <Typography className="p-2" sx={{ width: '33%', flexShrink: 0 }}>
                                     {value.title}
                                 </Typography>
-                                <Typography sx={{ color: 'text.secondary' }}>{value.title}</Typography>
                             </AccordionSummary>
-                            <AccordionDetails>
+                            <AccordionDetails className="p-2">
                                 <Typography>
                                     {value.content}
                                 </Typography>
-                                <ValuePhoto className="" value={value} />
+                                <ValuePhoto className="mt-2" className="" value={value} />
                             </AccordionDetails>
                         </Accordion>
                     )

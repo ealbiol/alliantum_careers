@@ -13,8 +13,8 @@ export function OurValuesMenu({ allOurValues }) {
 
 
     return (
-        <div >
-            <div className="flex" >
+        <div>
+            <div className="hidden xl:flex" >
                 <div className="w-6/12 w-full">
                     <div>
                         <ul className="card-menu mx-0 flex flex-col px-0" >

@@ -20,13 +20,11 @@ export function OurValuesSection() {
         <div className="blurred-gradient-wrapper">
             <div className="blurred-gradient-container">
                 <div className="blurred-gradient-content relative">
-                    <div className="my-7" >
+                    <div className="xl:my-7" >
                         <div className="container-main">
-                            <div>
-                                <OurValuesMenu
-                                    allOurValues={allOurValues}
-                                />
-                            </div>
+                            <OurValuesMenu
+                                allOurValues={allOurValues}
+                            />
                         </div>
                         <div className="card-bg bg-bleach md:w-px-420 mx-auto mt-4 mb-6 relative z-10">
                             <span className="title text-black text-md block">Do you want to grow with us?</span>
