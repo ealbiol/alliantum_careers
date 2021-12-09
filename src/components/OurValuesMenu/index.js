@@ -2,6 +2,7 @@ import * as React from "react"
 import { ValueCard } from "../ValueCard"
 import ArrowLeft from "../../images/values-photos/arrow-left.svg"
 import ArrowRight from "../../images/values-photos/arrow-right.svg"
+import { OurValuesMenuAccordion } from "../OurValuesMenuAccordion"
 
 
 export function OurValuesMenu({ allOurValues }) {
@@ -44,6 +45,8 @@ export function OurValuesMenu({ allOurValues }) {
                     }
                 </div>
             </div>
+
+            <OurValuesMenuAccordion />
 
         </div >
     )

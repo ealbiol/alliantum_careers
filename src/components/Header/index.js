@@ -7,6 +7,7 @@ import { SwitchModeButton } from "../SwitchModeButton/index";
 import useTheme from "../../hooks/useTheme";
 import AlliantumLogoWhite from "../../images/header-photos/Alliantum-white.svg"
 import AlliantumLogoBlack from "../../images/header-photos/Alliantum-black.svg"
+import HeaderBurgerMenu from "../HeaderBurgerMenu";
 
 
 export default function Header({ siteTitle, themeData, setThemeData }) {
@@ -42,25 +43,32 @@ export default function Header({ siteTitle, themeData, setThemeData }) {
             </div>
           </Link>
 
-          <div className="hidden lg:block">
-            {
-              headerUnite.map((unite, index) => {
-                return (
-                  <span key={index} style={{ margin: 0 }}  >
-                    <AnchorLink
-                      to={unite.anchor}
-                      style={{ color: `white`, textDecoration: `none` }}
-                      className="ml-3"
-                    >
-                      {unite.sectionName}
-                    </AnchorLink>
-                  </span>
-                )
-              })
-            }
+          <div className="hidden lg:block" >
+            <span>
+              {
+                headerUnite.map((unite, index) => {
+                  return (
+                    <span key={index} style={{ margin: 0 }}  >
+                      <AnchorLink
+                        to={unite.anchor}
+                        style={{ color: `white`, textDecoration: `none` }}
+                        className="ml-3"
+                      >
+                        {unite.sectionName}
+                      </AnchorLink>
+                    </span>
+                  )
+                })
+              }
+            </span>
+          </div>
+          <div className="block lg:hidden" >
+            <HeaderBurgerMenu />
           </div>
           <SwitchModeButton themeData={themeData} setThemeData={setThemeData} />
+
         </div>
+
 
 
 
@@ -69,6 +77,9 @@ export default function Header({ siteTitle, themeData, setThemeData }) {
     </header>
   )
 }
+
+
+
 
 // const Header = ({ siteTitle }) => (
 //   <header

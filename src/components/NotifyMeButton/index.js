@@ -38,7 +38,7 @@ export function NotifyMeButton({ showNotifySubmit, setShowNotifySubmit, submitMe
             .then(data => {
                 setSubmitMessage(true)
                 setShowNotifySubmit(false)
-                setTimeout(() => setSubmitMessage(true), 50000);
+                setTimeout(() => setSubmitMessage(false), 5000);
             })
             .catch(err => console.error(err));
 
@@ -168,7 +168,7 @@ export function NotifyMeButton({ showNotifySubmit, setShowNotifySubmit, submitMe
 
             }
             {submitMessage &&
-                <div style={{ color: "green" }} >We sent you a verification email! Please check your inbox.</div>
+                <div className="card bg-white mt-3 dark:bg-black dark:border-white"  >We sent you a verification email! Please check your inbox.</div>
             }
         </div>
 
