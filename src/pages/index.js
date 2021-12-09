@@ -65,7 +65,19 @@ function IndexPage() {
                 }
               />
 
-              <CircleBlur zIndex={1} blur="160" color="#8838F8" top="24%" left="34%" size="800"
+              <CircleBlur zIndex={1} color="#8838F8"
+                lg={{
+                  blur: 160,
+                  top: "24%",
+                  left: "34%",
+                  size: "800"
+                }}
+                sm={{
+                  blur: 20,
+                  top: "4%",
+                  left: "3%",
+                  size: "250"
+                }}
                 keyFrame={ /* PURPLE */
                   `
                   0% { transform: translate(0, 0) }
