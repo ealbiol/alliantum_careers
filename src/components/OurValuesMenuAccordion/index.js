@@ -26,7 +26,6 @@ export function OurValuesMenuAccordion() {
         setExpanded(isExpanded ? panel : false);
     };
 
-    const [showValueCard, setShowValueCard] = React.useState(1)
 
 
     return (
@@ -34,7 +33,7 @@ export function OurValuesMenuAccordion() {
             {
                 allOurValues.map((value, index) => {
                     return (
-                        <Accordion expanded={expanded === value.id} onChange={handleChange(value.id)}>
+                        <Accordion key={index} expanded={expanded === value.id} onChange={handleChange(value.id)}>
                             <AccordionSummary
                                 expandIcon={<ExpandMoreIcon />}
                                 aria-controls="panel1bh-content"

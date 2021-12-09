@@ -16,8 +16,8 @@ export function SwitchModeButton({ themeData, setThemeData }) {
 
             <div className="switch">
                 <input onChange={handleSwitch} checked={(themeData === "dark" ? true : false)} type="checkbox" />
-                <span class="button"></span>
-                <span class="label">
+                <span className="button"></span>
+                <span className="label">
 
                 </span>
             </div>
