@@ -42,9 +42,9 @@ function IndexPage() {
 
         {/* ------------> Job Offers Table */}
         <div id="jobs-table" className="w-full">
-          <div className="blurred-gradient-wrapper h-halfscreen">
+          <div className="blurred-gradient-wrapper lg:h-halfscreen">
             <div className="blurred-gradient-container">
-              <div className="blurred-gradient-content absolute">
+              <div className="blurred-gradient-content lg:absolute">
                 <div className="w-container-md w-100 h-full pt-7 px-2 xl:px-0">
                   <span className="pretitle text-black dark:text-white">What we need right now</span>
                   <AllJobOffersList className="relative z-4" id="/#jobs-table" />
@@ -54,10 +54,13 @@ function IndexPage() {
               <CircleBlur zIndex={1} blur="140" color="#F9B457" top="50%" left="20%" size="500"
                 keyFrame={ /* ORANGE */
                   ` 
-                    0 % { transform: translate(0, 0) }
-                    33 % { transform: scale(0.77) }
-                    66 % { transform: translate(20px, 40px) }
-                    100 % { transform: translate(30px, 40px) }
+                  0% { transform: translate(0, 0) }
+                  15% { transform: scale(0.9) }
+                  30% { transform: translate(30px, -30px) }
+                  45% { transform: translate(30px, 30px) }
+                  60% { transform: scale(1.1) }
+                  75% { transform: translate(30px, -30px) }
+                  100% { transform: translate(-30px, 30px) }
                   `
                 }
               />
@@ -65,10 +68,13 @@ function IndexPage() {
               <CircleBlur zIndex={1} blur="160" color="#8838F8" top="24%" left="34%" size="800"
                 keyFrame={ /* PURPLE */
                   `
-                    0 % { transform: translate(0, 0) }
-                    33 % { transform: scale(0.88) }
-                    66 % { transform: translate(10px, 20px) }
-                    100 % { transform: translate(30px, 40px) }
+                  0% { transform: translate(0, 0) }
+                  15% { transform: scale(1.1) }
+                  30% { transform: translate(-30px, -30px) }
+                  45% { transform: translate(30px, -30px) }
+                  60% { transform: scale(0.9) }
+                  75% { transform: translate(30px, 30px) }
+                  100% { transform: translate(-30px, -30px) }
                   `
                 }
               />
@@ -76,10 +82,13 @@ function IndexPage() {
               <CircleBlur zIndex={1} blur="160" color="#68B583" top="30%" left="58%" size="600"
                 keyFrame={ /* GREEN */
                   `
-                    0 % { transform: translate(0, 0) }
-                    33 % { transform: scale(0.82) }
-                    66 % { transform: translate(10px, 20px) }
-                    100 % { transform: translate(30px, 40px) }
+                  0% { transform: translate(0, 0) }
+                  15% { transform: scale(0.9) }
+                  30% { transform: translate(-30px, 30px) }
+                  45% { transform: translate(-30px, -30px) }
+                  60% { transform: scale(1.1) }
+                  75% { transform: translate(-30px, 30px) }
+                  100% { transform: translate(30px, -30px) }
                   `
                 }
               />
@@ -120,13 +129,16 @@ function IndexPage() {
               <GoogleMaps />
             </div>
 
-            <CircleBlur blur="180" color="#D76166" top="60%" left="40%" size="700"
+            <CircleBlur blur="180" color="#D76166" top="60%" left="40%" size="500"
               keyFrame={ /* RED */
                 `
-                  0 % { transform: translate(0, 0) }
-                  33 % { transform: scale(0.82) }
-                  66 % { transform: translate(10px, 20px) }
-                  100 % { transform: translate(30px, 40px) }
+                  0% { transform: translate(0, 0) }
+                  15% { transform: scale(0.9) }
+                  30% { transform: translate(-30px, 30px) }
+                  45% { transform: translate(-30px, -30px) }
+                  60% { transform: scale(1.1) }
+                  75% { transform: translate(-30px, 30px) }
+                  100% { transform: translate(30px, -30px) }
                 `
               }
             />
