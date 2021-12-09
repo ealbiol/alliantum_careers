@@ -5,6 +5,8 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { getAllOurValues } from "../../data/data"
+import { ValuePhoto } from "../ValuePhoto"
+
 
 
 export function OurValuesMenuAccordion() {
@@ -45,9 +47,9 @@ export function OurValuesMenuAccordion() {
                             </AccordionSummary>
                             <AccordionDetails>
                                 <Typography>
-                                    Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.
-                                    Aliquam eget maximus est, id dignissim quam.`````
+                                    {value.content}
                                 </Typography>
+                                <ValuePhoto className="" value={value} />
                             </AccordionDetails>
                         </Accordion>
                     )
