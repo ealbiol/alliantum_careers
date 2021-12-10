@@ -45,7 +45,7 @@ function IndexPage() {
           <div className="blurred-gradient-wrapper lg:h-halfscreen">
             <div className="blurred-gradient-container">
               <div className="blurred-gradient-content lg:absolute">
-                <div className="w-container-md w-100 h-full pt-7 px-2 xl:px-0">
+                <div className="w-container-md w-100 h-full pt-7 px-2 sm:px-4 md:px-6 xl:px-0">
                   <span className="pretitle text-black dark:text-white">What we need right now</span>
                   <AllJobOffersList className="relative z-4" id="/#jobs-table" />
                 </div>

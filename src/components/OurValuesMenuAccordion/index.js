@@ -26,10 +26,8 @@ export function OurValuesMenuAccordion() {
         setExpanded(isExpanded ? panel : false);
     };
 
-
-
     return (
-        <div className="mt-4 rounded-lg" >
+        <div className="mt-4 rounded-lg block xl:hidden" >
             {
                 allOurValues.map((value, index) => {
                     return (
@@ -48,7 +46,7 @@ export function OurValuesMenuAccordion() {
                                 <Typography>
                                     {value.content}
                                 </Typography>
-                                <ValuePhoto className="mt-2" className="" value={value} />
+                                <ValuePhoto className="mt-2" value={value} />
                             </AccordionDetails>
                         </Accordion>
                     )

@@ -48,6 +48,6 @@ export function OurValuesMenu({ allOurValues }) {
 
             <OurValuesMenuAccordion />
 
-        </div >
+        </div>
     )
 }

@@ -8,9 +8,6 @@ export function TheTeam() {
 
     return (
         <div>
-            <div className="container mx-auto">
-                <div>Meet the team</div>
-            </div>
             {/* ------------> The Team 
             <div className="container mx-auto">
                 <div className="flex">

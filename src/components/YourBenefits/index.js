@@ -65,7 +65,7 @@ export function YourBenefits() {
 
             {
                 theme === "dark" ?
-                    <div className="grid grid-cols-2 md:grid-cols-3 gap-4 py-5" >
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-4 pb-4" >
                         {
                             benefitsWhite.map((unite, index) => {
                                 const icon = iconsInSVGWhite.find(icon => icon.id === unite.id)
@@ -123,7 +123,7 @@ export function YourBenefits() {
                         }
                     </div>
                     :
-                    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 pt-5" >
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-4 pb-4" >
                         {
                             benefitsBlack.map((unite, index) => {
                                 const icon = iconsInSVGBlack.find(icon => icon.id === unite.id)

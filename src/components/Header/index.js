@@ -45,7 +45,7 @@ export default function Header({ siteTitle, themeData, setThemeData }) {
           <div className="flex">
 
             <div className="hidden lg:flex items-center" >
-              <ul className="list-none flex p-0 m-0">
+              <ul className="list-none flex p-0 m-0 mr-2">
                 {
                   headerUnite.map((unite, index) => {
                     return (
@@ -62,10 +62,10 @@ export default function Header({ siteTitle, themeData, setThemeData }) {
                   })
                 }
               </ul>
-              <SwitchModeButton themeData={themeData} setThemeData={setThemeData} />
+              <SwitchModeButton className="ml-2" themeData={themeData} setThemeData={setThemeData} />
             </div>
             <div className="flex lg:hidden" >
-              <SwitchModeButton themeData={themeData} setThemeData={setThemeData} />
+              <SwitchModeButton className="mr-1" themeData={themeData} setThemeData={setThemeData} />
               <HeaderBurgerMenu />
             </div>
 
