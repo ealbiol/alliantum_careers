@@ -120,7 +120,7 @@ function IndexPage() {
 
         {/* ------------> Office Presentation */}
         <div>
-          <div className="container mx-auto my-6 xl:mb-2">
+          <div className="container mx-auto mt-6 mb-2">
             <h3 className="title text-md xl:w-6/12">Your future office is modern, bright and equipped with the latest technological equipment</h3>
           </div>
           <OfficePhotos />

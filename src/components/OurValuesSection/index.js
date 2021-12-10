@@ -25,11 +25,12 @@ export function OurValuesSection() {
                             <OurValuesMenu
                                 allOurValues={allOurValues}
                             />
+                            <div className="card-bg bg-bleach md:w-px-420 mx-auto mt-4 mb-6 relative z-10">
+                                <span className="title text-black text-md block">Do you want to grow with us?</span>
+                                <AnchorLink className="btn btn-black btn-full text-center mt-4" to={"/#jobs-table"} >See open processes</AnchorLink>
+                            </div>
                         </div>
-                        <div className="card-bg bg-bleach md:w-px-420 mx-auto mt-4 mb-6 relative z-10">
-                            <span className="title text-black text-md block">Do you want to grow with us?</span>
-                            <AnchorLink className="btn btn-black btn-full text-center mt-4" to={"/#jobs-table"} >See open processes</AnchorLink>
-                        </div>
+
                     </div>
                 </div>
 

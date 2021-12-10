@@ -58,9 +58,9 @@ export default function HeaderBurgerMenu() {
                                 key={index}
                                 to={value.anchor}
                                 style={{ color: `white`, textDecoration: `none` }}
-                                className="ml-3"
+                                className="py-3"
                             >
-                                <MenuItem onClick={handleClose}>{value.sectionName}</MenuItem>
+                                <MenuItem className="" onClick={handleClose}>{value.sectionName}</MenuItem>
                             </AnchorLink>
                         )
                     })

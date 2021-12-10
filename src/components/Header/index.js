@@ -71,11 +71,7 @@ export default function Header({ siteTitle, themeData, setThemeData }) {
 
           </div>
 
-
         </div>
-
-
-
 
       </div>
 
