@@ -22,7 +22,7 @@ export default function Footer() {
     }, [])
 
     return (
-        <footer className="bg-black py-4 relative z-10">
+        <footer className="bg-black py-4 relative z-10 text-white">
 
             <section className="w-full bg-black pt-4">
                 <div className="py-12 container mx-auto">
