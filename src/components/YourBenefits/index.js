@@ -37,6 +37,8 @@ export function YourBenefits() {
             setBenefitsBlack(result)
         })
 
+
+
     }, [])
 
 
@@ -69,6 +71,10 @@ export function YourBenefits() {
                         {
                             benefitsWhite.map((unite, index) => {
                                 const icon = iconsInSVGWhite.find(icon => icon.id === unite.id)
+                                console.log("UNITE BLUR:--->", unite.blur1, unite.blur2, unite.blur3);
+                                console.log("UNITE color:--->", unite.color1, unite.color2, unite.color3);
+                                console.log("UNITE top:--->", unite.top1, unite.top2, unite.top3);
+
                                 return (
                                     <div key={index} className="blurred-gradient-wrapper">
                                         <div className="blurred-gradient-container">
@@ -85,36 +91,14 @@ export function YourBenefits() {
                                                 </div>
 
                                             </div>
-
-                                            <CircleBlur blur="40" color="#F9B457" top="20%" left="8%" size="70"
-                                                keyFrame={ /* ORANGE */
-                                                    `    
-                                        0%    {  transform: translate(0, 0) }
-                                        33%   {  transform: scale(0.77) }
-                                        66%   {  transform: translate(0px, 30px) }
-                                        100%  {  transform: translate(26px, 40px) }
-                                        `
-                                                }
+                                            <CircleBlur blur={unite.blur1} color={unite.color1} top={unite.top1} left={unite.left1} size={unite.size1}
+                                                keyFrame={unite.keyFrame1} /* ORANGE */
                                             />
-                                            <CircleBlur blur="40" color="#8838F8" top="8%" left="16%" size="70"
-                                                keyFrame={ /* PURPLE */
-                                                    `    
-                                        0%    {  transform: translate(0, 0) }
-                                        33%   {  transform: scale(0.88) }
-                                        66%   {  transform: translate(14px, 22px) }
-                                        100%  {  transform: translate(20px, 30px) }
-                                        `
-                                                }
+                                            <CircleBlur blur={unite.blur2} color={unite.color2} top={unite.top2} left={unite.left2} size={unite.size2}
+                                                keyFrame={unite.keyFrame2} /* PURPLE */
                                             />
-                                            <CircleBlur blur="40" color="#68B583" top="32%" left="30%" size="70"
-                                                keyFrame={ /* GREEN */
-                                                    `    
-                                        0%    {  transform: translate(0, 0) }
-                                        33%   {  transform: scale(0.82) }
-                                        66%   {  transform: translate(10px, 20px) }
-                                        100%  {  transform: translate(40px, 10px) }
-                                        `
-                                                }
+                                            <CircleBlur blur={unite.blur3} color={unite.color3} top={unite.top3} left={unite.left3} size={unite.size3}
+                                                keyFrame={unite.keyFrame3} /* GREEN */
                                             />
                                         </div>
                                     </div>
@@ -144,35 +128,14 @@ export function YourBenefits() {
 
                                             </div>
 
-                                            <CircleBlur blur="40" color="#F9B457" top="20%" left="8%" size="70"
-                                                keyFrame={ /* ORANGE */
-                                                    `    
-                                            0%    {  transform: translate(0, 0) }
-                                            33%   {  transform: scale(0.77) }
-                                            66%   {  transform: translate(0px, 30px) }
-                                            100%  {  transform: translate(26px, 40px) }
-                                            `
-                                                }
+                                            <CircleBlur blur={unite.blur1} color={unite.color1} top={unite.top1} left={unite.left1} size={unite.size1}
+                                                keyFrame={unite.keyFrame1} /* ORANGE */
                                             />
-                                            <CircleBlur blur="40" color="#8838F8" top="8%" left="16%" size="70"
-                                                keyFrame={ /* PURPLE */
-                                                    `    
-                                            0%    {  transform: translate(0, 0) }
-                                            33%   {  transform: scale(0.88) }
-                                            66%   {  transform: translate(14px, 22px) }
-                                            100%  {  transform: translate(20px, 30px) }
-                                            `
-                                                }
+                                            <CircleBlur blur={unite.blur2} color={unite.color2} top={unite.top2} left={unite.left2} size={unite.size2}
+                                                keyFrame={unite.keyFrame2} /* PURPLE */
                                             />
-                                            <CircleBlur blur="40" color="#68B583" top="32%" left="30%" size="70"
-                                                keyFrame={ /* GREEN */
-                                                    `    
-                                            0%    {  transform: translate(0, 0) }
-                                            33%   {  transform: scale(0.82) }
-                                            66%   {  transform: translate(10px, 20px) }
-                                            100%  {  transform: translate(40px, 10px) }
-                                            `
-                                                }
+                                            <CircleBlur blur={unite.blur3} color={unite.color3} top={unite.top3} left={unite.left3} size={unite.size3}
+                                                keyFrame={unite.keyFrame3} /* GREEN */
                                             />
                                         </div>
                                     </div>

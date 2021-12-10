@@ -12,6 +12,11 @@ function PrivacyPolicy({ data, location }) {
             <Seo title="Privacy Policy" />
 
             <div className="container-main" >
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
                 <section className=""
                     dangerouslySetInnerHTML={{ __html: privacyPolicy.html }}
                     itemProp="articleBody"

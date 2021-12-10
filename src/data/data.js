@@ -32,7 +32,7 @@ export async function getAllEmployees() {
 //-----------------------------------------------------//
 
 export const allHeaderAndFooterSections = [
-    { sectionName: "Your benefits", anchor: "/#your-benefits" },
+    { sectionName: "Your benefits", anchor: "/#your-benefits", },
     { sectionName: "The offices", anchor: "/#the-offices" },
     { sectionName: "The team", anchor: "/#the-team" },
     { sectionName: "Our values", anchor: "/#our-values" },
@@ -103,12 +103,180 @@ export async function getAllBenefits() {
 //-----------------------------------------------------//
 
 export const allBenefitsWhite = [
-    { id: 7, title: "Flexible Hours", content: "Flexible entry and exit times. There is life beyond work, and we know it" },
-    { id: 8, title: "Training Fridays", content: "Fridays dedicated to training in subjects of interest to our work place" },
-    { id: 9, title: "Team Activities", content: "We organise team activities and it is easy to see us many days eating hamburgers somewhere near the office" },
-    { id: 10, title: "Work-Life Balance", content: "Enjoy your life, your time, your family... You only live once! We need you to be happy" },
-    { id: 11, title: "Great Location", content: "Our office is located in the centre of Malaga, close to the shopping and entertainment area" },
-    { id: 12, title: "Coffee and Tea", content: "Coffee and tea for everyone and there is always someone to bring something to go with it" },
+    {
+        id: 7, title: "Flexible Hours", content: "Flexible entry and exit times. There is life beyond work, and we know it",
+        blur1: "40", color1: "red", top1: "50%", left1: "8%", size1: "70",
+        keyFrame1:
+            `    
+        0%    {  transform: translate(0, 0) }
+        33%   {  transform: scale(0.77) }
+        66%   {  transform: translate(0px, 30px) }
+        100%  {  transform: translate(26px, 40px) }
+        `,
+
+        blur2: "40", color2: "green", top2: "8%", left2: "16%", size2: "70",
+        keyFrame2:
+            `    
+        0%    {  transform: translate(0, 0) }
+        33%   {  transform: scale(0.77) }
+        66%   {  transform: translate(0px, 30px) }
+        100%  {  transform: translate(26px, 40px) }
+        `,
+
+        blur3: "40", color3: "#68B583", top3: "32%", left3: "30%", size3: "70",
+        keyFrame3:
+            `    
+        0%    {  transform: translate(0, 0) }
+        33%   {  transform: scale(0.77) }
+        66%   {  transform: translate(0px, 30px) }
+        100%  {  transform: translate(26px, 40px) }
+        `
+    },
+    {
+        id: 8, title: "Training Fridays", content: "Fridays dedicated to training in subjects of interest to our work place",
+        blur1: "40", color1: "blue", top1: "20%", left1: "8%", size1: "70",
+        keyFrame1:
+            `    
+        0%    {  transform: translate(0, 0) }
+        33%   {  transform: scale(0.77) }
+        66%   {  transform: translate(0px, 30px) }
+        100%  {  transform: translate(26px, 40px) }
+        `,
+
+        blur2: "40", color2: "pink", top2: "8%", left2: "16%", size2: "70",
+        keyFrame2:
+            `    
+        0%    {  transform: translate(0, 0) }
+        33%   {  transform: scale(0.77) }
+        66%   {  transform: translate(0px, 30px) }
+        100%  {  transform: translate(26px, 40px) }
+        `,
+
+        blur3: "40", color3: "yellow", top3: "72%", left3: "30%", size3: "70",
+        keyFrame3:
+            `    
+        0%    {  transform: translate(0, 0) }
+        33%   {  transform: scale(0.77) }
+        66%   {  transform: translate(0px, 30px) }
+        100%  {  transform: translate(26px, 40px) }
+        `
+    },
+    {
+        id: 9, title: "Team Activities", content: "We organise team activities and it is easy to see us many days eating hamburgers somewhere near the office",
+        blur1: "40", color1: "salmon", top1: "70%", left1: "50%", size1: "70",
+        keyFrame1:
+            `    
+        0%    {  transform: translate(0, 0) }
+        90%   {  transform: scale(0.77) }
+        20%   {  transform: translate(0px, 30px) }
+        100%  {  transform: translate(26px, 40px) }
+        `,
+
+        blur2: "40", color2: "#8838F8", top2: "8%", left2: "16%", size2: "70",
+        keyFrame2:
+            `    
+        0%    {  transform: translate(0, 0) }
+        33%   {  transform: scale(0.77) }
+        66%   {  transform: translate(0px, 30px) }
+        100%  {  transform: translate(26px, 40px) }
+        `,
+
+        blur3: "40", color3: "#68B583", top3: "32%", left3: "30%", size3: "70",
+        keyFrame3:
+            `    
+        0%    {  transform: translate(0, 0) }
+        33%   {  transform: scale(0.77) }
+        66%   {  transform: translate(0px, 30px) }
+        100%  {  transform: translate(26px, 40px) }
+        `
+    },
+    {
+        id: 10, title: "Work-Life Balance", content: "Enjoy your life, your time, your family... You only live once! We need you to be happy",
+        blur1: "40", color1: "#F9B457", top1: "20%", left1: "8%", size1: "70",
+        keyFrame1:
+            `    
+        0%    {  transform: translate(0, 0) }
+        33%   {  transform: scale(0.77) }
+        66%   {  transform: translate(0px, 30px) }
+        100%  {  transform: translate(26px, 40px) }
+        `,
+
+        blur2: "40", color2: "#8838F8", top2: "8%", left2: "16%", size2: "70",
+        keyFrame2:
+            `    
+        0%    {  transform: translate(0, 0) }
+        33%   {  transform: scale(0.77) }
+        66%   {  transform: translate(0px, 30px) }
+        100%  {  transform: translate(26px, 40px) }
+        `,
+
+        blur3: "40", color3: "#68B583", top3: "32%", left3: "30%", size3: "70",
+        keyFrame3:
+            `    
+        0%    {  transform: translate(0, 0) }
+        33%   {  transform: scale(0.77) }
+        66%   {  transform: translate(0px, 30px) }
+        100%  {  transform: translate(26px, 40px) }
+        `
+    },
+    {
+        id: 11, title: "Great Location", content: "Our office is located in the centre of Malaga, close to the shopping and entertainment area",
+        blur1: "40", color1: "#F9B457", top1: "20%", left1: "8%", size1: "70",
+        keyFrame1:
+            `    
+        0%    {  transform: translate(0, 0) }
+        33%   {  transform: scale(0.77) }
+        66%   {  transform: translate(0px, 30px) }
+        100%  {  transform: translate(26px, 40px) }
+        `,
+
+        blur2: "40", color2: "#8838F8", top2: "8%", left2: "16%", size2: "70",
+        keyFrame2:
+            `    
+        0%    {  transform: translate(0, 0) }
+        33%   {  transform: scale(0.77) }
+        66%   {  transform: translate(0px, 30px) }
+        100%  {  transform: translate(26px, 40px) }
+        `,
+
+        blur3: "40", color3: "#68B583", top3: "32%", left3: "30%", size3: "70",
+        keyFrame3:
+            `    
+        0%    {  transform: translate(0, 0) }
+        33%   {  transform: scale(0.77) }
+        66%   {  transform: translate(0px, 30px) }
+        100%  {  transform: translate(26px, 40px) }
+        `
+    },
+    {
+        id: 12, title: "Coffee and Tea", content: "Coffee and tea for everyone and there is always someone to bring something to go with it",
+        blur1: "40", color1: "#F9B457", top1: "20%", left1: "8%", size1: "70",
+        keyFrame1:
+            `    
+        0%    {  transform: translate(0, 0) }
+        33%   {  transform: scale(0.77) }
+        66%   {  transform: translate(0px, 30px) }
+        100%  {  transform: translate(26px, 40px) }
+        `,
+
+        blur2: "40", color2: "#8838F8", top2: "8%", left2: "16%", size2: "70",
+        keyFrame2:
+            `    
+        0%    {  transform: translate(0, 0) }
+        33%   {  transform: scale(0.77) }
+        66%   {  transform: translate(0px, 30px) }
+        100%  {  transform: translate(26px, 40px) }
+        `,
+
+        blur3: "40", color3: "#68B583", top3: "32%", left3: "30%", size3: "70",
+        keyFrame3:
+            `    
+        0%    {  transform: translate(0, 0) }
+        33%   {  transform: scale(0.77) }
+        66%   {  transform: translate(0px, 30px) }
+        100%  {  transform: translate(26px, 40px) }
+        `
+    },
 ]
 
 export async function getAllBenefitsWhite() {
@@ -118,12 +286,180 @@ export async function getAllBenefitsWhite() {
 //-----------------------------------------------------//
 
 export const allBenefitsBlack = [
-    { id: 13, title: "Flexible Hours", content: "Flexible entry and exit times. There is life beyond work, and we know it" },
-    { id: 14, title: "Training Fridays", content: "Fridays dedicated to training in subjects of interest to our work place" },
-    { id: 15, title: "Team Activities", content: "We organise team activities and it is easy to see us many days eating hamburgers somewhere near the office" },
-    { id: 16, title: "Work-Life Balance", content: "Enjoy your life, your time, your family... You only live once! We need you to be happy" },
-    { id: 17, title: "Great Location", content: "Our office is located in the centre of Malaga, close to the shopping and entertainment area" },
-    { id: 18, title: "Coffee and Tea", content: "Coffee and tea for everyone and there is always someone to bring something to go with it" },
+    {
+        id: 13, title: "Flexible Hours", content: "Flexible entry and exit times. There is life beyond work, and we know it",
+        blur1: "40", color1: "red", top1: "20%", left1: "8%", size1: "70",
+        keyFrame1:
+            `    
+        0%    {  transform: translate(0, 0) }
+        33%   {  transform: scale(0.77) }
+        66%   {  transform: translate(0px, 30px) }
+        100%  {  transform: translate(26px, 40px) }
+        `,
+
+        blur2: "40", color2: "#8838F8", top2: "8%", left2: "16%", size2: "70",
+        keyFrame2:
+            `    
+        0%    {  transform: translate(0, 0) }
+        33%   {  transform: scale(0.77) }
+        66%   {  transform: translate(0px, 30px) }
+        100%  {  transform: translate(26px, 40px) }
+        `,
+
+        blur3: "40", color3: "#68B583", top3: "32%", left3: "30%", size3: "70",
+        keyFrame3:
+            `    
+        0%    {  transform: translate(0, 0) }
+        33%   {  transform: scale(0.77) }
+        66%   {  transform: translate(0px, 30px) }
+        100%  {  transform: translate(26px, 40px) }
+        `
+    },
+    {
+        id: 14, title: "Training Fridays", content: "Fridays dedicated to training in subjects of interest to our work place",
+        blur1: "40", color1: "#F9B457", top1: "20%", left1: "8%", size1: "70",
+        keyFrame1:
+            `    
+    0%    {  transform: translate(0, 0) }
+    33%   {  transform: scale(0.77) }
+    66%   {  transform: translate(0px, 30px) }
+    100%  {  transform: translate(26px, 40px) }
+    `,
+
+        blur2: "40", color2: "#8838F8", top2: "8%", left2: "16%", size2: "70",
+        keyFrame2:
+            `    
+    0%    {  transform: translate(0, 0) }
+    33%   {  transform: scale(0.77) }
+    66%   {  transform: translate(0px, 30px) }
+    100%  {  transform: translate(26px, 40px) }
+    `,
+
+        blur3: "40", color3: "#68B583", top3: "32%", left3: "30%", size3: "70",
+        keyFrame3:
+            `    
+    0%    {  transform: translate(0, 0) }
+    33%   {  transform: scale(0.77) }
+    66%   {  transform: translate(0px, 30px) }
+    100%  {  transform: translate(26px, 40px) }
+    `
+    },
+    {
+        id: 15, title: "Team Activities", content: "We organise team activities and it is easy to see us many days eating hamburgers somewhere near the office",
+        blur1: "40", color1: "#F9B457", top1: "20%", left1: "8%", size1: "70",
+        keyFrame1:
+            `    
+    0%    {  transform: translate(0, 0) }
+    33%   {  transform: scale(0.77) }
+    66%   {  transform: translate(0px, 30px) }
+    100%  {  transform: translate(26px, 40px) }
+    `,
+
+        blur2: "40", color2: "#8838F8", top2: "8%", left2: "16%", size2: "70",
+        keyFrame2:
+            `    
+    0%    {  transform: translate(0, 0) }
+    33%   {  transform: scale(0.77) }
+    66%   {  transform: translate(0px, 30px) }
+    100%  {  transform: translate(26px, 40px) }
+    `,
+
+        blur3: "40", color3: "#68B583", top3: "32%", left3: "30%", size3: "70",
+        keyFrame3:
+            `    
+    0%    {  transform: translate(0, 0) }
+    33%   {  transform: scale(0.77) }
+    66%   {  transform: translate(0px, 30px) }
+    100%  {  transform: translate(26px, 40px) }
+    `
+    },
+    {
+        id: 16, title: "Work-Life Balance", content: "Enjoy your life, your time, your family... You only live once! We need you to be happy",
+        blur1: "40", color1: "#F9B457", top1: "20%", left1: "8%", size1: "70",
+        keyFrame1:
+            `    
+    0%    {  transform: translate(0, 0) }
+    33%   {  transform: scale(0.77) }
+    66%   {  transform: translate(0px, 30px) }
+    100%  {  transform: translate(26px, 40px) }
+    `,
+
+        blur2: "40", color2: "#8838F8", top2: "8%", left2: "16%", size2: "70",
+        keyFrame2:
+            `    
+    0%    {  transform: translate(0, 0) }
+    33%   {  transform: scale(0.77) }
+    66%   {  transform: translate(0px, 30px) }
+    100%  {  transform: translate(26px, 40px) }
+    `,
+
+        blur3: "40", color3: "#68B583", top3: "32%", left3: "30%", size3: "70",
+        keyFrame3:
+            `    
+    0%    {  transform: translate(0, 0) }
+    33%   {  transform: scale(0.77) }
+    66%   {  transform: translate(0px, 30px) }
+    100%  {  transform: translate(26px, 40px) }
+    `
+    },
+    {
+        id: 17, title: "Great Location", content: "Our office is located in the centre of Malaga, close to the shopping and entertainment area",
+        blur1: "40", color1: "#F9B457", top1: "20%", left1: "8%", size1: "70",
+        keyFrame1:
+            `    
+    0%    {  transform: translate(0, 0) }
+    33%   {  transform: scale(0.77) }
+    66%   {  transform: translate(0px, 30px) }
+    100%  {  transform: translate(26px, 40px) }
+    `,
+
+        blur2: "40", color2: "#8838F8", top2: "8%", left2: "16%", size2: "70",
+        keyFrame2:
+            `    
+    0%    {  transform: translate(0, 0) }
+    33%   {  transform: scale(0.77) }
+    66%   {  transform: translate(0px, 30px) }
+    100%  {  transform: translate(26px, 40px) }
+    `,
+
+        blur3: "40", color3: "#68B583", top3: "32%", left3: "30%", size3: "70",
+        keyFrame3:
+            `    
+    0%    {  transform: translate(0, 0) }
+    33%   {  transform: scale(0.77) }
+    66%   {  transform: translate(0px, 30px) }
+    100%  {  transform: translate(26px, 40px) }
+    `
+    },
+    {
+        id: 18, title: "Coffee and Tea", content: "Coffee and tea for everyone and there is always someone to bring something to go with it",
+        blur1: "40", color1: "#F9B457", top1: "20%", left1: "8%", size1: "70",
+        keyFrame1:
+            `    
+    0%    {  transform: translate(0, 0) }
+    33%   {  transform: scale(0.77) }
+    66%   {  transform: translate(0px, 30px) }
+    100%  {  transform: translate(26px, 40px) }
+    `,
+
+        blur2: "40", color2: "#8838F8", top2: "8%", left2: "16%", size2: "70",
+        keyFrame2:
+            `    
+    0%    {  transform: translate(0, 0) }
+    33%   {  transform: scale(0.77) }
+    66%   {  transform: translate(0px, 30px) }
+    100%  {  transform: translate(26px, 40px) }
+    `,
+
+        blur3: "40", color3: "#68B583", top3: "32%", left3: "30%", size3: "70",
+        keyFrame3:
+            `    
+    0%    {  transform: translate(0, 0) }
+    33%   {  transform: scale(0.77) }
+    66%   {  transform: translate(0px, 30px) }
+    100%  {  transform: translate(26px, 40px) }
+    `
+    },
 ]
 
 export async function getAllBenefitsBlack() {
@@ -173,7 +509,7 @@ export async function getAllAstronautPhotos() {
 //-------------------------------------------------------//
 
 export const allOurValues = [
-    { id: 1, title: "Pioneering Spirit", photo: "pioneering.jpg", content: "We are technological and therefore like to be at the cutting edge. We have an entrepreneurial spirit that drives us to develop innovative solutions and products that make it easier for our customers to differentiate themselves. Always from the perspective of profitability and growth. This principle is closely linked to learning and, more specifically, to the concept of lifelong learning. Inexhaustible capacity for learning" },
+    { id: 1, title: "Pioneering Spirit", photo: "pioneering.jpg", content: "We are technological and therefore like to be at the cutting edge. We have an entrepreneurial spirit that drives us to develop innovative solutions and products that make it easier for our customers to differentiate themselves. Always from the perspective of profitability and growth. This principle is closely linked to learning and, more specifically, to the concept of lifelong learning. Inexhaustible capacity for learning." },
     { id: 2, title: "Decisive", photo: "decisive.jpg", content: "We are resolute and strive to develop our projects on time. We like to provide solutions that add value and are tailored to the real needs of the company." },
     { id: 3, title: "Truly International", photo: "international.jpg", content: "We are an international company. Our German origin and our Spanish headquarters mean that our frontier is the world. We like international projects, and we do not limit ourselves to any geographical area." },
     { id: 4, title: "Fairness", photo: "fairness.jpg", content: "All decisions must be reasoned and seek the common good and be fair to the rest of the team. We also promote open speech as the possibility of being able to express an opinion or propose a particular action without fear of being reprimanded for it." },
