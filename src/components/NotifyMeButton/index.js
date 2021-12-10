@@ -113,7 +113,7 @@ export function NotifyMeButton({ showNotifySubmit, setShowNotifySubmit, submitMe
                     <div className="card bg-white dark:bg-black dark:border-white">
                         <div className="flex flex-col xl:flex-row">
                             <div className="flex flex-col xl:pr-2 w-100 xl:w-6/12">
-                                <label className="uppercase mb-1">Your email:{" "}</label>
+                                <label className="uppercase mb-1">Your email{" "}</label>
                                 <input
                                     type="email"
                                     name="Notify Me"
@@ -157,7 +157,7 @@ export function NotifyMeButton({ showNotifySubmit, setShowNotifySubmit, submitMe
                                 }
                             </div>
                             <div className="flex-grow">
-                                <small className="leading-4 w-100 pr-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem rerum beatae, soluta quia ea sint fugit ut inventore aspernatur unde!</small>
+                                <small className="leading-4 w-100 pt-2 pr-2">When you press this button, you accept our Privacy Policy. Your information will only be used internally to manage your application. </small>
                             </div>
                         </div>
                     </div>

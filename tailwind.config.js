@@ -22,6 +22,7 @@ module.exports = {
             current: 'currentColor',
 
             'bleach': '#FFF',
+            'cojgril': '#000',
             'white': '#F0F0F0',
             'black': '#141414',
 
