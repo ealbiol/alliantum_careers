@@ -1,22 +1,4 @@
 ---
-template: first_template
-title: Privacy policy
-hreflang:
-  - language: de
-    page: datenschutz
-  - language: es
-    page: politica-privacidad
-menu_name: "Privacy policy"
-menu_footer: true
-description: Read our Privacy policy
-callaction:
-  title: "If you want to know more about this topic,"
-  text: "send us an email and we will get in touch with you."
-header:
-  title:
-  style:
-    color: black
-    backgroundColor: cyan
 ---
 
 <h2>Privacy Policy</h2>
