@@ -48,7 +48,6 @@ export function NotifyMeButton({ showNotifySubmit, setShowNotifySubmit, submitMe
 
     const handleBoolean = () => {
         setShowNotifySubmit(!showNotifySubmit)
-        // setSubmitMessage(!submitMessage)
     }
 
     const options = allPositionsReactSelect
@@ -57,8 +56,7 @@ export function NotifyMeButton({ showNotifySubmit, setShowNotifySubmit, submitMe
         setUserPositions(e.map(department => department.id))
     }
 
-    // console.log("submitMessage:--->",submitMessage);
-    // console.log("showNotifySubmit:--->",showNotifySubmit);
+
 
 
     return (

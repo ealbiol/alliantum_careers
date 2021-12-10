@@ -22,7 +22,7 @@ export default function Footer() {
     }, [])
 
     return (
-        <footer className="bg-black py-4 relative z-10">
+        <footer className="bg-black py-4 relative z-10 text-white">
 
             <section className="w-full bg-black pt-4">
                 <div className="py-12 container mx-auto">
@@ -56,8 +56,12 @@ export default function Footer() {
                         </nav>
                         <nav className="col-span-1 md:col-span-1 lg:col-span-3">
                             <p className="mb-3 text-xs font-semibold tracking-wider text-gray-400 uppercase">Company</p>
-                            <a href="#" className="flex mb-3 font-medium text-gray-500 transition hover:text-gray-700 md:mb-2 hover:text-primary">About us</a>
-                            <a href="#" className="flex mb-3 font-medium text-gray-500 transition hover:text-gray-700 md:mb-2 hover:text-primary">Our services</a>
+                            <AnchorLink to="/" >
+                                <button className="flex mb-3 font-medium text-gray-500 transition hover:text-gray-700 md:mb-2 hover:text-primary" >About us</button>
+                            </AnchorLink>
+                            <AnchorLink to="/" >
+                                <button className="flex mb-3 font-medium text-gray-500 transition hover:text-gray-700 md:mb-2 hover:text-primary" >Our services</button>
+                            </AnchorLink>
                         </nav>
                         <div className="col-span-2 md:col-span-1 lg:col-span-3 pt-2 lg:pt-0">
                             {
@@ -76,8 +80,12 @@ export default function Footer() {
                     <div className="flex flex-col items-start justify-between pt-10 mt-10 border-t border-gray-100 md:flex-row md:items-center pt-3">
                         <p className="mb-6 text-xs text-left text-gray-600 md:mb-0">© Alliantum GmbH.</p>
                         <div className="flex items-start justify-start space-x-6 md:items-center md:justify-center">
-                            <a href="#_" className="text-xs text-gray-600 transition hover:text-primary">Imprint</a>
-                            <a href="#_" className="text-xs text-gray-600 transition hover:text-primary">Privacy</a>
+                            <AnchorLink to="/" >
+                                <span className="text-xs text-gray-600 transition hover:text-primary" >Imprint</span>
+                            </AnchorLink>
+                            <AnchorLink to="/privacy-policy" >
+                                <span className="text-xs text-gray-600 transition hover:text-primary" >Privacy Policy</span>
+                            </AnchorLink>
                         </div>
                     </div>
                 </div>
