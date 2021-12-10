@@ -62,7 +62,9 @@ export default function Header({ siteTitle, themeData, setThemeData }) {
                   })
                 }
               </ul>
-              <SwitchModeButton themeData={themeData} setThemeData={setThemeData} />
+              <span className="ml-2" >
+                <SwitchModeButton themeData={themeData} setThemeData={setThemeData} />
+              </span>
             </div>
             <div className="flex lg:hidden" >
               <SwitchModeButton themeData={themeData} setThemeData={setThemeData} />

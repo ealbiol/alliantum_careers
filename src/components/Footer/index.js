@@ -2,8 +2,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { getAllHeaderAndFooterSections, getAllAdresses } from "../../data/data"
 import { AnchorLink } from "gatsby-plugin-anchor-links";
-import AlliantumLogo from "../../images/header-photos/Image1.svg"
-
+import AlliantumLogoWhite from "../../images/header-photos/Alliantum-white.svg"
 
 export default function Footer() {
 
@@ -27,7 +26,7 @@ export default function Footer() {
             <div className="container-main flex text-white">
                 <div className="w-3/12 flex flex-col content-between">
                     <Link to="/" >
-                        <AlliantumLogo />
+                        <AlliantumLogoWhite />
 
                     </Link>
                     <p className="mt-2 text-xs" >© Alliantum GmbH.</p>
