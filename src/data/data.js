@@ -152,7 +152,7 @@ export const allBenefitsWhite = [
         100%  {  transform: translate(26px, 40px) }
         `,
 
-        blur3: "40", color3: "brown", top3: "72%", left3: "30%", size3: "70",
+        blur3: "40", color3: "yellow", top3: "72%", left3: "30%", size3: "70",
         keyFrame3:
             `    
         0%    {  transform: translate(0, 0) }
@@ -163,12 +163,12 @@ export const allBenefitsWhite = [
     },
     {
         id: 9, title: "Team Activities", content: "We organise team activities and it is easy to see us many days eating hamburgers somewhere near the office",
-        blur1: "40", color1: "#F9B457", top1: "20%", left1: "8%", size1: "70",
+        blur1: "40", color1: "salmon", top1: "70%", left1: "50%", size1: "70",
         keyFrame1:
             `    
         0%    {  transform: translate(0, 0) }
-        33%   {  transform: scale(0.77) }
-        66%   {  transform: translate(0px, 30px) }
+        90%   {  transform: scale(0.77) }
+        20%   {  transform: translate(0px, 30px) }
         100%  {  transform: translate(26px, 40px) }
         `,
 

@@ -5,6 +5,7 @@ import MenuItem from '@mui/material/MenuItem';
 import MenuIcon from '@mui/icons-material/Menu';
 import { getAllHeaderAndFooterSections } from "../../data/data"
 import { AnchorLink } from "gatsby-plugin-anchor-links";
+import { grey } from 'material-ui-colors';
 
 
 export default function HeaderBurgerMenu() {
@@ -39,7 +40,8 @@ export default function HeaderBurgerMenu() {
                 aria-expanded={open ? 'true' : undefined}
                 onClick={handleClick}
             >
-                <MenuIcon />
+
+                <MenuIcon sx={{ color: grey[50] }} />
             </Button>
             <Menu
                 id="basic-menu"
@@ -69,3 +71,8 @@ export default function HeaderBurgerMenu() {
         </div>
     )
 }
+
+
+
+
+
