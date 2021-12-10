@@ -9,7 +9,7 @@ Thank you for visiting our website and for your interest in our company and our 
 
 **1. What information do we collect from you?**
 
-**1.1 Technical information**
+**Technical information**
 
 We collect the IP address of your computer, the request from the client (browser) to our web server as well as its response and the website from which you are visiting us. We also store the date and time of the request, information about the browser type and version of your operating system and the Internet service provider you are using.
 
