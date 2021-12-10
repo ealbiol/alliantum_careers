@@ -51,7 +51,19 @@ function IndexPage() {
                 </div>
               </div>
 
-              <CircleBlur zIndex={1} blur="140" color="#F9B457" top="50%" left="20%" size="500"
+              <CircleBlur zIndex={1} color="#F9B457"
+                lg={{
+                  blur: 140,
+                  top: "50%",
+                  left: "20%",
+                  size: "500"
+                }}
+                sm={{
+                  blur: 100,
+                  top: "60%",
+                  left: "60%",
+                  size: "300"
+                }}
                 keyFrame={ /* ORANGE */
                   ` 
                   0% { transform: translate(0, 0) }
@@ -73,10 +85,10 @@ function IndexPage() {
                   size: "800"
                 }}
                 sm={{
-                  blur: 20,
-                  top: "4%",
-                  left: "3%",
-                  size: "250"
+                  blur: 100,
+                  top: "40%",
+                  left: "20%",
+                  size: "300"
                 }}
                 keyFrame={ /* PURPLE */
                   `
@@ -91,7 +103,19 @@ function IndexPage() {
                 }
               />
 
-              <CircleBlur zIndex={1} blur="160" color="#68B583" top="30%" left="58%" size="600"
+              <CircleBlur zIndex={1} color="#68B583"
+                lg={{
+                  blur: 160,
+                  top: "30%",
+                  left: "58%",
+                  size: "600"
+                }}
+                sm={{
+                  blur: 100,
+                  top: "62%",
+                  left: "2%",
+                  size: "400"
+                }}
                 keyFrame={ /* GREEN */
                   `
                   0% { transform: translate(0, 0) }

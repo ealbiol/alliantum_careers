@@ -122,12 +122,11 @@ export function YourBenefits() {
                                                         <div className="h-px-80 flex items-center">
                                                             <h4 className="mb-0 lg:w-4/12">{unite?.title?.toUpperCase()}</h4>
                                                         </div>
-                                                        <div className="pr-6 sm:pr-4 md:pr-6">{unite?.content}</div>
+                                                        <div className="pr-2 lg:pr-6">{unite?.content}</div>
                                                     </div>
                                                 </div>
 
                                             </div>
-
                                             <CircleBlur blur={unite.blur1} color={unite.color1} top={unite.top1} left={unite.left1} size={unite.size1}
                                                 keyFrame={unite.keyFrame1} /* ORANGE */
                                             />

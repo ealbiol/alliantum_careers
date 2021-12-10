@@ -380,6 +380,11 @@ body * {
     padding-left: 2rem!important;
 }
 
+.MuiTypography-root.MuiTypography-body1.p-2.min-w-full {
+    padding-left: 0;
+    font-weight: bold;
+}
+
 
 /*
 MEDIAQUERIES 
@@ -391,7 +396,6 @@ MEDIAQUERIES
     xxl: '1536px
     DEFAULT: '1450px
 */
-
 
 @media screen and (min-width: 768px) {
     

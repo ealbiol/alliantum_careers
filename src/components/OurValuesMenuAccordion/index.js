@@ -65,7 +65,7 @@ export function OurValuesMenuAccordion() {
                                 }
 
                                 <AccordionDetails className="p-2">
-                                    <Typography className="mb-3 text-justify">
+                                    <Typography className="pb-3 text-justify">
                                         {value.content}
                                     </Typography>
                                     <ValuePhoto value={value} />
