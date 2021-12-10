@@ -110,7 +110,7 @@ export function NotifyMeButton({ showNotifySubmit, setShowNotifySubmit, submitMe
 
                 <form onSubmit={handleUserEmail} >
 
-                    <div className="card bg-white dark:bg-black dark:border-white">
+                    <div className="card bg-white dark:bg-black dark:border-white w-full">
                         <div className="flex flex-col xl:flex-row">
                             <div className="flex flex-col xl:pr-2 w-100 xl:w-6/12">
                                 <label className="uppercase mb-1">Your email{" "}</label>
@@ -157,7 +157,7 @@ export function NotifyMeButton({ showNotifySubmit, setShowNotifySubmit, submitMe
                                 }
                             </div>
                             <div className="flex-grow">
-                                <small className="leading-4 w-100 pt-2 pr-2">When you press this button, you accept our Privacy Policy. Your information will only be used internally to manage your application. </small>
+                                <small className="leading-4 w-100 pt-2 pr-2">You will only receive job offers, as we described on our Privacy Policy. </small>
                             </div>
                         </div>
                     </div>
