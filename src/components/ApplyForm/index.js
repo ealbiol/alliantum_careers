@@ -1,14 +1,18 @@
 import * as React from "react"
 import GithubLogo from "../../images/apply-form-photos/github-logo.svg"
+import GithubLogoWhite from "../../images/apply-form-photos/github-logo-white.svg"
+import useTheme from "../../hooks/useTheme";
+
 
 export function ApplyForm({ jobDepartment }) {
 
+    const theme = useTheme();
 
 
 
     return (
 
-        <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="thank-you-for-applying/" style={{ border: "1px solid lightGray" }} className="mt-6"  >
+        <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="thank-you-for-applying/" className="mt-6 text-black"  >
             <input type="hidden" name="form-name" value="contact" />
 
             <div className="flex mb-2"  >
@@ -25,7 +29,13 @@ export function ApplyForm({ jobDepartment }) {
             <div className="flex mb-2">
                 {jobDepartment === "Web Developer" || jobDepartment === "Odoo Developer" || jobDepartment === "Sys Admin" || jobDepartment === "IT" || jobDepartment === "Business System" ?
                     <span className="flex flex-grow">
-                        <GithubLogo />
+                        {
+                            theme === "dark" ?
+                                <GithubLogoWhite />
+                                :
+                                <GithubLogo />
+
+                        }
                         <input type="url" name="Applicant URL" placeholder="Your Github profile" className="flex-grow" />
                     </span>
                     :
