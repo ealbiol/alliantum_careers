@@ -25,7 +25,6 @@ Thank you for visiting our website and for your interest in our company and our 
 
 <br/>
 
-
 **1. What information do we collect from you?**
 
 **1.1 Technical information**
@@ -38,20 +37,17 @@ We collect the IP address of your computer, the request from the client (browser
 
 We collect technical information automatically when you visit our website. Otherwise, we collect personal data only on the basis of your entries on our website (e.g. in the contact form). We need this data to operate and administer the website, to detect misuse and to rectify faults.
 
-
 <br/>
 
 **3. What rights do you have?**
 
-You have a right of access, rectification, cancellation, processing restrictions, data transferability and the right of appeal to a supervisory authority. You can contact us with your request: info@alliantum.com
-
+You have a right of access, rectification, cancellation, processing restrictions, data transferability and the right of appeal to a supervisory authority. You can contact us with your request: info@alliantum.com.
 
 <br/>
 
-**4 Further information on other data processing systems**
+**4. Further information on other data processing systems**
 
-Further information on other data processing systems As a company, we process not only personal data on our website. Should you require further information that you cannot find here, please contact info@alliantum.com
-
+Further information on other data processing systems As a company, we process not only personal data on our website. Should you require further information that you cannot find here, please contact info@alliantum.com.
 
 <br/>
 <br/>
