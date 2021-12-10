@@ -35,9 +35,7 @@ export function CircleBlur({ color, keyFrame, zIndex, lg, sm, ...other }) {
         top: ${top};  
         left: ${left};   
     `
-    console.log('Perico ---> ', Circle?.style?.width)
     const theSize = smallSize ? size / 4 : size;
-    console.log('Maruja ----->', theSize)
     return <Circle className="circle" />
 
 }

@@ -13,10 +13,10 @@ export function SwitchModeButton({ themeData, setThemeData }) {
     return (
 
         <div>
-            <div class="button r" id="button-4">
-                <input type="checkbox" class="checkbox" onChange={handleSwitch} checked={(themeData === "dark" ? true : false)} />
-                <div class="knobs"></div>
-                <div class="layer"></div>
+            <div className="button r" id="button-4">
+                <input type="checkbox" className="checkbox" onChange={handleSwitch} checked={(themeData === "dark" ? true : false)} />
+                <div className="knobs"></div>
+                <div className="layer"></div>
             </div>
         </div>
     )
