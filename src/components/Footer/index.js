@@ -56,10 +56,10 @@ export default function Footer() {
                         </nav>
                         <nav className="col-span-1 md:col-span-1 lg:col-span-3">
                             <p className="mb-3 text-xs font-semibold tracking-wider text-gray-400 uppercase">Company</p>
-                            <AnchorLink>
+                            <AnchorLink to="/" >
                                 <button className="flex mb-3 font-medium text-gray-500 transition hover:text-gray-700 md:mb-2 hover:text-primary" >About us</button>
                             </AnchorLink>
-                            <AnchorLink>
+                            <AnchorLink to="/" >
                                 <button className="flex mb-3 font-medium text-gray-500 transition hover:text-gray-700 md:mb-2 hover:text-primary" >Our services</button>
                             </AnchorLink>
                         </nav>
