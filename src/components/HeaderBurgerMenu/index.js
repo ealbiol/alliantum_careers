@@ -6,9 +6,12 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { getAllHeaderAndFooterSections } from "../../data/data"
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { grey } from 'material-ui-colors';
+import useTheme from "../../hooks/useTheme";
 
 
 export default function HeaderBurgerMenu() {
+
+    const theme = useTheme();
 
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
@@ -40,8 +43,12 @@ export default function HeaderBurgerMenu() {
                 aria-expanded={open ? 'true' : undefined}
                 onClick={handleClick}
             >
-
-                <MenuIcon sx={{ color: grey[50] }} />
+                {
+                    theme === "dark" ?
+                        <MenuIcon sx={{ color: grey[50] }} />
+                        :
+                        <MenuIcon sx={{ color: grey[900] }} />
+                }
             </Button>
             <Menu
                 id="basic-menu"
