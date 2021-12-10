@@ -6,10 +6,14 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { getAllOurValues } from "../../data/data"
 import { ValuePhoto } from "../ValuePhoto"
-
+// import ExpandLessIcon from '@mui/icons-material/ExpandLess';
+import useTheme from "../../hooks/useTheme";
+import { grey } from 'material-ui-colors';
 
 
 export function OurValuesMenuAccordion() {
+
+    const theme = useTheme();
 
     const [allOurValues, setAllOurValues] = React.useState([])
 
@@ -35,16 +39,31 @@ export function OurValuesMenuAccordion() {
                     allOurValues.map((value, index) => {
                         return (
                             <Accordion className="p-2 my-1 border-0 shadow-none dark:bg-black dark:text-white dark:border-white" key={index} expanded={expanded === value.id} onChange={handleChange(value.id)}>
-                                <AccordionSummary
-                                    className="uppercase font-bold p-0"
-                                    expandIcon={<ExpandMoreIcon />}
-                                    aria-controls="panel1bh-content"
-                                    id="panel1bh-header"
-                                >
-                                    <Typography className="p-2 min-w-full" sx={{ width: '33%', flexShrink: 0 }}>
-                                        {value.title}
-                                    </Typography>
-                                </AccordionSummary>
+                                {
+                                    theme === "dark" ?
+                                        <AccordionSummary
+                                            className="uppercase font-bold p-0"
+                                            expandIcon={<ExpandMoreIcon sx={{ color: grey[50] }} />}
+                                            aria-controls="panel1bh-content"
+                                            id="panel1bh-header"
+                                        >
+                                            <Typography className="p-2 min-w-full" sx={{ width: '33%', flexShrink: 0 }}>
+                                                {value.title}
+                                            </Typography>
+                                        </AccordionSummary>
+                                        :
+                                        <AccordionSummary
+                                            className="uppercase font-bold p-0"
+                                            expandIcon={<ExpandMoreIcon sx={{ color: grey[900] }} />}
+                                            aria-controls="panel1bh-content"
+                                            id="panel1bh-header"
+                                        >
+                                            <Typography className="p-2 min-w-full" sx={{ width: '33%', flexShrink: 0 }}>
+                                                {value.title}
+                                            </Typography>
+                                        </AccordionSummary>
+                                }
+
                                 <AccordionDetails className="p-2">
                                     <Typography className="mb-3 text-justify">
                                         {value.content}
