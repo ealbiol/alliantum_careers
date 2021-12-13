@@ -35,7 +35,7 @@ export function CircleBlur({ color, keyFrame, zIndex, lg, sm, ...other }) {
         top: ${top};  
         left: ${left};   
     `
-    const theSize = smallSize ? size / 4 : size;
+    // const theSize = smallSize ? size / 4 : size;
     return <Circle className="circle" />
 
 }
