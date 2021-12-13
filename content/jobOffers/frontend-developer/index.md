@@ -50,4 +50,3 @@ We are an international company with German spirit but with Spanish passion, loc
 <br/>
 
 Have we hit your interest? It's time to share your knowledge and passion with us. Become part of our team and apply. We are sure you will be the right candidate for our company.
-

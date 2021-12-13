@@ -469,7 +469,7 @@ export async function getAllBenefitsBlack() {
 //-----------------------------------------------------//
 
 export const allAddresses = [
-    { city: "Málaga", country: "Spain", address: "C. Ordóñez, 2, 2º, 29005 Málaga", lat: 36.71782288308034, lng: -4.424975802343778 },
+    { city: "Málaga", country: "Spain", address: "C. Ordóñez, 2, 2º, 29005 Málaga", lat: 36.71782288308034, lng: -4.424975802343778, phone: "+34 952 185 598" },
     { city: "Oststeinbek", country: "Germany", address: "Im Hegen 13 22113 Oststeinbek", lat: 53.55106201339093, lng: 10.155707354649618 }
 ]
 

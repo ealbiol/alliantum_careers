@@ -4,6 +4,7 @@ import { allPositionsReactSelect } from "../../data/data"
 import IconBellWhite from "../../images/notify-me-photos/Icon1.svg"
 import IconBellBlack from "../../images/notify-me-photos/Icon2.svg"
 import useTheme from "../../hooks/useTheme";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 
 export function NotifyMeButton({ showNotifySubmit, setShowNotifySubmit, submitMessage, setSubmitMessage }) {
@@ -157,7 +158,12 @@ export function NotifyMeButton({ showNotifySubmit, setShowNotifySubmit, submitMe
                                 }
                             </div>
                             <div className="flex-grow">
-                                <small className="leading-4 w-100 pt-2 pr-2">You will only receive job offers, as we described on our Privacy Policy. </small>
+                                <small className="leading-4 w-100 pt-2 pr-2">
+                                    You will only receive job offers, as we described on our
+                                    <AnchorLink to="/privacy-policy" >
+                                        {" "}<b>Privacy Policy.</b>
+                                    </AnchorLink>
+                                </small>
                             </div>
                         </div>
                     </div>

@@ -437,6 +437,13 @@ export function OfficeCard({ addressUnite }) {
                     <span className="pretitle text-chestnut-rose">{addressUnite.city.toUpperCase()}</span>
                     <h3 className="text-md mb-0">{addressUnite.country.toUpperCase()}</h3>
                     <span className="text-xs">{addressUnite.address}</span>
+                    {
+                        addressUnite.country === "Spain" ?
+
+                            <a className="text-xs" href={`tel:${addressUnite.phone}`}><div>{addressUnite.phone}</div></a>
+                            :
+                            ""
+                    }
                 </div>
             </div>
         </div>

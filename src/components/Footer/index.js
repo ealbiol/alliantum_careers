@@ -71,6 +71,12 @@ export default function Footer() {
                                             <div>{address.city.toUpperCase()}</div>
                                             <div className="text-sm text-bold">{address.country.toUpperCase()}</div>
                                             <div className="text-xs">{address.address}</div>
+                                            {
+                                                address.country === "Spain" ?
+                                                    <a className="text-xs" href={`tel:${address.phone}`}><div>{address.phone}</div></a>
+                                                    :
+                                                    ""
+                                            }
                                         </div>
                                     )
                                 })
@@ -80,7 +86,7 @@ export default function Footer() {
                     <div className="flex flex-col items-start justify-between pt-10 mt-10 border-t border-gray-100 md:flex-row md:items-center pt-3">
                         <p className="mb-6 text-xs text-left text-gray-600 md:mb-0">© Alliantum GmbH.</p>
                         <div className="flex items-start justify-start space-x-6 md:items-center md:justify-center">
-                            <AnchorLink to="/" >
+                            <AnchorLink to="/imprint" >
                                 <span className="text-xs text-gray-600 transition hover:text-primary" >Imprint</span>
                             </AnchorLink>
                             <AnchorLink to="/privacy-policy" >
