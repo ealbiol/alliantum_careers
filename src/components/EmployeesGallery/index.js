@@ -21,6 +21,8 @@ export function EmployeesGallery() {
     const doubleFirstLinePhotos = firstLinePhotos.concat(firstLinePhotos)
     const doubleSecondLinePhotos = secondLinePhotos.concat(secondLinePhotos)
 
+    console.log("Photos FirstLine:--->", doubleFirstLinePhotos);
+    console.log("Photos SecondLine:--->", doubleFirstLinePhotos);
 
     return (
 
