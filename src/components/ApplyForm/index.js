@@ -4,7 +4,7 @@ import GithubLogoWhite from "../../images/apply-form-photos/github-logo-white.sv
 import useTheme from "../../hooks/useTheme";
 
 
-export function ApplyForm({ jobDepartment }) {
+export function ApplyForm({ jobDepartment, jobTitle }) {
 
     const theme = useTheme();
 
@@ -27,7 +27,7 @@ export function ApplyForm({ jobDepartment }) {
                 <input type="file" id="uploadCV" name="Applicant CV" placeholder="Your CV" className="flex-grow hidden" required />
             </div>
             <div className="flex mb-2">
-                {jobDepartment === "Web Developer" || jobDepartment === "Odoo Developer" || jobDepartment === "Sys Admin" || jobDepartment === "IT" || jobDepartment === "Business System" ?
+                {jobDepartment === "Web Developer" || jobDepartment === "Odoo Developer" || jobDepartment === "Sys Admin" || jobDepartment === "IT" || jobDepartment === "Business System" || jobTitle === "Frontend Developer" ?
                     <div className="flex flex-grow relative input-icon items-center">
                         {
                             theme === "dark" ?

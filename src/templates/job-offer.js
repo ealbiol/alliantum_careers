@@ -15,6 +15,7 @@ const JobOfferTemplate = ({ data, location }) => {
   const jobOffer = data.markdownRemark;
 
   const jobDepartment = jobOffer.frontmatter.department
+  const jobTitle = jobOffer.frontmatter.title
 
 
 
@@ -75,7 +76,7 @@ const JobOfferTemplate = ({ data, location }) => {
 
           <div className="hidden xl:flex xl:w-6/12 justify-end mt-7"  >
             <div className="max-w-md flex-grow fixed mt-6 text-black" >
-              <ApplyForm jobDepartment={jobDepartment} />
+              <ApplyForm jobDepartment={jobDepartment} jobTitle={jobTitle} />
             </div>
           </div>
         </div>
