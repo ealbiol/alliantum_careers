@@ -199,10 +199,8 @@ function IndexPage() {
         </div>
 
         {/* ------------> Our Values */}
-        <div id="our-values" />
-        <div>
-          <OurValuesSection />
-        </div>
+        {/* AnchorLink id in OurValuesMenu Component. */}
+        <OurValuesSection />
       </div>
 
 
