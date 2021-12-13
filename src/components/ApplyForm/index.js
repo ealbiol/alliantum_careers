@@ -12,34 +12,35 @@ export function ApplyForm({ jobDepartment }) {
 
     return (
 
-        <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="thank-you-for-applying/" className="mt-6 text-black"  >
-            <input type="hidden" name="form-name" value="contact" />
+        <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="thank-you-for-applying/" className=""  >
+            <input className="" type="hidden" name="form-name" value="contact" />
 
-            <div className="flex mb-2"  >
-                <input type="text" name="Applicant Name" placeholder="Your name" className="flex-grow" required />
-                <input type="text" name="Applicant Last Name" placeholder="Your last name" className="flex-grow " required />
+            <div className="flex mb-2 gap-2"  >
+                <input type="text" name="Applicant Name" placeholder="Your name" className="flex-grow dark:input-dark" required />
+                <input type="text" name="Applicant Last Name" placeholder="Your last name" className="flex-grow dark:input-dark" required />
             </div>
             <div className="flex mb-2">
-                <textarea name="subject" id="subject" rows="5" placeholder="Tell us about your talents" className="flex-grow" style={{ resize: "none" }} required />
+                <textarea name="subject" id="subject" rows="5" placeholder="Tell us about your talents" className="flex-grow dark:input-dark" style={{ resize: "none" }} required />
             </div>
-            <div className="flex mb-2" >
-                <input type="email" name="Applicant Email" placeholder="Your email" className="flex-grow" required />
-                <input type="file" name="Applicant CV" placeholder="Your CV" className="flex-grow" required />
+            <div className="flex mb-2 gap-2" >
+                <input type="email" name="Applicant Email" placeholder="Your email" className="dark:input-dark" required />
+                <label htmlFor="uploadCV" className="input-upload cursor-pointer flex flex-grow dark:input-dark">Your CV</label>
+                <input type="file" id="uploadCV" name="Applicant CV" placeholder="Your CV" className="flex-grow hidden" required />
             </div>
             <div className="flex mb-2">
                 {jobDepartment === "Web Developer" || jobDepartment === "Odoo Developer" || jobDepartment === "Sys Admin" || jobDepartment === "IT" || jobDepartment === "Business System" ?
-                    <span className="flex flex-grow">
+                    <div className="flex flex-grow relative input-icon items-center">
                         {
                             theme === "dark" ?
-                                <GithubLogoWhite />
+                                <GithubLogoWhite className="absolute" />
                                 :
-                                <GithubLogo />
+                                <GithubLogo className="absolute" />
 
                         }
-                        <input type="url" name="Applicant URL" placeholder="Your Github profile" className="flex-grow" />
-                    </span>
+                        <input type="url" name="Applicant URL" placeholder="Your Github profile" className="flex-grow dark:input-dark" />
+                    </div>
                     :
-                    <input type="url" name="Applicant URL" placeholder="Your portfolio / blog / web" className="flex-grow" />
+                    <input type="url" name="Applicant URL" placeholder="Your portfolio / blog / web" className="flex-grow dark:input-dark" />
                 }
             </div>
             <div className="flex" >

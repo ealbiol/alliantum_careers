@@ -22,6 +22,7 @@ module.exports = {
             current: 'currentColor',
 
             'bleach': '#FFF',
+            'cojgril': '#000',
             'white': '#F0F0F0',
             'black': '#141414',
 
@@ -508,7 +509,7 @@ module.exports = {
         keyframes: {
             marquee: {
                 '0%': { transform: 'translateX(0%)' },
-                '100%': { transform: 'translateX(-200%)' },
+                '100%': { transform: 'translateX(-250%)' },
             },
             marquee2: {
                 '0%': { transform: 'translateX(250%)' },

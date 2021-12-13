@@ -105,7 +105,7 @@ export async function getAllBenefits() {
 export const allBenefitsWhite = [
     {
         id: 7, title: "Flexible Hours", content: "Flexible entry and exit times. There is life beyond work, and we know it",
-        blur1: "40", color1: "red", top1: "50%", left1: "8%", size1: "70",
+        blur1: "40", color1: "#F9B457", top1: "50%", left1: "8%", size1: "70",
         keyFrame1:
             `    
         0%    {  transform: translate(0, 0) }
@@ -114,7 +114,7 @@ export const allBenefitsWhite = [
         100%  {  transform: translate(26px, 40px) }
         `,
 
-        blur2: "40", color2: "green", top2: "8%", left2: "16%", size2: "70",
+        blur2: "40", color2: "#8EE8F9", top2: "8%", left2: "16%", size2: "70",
         keyFrame2:
             `    
         0%    {  transform: translate(0, 0) }
@@ -123,7 +123,7 @@ export const allBenefitsWhite = [
         100%  {  transform: translate(26px, 40px) }
         `,
 
-        blur3: "40", color3: "#68B583", top3: "32%", left3: "30%", size3: "70",
+        blur3: "40", color3: "#8838F8", top3: "32%", left3: "30%", size3: "70",
         keyFrame3:
             `    
         0%    {  transform: translate(0, 0) }
@@ -134,7 +134,7 @@ export const allBenefitsWhite = [
     },
     {
         id: 8, title: "Training Fridays", content: "Fridays dedicated to training in subjects of interest to our work place",
-        blur1: "40", color1: "blue", top1: "20%", left1: "8%", size1: "70",
+        blur1: "40", color1: "#D76166", top1: "28%", left1: "0%", size1: "70",
         keyFrame1:
             `    
         0%    {  transform: translate(0, 0) }
@@ -143,7 +143,7 @@ export const allBenefitsWhite = [
         100%  {  transform: translate(26px, 40px) }
         `,
 
-        blur2: "40", color2: "pink", top2: "8%", left2: "16%", size2: "70",
+        blur2: "40", color2: "#68B583", top2: "8%", left2: "16%", size2: "70",
         keyFrame2:
             `    
         0%    {  transform: translate(0, 0) }
@@ -152,7 +152,7 @@ export const allBenefitsWhite = [
         100%  {  transform: translate(26px, 40px) }
         `,
 
-        blur3: "40", color3: "yellow", top3: "72%", left3: "30%", size3: "70",
+        blur3: "40", color3: "#529DFC", top3: "62%", left3: "18%", size3: "70",
         keyFrame3:
             `    
         0%    {  transform: translate(0, 0) }
@@ -163,7 +163,7 @@ export const allBenefitsWhite = [
     },
     {
         id: 9, title: "Team Activities", content: "We organise team activities and it is easy to see us many days eating hamburgers somewhere near the office",
-        blur1: "40", color1: "salmon", top1: "70%", left1: "50%", size1: "70",
+        blur1: "40", color1: "#529DFC", top1: "48%", left1: "35%", size1: "70",
         keyFrame1:
             `    
         0%    {  transform: translate(0, 0) }
@@ -172,7 +172,7 @@ export const allBenefitsWhite = [
         100%  {  transform: translate(26px, 40px) }
         `,
 
-        blur2: "40", color2: "#8838F8", top2: "8%", left2: "16%", size2: "70",
+        blur2: "40", color2: "#966CE0", top2: "30%", left2: "16%", size2: "70",
         keyFrame2:
             `    
         0%    {  transform: translate(0, 0) }
@@ -181,7 +181,7 @@ export const allBenefitsWhite = [
         100%  {  transform: translate(26px, 40px) }
         `,
 
-        blur3: "40", color3: "#68B583", top3: "32%", left3: "30%", size3: "70",
+        blur3: "40", color3: "#F9B457", top3: "0%", left3: "25%", size3: "70",
         keyFrame3:
             `    
         0%    {  transform: translate(0, 0) }
@@ -192,7 +192,7 @@ export const allBenefitsWhite = [
     },
     {
         id: 10, title: "Work-Life Balance", content: "Enjoy your life, your time, your family... You only live once! We need you to be happy",
-        blur1: "40", color1: "#F9B457", top1: "20%", left1: "8%", size1: "70",
+        blur1: "40", color1: "#91E7C8", top1: "30%", left1: "0%", size1: "70",
         keyFrame1:
             `    
         0%    {  transform: translate(0, 0) }
@@ -201,7 +201,7 @@ export const allBenefitsWhite = [
         100%  {  transform: translate(26px, 40px) }
         `,
 
-        blur2: "40", color2: "#8838F8", top2: "8%", left2: "16%", size2: "70",
+        blur2: "40", color2: "#E568B2", top2: "8%", left2: "16%", size2: "70",
         keyFrame2:
             `    
         0%    {  transform: translate(0, 0) }
@@ -210,7 +210,7 @@ export const allBenefitsWhite = [
         100%  {  transform: translate(26px, 40px) }
         `,
 
-        blur3: "40", color3: "#68B583", top3: "32%", left3: "30%", size3: "70",
+        blur3: "40", color3: "#529DFC", top3: "40%", left3: "20%", size3: "70",
         keyFrame3:
             `    
         0%    {  transform: translate(0, 0) }
@@ -221,7 +221,7 @@ export const allBenefitsWhite = [
     },
     {
         id: 11, title: "Great Location", content: "Our office is located in the centre of Malaga, close to the shopping and entertainment area",
-        blur1: "40", color1: "#F9B457", top1: "20%", left1: "8%", size1: "70",
+        blur1: "40", color1: "#8EE8F9", top1: "20%", left1: "8%", size1: "70",
         keyFrame1:
             `    
         0%    {  transform: translate(0, 0) }
@@ -230,7 +230,7 @@ export const allBenefitsWhite = [
         100%  {  transform: translate(26px, 40px) }
         `,
 
-        blur2: "40", color2: "#8838F8", top2: "8%", left2: "16%", size2: "70",
+        blur2: "40", color2: "#91E7C8", top2: "8%", left2: "16%", size2: "70",
         keyFrame2:
             `    
         0%    {  transform: translate(0, 0) }
@@ -239,7 +239,7 @@ export const allBenefitsWhite = [
         100%  {  transform: translate(26px, 40px) }
         `,
 
-        blur3: "40", color3: "#68B583", top3: "32%", left3: "30%", size3: "70",
+        blur3: "40", color3: "#FCE569", top3: "32%", left3: "30%", size3: "70",
         keyFrame3:
             `    
         0%    {  transform: translate(0, 0) }
@@ -250,7 +250,7 @@ export const allBenefitsWhite = [
     },
     {
         id: 12, title: "Coffee and Tea", content: "Coffee and tea for everyone and there is always someone to bring something to go with it",
-        blur1: "40", color1: "#F9B457", top1: "20%", left1: "8%", size1: "70",
+        blur1: "40", color1: "#D76166", top1: "20%", left1: "8%", size1: "70",
         keyFrame1:
             `    
         0%    {  transform: translate(0, 0) }
@@ -259,7 +259,7 @@ export const allBenefitsWhite = [
         100%  {  transform: translate(26px, 40px) }
         `,
 
-        blur2: "40", color2: "#8838F8", top2: "8%", left2: "16%", size2: "70",
+        blur2: "40", color2: "#529DFC", top2: "8%", left2: "16%", size2: "70",
         keyFrame2:
             `    
         0%    {  transform: translate(0, 0) }
