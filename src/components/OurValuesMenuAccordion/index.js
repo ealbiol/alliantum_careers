@@ -32,8 +32,8 @@ export function OurValuesMenuAccordion() {
 
     return (
         <div className="mt-4 rounded-lg block xl:hidden" >
-            <div class="mt-6 mb-2">
-                <h3 class="title text-md xl:w-6/12">Our values</h3>
+            <div className="mt-6 mb-2">
+                <h3 className="title text-md xl:w-6/12">Our values</h3>
 
                 {
                     allOurValues.map((value, index) => {

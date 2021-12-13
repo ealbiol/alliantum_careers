@@ -71,9 +71,6 @@ export function YourBenefits() {
                         {
                             benefitsWhite.map((unite, index) => {
                                 const icon = iconsInSVGWhite.find(icon => icon.id === unite.id)
-                                console.log("UNITE BLUR:--->", unite.blur1, unite.blur2, unite.blur3);
-                                console.log("UNITE color:--->", unite.color1, unite.color2, unite.color3);
-                                console.log("UNITE top:--->", unite.top1, unite.top2, unite.top3);
 
                                 return (
                                     <div key={index} className="blurred-gradient-wrapper">

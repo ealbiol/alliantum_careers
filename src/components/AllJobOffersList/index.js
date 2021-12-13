@@ -7,7 +7,6 @@ import { NotifyMeButton } from "../NotifyMeButton"
 
 export function AllJobOffersList() {
 
-
     const data = useStaticQuery(graphql`
     query {
         allMarkdownRemark(          filter: {fileAbsolutePath: {regex: "/content\/jobOffers/"}}
