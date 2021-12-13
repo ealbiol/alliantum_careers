@@ -1,11 +1,8 @@
 ---
 title: Odoo Consultant (ERP/OpenERP) - Remote
-date: "2015-05-01T22:12:03.284Z"
-description: "Hello World"
 department: "Business System"
 experience: "At least 2 years"
 languageRequired1: "English - Advanced Level"
-# languageRequired2: "French - Advanced"
 ---
 
 At Alliantum GmbH we are currently recruiting for a new employee as Odoo Consultant (ERP/OpenERP).
@@ -48,4 +45,3 @@ We are an international company with German spirit but with Spanish passion, loc
 <br/>
 
 Have we hit your interest? It's time to share your knowledge and passion with us. Become part of our team and apply. We are sure you will be the right candidate for our company.
-

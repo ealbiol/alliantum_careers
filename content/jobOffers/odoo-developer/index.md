@@ -3,7 +3,6 @@ title: Odoo Developer (Python)
 department: "Business System"
 experience: "At least 1 year"
 languageRequired1: "English - Advanced Level"
-# languageRequired2: "French - Advanced"
 ---
 
 At Alliantum GmbH we are currently recruiting for a new employee as Odoo Developer (Python).

@@ -6,13 +6,14 @@
 <h2>Office Addresses</h2>
 
 <br/>
+<br/>
 
 - **<h3>Spain</h3>**
 - **Alliantum SL**
 - Ordoñez 2 - 2nd Floor,
 - 29005 Málaga
 - **Mail:** info@alliantum.com
-- **Mail:** (+34) 952 185 598
+- **Telephone:** (+34) 952 185 598
 
 <br/>
 
@@ -27,14 +28,13 @@
 
 <br/>
 <br/>
-<br/>
 
 - **<h3>Germany</h3>**
 - **Alliantum GmbH**
 - Im Hegen 13,
 - 22113 Oststeinbeck
 - **Mail:** info@alliantum.com
-- **Mail:** (+49)(0) 40 70 70 80 680
+- **Telephone:** (+49)(0) 40 70 70 80 680
 
 <br/>
 
