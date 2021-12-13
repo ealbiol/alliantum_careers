@@ -16,8 +16,9 @@ export function OfficePhotos() {
         })
     }, [])
 
-    const firstLinePhotos = officePhotos.slice(0, 5).sort(function (a, b) { return 0.5 - Math.random() })
-    const secondLinePhotos = officePhotos.slice(5, 10).sort(function (a, b) { return 0.5 - Math.random() });
+    officePhotos.sort(function (a, b) { return 0.5 - Math.random() })
+    const firstLinePhotos = officePhotos.slice(0, 5)
+    const secondLinePhotos = officePhotos.slice(5, 10)
 
     return (
         <div >
