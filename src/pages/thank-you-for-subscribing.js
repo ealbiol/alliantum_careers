@@ -8,16 +8,14 @@ function ThankYouForSubscribing() {
     return (
         <Layout>
             <Seo title="Thank You for subscribing" />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <h1>Thank You for Subscribing!</h1>
-            <AnchorLink to="/" >
-                <button>Go back to home Page.</button>
-            </AnchorLink>
+            <div className="container mx-auto my-6 h-screen flex flex-col justify-center ">
+                <div>
+                    <h1 className="text-lg">We will notify you when new job offers are available</h1>
+                    <AnchorLink to="/" >
+                        <button className="btn btn-primary">Go back home</button>
+                    </AnchorLink>
+                </div>
+            </div>
         </Layout>
     )
 }

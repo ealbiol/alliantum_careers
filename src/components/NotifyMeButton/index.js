@@ -111,26 +111,15 @@ export function NotifyMeButton({ showNotifySubmit, setShowNotifySubmit, submitMe
                 <form onSubmit={handleUserEmail} >
 
                     <div className="card bg-white dark:bg-black dark:border-white w-full">
-                        <div className="flex flex-col xl:flex-row">
-                            <div className="flex flex-col xl:pr-2 w-100 xl:w-6/12">
-                                <label className="uppercase mb-1">Your email{" "}</label>
-                                <input
-                                    type="email"
-                                    name="Notify Me"
-                                    placeholder="email" onChange={(e) => setUserEmail(e.currentTarget.value)}
-                                    className="rounded h-4 text-black p-2"
-                                    required
-                                />
-                            </div>
-                            <div className="flex flex-col w-100 xl:w-6/12">
-                                <label className="uppercase mb-1">Job Positions:</label>
-
+                        <div className="">
+                            <div className="flex flex-col w-100">
+                                <label className="uppercase mb-1">I'm interested in...</label>
                                 <Select
                                     defaultValue={[allPositionsReactSelect[0]]}
                                     isMulti
                                     name="positions"
                                     options={options}
-                                    className="basic-multi-select"
+                                    className="flex-grow input dark:input-dark"
                                     classNamePrefix="select"
                                     onChange={handleChangeDepartment}
                                     className="text-black"
@@ -142,6 +131,17 @@ export function NotifyMeButton({ showNotifySubmit, setShowNotifySubmit, submitMe
                                         <div style={{ color: "red" }} ><i>Required Field</i></div>
                                 }
                             </div>
+                            <div className="flex flex-col w-100 mt-2">
+                                <label className="uppercase mb-1">{" "}</label>
+                                <input
+                                    type="email"
+                                    name="Notify Me"
+                                    placeholder="myEmail@gmail.com" onChange={(e) => setUserEmail(e.currentTarget.value)}
+                                    className="flex-grow dark:input-dark text-black"
+                                    required
+                                />
+                            </div>
+
                         </div>
                         <div className="flex flex-col justify-between mt-3">
                             <div className="flex flex-grow">

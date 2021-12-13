@@ -55,7 +55,7 @@ export function AllJobOffersList() {
     return (
         <div>
             {showNotifySubmit === true ?
-                <div className="relative z-10">
+                <div className="relative z-9">
                     <div className="relative z-8">
 
                         <div className="flex mb-3">
@@ -98,7 +98,7 @@ export function AllJobOffersList() {
                             :
                             <div className="mb-3" >There are currently no job offers available for the {clickedDepartment} team.</div>
                     }
-                    <div className="absolute">
+                    <div className="absolute rounded-lg p-4 top-0 w-100 min-w-full bg-white dark:bg-black z-20">
                         <div>
                             {
                                 showNotifySubmit === true ?

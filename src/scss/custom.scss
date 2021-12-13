@@ -19,14 +19,15 @@ body * {
 }
 
 .input,
+select,
+textarea,
 input[type="text"],
 input[type="textarea"],
 input[type="password"],
 input[type="tel"],
 input[type="email"],
 input[type="url"],
-input[type="file"],
-textarea {
+input[type="file"] {
     @apply p-2 rounded-md text-black;
     border: solid 2px #D7DCE1;
 
@@ -35,13 +36,27 @@ textarea {
     }
 }
 
+.dark .input {
+    @apply p-2 rounded-md text-white;
+    border: solid 2px #464748;
+    background-color: black;
+
+    &::placeholder {
+        color: #6c6e70;
+    }
+}
+
+.select__value-container {
+    padding: 0.889rem!important;
+}
+
 .input-upload {
     @apply input bg-white;
     border-style: dashed;
 }
 
 .input-dark {
-    background: black;
+    background: black!important;
     color: white;
     border-color: gray;
 }
@@ -202,7 +217,6 @@ textarea {
 .hero-left-content__wrapper-black::before {
     @apply bg-black;
 }
-
 
 .hero-header__back {
     height: 38vh;

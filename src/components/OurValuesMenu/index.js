@@ -15,7 +15,7 @@ export function OurValuesMenu({ allOurValues }) {
     return (
         <div>
 
-            <div className="hidden" >
+            <div className="hidden xl:block" >
                 <div className="container mx-auto mt-6 mb-2">
                     <h3 className="title text-md xl:w-6/12">Our values</h3>
                 </div>
