@@ -21,10 +21,10 @@
 - **Registrada en el Registro mercantil de Málaga**
   <br/>
   <br/>
-- ● Managing Director: Carlos Mayo
-- ● Hoja: MA-164187
-- ● Folio 35 del tomo 6099, libro número 5006 de la Sección General de Sociedades con fecha 2 de diciembre de 2021.
-- ● Cif: B67842625
+- -- Managing Director: Carlos Mayo
+- -- Hoja: MA-164187
+- -- Folio 35 del tomo 6099, libro número 5006 de la Sección General de Sociedades con fecha 2 de diciembre de 2021.
+- -- Cif: B67842625
 
 <br/>
 <br/>
@@ -42,12 +42,12 @@
 - **Entry in the commercial register**
   <br/>
   <br/>
-- ● Registry court: Lüneburg
-- ● Commercial register number: HRB 208342
-- ● USt-Id-Nr: DE 299424919
-- ● Managing directors: Stephan Diehl, Daniel Trenk
-- ● Sales tax identification number as referred to in §27a of law of sales tax: DE299424919
-- ● Responsible for contents as referred to in §10 MDStV: Alliantum GmbH
+- -- Registry court: Lüneburg
+- -- Commercial register number: HRB 208342
+- -- USt-Id-Nr: DE 299424919
+- -- Managing directors: Stephan Diehl, Daniel Trenk
+- -- Sales tax identification number as referred to in §27a of law of sales tax: DE299424919
+- -- Responsible for contents as referred to in §10 MDStV: Alliantum GmbH
 
 <br/>
 <br/>
