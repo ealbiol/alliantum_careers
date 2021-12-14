@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "alliantum.es",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Alliantum.es Site",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Alliantum",
   "dependencies": {
     "@emotion/styled": "^11.6.0",
     "@mui/icons-material": "^5.2.1",
