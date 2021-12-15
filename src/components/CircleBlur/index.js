@@ -27,7 +27,7 @@ export function CircleBlur({ color, keyFrame, zIndex, lg, sm, ...other }) {
         position: relative;
         z-index: ${zIndex};
         border-radius: 100%;
-        animation: ${spin} linear infinite alternate 16s;
+        animation: ${spin} linear infinite alternate 12s;
         filter: blur(${blur}px);
         background-color: ${color};
         width: ${size}px;
