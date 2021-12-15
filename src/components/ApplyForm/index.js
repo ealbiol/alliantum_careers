@@ -12,7 +12,7 @@ export function ApplyForm({ jobDepartment, jobTitle }) {
 
     return (
 
-        <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="thank-you-for-applying/" className=""  >
+        <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you-for-applying/" className=""  >
 
             <input type="hidden" name="position" value={jobTitle} />
 
