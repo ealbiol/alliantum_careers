@@ -42,12 +42,12 @@ const JobOfferTemplate = ({ data, location }) => {
               <div className="pretitle text-loblolly-600" >WORK WITH US AS</div>
               <div className="title text-md mt-1" >{jobOffer.frontmatter.title}</div>
 
-              <div className="flex mt-7" >
+              <div className="flex flex-col lg:flex-row mt-4 lg:mt-7" >
                 <div className="flex-grow" >
                   <div className="pretitle text-loblolly-600" >MINIMUM EXPERIENCE</div>
                   <div>{jobOffer.frontmatter.experience}</div>
                 </div>
-                <div className="flex-grow" >
+                <div className="flex-grow mt-4 lg:mt-0" >
                   <div className="pretitle text-loblolly-600" >LANGUAGES REQUIRED</div>
                   <div>{jobOffer.frontmatter.languageRequired1}</div>
                   <div>{jobOffer.frontmatter.languageRequired2}</div>
@@ -56,7 +56,7 @@ const JobOfferTemplate = ({ data, location }) => {
               </div>
             </div>
 
-            <section className="border border-loblolly rounded-lg p-3 overflow-hidden max-w-3xl mt-5 w-12/12"
+            <section className="border border-loblolly rounded-lg p-2 lg:p-3 text-xs lg:text-base overflow-hidden max-w-3xl mt-5 w-12/12"
               dangerouslySetInnerHTML={{ __html: jobOffer.html }}
               itemProp="articleBody"
             />

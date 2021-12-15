@@ -32,7 +32,7 @@ export default function Header({ siteTitle, themeData, setThemeData }) {
         <div className="flex flex-row justify-between bb bg-red">
 
           <Link to="/" >
-            <div className="flex items-end">
+            <div className="thelogo flex items-end">
               {
                 theme === "dark" ?
                   <AlliantumLogoWhite style={{ margin: "4px" }} />

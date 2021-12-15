@@ -37,10 +37,8 @@ export function OurValuesSection() {
                 <CircleBlur zIndex={1} blur="140" color="#529DFC" top="66%" left="35%" size="600"
                     keyFrame={ /* BLUE */
                         ` 
-                            0 % { transform: translate(0, 0) }
-                            33 % { transform: scale(0.77) }
-                            66 % { transform: translate(20px, 40px) }
-                            100 % { transform: translate(30px, 40px) }
+                            0 % { transform: scale(1) }
+                            100 % { transform: scale(0.77) }
                         `
                     }
                 />

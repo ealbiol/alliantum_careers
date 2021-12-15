@@ -97,7 +97,7 @@ export function AllJobOffersList() {
                             :
                             <div className="mb-3" >There are currently no job offers available for the {clickedDepartment} team.</div>
                     }
-                    <div className="absolute rounded-lg p-4 top-0 w-100 min-w-full bg-white dark:bg-black z-20">
+                    <div className="absolute rounded-lg p-2 lg:p-4 bot-0 w-100 min-w-full bg-white dark:bg-black z-20">
                         <div>
                             {
                                 showNotifySubmit === true ?

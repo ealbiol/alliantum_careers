@@ -157,11 +157,11 @@ export function NotifyMeButton({ showNotifySubmit, setShowNotifySubmit, submitMe
                                         </button>
                                 }
                             </div>
-                            <div className="flex-grow">
-                                <small className="leading-4 w-100 pt-2 pr-2">
+                            <div className="flex-grow pt-1">
+                                <small className="leading-4 w-100 pr-2">
                                     You will only receive job offers, as we described on our
-                                    <AnchorLink to="/privacy-policy" >
-                                        {" "}<b>Privacy Policy.</b>
+                                    <AnchorLink target="_blank" to="/privacy-policy" className="bold">
+                                        {" "}Privacy Policy.
                                     </AnchorLink>
                                 </small>
                             </div>

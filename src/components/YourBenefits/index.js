@@ -119,7 +119,7 @@ export function YourBenefits() {
                                                         <div className="h-px-80 flex items-center">
                                                             <h4 className="mb-0 lg:w-4/12">{unite?.title?.toUpperCase()}</h4>
                                                         </div>
-                                                        <div className="pr-2 lg:pr-6">{unite?.content}</div>
+                                                        <div className="xl:pr-6">{unite?.content}</div>
                                                     </div>
                                                 </div>
 

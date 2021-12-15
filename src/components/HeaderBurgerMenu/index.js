@@ -35,13 +35,14 @@ export default function HeaderBurgerMenu() {
 
 
     return (
-        <div>
+        <div className="flex items-center">
             <Button
                 id="basic-button"
                 aria-controls="basic-menu"
                 aria-haspopup="true"
                 aria-expanded={open ? 'true' : undefined}
                 onClick={handleClick}
+                className="pl-2 pr-0"
             >
                 {
                     theme === "dark" ?
