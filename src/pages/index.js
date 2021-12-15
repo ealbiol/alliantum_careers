@@ -135,11 +135,12 @@ function IndexPage() {
         </div>
 
         {/* ------------> Your Benefits */}
-        <div id="your-benefits" />
-        <div className="container mx-auto my-6">
-          <span className="pretitle">Your benefits</span>
-          <h3 className="title text-md xl:w-6/12">Work in an international company, with a happy team, in a great office</h3>
-          <YourBenefits />
+        <div id="your-benefits" >
+          <div className="container mx-auto my-6">
+            <span className="pretitle">Your benefits</span>
+            <h3 className="title text-md xl:w-6/12">Work in an international company, with a happy team, in a great office</h3>
+            <YourBenefits />
+          </div>
         </div>
 
         {/* ------------> Office Presentation */}
@@ -151,23 +152,22 @@ function IndexPage() {
         </div>
 
         {/* ------------> World Map */}
-        <div id="the-offices" />
-
-        <div className="blurred-gradient-wrapper">
-          <div className="blurred-gradient-container">
-            <div className="blurred-gradient-content">
-            </div>
-            <div className="relative z-10">
-              <div className="container mx-auto mt-6 mb-2">
-                <span className="pretitle">The office</span>
-                <h3 className="title text-md xl:w-6/12">German spirit. Spanish passion.</h3>
+        <div id="the-offices" >
+          <div className="blurred-gradient-wrapper">
+            <div className="blurred-gradient-container">
+              <div className="blurred-gradient-content">
               </div>
-              <GoogleMaps />
-            </div>
+              <div className="relative z-10">
+                <div className="container mx-auto mt-6 mb-2">
+                  <span className="pretitle">The office</span>
+                  <h3 className="title text-md xl:w-6/12">German spirit. Spanish passion.</h3>
+                </div>
+                <GoogleMaps />
+              </div>
 
-            <CircleBlur blur="180" color="#D76166" top="60%" left="40%" size="500"
-              keyFrame={ /* RED */
-                `
+              <CircleBlur blur="180" color="#D76166" top="60%" left="40%" size="500"
+                keyFrame={ /* RED */
+                  `
                   0% { transform: translate(0, 0) }
                   15% { transform: scale(0.9) }
                   30% { transform: translate(-30px, 30px) }
@@ -176,9 +176,10 @@ function IndexPage() {
                   75% { transform: translate(-30px, 30px) }
                   100% { transform: translate(30px, -30px) }
                 `
-              }
-            />
+                }
+              />
 
+            </div>
           </div>
         </div>
 
@@ -204,7 +205,7 @@ function IndexPage() {
       </div>
 
 
-    </Layout>
+    </Layout >
   )
 
 }

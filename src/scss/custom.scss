@@ -225,6 +225,8 @@ input[type="file"] {
 /* ------- HERO HEADER FACES ------- */
 .hero-faces-row {
   display: flex;
+  position: relative;
+  transform: translate(-180px);
 }
 
 .hero-item-face {
@@ -451,14 +453,6 @@ input[type="file"] {
     min-width: auto;
 }
 
-
-.css-6hp17o-MuiList-root-MuiMenu-list a {
-  padding-top: 3rem !important;
-  padding-bottom: 3rem !important;
-  margin-bottom: 4px !important;
-  padding-left: 2rem !important;
-}
-
 .MuiTypography-root.MuiTypography-body1.p-2.min-w-full {
   padding-left: 0;
   font-weight: bold;
@@ -474,10 +468,27 @@ input[type="file"] {
     margin-right: 8px;
 }
 
-.gatsby-image-wrapper.gatsby-image-wrapper-constrained.rounded-lg.mr-3 > div:first-child {
-    max-height: 170px;
-    max-width: 260px!important;
+.MuiList-root.MuiList-padding.MuiMenu-list.css-6hp17o-MuiList-root-MuiMenu-list a {
+    display: flex!important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    margin-bottom: 4px !important;
+    padding-left: 2rem !important;
+    transition: background-color ease-in-out 0.2s;
+
+    &:first-child {
+        padding-top: 2rem !important;
+    }
+
+    &:last-child {
+        padding-bottom: 2rem !important;
+    }
+
+    &:hover {
+        @apply bg-black
+    }
 }
+
 
 /*
 MEDIAQUERIES 
@@ -495,6 +506,10 @@ MEDIAQUERIES
     .gatsby-image-wrapper.gatsby-image-wrapper-constrained.rounded-lg.mr-3 > div:first-child {
         max-height: unset;
         max-width: unset;
+    }
+
+    .hero-faces-row {
+        transform: none!important;
     }
 }
 
