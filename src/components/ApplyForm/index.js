@@ -10,6 +10,16 @@ export function ApplyForm({ jobDepartment, jobTitle }) {
 
     console.log("jobDepartment:--->", jobTitle);
 
+    const [fileName, setFileName] = React.useState(false)
+
+
+    function handleFileInput(e) {
+        // console.log("paquita:----->", e.target.value);
+        setFileName(true)
+    }
+
+    console.log("fileName:--->", fileName);
+
     return (
 
         <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you-for-applying/" className=""  >
@@ -26,8 +36,15 @@ export function ApplyForm({ jobDepartment, jobTitle }) {
             </div>
             <div className="flex mb-2 gap-2" >
                 <input type="email" name="Applicant Email" placeholder="Your email" className="input" required />
-                <label htmlFor="uploadCV" className="input-upload cursor-pointer flex flex-grow input">Your CV</label>
-                <input type="file" id="uploadCV" name="Applicant CV" placeholder="Your CV" className="flex-grow hidden" />
+                <label htmlFor="uploadCV" className="input-upload cursor-pointer flex flex-grow input">
+                    {
+                        fileName === false ?
+                            "Your CV"
+                            :
+                            "File Uploaded"
+                    }
+                </label>
+                <input type="file" id="uploadCV" name="Applicant CV" placeholder="Your CV" className="flex-grow hidden" accept=".pdf" onChange={handleFileInput} />
             </div>
             <div className="flex mb-2">
                 {jobDepartment === "Web Developer" || jobDepartment === "Odoo Developer" || jobDepartment === "Sys Admin" || jobDepartment === "IT" || jobDepartment === "Business System" || jobTitle === "Frontend Developer" ?
