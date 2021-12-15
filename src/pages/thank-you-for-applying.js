@@ -10,7 +10,9 @@ function ThankYouForApplying() {
             <Seo title="Thank You for applying" />
             <div className="container mx-auto my-6 h-screen flex flex-col justify-center ">
                 <div>
+                    <h1 className="text-md sm:text-lg">Application sent.</h1>
                     <h1 className="text-md sm:text-lg">Thank you for applying!</h1>
+
                     <AnchorLink to="/" >
                         <button className="btn btn-primary">Go back home</button>
                     </AnchorLink>
