@@ -8,11 +8,13 @@ export function ApplyForm({ jobDepartment, jobTitle }) {
 
     const theme = useTheme();
 
-
+    console.log("jobDepartment:--->", jobTitle);
 
     return (
 
         <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="thank-you-for-applying/" className=""  >
+
+            <input type="hidden" name="position" value={jobTitle} />
 
             <div className="flex mb-2 gap-2"  >
                 <input type="text" name="Applicant Name" placeholder="Your name" className="flex-grow input" required />
@@ -24,7 +26,7 @@ export function ApplyForm({ jobDepartment, jobTitle }) {
             <div className="flex mb-2 gap-2" >
                 <input type="email" name="Applicant Email" placeholder="Your email" className="input" required />
                 <label htmlFor="uploadCV" className="input-upload cursor-pointer flex flex-grow input">Your CV</label>
-                <input type="file" id="uploadCV" name="Applicant CV" placeholder="Your CV" className="flex-grow hidden" required />
+                <input type="file" id="uploadCV" name="Applicant CV" placeholder="Your CV" className="flex-grow hidden" />
             </div>
             <div className="flex mb-2">
                 {jobDepartment === "Web Developer" || jobDepartment === "Odoo Developer" || jobDepartment === "Sys Admin" || jobDepartment === "IT" || jobDepartment === "Business System" || jobTitle === "Frontend Developer" ?

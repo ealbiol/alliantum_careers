@@ -140,7 +140,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Alliantum.es`,
+        name: `Alliantum Careers`,
         short_name: `Alliantum.es`,
         start_url: `/`,
         background_color: `#ffffff`,
