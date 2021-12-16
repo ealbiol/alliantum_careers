@@ -27,7 +27,7 @@ export function ApplyForm({ jobDepartment, jobTitle }) {
         item.current.click()
     }
 
-
+    console.log("fileStatus:--->", fileStatus);
 
     return (
 
@@ -49,7 +49,12 @@ export function ApplyForm({ jobDepartment, jobTitle }) {
                     fileName === false ?
                         <label htmlFor="uploadCV" className="input-upload cursor-pointer flex flex-grow input" onClick={handleLabel} >Your CV</label>
                         :
-                        <label htmlFor="uploadCV" className="input-upload input-upload--filled cursor-pointer flex flex-grow input" onClick={handleLabel} >{fileStatus}</label>
+                        <label htmlFor="uploadCV" className="input-upload input-upload--filled cursor-pointer flex flex-grow input" onClick={handleLabel} >
+                            {fileStatus ?
+                                fileStatus
+                                :
+                                "Your CV"}
+                        </label>
                 }
                 <input ref={item} type="file" id="uploadCV" name="Applicant CV" placeholder="Your CV" className="flex-grow hidden" accept=".pdf" onChange={handleFileInput} />
 
