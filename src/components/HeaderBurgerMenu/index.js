@@ -60,6 +60,8 @@ export default function HeaderBurgerMenu() {
                     'aria-labelledby': 'basic-button',
                 }}
                 sx={{ boxShadow: 0 }}
+                anchorEl={anchorEl}
+                marginThreshold={0}
                 PaperProps={{
                     style: {
                         width: "100%",
@@ -68,6 +70,8 @@ export default function HeaderBurgerMenu() {
                         right: 0,
                     }
                 }}
+                anchorOrigin={{ vertical: "bottom" }}
+                transformOrigin={{ vertical: "top" }}
             >
                 {
                     headerUnite.map((value, index) => {
