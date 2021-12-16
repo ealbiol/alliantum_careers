@@ -82,7 +82,7 @@ export default function HeaderBurgerMenu() {
                                 style={{ color: `white`, textDecoration: `none` }}
                                 className="py-3"
                             >
-                                <MenuItem style={{ padding: "20px" }} className="bg-white dark:bg-cojgril" onClick={handleClose}>{value.sectionName}</MenuItem>
+                                <MenuItem style={{ padding: "20px", backgroundColor: 'red' }} className="bg-white dark:bg-cojgril" onClick={handleClose}>{value.sectionName}</MenuItem>
                             </AnchorLink>
                         )
                     })
