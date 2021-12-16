@@ -28,15 +28,7 @@ export function ApplyForm({ jobDepartment, jobTitle }) {
     }
 
 
-    const str = "The quick brown fox jumps over the lazy dog."
-    const str2 = str.split(" ")
 
-    console.log("str:--->", str);
-    // console.log("str 2:--->", str2);
-
-
-
-    console.log("fileStatus:--->", fileStatus);
 
     return (
 
