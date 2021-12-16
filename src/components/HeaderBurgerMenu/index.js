@@ -60,6 +60,14 @@ export default function HeaderBurgerMenu() {
                     'aria-labelledby': 'basic-button',
                 }}
                 sx={{ boxShadow: 0 }}
+                PaperProps={{
+                    style: {
+                        width: "100%",
+                        maxWidth: "100%",
+                        left: 0,
+                        right: 0,
+                    }
+                }}
             >
                 {
                     headerUnite.map((value, index) => {

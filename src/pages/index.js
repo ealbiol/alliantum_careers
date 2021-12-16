@@ -32,6 +32,7 @@ function IndexPage() {
   return (
     <Layout titlePage={data.site.siteMetadata?.mainPage} >
 
+
       <div>
         <Seo title="Alliantum Careers" />
 

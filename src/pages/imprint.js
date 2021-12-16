@@ -23,6 +23,7 @@ function ImprintPage({ data, location }) {
                     itemProp="articleBody"
                 />
             </div>
+
         </Layout>
     )
 }
