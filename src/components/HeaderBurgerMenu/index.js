@@ -68,6 +68,7 @@ export default function HeaderBurgerMenu() {
                         maxWidth: "100%",
                         left: 0,
                         right: 0,
+                        backgroundColor: "black"
                     }
                 }}
                 anchorOrigin={{ vertical: "bottom" }}
@@ -82,7 +83,7 @@ export default function HeaderBurgerMenu() {
                                 style={{ color: `white`, textDecoration: `none` }}
                                 className="py-3"
                             >
-                                <MenuItem style={{ padding: "20px", backgroundColor: "white text-black dark:black dark:-text-white" }} className="bg-white dark:bg-cojgril" onClick={handleClose}>{value.sectionName}</MenuItem>
+                                <MenuItem style={{ padding: "20px", backgroundColor: 'black', color: "white" }} onClick={handleClose}>{value.sectionName}</MenuItem>
                             </AnchorLink>
                         )
                     })
