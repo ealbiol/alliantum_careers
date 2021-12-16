@@ -10,10 +10,13 @@ export function ApplyForm({ jobDepartment, jobTitle }) {
 
 
     const [fileName, setFileName] = React.useState(false)
+    const [fileStatus, setFileStatus] = React.useState(null)
+
 
 
     function handleFileInput(e) {
         setFileName(true)
+        setFileStatus(e.target.value.split("\\").pop())
     }
 
 
@@ -23,6 +26,17 @@ export function ApplyForm({ jobDepartment, jobTitle }) {
         e.preventDefault()
         item.current.click()
     }
+
+
+    const str = "The quick brown fox jumps over the lazy dog."
+    const str2 = str.split(" ")
+
+    console.log("str:--->", str);
+    // console.log("str 2:--->", str2);
+
+
+
+    console.log("fileStatus:--->", fileStatus);
 
     return (
 
@@ -40,16 +54,12 @@ export function ApplyForm({ jobDepartment, jobTitle }) {
             </div>
             <div className="flex mb-2 gap-2" >
                 <input type="email" name="Applicant Email" placeholder="Your email" className="input" required />
-
-
-                <label htmlFor="uploadCV" className="input-upload cursor-pointer flex flex-grow input" onClick={handleLabel} >
-                    {
-                        fileName === false ?
-                            "Your CV"
-                            :
-                            "File Uploaded"
-                    }
-                </label>
+                {
+                    fileName === false ?
+                        <label htmlFor="uploadCV" className="input-upload cursor-pointer flex flex-grow input" onClick={handleLabel} >Your CV</label>
+                        :
+                        <label htmlFor="uploadCV" className="input-upload input-upload--filled cursor-pointer flex flex-grow input" onClick={handleLabel} >{fileStatus}</label>
+                }
                 <input ref={item} type="file" id="uploadCV" name="Applicant CV" placeholder="Your CV" className="flex-grow hidden" accept=".pdf" onChange={handleFileInput} />
 
 
