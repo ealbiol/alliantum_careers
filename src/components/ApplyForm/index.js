@@ -28,6 +28,8 @@ export function ApplyForm({ jobDepartment, jobTitle }) {
     }
 
     console.log("fileStatus:--->", fileStatus);
+    console.log("jobDepartment:--->", jobDepartment);
+    console.log("jobTitle:--->", jobTitle);
 
     return (
 
