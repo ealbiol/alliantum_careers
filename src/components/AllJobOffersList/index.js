@@ -32,7 +32,7 @@ export function AllJobOffersList() {
   `)
 
     const [clickedDepartment, setClickedDepartment] = React.useState(null)
-    const [formVisibility, setFormVisivbility] = React.useState(false)
+    // const [formVisibility, setFormVisivbility] = React.useState(false)
     const [showNotifySubmit, setShowNotifySubmit] = React.useState(false)
     const [submitMessage, setSubmitMessage] = React.useState(false)
 
@@ -46,9 +46,9 @@ export function AllJobOffersList() {
         setClickedDepartment(null)
     }
 
-    const handlePositionForm = () => {
-        setFormVisivbility(!formVisibility)
-    }
+    // const handlePositionForm = () => {
+    //     setFormVisivbility(!formVisibility)
+    // }
 
 
     return (
@@ -107,7 +107,7 @@ export function AllJobOffersList() {
                         </div>
 
                         <div  >
-                            <NotifyMeButton showNotifySubmit={showNotifySubmit} setShowNotifySubmit={setShowNotifySubmit} submitMessage={submitMessage} setSubmitMessage={setSubmitMessage} onClick={handlePositionForm} />
+                            <NotifyMeButton showNotifySubmit={showNotifySubmit} setShowNotifySubmit={setShowNotifySubmit} submitMessage={submitMessage} setSubmitMessage={setSubmitMessage} />
                         </div>
                     </div>
 
@@ -163,7 +163,7 @@ export function AllJobOffersList() {
 
 
                     <div>
-                        <NotifyMeButton showNotifySubmit={showNotifySubmit} setShowNotifySubmit={setShowNotifySubmit} submitMessage={submitMessage} setSubmitMessage={setSubmitMessage} onClick={handlePositionForm} />
+                        <NotifyMeButton showNotifySubmit={showNotifySubmit} setShowNotifySubmit={setShowNotifySubmit} submitMessage={submitMessage} setSubmitMessage={setSubmitMessage} />
                     </div>
 
 
