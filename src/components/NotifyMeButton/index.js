@@ -124,12 +124,6 @@ export function NotifyMeButton({ showNotifySubmit, setShowNotifySubmit, submitMe
                                     classNamePrefix="select"
                                     onChange={handleChangeDepartment}
                                     className="text-black"
-                                    PaperProps={{
-                                        style: {
-
-                                            backgroundColor: "black"
-                                        }
-                                    }}
                                 />
                                 {
                                     userPositions.length > 0 ?
