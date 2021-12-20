@@ -106,8 +106,8 @@ export function AllJobOffersList() {
                             }
                         </div>
 
-                        <div onClick={handlePositionForm} >
-                            <NotifyMeButton showNotifySubmit={showNotifySubmit} setShowNotifySubmit={setShowNotifySubmit} submitMessage={submitMessage} setSubmitMessage={setSubmitMessage} />
+                        <div  >
+                            <NotifyMeButton showNotifySubmit={showNotifySubmit} setShowNotifySubmit={setShowNotifySubmit} submitMessage={submitMessage} setSubmitMessage={setSubmitMessage} onClick={handlePositionForm} />
                         </div>
                     </div>
 

@@ -60,7 +60,6 @@ export default function HeaderBurgerMenu() {
                     'aria-labelledby': 'basic-button',
                 }}
                 sx={{ boxShadow: 0 }}
-                anchorEl={anchorEl}
                 marginThreshold={0}
                 PaperProps={{
                     style: {
