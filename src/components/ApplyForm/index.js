@@ -31,7 +31,7 @@ export function ApplyForm({ jobDepartment, jobTitle }) {
 
     return (
 
-        <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you-for-applying/" className=""  >
+        <form name="contact" method="POST" data-netlify="true" enctype="multipart/form-data" data-netlify-honeypot="bot-field" action="/thank-you-for-applying/"   >
 
             <input type="hidden" name="form-name" value="contact"></input>
             <input type="hidden" name="position" value={jobTitle} />
