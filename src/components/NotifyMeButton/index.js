@@ -124,12 +124,18 @@ export function NotifyMeButton({ showNotifySubmit, setShowNotifySubmit, submitMe
                                     classNamePrefix="select"
                                     onChange={handleChangeDepartment}
                                     className="text-black"
+                                    PaperProps={{
+                                        style: {
+
+                                            backgroundColor: "black"
+                                        }
+                                    }}
                                 />
                                 {
                                     userPositions.length > 0 ?
                                         ""
                                         :
-                                        <div style={{ color: "red" }} ><i>Required Field</i></div>
+                                        <div style={{ color: "red" }} >Required Field</div>
                                 }
                             </div>
                             <div className="flex flex-col w-100 mt-2">

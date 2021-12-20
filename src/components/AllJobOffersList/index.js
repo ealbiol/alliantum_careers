@@ -106,7 +106,7 @@ export function AllJobOffersList() {
                             }
                         </div>
 
-                        <div  >
+                        <div>
                             <NotifyMeButton showNotifySubmit={showNotifySubmit} setShowNotifySubmit={setShowNotifySubmit} submitMessage={submitMessage} setSubmitMessage={setSubmitMessage} />
                         </div>
                     </div>
