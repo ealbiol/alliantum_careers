@@ -10,7 +10,7 @@ function ThankYouForSubscribing() {
             <Seo title="Thank You for subscribing" />
             <div className="container mx-auto mb-6 h-screen flex flex-col justify-center ">
                 <div>
-                    <h1 className="text-md sm:text-lg">We will notify you when new job offers are available</h1>
+                    <h1 className="text-md sm:text-lg">We will notify you when new job offers are available.</h1>
                     <AnchorLink to="/" >
                         <button className="btn btn-primary">Go back home</button>
                     </AnchorLink>

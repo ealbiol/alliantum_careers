@@ -56,7 +56,7 @@ export function ApplyForm({ jobDepartment, jobTitle }) {
                                 "Your CV"}
                         </label>
                 }
-                <input ref={item} type="file" id="uploadCV" name="Applicant CV" placeholder="Your CV" className="flex-grow hidden" accept=".pdf" onChange={handleFileInput} />
+                <input ref={item} type="file" id="uploadCV" name="Applicant CV" placeholder="Your CV" className="flex-grow hidden" onChange={handleFileInput} />
 
 
             </div>

@@ -171,7 +171,7 @@ export function NotifyMeButton({ showNotifySubmit, setShowNotifySubmit, submitMe
 
             }
             {submitMessage &&
-                <div className="card bg-white mt-3 dark:bg-black dark:border-white"  >We sent you a verification email! Please check your inbox.</div>
+                <div className="card bg-white mt-3 dark:bg-black dark:border-white">We sent you a verification email! Please check your inbox.</div>
             }
         </div>
 
