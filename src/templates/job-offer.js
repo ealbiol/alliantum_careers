@@ -62,7 +62,7 @@ const JobOfferTemplate = ({ data, location }) => {
             />
 
             <div className="block xl:hidden my-6">
-              <ApplyForm jobDepartment={jobDepartment} />
+              <ApplyForm jobDepartment={jobDepartment} jobTitle={jobTitle} />
             </div>
 
             <div className="my-6" >

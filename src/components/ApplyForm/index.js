@@ -27,9 +27,7 @@ export function ApplyForm({ jobDepartment, jobTitle }) {
         item.current.click()
     }
 
-    console.log("fileStatus:--->", fileStatus);
-    console.log("jobDepartment:--->", jobDepartment);
-    console.log("jobTitle:--->", jobTitle);
+
 
     return (
 
