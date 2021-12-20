@@ -8,7 +8,7 @@ function ThankYouForSubscribing() {
     return (
         <Layout>
             <Seo title="Thank You for subscribing" />
-            <div className="container mx-auto my-6 h-screen flex flex-col justify-center ">
+            <div className="container mx-auto mb-6 h-screen flex flex-col justify-center ">
                 <div>
                     <h1 className="text-md sm:text-lg">We will notify you when new job offers are available</h1>
                     <AnchorLink to="/" >
