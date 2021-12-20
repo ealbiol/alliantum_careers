@@ -12,13 +12,11 @@ export function NotifyMeButton({ showNotifySubmit, setShowNotifySubmit, submitMe
 
     const [userEmail, setUserEmail] = React.useState("")
     const [userPositions, setUserPositions] = React.useState([allPositionsReactSelect[0].id])
-    // const [submitMessage, setSubmitMessage] = React.useState(false)
     const theme = useTheme();
 
 
     const URL = "https://api.sendinblue.com/v3/contacts"
 
-    console.log("userPosition:--->", userPositions);
 
     function handleUserEmail(e) {
         e.preventDefault();

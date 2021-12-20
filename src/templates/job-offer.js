@@ -25,6 +25,7 @@ const JobOfferTemplate = ({ data, location }) => {
       <br />
       <br />
       <br />
+      <br />
 
 
       <div className="container-main" >
