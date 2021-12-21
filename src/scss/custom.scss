@@ -176,6 +176,10 @@ input[type="file"] {
   top: 0;
 }
 
+#jobs-table {
+  min-height: 940px;
+}
+
 /* ------- HERO HEADER ------- */
 .hero-header {
   position: relative;
@@ -557,9 +561,7 @@ MEDIAQUERIES
 
 @media (max-width: 1920px) and (max-height: 1024px) {
   
-  #jobs-table {
-    min-height: 940px;
-  }
+  
 
 }
 
