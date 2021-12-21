@@ -128,7 +128,7 @@ export function NotifyMeButton({ showNotifySubmit, setShowNotifySubmit, submitMe
                                     userPositions.length > 0 ?
                                         ""
                                         :
-                                        <div style={{ color: "red" }} >Required Field</div>
+                                        <div style={{ color: "red", marginTop: "5px", marginLeft: "5px" }} >Required Field</div>
                                 }
                             </div>
                             <div className="flex flex-col w-100 mt-2">
