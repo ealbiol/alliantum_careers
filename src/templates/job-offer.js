@@ -76,7 +76,7 @@ const JobOfferTemplate = ({ data, location }) => {
           </div>
 
           <div className="hidden xl:flex xl:w-6/12 justify-end mt-7"  >
-            <div className="max-w-md flex-grow fixed mt-6 text-black" >
+            <div className="xl:w-px-512 flex-grow fixed mt-6 text-black" >
               <ApplyForm jobDepartment={jobDepartment} jobTitle={jobTitle} />
             </div>
           </div>
