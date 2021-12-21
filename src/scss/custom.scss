@@ -46,22 +46,39 @@ input[type="file"] {
   }
 }
 
+.select__control {
+  border-radius: 0.444rem!important;
+  border: solid 2px #d7dce1!important;
+}
+
+.dark .select__control {
+  border-color: #464748!important;
+}
+
 .select__value-container {
   padding: 0.889rem !important;
-  background-color: black;
-  border: solid 2px #464748;
-  border-radius: 0.444rem;
 }
+
+.dark .select__multi-value {
+  background: #141414;
+  color: white;
+  border: solid 1px #4e4e4e;
+  border-radius: 6px; 
+}
+
+.dark .select__control {
+  background-color: black;
+  border-color: #464748;
+
+  .select__multi-value__label {
+    color: white;
+  }
+}
+
 
 .input-upload {
   @apply input bg-white;
   border-style: dashed;
-}
-
-.input-dark {
-  background: black !important;
-  color: white;
-  border-color: gray;
 }
 
 .input-icon input[type="url"] {

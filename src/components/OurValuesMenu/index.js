@@ -29,7 +29,7 @@ export function OurValuesMenu({ allOurValues }) {
 
                                             <li key={index} className="flex w-full flex-grow" >
                                                 <button
-                                                    className="p-4 flex-grow uppercase flex items-center justify-between cursor-pointer"
+                                                    className="p-3-5 font-bold flex-grow uppercase flex items-center justify-between cursor-pointer"
                                                     onClick={() => (setShowValueCard(value.id))}
                                                 >
                                                     {value.title}
