@@ -20,7 +20,7 @@ export function OurValuesSection() {
         <div className="blurred-gradient-wrapper">
             <div className="blurred-gradient-container">
                 <div className="blurred-gradient-content relative">
-                    <div className="xl:my-7" >
+                    <div className="xl:py-2" >
                         <div className="container-main">
                             <OurValuesMenu
                                 allOurValues={allOurValues}

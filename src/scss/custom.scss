@@ -48,6 +48,9 @@ input[type="file"] {
 
 .select__value-container {
   padding: 0.889rem !important;
+  background-color: black;
+  border: solid 2px #464748;
+  border-radius: 0.444rem;
 }
 
 .input-upload {
@@ -495,10 +498,10 @@ MEDIAQUERIES
 --------------------
     sm: 640px
     md: 768px
-    lg: '1024px
-    xl: '1280px
-    xxl: '1536px
-    DEFAULT: '1450px
+    lg: 1024px
+    xl: 1280px
+    xxl: 1536px
+    DEFAULT: 1450px
 */
 
 @media screen and (min-width: 768px) {
@@ -549,5 +552,23 @@ MEDIAQUERIES
         max-height: unset!important;
         margin-right: 0;
     }
+
+}
+
+@media (max-width: 1920px) and (max-height: 1024px) {
+  
+  #jobs-table {
+    min-height: 940px;
+  }
+
+}
+
+@media (min-width: 1024px) and (max-height: 1024px) {
+
+  .marquee-wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
 
 }

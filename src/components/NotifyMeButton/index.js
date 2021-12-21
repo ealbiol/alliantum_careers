@@ -119,7 +119,7 @@ export function NotifyMeButton({ showNotifySubmit, setShowNotifySubmit, submitMe
                                     isMulti
                                     name="positions"
                                     options={options}
-                                    className="flex-grow input dark:input-dark"
+                                    className="flex-grow input"
                                     classNamePrefix="select"
                                     onChange={handleChangeDepartment}
                                     className="text-black"
@@ -137,7 +137,7 @@ export function NotifyMeButton({ showNotifySubmit, setShowNotifySubmit, submitMe
                                     type="email"
                                     name="Notify Me"
                                     placeholder="myEmail@gmail.com" onChange={(e) => setUserEmail(e.currentTarget.value)}
-                                    className="flex-grow dark:input-dark text-black"
+                                    className="flex-grow input text-black"
                                     required
                                 />
                             </div>

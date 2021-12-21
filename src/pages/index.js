@@ -137,7 +137,7 @@ function IndexPage() {
 
         {/* ------------> Your Benefits */}
         <div id="your-benefits" >
-          <div className="container mx-auto my-6">
+          <div className="container mx-auto pt-6 mb-2">
             <span className="pretitle">Your benefits</span>
             <h3 className="title text-md xl:w-6/12">Work in an international company, with a happy team, in a great office</h3>
             <YourBenefits />
