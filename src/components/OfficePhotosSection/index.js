@@ -100,8 +100,8 @@ export function OfficePhotos() {
                             style={{
                                 display: "flex",
                                 position: "absolute",
-                                left: `${percentage * 50}%`,
-                                transform: "translate(-35%,-0%)",
+                                left: `${percentage * 120}%`,
+                                transform: "translate(-50%,-0%)",
                                 width: 1000,
                             }} >
                             {
@@ -129,8 +129,8 @@ export function OfficePhotos() {
                             style={{
                                 display: "flex",
                                 position: "absolute",
-                                left: `${percentage * 100}%`,
-                                transform: "translate(-35%,-0%)",
+                                left: `${percentage * 200}%`,
+                                transform: "translate(-65%,-0%)",
                                 width: 1000,
                             }} >
                             {
