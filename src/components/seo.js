@@ -33,10 +33,10 @@ function Seo({ description, lang, meta, title }) {
   const defaultTitle = site.siteMetadata?.title
 
   // console.log("theme:--->", theme);
-
   const theme_color_meta = theme === "dark" ? "#141414" : "#f0f0f0"
-
   // console.log("theme_color_meta:--->", theme_color_meta);
+
+
 
   return (
     <Helmet
@@ -81,7 +81,8 @@ function Seo({ description, lang, meta, title }) {
         {
           name: `theme-color`,
           content: theme_color_meta
-        }
+        },
+
       ].concat(meta)}
     />
   )
