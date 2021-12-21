@@ -37,19 +37,18 @@ export function ApplyForm({ jobDepartment, jobTitle }) {
             <input type="hidden" name="position" value={jobTitle} />
 
             <div className="flex mb-2 gap-2"  >
-                <input type="text" name="Applicant Name" placeholder="Your name" className="flex-grow input" required />
-                <input type="text" name="Applicant Last Name" placeholder="Your last name" className="flex-grow input" required />
+                <input type="text" name="Applicant Full Name" placeholder="Your full name" className="flex-grow input" required />
             </div>
             <div className="flex mb-2">
                 <textarea name="subject" id="subject" rows="5" placeholder="Tell us about your talents" className="flex-grow input" style={{ resize: "none" }} required />
             </div>
-            <div className="flex mb-2 gap-2" >
+            <div className="flex flex-col lg:flex-row mb-2 gap-2" >
                 <input type="email" name="Applicant Email" placeholder="Your email" className="input" required />
                 {
                     fileName === false ?
-                        <label htmlFor="uploadCV" className="input-upload cursor-pointer flex flex-grow input" onClick={handleLabel} >Your CV</label>
+                        <label htmlFor="uploadCV" className="input-upload cursor-pointer flex flex-grow input w-100" onClick={handleLabel} >Your CV</label>
                         :
-                        <label htmlFor="uploadCV" className="input-upload input-upload--filled cursor-pointer flex flex-grow input" onClick={handleLabel} >
+                        <label htmlFor="uploadCV" className="input-upload input-upload--filled cursor-pointer flex flex-grow input w-100" onClick={handleLabel} >
                             {fileStatus ?
                                 fileStatus
                                 :

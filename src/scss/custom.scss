@@ -59,6 +59,11 @@ input[type="file"] {
   padding: 0.889rem !important;
 }
 
+.select__multi-value {
+  border: solid 1px #d7dce1;
+  border-radius: 6px; 
+}
+
 .dark .select__multi-value {
   background: #141414;
   color: white;
@@ -79,6 +84,41 @@ input[type="file"] {
 .input-upload {
   @apply input bg-white;
   border-style: dashed;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 100%;
+    background: rgb(240,240,240);
+    background: linear-gradient(270deg, rgba(240,240,240,1) 33%, rgba(240,240,240,0) 100%);
+  }
+}
+
+.dark .input-upload {
+  border-color: #4e4e4e;
+  border-style: dashed;
+  color: #4e4e4e;
+
+  &::after {
+    background: rgb(0,0,0);
+    background: linear-gradient(270deg, rgba(0,0,0,1) 33%, rgba(0,0,0,0) 100%);
+    transition: all ease-in-out 0.2s;
+  }
+}
+
+.dark .input-upload--filled {
+  color: white;
+}
+
+.input-upload--filled {
+  color: black;
 }
 
 .input-icon input[type="url"] {
@@ -181,12 +221,6 @@ input[type="file"] {
 .ourvalues__images {
   top: 0;
   z-index: 99999999999;
-}
-
-.ourvalues-image__above {
-}
-
-.ourvalues-image__below {
 }
 
 .ourvalues__content {

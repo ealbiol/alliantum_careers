@@ -832,6 +832,7 @@ module.exports = {
             ...theme('spacing'),
             'px-230': '230px',
             'px-420': '420px',
+            'px-512': '512px',
             'container-sm': '990px',
             'container-md': '1024px',
             '1/12': '8.333333%',
