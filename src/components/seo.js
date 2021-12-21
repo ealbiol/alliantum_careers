@@ -9,6 +9,8 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import useTheme from "../hooks/useTheme";
+
 
 function Seo({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
@@ -25,8 +27,15 @@ function Seo({ description, lang, meta, title }) {
     `
   )
 
+  const theme = useTheme();
+
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
+
+  console.log("theme:--->", theme);
+
+
+  const theme_color_meta = theme === "dark" ? "#141414" : "#f0f0f0"
 
   return (
     <Helmet
@@ -70,7 +79,7 @@ function Seo({ description, lang, meta, title }) {
         },
         {
           name: `theme-color`,
-          content: `#ffffff`
+          content: theme_color_meta
         }
       ].concat(meta)}
     />
