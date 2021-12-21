@@ -22,7 +22,7 @@ export function OfficePhotos() {
 
     return (
         <div >
-            <div className="mb-3" >
+            <div className="mb-3 hidden lg:block" >
                 <Parallax
                     style={{
                         height: "240px",
@@ -51,7 +51,7 @@ export function OfficePhotos() {
                 </Parallax>
             </div>
 
-            <div>
+            <div className="hidden lg:block" >
                 <Parallax
                     style={{
                         height: "240px",
@@ -86,6 +86,68 @@ export function OfficePhotos() {
                 >
                 </Parallax>
             </div>
+
+
+            {/* Mobile version */}
+
+            <div className="lg:hidden" >
+                <Parallax
+                    style={{
+                        height: "150px",
+                    }}
+                    renderLayer={(percentage) => (
+                        <div
+                            style={{
+                                display: "flex",
+                                position: "absolute",
+                                left: `${percentage * 50}%`,
+                                transform: "translate(-35%,-0%)",
+                                width: 1000,
+                            }} >
+                            {
+                                firstLinePhotos.map((officePhoto, index) => {
+                                    return (
+                                        <div key={index} >
+                                            <OfficePhoto key={index} officePhoto={officePhoto} />
+                                        </div>
+                                    )
+                                })
+                            }
+                        </div>
+                    )}
+                >
+                </Parallax>
+            </div>
+
+            <div className="lg:hidden">
+                <Parallax
+                    style={{
+                        height: "150px",
+                    }}
+                    renderLayer={(percentage) => (
+                        <div
+                            style={{
+                                display: "flex",
+                                position: "absolute",
+                                left: `${percentage * 100}%`,
+                                transform: "translate(-35%,-0%)",
+                                width: 1000,
+                            }} >
+                            {
+                                secondLinePhotos.map((officePhoto, index) => {
+                                    return (
+                                        <div key={index} >
+                                            <OfficePhoto key={index} officePhoto={officePhoto} />
+                                        </div>
+                                    )
+                                })
+                            }
+                        </div>
+                    )}
+                >
+                </Parallax>
+            </div>
+
 
 
         </div>
