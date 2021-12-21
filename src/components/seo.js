@@ -32,11 +32,11 @@ function Seo({ description, lang, meta, title }) {
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
 
-  console.log("theme:--->", theme);
-
+  // console.log("theme:--->", theme);
 
   const theme_color_meta = theme === "dark" ? "#141414" : "#f0f0f0"
-  console.log("theme_color_meta:--->", theme_color_meta);
+
+  // console.log("theme_color_meta:--->", theme_color_meta);
 
   return (
     <Helmet
