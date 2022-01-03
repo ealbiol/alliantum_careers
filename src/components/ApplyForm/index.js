@@ -8,17 +8,13 @@ export function ApplyForm({ jobDepartment, jobTitle }) {
 
     const theme = useTheme();
 
-
     const [fileName, setFileName] = React.useState(false)
     const [fileStatus, setFileStatus] = React.useState(null)
-
-
 
     function handleFileInput(e) {
         setFileName(true)
         setFileStatus(e.target.value.split("\\").pop())
     }
-
 
     const item = React.useRef();
 

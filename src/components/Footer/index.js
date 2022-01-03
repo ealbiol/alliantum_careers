@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import { getAllHeaderAndFooterSections, getAllAdresses } from "../../data/data"
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import AlliantumLogoWhite from "../../images/header-photos/Alliantum-white.svg"
+import AlliantumIconLinkedin from "../../images/social/social-linkedin.svg"
 
 export default function Footer() {
 
@@ -55,13 +56,12 @@ export default function Footer() {
                             </ul>
                         </nav>
                         <nav className="col-span-1 md:col-span-1 lg:col-span-3">
-                            <div className="hidden">
-                                <p className="mb-3 text-xs font-semibold tracking-wider text-gray-400 uppercase">Company</p>
-                                <AnchorLink to="https://www.alliantum.com/" >
-                                    <button className="flex mb-3 font-medium text-gray-500 transition hover:text-gray-700 md:mb-2 hover:text-primary" >About us</button>
-                                </AnchorLink>
-                                <AnchorLink to="https://www.alliantum.com/" >
-                                    <button className="flex mb-3 font-medium text-gray-500 transition hover:text-gray-700 md:mb-2 hover:text-primary" >Our services</button>
+                            <div className="">
+                                <p className="mb-3 text-xs font-semibold tracking-wider text-gray-400 uppercase">Social</p>
+                                <AnchorLink target="_blank" to="https://www.linkedin.com/company/alliantum/mycompany/" >
+                                    <button className="flex mb-3 font-medium text-gray-500 transition hover:text-gray-700 md:mb-2 hover:text-primary" >
+                                        <AlliantumIconLinkedin className="w-3" />
+                                    </button>
                                 </AnchorLink>
                             </div>
                         </nav>
