@@ -93,7 +93,7 @@ export const allBenefits = [
     { id: 3, title: "Team Activities", content: "We organise team activities and it is easy to see us many days eating hamburgers somewhere near the office" },
     { id: 4, title: "Work-Life Balance", content: "Enjoy your life, your time, your family... You only live once! We need you to be happy" },
     { id: 5, title: "Great Location", content: "Our office is located in the centre of Malaga, close to the shopping and entertainment area" },
-    { id: 6, title: "Coffee and Tea", content: "Coffee and tea for everyone and there is always someone to bring something to go with it" },
+    { id: 6, title: "Coffee, Tea and Fruit", content: "Coffee, Tea and Fruit for everyone. Staying healthy boosts productivity and happiness" },
 ]
 
 export async function getAllBenefits() {
