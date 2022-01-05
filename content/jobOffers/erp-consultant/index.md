@@ -27,7 +27,7 @@ We are an international company with German spirit but with Spanish passion, loc
 **Would you be able to bring us the following skills/knowledge?**
 
 - -- Experience in ERP/CRM
-- --  Experience working with clients.
+- -- Experience working with clients.
 - -- Negotiation skills.
 - -- Time management.
 - -- Profile with autonomy and initiative.
@@ -49,4 +49,3 @@ We are an international company with German spirit but with Spanish passion, loc
 <br/>
 
 Have we hit your interest? It's time to share your knowledge and passion with us. Become part of our team and apply. We are sure you will be the right candidate for our company. Participate in the consulting services we offer to our partners and customers, on the functional side.
-
