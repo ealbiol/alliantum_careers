@@ -184,14 +184,6 @@ module.exports = {
     "gatsby-plugin-react-svg",
     "gatsby-plugin-styled-components",
     "styled-components",
-    {
-      resolve: `gatsby-plugin-subfont`,
-      options: {
-        silent: true,
-        fallbacks: false,
-        inlineFonts: true,
-        fontDisplay: "swap",
-      },
-    },
+
   ],
 }
