@@ -14,7 +14,7 @@ function ThankYouForApplying() {
                     <h1 className="text-md sm:text-lg">Thank you for applying!</h1>
 
                     <AnchorLink to="/" >
-                        <button className="btn btn-primary">Go back home</button>
+                        <button aria-label="Go back home button" className="btn btn-primary">Go back home</button>
                     </AnchorLink>
                 </div>
             </div>

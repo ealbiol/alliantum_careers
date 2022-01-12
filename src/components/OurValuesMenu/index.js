@@ -31,6 +31,7 @@ export function OurValuesMenu({ allOurValues }) {
                                                 <button
                                                     className="p-3-5 font-bold flex-grow uppercase flex items-center justify-between cursor-pointer"
                                                     onClick={() => (setShowValueCard(value.id))}
+                                                    aria-label={`Values Menu button ${index}`}
                                                 >
                                                     {value.title}
                                                     <span className="block">{showValueCard === value.id ? <ArrowLeft /> : <ArrowRight />}</span>

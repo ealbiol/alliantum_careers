@@ -59,6 +59,7 @@ export function AllJobOffersList() {
 
                         <div className="flex mb-3">
                             <button
+                                aria-label="Departments Name"
                                 style={{
                                     backgroundColor: clickedDepartment ? "" : "#141414",
                                     color: clickedDepartment ? "" : "#f0f0f0"
@@ -102,7 +103,7 @@ export function AllJobOffersList() {
                             {
                                 showNotifySubmit === true ?
                                     "" :
-                                    <button className="btn btn-white" onClick={() => setShowNotifySubmit(false)}>Close</button>
+                                    <button aria-label="Close Button" className="btn btn-white" onClick={() => setShowNotifySubmit(false)}>Close</button>
                             }
                         </div>
 
@@ -127,6 +128,7 @@ export function AllJobOffersList() {
                                     color: clickedDepartment ? "" : "#f0f0f0"
 
                                 }}
+                                aria-label="Clicked Department"
                                 className="text-xs py-1 px-3 border border-black dark:border-white rounded-xl mr-1 mb-2 self-start"
                                 onClick={() => (allRoles())} >
                                 All roles

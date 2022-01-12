@@ -36,8 +36,8 @@ export function CookieBanner() {
 
                 <div>
                     <div>Cookie Banner</div>
-                    <button onClick={handleAcceptCookies} >Accept</button>
-                    <button onClick={handleRejectCookies} >Cancel</button>
+                    <button aria-label="Accept Cookie Banner" onClick={handleAcceptCookies} >Accept</button>
+                    <button aria-label="Cancel Cookie Banner" onClick={handleRejectCookies} >Cancel</button>
                 </div>
             }
 

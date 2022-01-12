@@ -71,7 +71,7 @@ export function ApplyForm({ jobDepartment, jobTitle }) {
                 }
             </div>
             <div className="flex" >
-                <button type="submit" className="btn btn-primary flex-grow" >Apply for this job</button>
+                <button type="submit" aria-label="Submit job offer" className="btn btn-primary flex-grow" >Apply for this job</button>
             </div>
         </form>
 

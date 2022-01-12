@@ -23,6 +23,7 @@ export function DepartmentsMenu({ allDepartments, clickedDep, setClickedDep }) {
                                 backgroundColor: department === clickedDep ? "#141414" : "",
                                 color: department === clickedDep ? "white" : ""
                             }}
+                            aria-label="Department Unite"
                             className="text-xs py-1 px-3 border border-black dark:border-white rounded-xl mr-1 mb-2"
                             onClick={() => filterDepartment(department)}
                             key={index} >

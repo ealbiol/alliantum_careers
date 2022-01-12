@@ -67,6 +67,7 @@ export function NotifyMeButton({ showNotifySubmit, setShowNotifySubmit, submitMe
                         <button
                             className="btn btn-white btn-icon mb-3"
                             onClick={handleBoolean}
+                            aria-label="Notify Me Close window in dark mode"
                         >Close
                         </button>
                     </div>
@@ -75,6 +76,7 @@ export function NotifyMeButton({ showNotifySubmit, setShowNotifySubmit, submitMe
                     <button
                         className="btn btn-black btn-icon mb-3"
                         onClick={handleBoolean}
+                        aria-label="Notify Me Close Windor in light mode"
                     >Close
                     </button>
 
@@ -84,6 +86,7 @@ export function NotifyMeButton({ showNotifySubmit, setShowNotifySubmit, submitMe
                     <button
                         className="btn btn-white btn-icon"
                         onClick={handleBoolean}
+                        aria-label="Notify Me on new jobs in dark mode"
                     >
 
                         <span><IconBellBlack /></span>
@@ -94,6 +97,7 @@ export function NotifyMeButton({ showNotifySubmit, setShowNotifySubmit, submitMe
                     <button
                         className="btn btn-black btn-icon"
                         onClick={handleBoolean}
+                        aria-label="Notify Me on new jobs in light mode"
                     >
 
                         <span><IconBellWhite /></span>
@@ -146,11 +150,11 @@ export function NotifyMeButton({ showNotifySubmit, setShowNotifySubmit, submitMe
                             <div className="flex flex-grow">
                                 {
                                     userPositions.length > 0 ?
-                                        <button type="submit" className="btn btn-primary w-100 flex flex-grow" >
+                                        <button type="submit" className="btn btn-primary w-100 flex flex-grow" aria-label="Subscribe to jobs enabled">
                                             Subscribe to jobs
                                         </button>
                                         :
-                                        <button type="submit" className="btn btn-primary w-100" disabled>
+                                        <button type="submit" className="btn btn-primary w-100" aria-label="Subscribe to jobs disabled" disabled>
                                             Subscribe to jobs
                                         </button>
                                 }

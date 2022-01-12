@@ -59,7 +59,7 @@ export default function Footer() {
                             <div className="">
                                 <p className="mb-3 text-xs font-semibold tracking-wider text-gray-400 uppercase">Social</p>
                                 <AnchorLink target="_blank" to="https://www.linkedin.com/company/alliantum/mycompany/" >
-                                    <button className="flex mb-3 font-medium text-gray-500 transition hover:text-gray-700 md:mb-2 hover:text-primary" >
+                                    <button aria-label="Alliantum Icon Linkedin" className="flex mb-3 font-medium text-gray-500 transition hover:text-gray-700 md:mb-2 hover:text-primary" >
                                         <AlliantumIconLinkedin className="w-3" />
                                     </button>
                                 </AnchorLink>
