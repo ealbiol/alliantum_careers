@@ -444,7 +444,7 @@ export function OfficeCard({ addressUnite }) {
                             {
                                 addressUnite.country === "Spain" ?
 
-                                    <a className="text-xs" href={`tel:${addressUnite.phone}`}>{addressUnite.phone}</a>
+                                    <a className="text-xs" aria-label={`Link to ${addressUnite.phone} phone number`} href={`tel:${addressUnite.phone}`}>{addressUnite.phone}</a>
                                     :
                                     ""
                             }

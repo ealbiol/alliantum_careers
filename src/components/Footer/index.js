@@ -75,7 +75,7 @@ export default function Footer() {
                                             <div className="text-xs">{address.address}</div>
                                             {
                                                 address.country === "Spain" ?
-                                                    <a className="text-xs" href={`tel:${address.phone}`}><div>{address.phone}</div></a>
+                                                    <a className="text-xs" aria-label={`Footer link to ${address.country} office`} href={`tel:${address.phone}`}><div>{address.phone}</div></a>
                                                     :
                                                     ""
                                             }

@@ -141,6 +141,7 @@ export function NotifyMeButton({ showNotifySubmit, setShowNotifySubmit, submitMe
                                     name="Notify Me"
                                     placeholder="myEmail@gmail.com" onChange={(e) => setUserEmail(e.currentTarget.value)}
                                     className="flex-grow input text-black"
+                                    aria-label="Notify Me Email Input"
                                     required
                                 />
                             </div>
