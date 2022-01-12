@@ -18,8 +18,8 @@ export function EmployeesGallery() {
     const firstLinePhotos = allEmployeePhotos.slice(0, 8);
     const secondLinePhotos = allEmployeePhotos.slice(8, 16);
 
-    const doubleFirstLinePhotos = firstLinePhotos.concat(firstLinePhotos)
-    const doubleSecondLinePhotos = secondLinePhotos.concat(secondLinePhotos)
+    // const doubleFirstLinePhotos = firstLinePhotos.concat(firstLinePhotos)
+    // const doubleSecondLinePhotos = secondLinePhotos.concat(secondLinePhotos)
 
 
 
