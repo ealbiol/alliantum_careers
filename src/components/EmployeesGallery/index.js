@@ -29,7 +29,7 @@ export function EmployeesGallery() {
             <div className="hero-back-content">
                 <div className="hero-faces-row mb-2" >
                     {
-                        doubleFirstLinePhotos.map((employee, index) => {
+                        firstLinePhotos.map((employee, index) => {
                             return (
                                 <div key={index} className="hero-faces-row__item absolute top-0 py-12 animate-marquee2 whitespace-nowrap" >
                                     <EmployeePhoto className="mr-2 mb-2" photo={employee.photo} firstName={employee.firstName} surname={employee.surname} />
@@ -45,7 +45,7 @@ export function EmployeesGallery() {
 
                 <div className="hero-faces-row mb-2" >
                     {
-                        doubleSecondLinePhotos.map((employee, index) => {
+                        secondLinePhotos.map((employee, index) => {
                             return (
                                 <div key={index} className="hero-faces-row__item absolute top-0 py-12 animate-marquee2 whitespace-nowrap" >
                                     <EmployeePhoto className="mr-2 mb-2" photo={employee.photo} />
