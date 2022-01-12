@@ -12,7 +12,7 @@ function ThankYouForSubscribing() {
                 <div>
                     <h1 className="text-md sm:text-lg">We will notify you when new job offers are available.</h1>
                     <AnchorLink to="/" >
-                        <button className="btn btn-primary">Go back home</button>
+                        <button className="btn btn-primary" aria-label="Go Back Home button">Go back home</button>
                     </AnchorLink>
                 </div>
             </div>

@@ -10,8 +10,7 @@ function ThankYouForApplying() {
             <Seo title="Thank You for applying" />
             <div className="container mx-auto mb-6 h-screen flex flex-col justify-center ">
                 <div>
-                    <h1 className="text-md sm:text-lg">Application sent.</h1>
-                    <h1 className="text-md sm:text-lg">Thank you for applying!</h1>
+                    <h1 className="text-md sm:text-lg">Application sent.<br />Thank you for applying!</h1>
 
                     <AnchorLink to="/" >
                         <button aria-label="Go back home button" className="btn btn-primary">Go back home</button>
