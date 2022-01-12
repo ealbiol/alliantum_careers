@@ -23,6 +23,6 @@ export function ValuePhoto({ value }) {
 
 
   return (
-    <GatsbyImage className="w-full rounded-lg overflow-hidden" image={getImage(photoValue)} alt="Photo Office" />
+    <GatsbyImage loading="lazy" className="w-full rounded-lg overflow-hidden" image={getImage(photoValue)} alt={`Photo Office ${value}`} />
   )
 }
