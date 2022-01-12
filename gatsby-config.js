@@ -184,6 +184,13 @@ module.exports = {
     "gatsby-plugin-react-svg",
     "gatsby-plugin-styled-components",
     "styled-components",
-    'gatsby-plugin-robots-txt'
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://www.alliantum.es/',
+        sitemap: 'https://www.example.com/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    }
   ],
 }
