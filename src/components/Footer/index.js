@@ -30,7 +30,7 @@ export default function Footer() {
                     <div className="grid grid-cols-2 gap-10 mb-3 md:grid-cols-3 lg:grid-cols-12 lg:gap-20">
                         <div className="col-span-3">
                             <div>
-                                <Link to="/" >
+                                <Link aria-label="logo" to="/" >
                                     <AlliantumLogoWhite />
                                 </Link>
                                 <AnchorLink className="btn btn-outline-white mt-3" to="/#jobs-table">Work with us</AnchorLink>

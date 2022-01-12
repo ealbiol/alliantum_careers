@@ -1,6 +1,7 @@
 import * as React from "react"
 import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 import useTheme from "../../hooks/useTheme";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 
 const containerStyle = {
