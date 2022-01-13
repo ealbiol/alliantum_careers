@@ -23,6 +23,6 @@ export function OfficePhoto({ officePhoto }) {
 
 
   return (
-    <GatsbyImage className="rounded-lg mr-3" image={getImage(photoOffice)} alt="Alliantum office photo" />
+    <GatsbyImage loading="lazy" className="rounded-lg mr-3" image={getImage(photoOffice)} alt="Alliantum office photo" />
   )
 }
