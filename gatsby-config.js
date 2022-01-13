@@ -188,7 +188,7 @@ module.exports = {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://www.alliantum.es/',
-        sitemap: 'https://www.example.com/sitemap.xml',
+        sitemap: 'https://www.alliantum.es/sitemap/sitemap-index.xml',
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },
