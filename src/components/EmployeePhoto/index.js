@@ -30,6 +30,6 @@ export default function EmployeePhoto({ photo, firstName, surname }) {
 
 
   return (
-    <GatsbyImage className="rounded-lg" style={{ transform: "scale(1.01)" }} image={getImage(photoEmployee)} alt={altEmployeeName} />
+    <GatsbyImage loading="lazy" className="rounded-lg" style={{ transform: "scale(1.01)" }} image={getImage(photoEmployee)} alt={altEmployeeName} />
   )
 }

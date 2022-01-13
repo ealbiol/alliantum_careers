@@ -61,6 +61,7 @@ export function AstronautSection() {
                                                         alt="Astronaut"
                                                         placeholder="blurred"
                                                         layout="fixed"
+                                                        loading="lazy"
                                                     />
                                                 </div>
                                             </div>
