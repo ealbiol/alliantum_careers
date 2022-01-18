@@ -55,7 +55,7 @@ export function ApplyForm({ jobDepartment, jobTitle }) {
 
             </div>
             <div className="flex mb-2">
-                {jobDepartment === "Web Developer" || jobDepartment === "Odoo Developer" || jobDepartment === "Sys Admin" || jobDepartment === "IT" || jobDepartment === "Business System" || jobTitle === "Frontend Developer" ?
+                {jobDepartment === "Web Developer" || jobDepartment === "Odoo Developer" || jobDepartment === "Sys Admin" || jobDepartment === "IT" || jobDepartment === "Business Systems" || jobTitle === "Frontend Developer" ?
                     <div className="flex flex-grow relative input-icon items-center">
                         {
                             theme === "dark" ?
