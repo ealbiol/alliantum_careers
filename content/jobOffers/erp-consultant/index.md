@@ -2,7 +2,7 @@
 title: ERP Consultant
 date: "2015-05-01T22:12:03.284Z"
 description: "Hello World"
-department: "Business System"
+department: "Business Systems"
 experience: "At least 2 years"
 languageRequired1: "English - Advanced Level"
 # languageRequired2: "French - Advanced"

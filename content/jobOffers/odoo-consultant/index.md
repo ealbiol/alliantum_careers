@@ -1,6 +1,6 @@
 ---
 title: Odoo Consultant (ERP/OpenERP) - Remote
-department: "Business System"
+department: "Business Systems"
 experience: "At least 2 years"
 languageRequired1: "English - Advanced Level"
 ---

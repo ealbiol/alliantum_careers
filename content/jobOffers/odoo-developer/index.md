@@ -1,6 +1,6 @@
 ---
 title: Odoo Developer (Python)
-department: "Business System"
+department: "Business Systems"
 experience: "At least 1 year"
 languageRequired1: "English - Advanced Level"
 ---
