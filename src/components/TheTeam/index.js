@@ -33,14 +33,19 @@ export function TheTeam() {
 
             <div className="blurred-gradient-wrapper">
                 <div className="blurred-gradient-container">
-                    <div className="blurred-gradient-content">
+                    <div className="blurred-gradient-content flex-col">
                         <div className="w-100 relative z-10">
-                            <EmployeesGallery />
+                            <div className="employeesGallery-offset" >
+                                <EmployeesGallery />
+                            </div>
                         </div>
-                        <div className="card-bg bg-white md:w-px-420 mx-auto -mt-7 mb-6 relative z-10">
-                            <span className="title text-black text-md block">Do you want to grow with us?</span>
-                            <AnchorLink className="btn btn-black btn-full text-center mt-4" to={"/#jobs-table"} >See current job offers</AnchorLink>
+                        <div className="container-main" >
+                            <div className="card-bg bg-white md:w-px-420 mx-auto lg:-mt-7 mb-6 relative z-10">
+                                <span className="title text-black text-md block">Do you want to grow with us?</span>
+                                <AnchorLink className="btn btn-black btn-full text-center mt-4" to={"/#jobs-table"} >See current job offers</AnchorLink>
+                            </div>
                         </div>
+
                     </div>
 
                     <CircleBlur blur="160" color="#F9B457" top="40%" left="16%" size="700"

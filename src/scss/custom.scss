@@ -47,12 +47,12 @@ input[type="file"] {
 }
 
 .select__control {
-  border-radius: 0.444rem!important;
-  border: solid 2px #d7dce1!important;
+  border-radius: 0.444rem !important;
+  border: solid 2px #d7dce1 !important;
 }
 
 .dark .select__control {
-  border-color: #464748!important;
+  border-color: #464748 !important;
 }
 
 .select__value-container {
@@ -61,14 +61,14 @@ input[type="file"] {
 
 .select__multi-value {
   border: solid 1px #d7dce1;
-  border-radius: 6px; 
+  border-radius: 6px;
 }
 
 .dark .select__multi-value {
   background: #141414;
   color: white;
   border: solid 1px #4e4e4e;
-  border-radius: 6px; 
+  border-radius: 6px;
 }
 
 .dark .select__control {
@@ -79,7 +79,6 @@ input[type="file"] {
     color: white;
   }
 }
-
 
 .input-upload {
   @apply input bg-white;
@@ -96,8 +95,12 @@ input[type="file"] {
     right: 0;
     width: 60px;
     height: 100%;
-    background: rgb(240,240,240);
-    background: linear-gradient(270deg, rgba(240,240,240,1) 33%, rgba(240,240,240,0) 100%);
+    background: rgb(240, 240, 240);
+    background: linear-gradient(
+      270deg,
+      rgba(240, 240, 240, 1) 33%,
+      rgba(240, 240, 240, 0) 100%
+    );
   }
 }
 
@@ -107,8 +110,12 @@ input[type="file"] {
   color: #4e4e4e;
 
   &::after {
-    background: rgb(0,0,0);
-    background: linear-gradient(270deg, rgba(0,0,0,1) 33%, rgba(0,0,0,0) 100%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      270deg,
+      rgba(0, 0, 0, 1) 33%,
+      rgba(0, 0, 0, 0) 100%
+    );
     transition: all ease-in-out 0.2s;
   }
 }
@@ -472,43 +479,40 @@ input[type="file"] {
   background-color: transparent;
 }
 
-
-
-
 /* MOBILE MENU */
 .css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
-    left: 0 !important;
-    min-width: 100% !important;
-    top: 60px !important;
-    left: 0 !important;
-    background-color: transparent!important;
-    background: transparent!important;
+  left: 0 !important;
+  min-width: 100% !important;
+  top: 60px !important;
+  left: 0 !important;
+  background-color: transparent !important;
+  background: transparent !important;
 
-    ul {
-        @apply container mx-auto;
-        background-color: black;
-        color: white;
-        border-radius: 18px;
-        padding: 0!important;
+  ul {
+    @apply container mx-auto;
+    background-color: black;
+    color: white;
+    border-radius: 18px;
+    padding: 0 !important;
 
-        li {
-            padding: 0;
-            margin: 0;
+    li {
+      padding: 0;
+      margin: 0;
 
-            a {
-                padding: 14px;
-                display: flex;
+      a {
+        padding: 14px;
+        display: flex;
 
-                &:not(:last-child) {
-                    margin-bottom: 4px;
-                }
-            }
+        &:not(:last-child) {
+          margin-bottom: 4px;
         }
+      }
     }
+  }
 }
 
 .css-1e6y48t-MuiButtonBase-root-MuiButton-root {
-    min-width: auto;
+  min-width: auto;
 }
 
 .MuiTypography-root.MuiTypography-body1.p-2.min-w-full {
@@ -521,32 +525,32 @@ input[type="file"] {
 }
 
 .thelogo svg {
-    width: auto;
-    max-height: 24px;
-    margin-right: 8px;
+  width: auto;
+  max-height: 24px;
+  margin-right: 8px;
 }
 
-.MuiList-root.MuiList-padding.MuiMenu-list.css-6hp17o-MuiList-root-MuiMenu-list a {
-    display: flex!important;
-    padding-top: 1rem !important;
-    padding-bottom: 1rem !important;
-    margin-bottom: 4px !important;
-    padding-left: 2rem !important;
-    transition: background-color ease-in-out 0.2s;
+.MuiList-root.MuiList-padding.MuiMenu-list.css-6hp17o-MuiList-root-MuiMenu-list
+  a {
+  display: flex !important;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+  margin-bottom: 4px !important;
+  padding-left: 2rem !important;
+  transition: background-color ease-in-out 0.2s;
 
-    &:first-child {
-        padding-top: 2rem !important;
-    }
+  &:first-child {
+    padding-top: 2rem !important;
+  }
 
-    &:last-child {
-        padding-bottom: 2rem !important;
-    }
+  &:last-child {
+    padding-bottom: 2rem !important;
+  }
 
-    &:hover {
-        @apply bg-black
-    }
+  &:hover {
+    @apply bg-black;
+  }
 }
-
 
 /*
 MEDIAQUERIES 
@@ -560,15 +564,15 @@ MEDIAQUERIES
 */
 
 @media screen and (min-width: 768px) {
-    
-    .gatsby-image-wrapper.gatsby-image-wrapper-constrained.rounded-lg.mr-3 > div:first-child {
-        max-height: unset;
-        max-width: unset;
-    }
+  .gatsby-image-wrapper.gatsby-image-wrapper-constrained.rounded-lg.mr-3
+    > div:first-child {
+    max-height: unset;
+    max-width: unset;
+  }
 
-    .hero-faces-row {
-        transform: none!important;
-    }
+  .hero-faces-row {
+    transform: none !important;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -602,26 +606,27 @@ MEDIAQUERIES
     height: 70vh;
   }
 
-    .thelogo svg {
-        width: auto;
-        max-height: unset!important;
-        margin-right: 0;
-    }
-
+  .thelogo svg {
+    width: auto;
+    max-height: unset !important;
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 1920px) and (max-height: 1024px) {
-  
-  
-
 }
 
 @media (min-width: 1024px) and (max-height: 1024px) {
-
   .marquee-wrapper {
     height: 100vh;
     display: flex;
     align-items: center;
   }
+}
 
+@media (min-width: 1920px) {
+  .employeesGallery-offset {
+    position: relative;
+    left: -400px;
+  }
 }
