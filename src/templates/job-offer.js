@@ -43,7 +43,7 @@ const JobOfferTemplate = ({ data, location }) => {
               <div className="pretitle text-loblolly-600" >WORK WITH US AS</div>
               <div className="title text-md mt-1" >{jobOffer.frontmatter.title}</div>
 
-              <div className="flex flex-col lg:flex-row mt-4 lg:mt-7" >
+              <div className="flex flex-col lg:flex-row mt-4 lg:mt-6" >
                 <div className="flex-grow" >
                   <div className="pretitle text-loblolly-600" >MINIMUM EXPERIENCE</div>
                   <div>{jobOffer.frontmatter.experience}</div>
