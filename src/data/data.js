@@ -12,6 +12,7 @@ export const allEmployees = [
     { firstName: "Jose", surname: "Robles", departmentName: "Business Systems", description: "With a kernel of maker_4.0, I am always trying to be at the edge of the brand new technologies like blockchain, IA, genetic engineering, etc… and of course in love with ERP systems like Odoo! ", photo: "JoseRobles.jpg" },
     { firstName: "Aitor", surname: "Rosell", departmentName: "Business Systems", description: "You can call me Code Wizard, Pythonic Sorcerer, Bug Summoner, JavaScript Ninja or more accurately “that guy that keeps writing code so that things work”, either way still a wizard and a problem solving junkie.", photo: "AitorRosell.jpg" },
     { firstName: "Antonio", surname: "Garcia", departmentName: "Business Systems", description: "Lorem Ipsum", photo: "AntonioGarcia.jpg" },
+    { firstName: "Juan Pablo", surname: "Vienés", departmentName: "Business Systems", description: "Lorem Ipsum", photo: "JuanPabloVienes.jpg" },
     { firstName: "Mariela", surname: "Gadea", departmentName: "Digital Marketing", description: "E-commerce lover and brand developer. Trying to stick to the Gantt but sometimes secondary roads take you to better places. Also, the official birthday cards designer and the one who always says yes to an after office.", photo: "MarielaGadeta.jpg" },
     { firstName: "Eder", surname: "Iraizoz", departmentName: "Digital Marketing", description: "Always trying to learn and get to the best version of myself. I love solving problems, impossible missions, mountain hiking and climbing. Understanding people is my passion and I'm happily able to do it through my job: to make complex systems easy for humans.", photo: "EderIraizoz.jpg" },
     { firstName: "Rafa", surname: "Camón", departmentName: "Digital Marketing", description: "All terrain developer, now focused on backend side. Coding is my business. Love it since I was a child, and helping people to understand what's behind the magic. A young mind in a mature body.", photo: "RafaelCamon.jpg" },
@@ -22,6 +23,7 @@ export const allEmployees = [
     // { firstName: "Camélia", surname: "Lemseffer", departmentName: "Digital Marketing", description: "Passionate about PPC strategies, Im Inbound Marketing lover and big fan of Google, I feel lucky to have participated and witnessed the evolution of Google Ads from its start. I love working with goals. Learning more everyday. I love horses and new cultures.", photo: "CameliaLemseffer.jpg" },
     { firstName: "Iago", surname: "Alonso", departmentName: "IT", description: "Snake admirer, Crab junkie, Open Source devotee and Linux enthusiast. Computer nerd turned developer, finally dropping the anchor as a SysAdmin. The living proof that you can turn your passion into your job.", photo: "IagoAlonso.jpg" },
     { firstName: "Jose", surname: "Ruiz", departmentName: "IT", description: "The grumpy guy that keeps everything working. The “strange question” wrangler, trying to bring order and logic to your chaos. A sysadmin, because even developers need action heroes.s", photo: "JoseRuiz.jpg" },
+
 ];
 
 export async function getAllEmployees() {
