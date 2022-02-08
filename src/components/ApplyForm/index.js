@@ -27,7 +27,7 @@ export function ApplyForm({ jobDepartment, jobTitle }) {
 
     return (
 
-        <form name="contact" method="POST" data-netlify="true" enctype="multipart/form-data" data-netlify-honeypot="bot-field" action="/thank-you-for-applying/"   >
+        <form name="contact" method="POST" className="relative z-10" data-netlify="true" enctype="multipart/form-data" data-netlify-honeypot="bot-field" action="/thank-you-for-applying/"   >
 
             <input type="hidden" name="form-name" aria-label="Input contact" value="contact"></input>
             <input type="hidden" name="position" aria-label={`Input position ${jobTitle}`} value={jobTitle} />

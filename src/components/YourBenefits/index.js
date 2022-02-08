@@ -15,7 +15,6 @@ import Icon17 from "../../images/your-benefits-photos/icon-black-5.svg"
 import Icon18 from "../../images/your-benefits-photos/icon-black-6.svg"
 
 
-import { CircleBlur } from "../CircleBlur/index"
 import useTheme from "../../hooks/useTheme";
 
 
@@ -64,39 +63,41 @@ export function YourBenefits() {
     return (
 
         <div>
+            <div className="trianglesWrapper">
+                <div className="triangle triangle-md triangleColor-general-1"
+                    style={{
+                        top: -180,
+                        right: "90%",
+                        transform: "rotate(60deg)",
+                        animationDuration: "38s"
+                    }}>
+                </div>
+                <div className="triangle triangle-xl triangleColor-general-2"
+                    style={{
+                        top: 0,
+                        left: "100%",
+                        transform: "rotate(90deg)",
+                        animationDuration: "42s"
+                    }}>
+                </div>
+            </div>
 
             {
                 theme === "dark" ?
-                    <div className="grid grid-cols-2 md:grid-cols-3 gap-4 pb-4" >
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-4 pb-4 relative z-10" >
                         {
                             benefitsWhite.map((unite, index) => {
                                 const icon = iconsInSVGWhite.find(icon => icon.id === unite.id)
 
                                 return (
-                                    <div key={index} className="blurred-gradient-wrapper">
-                                        <div className="blurred-gradient-container">
-                                            <div className="blurred-gradient-content relative">
 
-                                                <div className="flex flex-col xxl:flex-row">
-                                                    <div>{icon && icon.component}</div>
-                                                    <div className="flex flex-col mb-1 xxl:pl-3">
-                                                        <div className="h-px-80 flex items-center">
-                                                            <h4 className="mb-0 lg:w-4/12">{unite?.title?.toUpperCase()}</h4>
-                                                        </div>
-                                                        <div className="xl:pr-6">{unite?.content}</div>
-                                                    </div>
-                                                </div>
-
+                                    <div className="flex flex-col xxl:flex-row">
+                                        <div>{icon && icon.component}</div>
+                                        <div className="flex flex-col mb-1 xxl:pl-3">
+                                            <div className="h-px-80 flex items-center">
+                                                <h4 className="mb-0 lg:w-4/12">{unite?.title?.toUpperCase()}</h4>
                                             </div>
-                                            <CircleBlur blur={unite.blur1} color={unite.color1} top={unite.top1} left={unite.left1} size={unite.size1}
-                                                keyFrame={unite.keyFrame1} /* ORANGE */
-                                            />
-                                            <CircleBlur blur={unite.blur2} color={unite.color2} top={unite.top2} left={unite.left2} size={unite.size2}
-                                                keyFrame={unite.keyFrame2} /* PURPLE */
-                                            />
-                                            <CircleBlur blur={unite.blur3} color={unite.color3} top={unite.top3} left={unite.left3} size={unite.size3}
-                                                keyFrame={unite.keyFrame3} /* GREEN */
-                                            />
+                                            <div className="xl:pr-6">{unite?.content}</div>
                                         </div>
                                     </div>
                                 )
@@ -104,35 +105,19 @@ export function YourBenefits() {
                         }
                     </div>
                     :
-                    <div className="grid grid-cols-2 md:grid-cols-3 gap-4 pb-4" >
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-4 pb-4 relative z-10" >
                         {
                             benefitsBlack.map((unite, index) => {
                                 const icon = iconsInSVGBlack.find(icon => icon.id === unite.id)
                                 return (
-                                    <div key={index} className="blurred-gradient-wrapper">
-                                        <div className="blurred-gradient-container">
-                                            <div className="blurred-gradient-content relative">
 
-                                                <div className="flex flex-col xxl:flex-row">
-                                                    <div>{icon && icon.component}</div>
-                                                    <div className="flex flex-col mb-1 xxl:pl-3">
-                                                        <div className="h-px-80 flex items-center">
-                                                            <h4 className="mb-0 lg:w-4/12">{unite?.title?.toUpperCase()}</h4>
-                                                        </div>
-                                                        <div className="xl:pr-6">{unite?.content}</div>
-                                                    </div>
-                                                </div>
-
+                                    <div className="flex flex-col xxl:flex-row">
+                                        <div>{icon && icon.component}</div>
+                                        <div className="flex flex-col mb-1 xxl:pl-3">
+                                            <div className="h-px-80 flex items-center">
+                                                <h4 className="mb-0 lg:w-4/12">{unite?.title?.toUpperCase()}</h4>
                                             </div>
-                                            <CircleBlur blur={unite.blur1} color={unite.color1} top={unite.top1} left={unite.left1} size={unite.size1}
-                                                keyFrame={unite.keyFrame1} /* ORANGE */
-                                            />
-                                            <CircleBlur blur={unite.blur2} color={unite.color2} top={unite.top2} left={unite.left2} size={unite.size2}
-                                                keyFrame={unite.keyFrame2} /* PURPLE */
-                                            />
-                                            <CircleBlur blur={unite.blur3} color={unite.color3} top={unite.top3} left={unite.left3} size={unite.size3}
-                                                keyFrame={unite.keyFrame3} /* GREEN */
-                                            />
+                                            <div className="xl:pr-6">{unite?.content}</div>
                                         </div>
                                     </div>
                                 )

@@ -76,16 +76,33 @@ const JobOfferTemplate = ({ data, location }) => {
           </div>
 
           <div className="hidden xl:flex xl:w-6/12 justify-end mt-7"  >
+
             <div className="xl:w-px-512 flex-grow fixed mt-6 text-black" >
-              <ApplyForm jobDepartment={jobDepartment} jobTitle={jobTitle} />
+              <ApplyForm className="relative z-10" jobDepartment={jobDepartment} jobTitle={jobTitle} />
+              <div className="trianglesWrapper relative z-1">
+                <div className="triangle triangle-md triangleColor-general-1"
+                  style={{
+                    top: -300,
+                    left: "40%",
+                    transform: "rotate(60deg)",
+                    animationDuration: "38s"
+                  }}>
+                </div>
+                <div className="triangle triangle-sm triangleColor-general-2"
+                  style={{
+                    top: -500,
+                    left: "-20%",
+                    transform: "rotate(90deg)",
+                    animationDuration: "42s"
+                  }}>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-
-
       </div>
 
-      <div className="bg-white dark:bg-black z-10 relative">
+      <div className="bg-white dark:bg-black z-20 relative">
         <div className="container mx-auto pt-6 pb-4" >
           <YourBenefits />
         </div>

@@ -20,7 +20,7 @@ export function OurValuesMenu({ allOurValues }) {
                     <h3 className="title text-md xl:w-6/12">Our values</h3>
                 </div>
                 <div className="xl:flex">
-                    <div className="w-6/12">
+                    <div className="w-6/12 relative z-10">
                         <div>
                             <ul className="card-menu mx-0 flex flex-col px-0" >
                                 {
@@ -29,7 +29,7 @@ export function OurValuesMenu({ allOurValues }) {
 
                                             <li key={index} className="flex w-full flex-grow" >
                                                 <button
-                                                    className="p-3-5 font-bold flex-grow uppercase flex items-center justify-between cursor-pointer"
+                                                    className="p-4 font-bold flex-grow uppercase flex items-center justify-between cursor-pointer"
                                                     onClick={() => (setShowValueCard(value.id))}
                                                     aria-label={`Values Menu button ${index}`}
                                                 >
@@ -45,7 +45,7 @@ export function OurValuesMenu({ allOurValues }) {
                         </div>
 
                     </div>
-                    <div className="w-6/12 ml-2 rounded-xl overflow-hidden border bg-bleach dark:bg-black dark:border dark:border-white">
+                    <div className="w-6/12 ml-2 rounded-xl overflow-hidden border bg-bleach dark:bg-black dark:border dark:border-white relative z-10">
                         {showValueCard &&
                             <ValueCard value={allOurValues.find(value => value.id === showValueCard)} />
                         }

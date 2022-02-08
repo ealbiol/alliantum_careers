@@ -1,7 +1,6 @@
 import * as React from "react"
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { EmployeesGallery } from "../EmployeesGallery";
-import { CircleBlur } from "../CircleBlur/index"
 
 export function TheTeam() {
 
@@ -36,39 +35,43 @@ export function TheTeam() {
                     <div className="blurred-gradient-content flex-col">
                         <div className="w-100 relative z-10">
                             <div className="employeesGallery-offset" >
+                                <div className="trianglesWrapper">
+                                    <div className="triangle triangle-xl triangleColor-general-1"
+                                        style={{
+                                            top: 200,
+                                            left: "-12%",
+                                            transform: "rotate(60deg)",
+                                            animationDuration: "38s"
+                                        }}>
+                                    </div>
+                                    <div className="triangle triangle-lg triangleColor-general-2"
+                                        style={{
+                                            top: 600,
+                                            right: "0%",
+                                            transform: "rotate(90deg)",
+                                            animationDuration: "42s"
+                                        }}>
+                                    </div>
+                                    <div className="triangle triangle-md triangleColor-general-3"
+                                        style={{
+                                            top: 800,
+                                            left: "40%",
+                                            transform: "rotate(20deg)",
+                                            animationDuration: "50s"
+                                        }}>
+                                    </div>
+                                </div>
                                 <EmployeesGallery />
                             </div>
                         </div>
                         <div className="container-main" >
                             <div className="card-bg bg-white md:w-px-420 mx-auto lg:-mt-7 mb-6 relative z-10">
                                 <span className="title text-black text-md block">Do you want to grow with us?</span>
-                                <AnchorLink className="btn btn-black btn-full text-center mt-4" to={"/#jobs-table"} >See current job offers</AnchorLink>
+                                <AnchorLink className="btn bg-purple btn-full text-center text-white mt-4" to={"/#jobs-table"} >See current job offers</AnchorLink>
                             </div>
                         </div>
 
                     </div>
-
-                    <CircleBlur blur="160" color="#F9B457" top="40%" left="16%" size="700"
-                        keyFrame={ /* YELLOW */
-                            `    
-                            0%    {  transform: translate(0, 0) }
-                            33%   {  transform: scale(0.77) }
-                            66%   {  transform: translate(10px, 20px) }
-                            100%  {  transform: translate(30px, 40px) }
-                            `
-                        }
-                    />
-
-                    <CircleBlur blur="160" color="#966CE0" top="48%" left="50%" size="700"
-                        keyFrame={ /* PURPLE */
-                            `    
-                            0%    {  transform: translate(0, 0) }
-                            33%   {  transform: scale(0.77) }
-                            66%   {  transform: translate(10px, 20px) }
-                            100%  {  transform: translate(30px, 40px) }
-                            `
-                        }
-                    />
 
                 </div>
             </div>

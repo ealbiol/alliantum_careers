@@ -37,7 +37,7 @@ export function OfficeCard({ addressUnite }) {
     // }, [])
 
     return isLoaded ? (
-        <div className="w-100 md:w-6/12 xl:w-4/12 md:px-2 mb-2 md:mb-0">
+        <div className="w-100 md:w-6/12 xl:w-5/12 md:px-2 mb-2 md:mb-0">
             <div className="bg-white dark:bg-black dark:border-white rounded-lg overflow-hidden">
                 <div>
                     {
@@ -435,7 +435,7 @@ export function OfficeCard({ addressUnite }) {
 
                 </div>
                 <div className="p-3">
-                    <span className="pretitle text-chestnut-rose">{addressUnite.city.toUpperCase()}</span>
+                    <span className="pretitle text-purple">{addressUnite.city.toUpperCase()}</span>
                     <h3 className="text-md mb-0">{addressUnite.country.toUpperCase()}</h3>
                     <div className="flex flex-col lg:flex-row justify-between">
                         <div>
