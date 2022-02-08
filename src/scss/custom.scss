@@ -849,7 +849,7 @@ MEDIAQUERIES
   }
 
   .hero-header {
-    padding-top: 0;
+    padding-top: 80px;
   }
 
   .hero-header__back {
@@ -858,6 +858,7 @@ MEDIAQUERIES
 
   .marquee-wrapper {
     height: 70vh;
+    min-height: 1024px;
   }
 
 }
@@ -875,6 +876,12 @@ MEDIAQUERIES
     & a:nth-child(7) { grid-area: 7 / 1 / 8 / 2; }
     & a:nth-child(8) { grid-area: 8 / 2 / 9 / 3; }
     & a:nth-child(9) { grid-area: 9 / 1 / 10 / 2; }
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .hero-faces-row__item .gatsby-image-wrapper {
+    width: 240px;
   }
 }
 

@@ -67,7 +67,7 @@ const JobOfferTemplate = ({ data, location }) => {
             </div>
 
             <div className="my-6" >
-              <div className="pretitle text-loblolly-600" >WHAT WE NEED RIGHT NOW</div>
+              <div className="pretitle text-loblolly-600 font-medium" >WHAT WE NEED RIGHT NOW</div>
               <div>
                 <AllJobOffersList />
               </div>

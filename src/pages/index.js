@@ -71,7 +71,7 @@ function IndexPage() {
               </div>
             </div>
 
-            <div className="w-100 h-full pt-7 px-2 sm:px-4 md:px-6 xl:px-0">
+            <div className="w-screen lg:w-full pt-7 px-2 sm:px-4 md:px-6 xl:px-0">
 
               <h2 className="pretitle text-black dark:text-white font-medium">What we need right now</h2>
               <AllJobOffersList className="relative z-4" id="/#jobs-table" />
@@ -82,7 +82,7 @@ function IndexPage() {
 
         {/* ------------> Your Benefits */}
         <div id="your-benefits" >
-          <div className="container mx-auto pt-6 mb-2">
+          <div className="container mx-auto pt-6 mb-2 md:mt-6">
             <span className="pretitle">Your benefits</span>
             <h3 className="title text-md xl:w-6/12">Work in an international company, with a happy team, in a great office</h3>
             <YourBenefits />
