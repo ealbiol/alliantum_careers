@@ -25,7 +25,7 @@ export function EmployeesGallery() {
 
     return (
 
-        <div className="hero-header__back">
+        <div className="hero-header__back pt-6 lg:pt-0">
             <div className="hero-back-content">
                 <div className="hero-faces-row mb-2" >
                     {

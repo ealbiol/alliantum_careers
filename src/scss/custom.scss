@@ -885,4 +885,14 @@ MEDIAQUERIES
   }
 }
 
+@media screen and (max-width: 768px) {
+  .hero-faces-row__item .gatsby-image-wrapper {
+    width: 180px;
+  }
+
+  .hero-item-info {
+    font-size: 14px;
+  }
+}
+
 
