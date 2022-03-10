@@ -15,8 +15,8 @@ export function EmployeesGallery() {
     }, [])
 
     const allEmployeePhotos = employees.sort(function (a, b) { return 0.5 - Math.random() })
-    const firstLinePhotos = allEmployeePhotos.slice(0, 8);
-    const secondLinePhotos = allEmployeePhotos.slice(8, 17);
+    const firstLinePhotos = allEmployeePhotos.slice(0, 9);
+    const secondLinePhotos = allEmployeePhotos.slice(8, 18);
 
     // const doubleFirstLinePhotos = firstLinePhotos.concat(firstLinePhotos)
     // const doubleSecondLinePhotos = secondLinePhotos.concat(secondLinePhotos)
