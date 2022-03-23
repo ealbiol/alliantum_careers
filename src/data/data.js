@@ -13,6 +13,7 @@ export const allEmployees = [
     { firstName: "Aitor", surname: "Rosell", departmentName: "Business Systems", description: "You can call me Code Wizard, Pythonic Sorcerer, Bug Summoner, JavaScript Ninja or more accurately “that guy that keeps writing code so that things work”, either way still a wizard and a problem solving junkie.", photo: "AitorRosell.jpg" },
     { firstName: "Antonio", surname: "Garcia", departmentName: "Business Systems", description: "Lorem Ipsum", photo: "AntonioGarcia.jpg" },
     { firstName: "Juan Pablo", surname: "Vienés", departmentName: "Business Systems", description: "Lorem Ipsum", photo: "JuanPabloVienes.jpg" },
+    { firstName: "Máilen", surname: "Rojas", departmentName: "Business Systems", description: "Lorem Ipsum", photo: "MailenRojas.jpg" },
     { firstName: "Almudena", surname: "Martínez", departmentName: "Digital Marketing", description: "Lorem Ipsum", photo: "AlmudenaMartinez.jpg" },
     { firstName: "Mariela", surname: "Gadea", departmentName: "Digital Marketing", description: "E-commerce lover and brand developer. Trying to stick to the Gantt but sometimes secondary roads take you to better places. Also, the official birthday cards designer and the one who always says yes to an after office.", photo: "MarielaGadeta.jpg" },
     { firstName: "Eder", surname: "Iraizoz", departmentName: "Digital Marketing", description: "Always trying to learn and get to the best version of myself. I love solving problems, impossible missions, mountain hiking and climbing. Understanding people is my passion and I'm happily able to do it through my job: to make complex systems easy for humans.", photo: "EderIraizoz.jpg" },
@@ -26,6 +27,11 @@ export const allEmployees = [
     { firstName: "Jose", surname: "Ruiz", departmentName: "IT", description: "The grumpy guy that keeps everything working. The “strange question” wrangler, trying to bring order and logic to your chaos. A sysadmin, because even developers need action heroes.s", photo: "JoseRuiz.jpg" },
 
 ];
+
+
+export async function getAllEmployeesLength() {
+    return allEmployees?.length
+}
 
 export async function getAllEmployees() {
     return allEmployees

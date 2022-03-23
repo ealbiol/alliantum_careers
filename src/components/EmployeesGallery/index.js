@@ -1,26 +1,33 @@
 import * as React from "react"
 import EmployeePhoto from "../EmployeePhoto";
-import { getAllEmployees } from "../../data/data"
+import { getAllEmployees, getAllEmployeesLength } from "../../data/data"
 
 
 export function EmployeesGallery() {
 
     const [employees, setEmployees] = React.useState([])
+    const [allEmployeesLength, setAllEmployeesLength] = React.useState([])
 
     React.useEffect(() => {
         getAllEmployees().then((result) => {
             setEmployees(result)
+        })
 
+        getAllEmployeesLength().then((result) => {
+            setAllEmployeesLength(result)
         })
     }, [])
 
+
+    const firstHalfEmployees = Math.floor(allEmployeesLength / 2)
+    const secondHalfEmployees = firstHalfEmployees * 2
+
     const allEmployeePhotos = employees.sort(function (a, b) { return 0.5 - Math.random() })
-    const firstLinePhotos = allEmployeePhotos.slice(0, 9);
-    const secondLinePhotos = allEmployeePhotos.slice(8, 18);
+    const firstLinePhotos = allEmployeePhotos.slice(0, firstHalfEmployees);
+    const secondLinePhotos = allEmployeePhotos.slice(firstHalfEmployees, secondHalfEmployees);
 
     // const doubleFirstLinePhotos = firstLinePhotos.concat(firstLinePhotos)
     // const doubleSecondLinePhotos = secondLinePhotos.concat(secondLinePhotos)
-
 
 
     return (
