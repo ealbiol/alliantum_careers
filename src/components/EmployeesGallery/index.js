@@ -30,6 +30,7 @@ export function EmployeesGallery() {
     // const doubleSecondLinePhotos = secondLinePhotos.concat(secondLinePhotos)
 
 
+
     return (
 
         <div className="hero-header__back pt-6 lg:pt-0">
