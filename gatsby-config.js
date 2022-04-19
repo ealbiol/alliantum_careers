@@ -192,6 +192,7 @@ module.exports = {
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },
-    `gatsby-plugin-sitemap`
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-netlify`
   ],
 }
