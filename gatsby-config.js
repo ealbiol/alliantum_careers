@@ -24,13 +24,6 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/legal/consentForSendingCv`,
-        name: `consentForSendingCv`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         path: `${__dirname}/content/legal/imprint`,
         name: `imprint`,
       },
