@@ -5,7 +5,7 @@
 
 <h2>Office Addresses</h2>
 
-<br/>
+<!-- <br/>
 <br/>
 
 - **<h3>Spain</h3>**
@@ -24,7 +24,7 @@
 - -- Managing Director: Carlos Mayo
 - -- Hoja: MA-164187
 - -- Folio 35 del tomo 6099, libro número 5006 de la Sección General de Sociedades con fecha 2 de diciembre de 2021.
-- -- Cif: B67842625
+- -- Cif: B67842625 -->
 
 <br/>
 <br/>
