@@ -2,6 +2,7 @@ import * as React from "react"
 import GithubLogo from "../../images/apply-form-photos/github-logo.svg"
 import GithubLogoWhite from "../../images/apply-form-photos/github-logo-white.svg"
 import useTheme from "../../hooks/useTheme";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 
 export function ApplyForm({ jobDepartment, jobTitle }) {
@@ -70,6 +71,15 @@ export function ApplyForm({ jobDepartment, jobTitle }) {
                     <input type="url" name="Applicant URL" placeholder="Your portfolio / blog / web" aria-label="Input appliant url" className="flex-grow input" />
                 }
             </div>
+            <div style={{ display: "flex", alignItems: "center" }} >
+                <input type="checkbox" required></input>
+                <span style={{ color: "salmon", fontSize: "11px" }}>
+                    {" "} &nbsp; To continue, you must accept that you have read and agree with
+                    <AnchorLink to="/consent-for-sending-cv" >
+                        <span className="text-gray-600 transition hover:text-primary" >{" "} <u>the clause</u></span>.
+                    </AnchorLink>
+                </span>
+            </div>
             <div className="flex" >
                 <button type="submit" aria-label="Submit job offer" className="btn btn-primary flex-grow" >Apply for this job</button>
             </div>
@@ -78,3 +88,5 @@ export function ApplyForm({ jobDepartment, jobTitle }) {
 
     )
 }
+
+
