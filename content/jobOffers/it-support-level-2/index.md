@@ -16,7 +16,8 @@ This time we are looking for an 2nd level IT Support:
 **What would you like to help us with?**
 
 - -- First contact person for all employees within the company in case of IT problems.
-- -- Support for the migration to Google WorkspaceSupport in optimising the working environment.
+- -- Support for the migration to Google Workspace.
+- -- Support in optimising the working environment.
 - -- Joint problem solving with the employees on the phone.
 - -- Troubleshooting in the area of hardware and software in a Mac environment.
 
